@@ -1,5 +1,5 @@
 import { ChipProps, forwardRef } from '@queelag/preact'
-import { ChipElement } from '@queelag/web-components'
+import type { ChipElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

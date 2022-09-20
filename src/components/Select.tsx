@@ -1,5 +1,5 @@
 import { forwardRef, SelectProps } from '@queelag/preact'
-import { SelectElement } from '@queelag/web-components'
+import type { SelectElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

@@ -1,5 +1,5 @@
 import { forwardRef, InputFileProps } from '@queelag/preact'
-import { InputFileElement } from '@queelag/web-components'
+import type { InputFileElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

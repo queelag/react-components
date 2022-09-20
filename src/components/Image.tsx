@@ -1,5 +1,5 @@
 import { forwardRef, ImageProps } from '@queelag/preact'
-import { ImageElement } from '@queelag/web-components'
+import type { ImageElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

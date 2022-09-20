@@ -1,5 +1,5 @@
 import { forwardRef, IconProps } from '@queelag/preact'
-import { IconElement } from '@queelag/web-components'
+import type { IconElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

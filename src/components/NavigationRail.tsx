@@ -1,5 +1,5 @@
 import { forwardRef, NavigationRailProps } from '@queelag/preact'
-import { NavigationRailElement } from '@queelag/web-components'
+import type { NavigationRailElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

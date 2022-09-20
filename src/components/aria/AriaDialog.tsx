@@ -1,5 +1,5 @@
 import { AriaDialogDescriptionProps, AriaDialogLabelProps, AriaDialogProps, forwardRef } from '@queelag/preact'
-import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@queelag/web-components'
+import type { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

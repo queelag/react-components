@@ -1,5 +1,5 @@
 import { AriaBreadcrumbListItemProps, AriaBreadcrumbListProps, AriaBreadcrumbProps, forwardRef } from '@queelag/preact'
-import { AriaBreadcrumbElement, AriaBreadcrumbListElement, AriaBreadcrumbListItemElement } from '@queelag/web-components'
+import type { AriaBreadcrumbElement, AriaBreadcrumbListElement, AriaBreadcrumbListItemElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

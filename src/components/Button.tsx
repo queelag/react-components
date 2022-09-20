@@ -1,5 +1,5 @@
 import { ButtonProps, forwardRef } from '@queelag/preact'
-import { ButtonElement } from '@queelag/web-components'
+import type { ButtonElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

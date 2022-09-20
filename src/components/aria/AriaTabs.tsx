@@ -1,5 +1,5 @@
 import { AriaTabsPanelProps, AriaTabsProps, AriaTabsTabProps, forwardRef } from '@queelag/preact'
-import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@queelag/web-components'
+import type { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

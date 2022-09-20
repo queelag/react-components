@@ -1,5 +1,5 @@
 import { CheckBoxProps, forwardRef } from '@queelag/preact'
-import { CheckBoxElement } from '@queelag/web-components'
+import type { CheckBoxElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

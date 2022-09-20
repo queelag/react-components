@@ -7,7 +7,7 @@ import {
   AriaComboBoxProps,
   forwardRef
 } from '@queelag/preact'
-import {
+import type {
   AriaComboBoxButtonElement,
   AriaComboBoxElement,
   AriaComboBoxGroupElement,

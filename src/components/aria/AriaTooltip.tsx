@@ -1,5 +1,5 @@
 import { AriaTooltipArrowProps, AriaTooltipContentProps, AriaTooltipProps, AriaTooltipTriggerProps, forwardRef } from '@queelag/preact'
-import { AriaTooltipArrowElement, AriaTooltipContentElement, AriaTooltipElement, AriaTooltipTriggerElement } from '@queelag/web-components'
+import type { AriaTooltipArrowElement, AriaTooltipContentElement, AriaTooltipElement, AriaTooltipTriggerElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

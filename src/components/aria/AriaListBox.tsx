@@ -1,5 +1,5 @@
 import { AriaListBoxOptionProps, AriaListBoxProps, forwardRef } from '@queelag/preact'
-import { AriaListBoxElement, AriaListBoxOptionElement } from '@queelag/web-components'
+import type { AriaListBoxElement, AriaListBoxOptionElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

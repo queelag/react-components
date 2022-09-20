@@ -1,5 +1,5 @@
 import { forwardRef, SwitchProps } from '@queelag/preact'
-import { SwitchElement } from '@queelag/web-components'
+import type { SwitchElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

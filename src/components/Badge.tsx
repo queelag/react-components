@@ -1,5 +1,5 @@
 import { BadgeProps, forwardRef } from '@queelag/preact'
-import { BadgeElement } from '@queelag/web-components'
+import type { BadgeElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

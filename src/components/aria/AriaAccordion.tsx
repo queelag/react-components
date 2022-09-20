@@ -6,7 +6,7 @@ import {
   AriaAccordionSectionProps,
   forwardRef
 } from '@queelag/preact'
-import {
+import type {
   AriaAccordionButtonElement,
   AriaAccordionElement,
   AriaAccordionHeaderElement,

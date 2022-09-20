@@ -1,5 +1,5 @@
 import { forwardRef, MeterProps } from '@queelag/preact'
-import { MeterElement } from '@queelag/web-components'
+import type { MeterElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

@@ -1,5 +1,5 @@
 import { AriaMenuBarItemProps, AriaMenuBarProps, AriaMenuBarSubMenuProps, forwardRef } from '@queelag/preact'
-import { AriaMenuBarElement, AriaMenuBarItemElement, AriaMenuBarSubMenuElement } from '@queelag/web-components'
+import type { AriaMenuBarElement, AriaMenuBarItemElement, AriaMenuBarSubMenuElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

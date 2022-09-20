@@ -1,5 +1,5 @@
 import { forwardRef, NavigationBarProps } from '@queelag/preact'
-import { NavigationBarElement } from '@queelag/web-components'
+import type { NavigationBarElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

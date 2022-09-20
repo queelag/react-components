@@ -1,5 +1,5 @@
 import { DividerProps, forwardRef } from '@queelag/preact'
-import { DividerElement } from '@queelag/web-components'
+import type { DividerElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

@@ -1,5 +1,5 @@
 import { forwardRef, TextAreaProps } from '@queelag/preact'
-import { TextAreaElement } from '@queelag/web-components'
+import type { TextAreaElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

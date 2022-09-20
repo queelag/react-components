@@ -9,7 +9,7 @@ import {
   AriaCarouselTabsProps,
   forwardRef
 } from '@queelag/preact'
-import {
+import type {
   AriaCarouselElement,
   AriaCarouselNextSlideControlElement,
   AriaCarouselPreviousSlideControlElement,

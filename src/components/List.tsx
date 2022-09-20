@@ -1,5 +1,5 @@
 import { forwardRef, ListItemProps, ListProps } from '@queelag/preact'
-import { ListElement, ListItemElement } from '@queelag/web-components'
+import type { ListElement, ListItemElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

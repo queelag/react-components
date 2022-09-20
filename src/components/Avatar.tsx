@@ -1,5 +1,5 @@
 import { AvatarProps, forwardRef } from '@queelag/preact'
-import { AvatarElement } from '@queelag/web-components'
+import type { AvatarElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

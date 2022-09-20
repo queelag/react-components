@@ -1,5 +1,5 @@
 import { AriaFeedArticleDescriptionProps, AriaFeedArticleLabelProps, AriaFeedArticleProps, AriaFeedProps, forwardRef } from '@queelag/preact'
-import { AriaFeedArticleDescriptionElement, AriaFeedArticleElement, AriaFeedArticleLabelElement, AriaFeedElement } from '@queelag/web-components'
+import type { AriaFeedArticleDescriptionElement, AriaFeedArticleElement, AriaFeedArticleLabelElement, AriaFeedElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {

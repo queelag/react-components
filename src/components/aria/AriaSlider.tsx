@@ -1,5 +1,5 @@
 import { AriaSliderProps, AriaSliderThumbProps, forwardRef } from '@queelag/preact'
-import { AriaSliderElement, AriaSliderThumbElement } from '@queelag/web-components'
+import type { AriaSliderElement, AriaSliderThumbElement } from '@queelag/web-components'
 import { h, Ref } from 'preact'
 
 declare global {
