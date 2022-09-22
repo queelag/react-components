@@ -1,4 +1,5 @@
 export * from './components/aria/AriaAccordion'
+export * from './components/aria/AriaAlert'
 export * from './components/aria/AriaAlertDialog'
 export * from './components/aria/AriaBreadcrumb'
 export * from './components/aria/AriaCarousel'
