@@ -1,6 +1,7 @@
 {
   "author": "Dario Sechi",
   "devDependencies": {
+    "@floating-ui/dom": "^1.0.4",
     "@microsoft/api-extractor": "^7.33.6",
     "@queelag/core": "^1.1.14",
     "@queelag/react": "^1.0.3",
@@ -14,6 +15,7 @@
     "@vitejs/plugin-react": "^2.2.0",
     "@vitest/coverage-c8": "^0.25.0",
     "@vitest/ui": "^0.25.0",
+    "dompurify": "^2.4.0",
     "focus-trap": "^7.0.0",
     "jsdom": "^20.0.2",
     "lit": "^2.4.1",
@@ -22,6 +24,7 @@
     "react-dom": "^18.2.0",
     "rollup": "^3.2.5",
     "rollup-plugin-terser": "^7.0.2",
+    "tabbable": "^6.0.1",
     "tslib": "^2.4.1",
     "typedoc": "^0.23.20",
     "typescript": "4.8.4",
