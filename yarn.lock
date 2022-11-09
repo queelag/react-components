@@ -374,6 +374,11 @@
     node-fetch-cjs "^3.2.10"
     rfc4648 "^1.5.2"
 
+"@queelag/react@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@queelag/react/-/react-1.0.3.tgz#031d4a5bc95ff047e6df04281d49917d02bf2408"
+  integrity sha512-XtI/0OYqdvzayGNIhCHicZrKGxYuR0/BhV8GUm2pmTcJQMBEd1exePktLv7MlkKRv2DGG8AmHVvaQ0SYtoxIhQ==
+
 "@queelag/web-components@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@queelag/web-components/-/web-components-1.0.6.tgz#4169d481e2ac9f767bad141d6b14803a7ca3708d"
