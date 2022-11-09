@@ -379,10 +379,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@queelag/core@^1.1.14":
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/@queelag/core/-/core-1.1.14.tgz#f8b6b068cae0b1d58c97ae09e454b63d2c087b7a"
-  integrity sha512-KwQbS3wXswc0ruVPMug/4PrpJWxXl72GkMgsPGJMqUHWkVfrff/0zjx/oiPaWJzaddWtLumeH2lRmNf4YF2UYw==
+"@queelag/core@^1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@queelag/core/-/core-1.1.15.tgz#862be4e553d01ed2c4f6f535457206e61a68cb75"
+  integrity sha512-/rjwa8xwJA6vG/0YsayVqaSFQEVAfjD6p3/f/e3j4uxp9CQpncndtGxeWsAeofnOQ3KyjC0S+S4hllSgbXndDQ==
   dependencies:
     "@types/cookie" "^0.5.1"
     cookie "^0.5.0"
@@ -396,15 +396,15 @@
   resolved "https://registry.yarnpkg.com/@queelag/react/-/react-1.0.3.tgz#031d4a5bc95ff047e6df04281d49917d02bf2408"
   integrity sha512-XtI/0OYqdvzayGNIhCHicZrKGxYuR0/BhV8GUm2pmTcJQMBEd1exePktLv7MlkKRv2DGG8AmHVvaQ0SYtoxIhQ==
 
-"@queelag/web-components@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@queelag/web-components/-/web-components-1.0.6.tgz#4169d481e2ac9f767bad141d6b14803a7ca3708d"
-  integrity sha512-KFbDjrJkKyIiz+Wkx4XQWFmPILX7kLKRu18PHUHdabKDcg3aIkSFkqInFItYZ3D72nXT09frglOe+Gn8GmaPGg==
+"@queelag/web-components@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@queelag/web-components/-/web-components-1.0.7.tgz#e1a7b058eefabbd450f30fa5ebb2f3b9d01e3685"
+  integrity sha512-fapxtYxhJFocdwvPiHDaXw0rXHgGF/OJug5wyexZPcafsT3DwjuU/5oXZJzoJDm1fp0dYMYOsVLvlGFlH2GCfQ==
 
-"@queelag/web@^1.0.10":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@queelag/web/-/web-1.0.10.tgz#497d5f5f97f6abee33705be24b81645499a719e7"
-  integrity sha512-kx2AlgndjJdrfvbtCq+VPKg2ehScfWectJ839cvgiDeJjK4Wc8JzFZLjNcjVNQc0hmK8db63vgjDo6YE/an+ZQ==
+"@queelag/web@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@queelag/web/-/web-1.0.11.tgz#9e13528fffae660156d9275d0b82e7ebbb299fc4"
+  integrity sha512-bMXC9itqMf1y/web2cj9e1MBrih4xSt7KM/HnwQDRkt+Ayu/KVq92Lc8NoQoQQ0HTau8Pxr208GBubeWJrQiDA==
 
 "@rollup/plugin-strip@^3.0.1":
   version "3.0.1"
