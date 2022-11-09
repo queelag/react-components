@@ -1,5 +1,5 @@
 import { createElementComponent, ElementComponent, NavigationBarItemProps, NavigationBarProps } from '@queelag/react'
-import { NavigationBarElement, NavigationBarItemElement } from '@queelag/web-components'
+import { NavigationBarElement, NavigationBarItemElement } from '@queelag/web-components/elements/navigation/navigation.bar.element'
 
 export const QNavigationBar: ElementComponent<NavigationBarElement, NavigationBarProps> = createElementComponent('q-navigation-bar', NavigationBarElement)
 

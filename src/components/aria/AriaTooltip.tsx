@@ -6,7 +6,12 @@ import {
   createElementComponent,
   ElementComponent
 } from '@queelag/react'
-import { AriaTooltipArrowElement, AriaTooltipContentElement, AriaTooltipElement, AriaTooltipTriggerElement } from '@queelag/web-components'
+import {
+  AriaTooltipArrowElement,
+  AriaTooltipContentElement,
+  AriaTooltipElement,
+  AriaTooltipTriggerElement
+} from '@queelag/web-components/elements/aria/aria.tooltip.element'
 
 export const QAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createElementComponent('q-aria-tooltip', AriaTooltipElement)
 

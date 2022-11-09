@@ -1,5 +1,5 @@
 import { AriaTabsPanelProps, AriaTabsProps, AriaTabsTabProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@queelag/web-components'
+import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@queelag/web-components/elements/aria/aria.tabs.element'
 
 export const QAriaTabs: ElementComponent<AriaTabsElement, AriaTabsProps> = createElementComponent('q-aria-tabs', AriaTabsElement)
 export const QAriaTabsPanel: ElementComponent<AriaTabsPanelElement, AriaTabsPanelProps> = createElementComponent('q-aria-tabs-panel', AriaTabsPanelElement)

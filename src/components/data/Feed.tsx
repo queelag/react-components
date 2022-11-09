@@ -1,5 +1,5 @@
 import { createElementComponent, ElementComponent, FeedArticleDescriptionProps, FeedArticleLabelProps, FeedArticleProps, FeedProps } from '@queelag/react'
-import { FeedArticleDescriptionElement, FeedArticleElement, FeedArticleLabelElement, FeedElement } from '@queelag/web-components'
+import { FeedArticleDescriptionElement, FeedArticleElement, FeedArticleLabelElement, FeedElement } from '@queelag/web-components/elements/data/feed.element'
 
 export const QFeed: ElementComponent<FeedElement, FeedProps> = createElementComponent('q-feed', FeedElement)
 

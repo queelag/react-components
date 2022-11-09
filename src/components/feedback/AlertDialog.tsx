@@ -1,5 +1,5 @@
 import { AlertDialogDescriptionProps, AlertDialogLabelProps, AlertDialogProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AlertDialogDescriptionElement, AlertDialogElement, AlertDialogLabelElement } from '@queelag/web-components'
+import { AlertDialogDescriptionElement, AlertDialogElement, AlertDialogLabelElement } from '@queelag/web-components/elements/feedback/alert.dialog.element'
 
 export const QAlertDialog: ElementComponent<AlertDialogElement, AlertDialogProps> = createElementComponent('q-alert-dialog', AlertDialogElement)
 

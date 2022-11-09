@@ -1,5 +1,10 @@
 import { createElementComponent, DisclosureButtonProps, DisclosurePanelProps, DisclosureProps, DisclosureSectionProps, ElementComponent } from '@queelag/react'
-import { DisclosureButtonElement, DisclosureElement, DisclosurePanelElement, DisclosureSectionElement } from '@queelag/web-components'
+import {
+  DisclosureButtonElement,
+  DisclosureElement,
+  DisclosurePanelElement,
+  DisclosureSectionElement
+} from '@queelag/web-components/elements/surface/disclosure.element'
 
 export const QDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createElementComponent('q-disclosure', DisclosureElement)
 

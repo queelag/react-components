@@ -7,7 +7,13 @@ import {
   createElementComponent,
   ElementComponent
 } from '@queelag/react'
-import { AccordionButtonElement, AccordionElement, AccordionHeaderElement, AccordionPanelElement, AccordionSectionElement } from '@queelag/web-components'
+import {
+  AccordionButtonElement,
+  AccordionElement,
+  AccordionHeaderElement,
+  AccordionPanelElement,
+  AccordionSectionElement
+} from '@queelag/web-components/elements/surface/accordion.element'
 
 export const QAccordion: ElementComponent<AccordionElement, AccordionProps> = createElementComponent('q-accordion', AccordionElement)
 

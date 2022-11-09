@@ -19,7 +19,7 @@ import {
   AriaCarouselSlidesElement,
   AriaCarouselTabElement,
   AriaCarouselTabsElement
-} from '@queelag/web-components'
+} from '@queelag/web-components/elements/aria/aria.carousel.element'
 
 export const QAriaCarousel: ElementComponent<AriaCarouselElement, AriaCarouselProps> = createElementComponent('q-aria-carousel', AriaCarouselElement)
 

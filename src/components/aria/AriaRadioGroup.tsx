@@ -1,5 +1,5 @@
 import { AriaRadioButtonProps, AriaRadioGroupProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaRadioButtonElement, AriaRadioGroupElement } from '@queelag/web-components'
+import { AriaRadioButtonElement, AriaRadioGroupElement } from '@queelag/web-components/elements/aria/aria.radio.group.element'
 
 export const QAriaRadioButton: ElementComponent<AriaRadioButtonElement, AriaRadioButtonProps> = createElementComponent(
   'q-aria-radio-button',

@@ -6,7 +6,12 @@ import {
   createElementComponent,
   ElementComponent
 } from '@queelag/react'
-import { AriaDisclosureButtonElement, AriaDisclosureElement, AriaDisclosurePanelElement, AriaDisclosureSectionElement } from '@queelag/web-components'
+import {
+  AriaDisclosureButtonElement,
+  AriaDisclosureElement,
+  AriaDisclosurePanelElement,
+  AriaDisclosureSectionElement
+} from '@queelag/web-components/elements/aria/aria.disclosure.element'
 
 export const QAriaDisclosure: ElementComponent<AriaDisclosureElement, AriaDisclosureProps> = createElementComponent('q-aria-disclosure', AriaDisclosureElement)
 

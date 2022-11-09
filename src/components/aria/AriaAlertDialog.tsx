@@ -1,5 +1,9 @@
 import { AriaAlertDialogDescriptionProps, AriaAlertDialogLabelProps, AriaAlertDialogProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaAlertDialogDescriptionElement, AriaAlertDialogElement, AriaAlertDialogLabelElement } from '@queelag/web-components'
+import {
+  AriaAlertDialogDescriptionElement,
+  AriaAlertDialogElement,
+  AriaAlertDialogLabelElement
+} from '@queelag/web-components/elements/aria/aria.alert.dialog.element'
 
 export const QAriaAlertDialog: ElementComponent<AriaAlertDialogElement, AriaAlertDialogProps> = createElementComponent(
   'q-aria-alert-dialog',
