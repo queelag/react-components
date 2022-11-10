@@ -1,4 +1,4 @@
-import { createElementComponent, ElementComponent, FormProps } from '@queelag/react'
+import { createBaseElementComponent, ElementComponent, FormProps } from '@queelag/react'
 import { FormElement } from '@queelag/web-components/elements/input/form.element.js'
 
-export const QForm: ElementComponent<FormElement, FormProps> = createElementComponent('q-form', FormElement)
+export const QForm: ElementComponent<FormElement, FormProps> = createBaseElementComponent('q-form', FormElement)

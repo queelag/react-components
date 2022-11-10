@@ -5,7 +5,9 @@ import {
   AriaComboBoxListProps,
   AriaComboBoxOptionProps,
   AriaComboBoxProps,
-  createElementComponent,
+  createBaseElementComponent,
+  createFloatingElementComponent,
+  createFormFieldElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -17,29 +19,29 @@ import {
   AriaComboBoxOptionElement
 } from '@queelag/web-components/elements/aria/aria.combo.box.element.js'
 
-export const QAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createElementComponent('q-aria-combobox', AriaComboBoxElement)
+export const QAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createFormFieldElementComponent('q-aria-combobox', AriaComboBoxElement)
 
-export const QAriaComboBoxButton: ElementComponent<AriaComboBoxButtonElement, AriaComboBoxButtonProps> = createElementComponent(
+export const QAriaComboBoxButton: ElementComponent<AriaComboBoxButtonElement, AriaComboBoxButtonProps> = createBaseElementComponent(
   'q-aria-combobox-button',
   AriaComboBoxButtonElement
 )
 
-export const QAriaComboBoxGroup: ElementComponent<AriaComboBoxGroupElement, AriaComboBoxGroupProps> = createElementComponent(
+export const QAriaComboBoxGroup: ElementComponent<AriaComboBoxGroupElement, AriaComboBoxGroupProps> = createBaseElementComponent(
   'q-aria-combobox-group',
   AriaComboBoxGroupElement
 )
 
-export const QAriaComboBoxInput: ElementComponent<AriaComboBoxInputElement, AriaComboBoxInputProps> = createElementComponent(
+export const QAriaComboBoxInput: ElementComponent<AriaComboBoxInputElement, AriaComboBoxInputProps> = createBaseElementComponent(
   'q-aria-combobox-input',
   AriaComboBoxInputElement
 )
 
-export const QAriaComboBoxList: ElementComponent<AriaComboBoxListElement, AriaComboBoxListProps> = createElementComponent(
+export const QAriaComboBoxList: ElementComponent<AriaComboBoxListElement, AriaComboBoxListProps> = createFloatingElementComponent(
   'q-aria-combobox-list',
   AriaComboBoxListElement
 )
 
-export const QAriaComboBoxOption: ElementComponent<AriaComboBoxOptionElement, AriaComboBoxOptionProps> = createElementComponent(
+export const QAriaComboBoxOption: ElementComponent<AriaComboBoxOptionElement, AriaComboBoxOptionProps> = createBaseElementComponent(
   'q-aria-combobox-option',
   AriaComboBoxOptionElement
 )

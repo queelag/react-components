@@ -1,11 +1,18 @@
-import { createElementComponent, DialogDescriptionProps, DialogLabelProps, DialogProps, ElementComponent } from '@queelag/react'
+import {
+  createBaseElementComponent,
+  createFocusTrapElementComponent,
+  DialogDescriptionProps,
+  DialogLabelProps,
+  DialogProps,
+  ElementComponent
+} from '@queelag/react'
 import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@queelag/web-components/elements/feedback/dialog.element.js'
 
-export const QDialog: ElementComponent<DialogElement, DialogProps> = createElementComponent('q-dialog', DialogElement)
+export const QDialog: ElementComponent<DialogElement, DialogProps> = createFocusTrapElementComponent('q-dialog', DialogElement)
 
-export const QDialogDescription: ElementComponent<DialogDescriptionElement, DialogDescriptionProps> = createElementComponent(
+export const QDialogDescription: ElementComponent<DialogDescriptionElement, DialogDescriptionProps> = createBaseElementComponent(
   'q-dialog-description',
   DialogDescriptionElement
 )
 
-export const QDialogLabel: ElementComponent<DialogLabelElement, DialogLabelProps> = createElementComponent('q-dialog-label', DialogLabelElement)
+export const QDialogLabel: ElementComponent<DialogLabelElement, DialogLabelProps> = createBaseElementComponent('q-dialog-label', DialogLabelElement)

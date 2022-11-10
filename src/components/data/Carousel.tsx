@@ -7,7 +7,7 @@ import {
   CarouselSlidesProps,
   CarouselTabProps,
   CarouselTabsProps,
-  createElementComponent,
+  createBaseElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -21,24 +21,25 @@ import {
   CarouselTabsElement
 } from '@queelag/web-components/elements/data/carousel.element.js'
 
-export const QCarousel: ElementComponent<CarouselElement, CarouselProps> = createElementComponent('q-carousel', CarouselElement)
+export const QCarousel: ElementComponent<CarouselElement, CarouselProps> = createBaseElementComponent('q-carousel', CarouselElement)
 
-export const QCarouselNextSlideControl: ElementComponent<CarouselNextSlideControlElement, CarouselNextSlideControlProps> = createElementComponent(
+export const QCarouselNextSlideControl: ElementComponent<CarouselNextSlideControlElement, CarouselNextSlideControlProps> = createBaseElementComponent(
   'q-carousel-next-slide-control',
   CarouselNextSlideControlElement
 )
 
-export const QCarouselPreviousSlideControl: ElementComponent<CarouselPreviousSlideControlElement, CarouselPreviousSlideControlProps> = createElementComponent(
-  'q-carousel-previous-slide-control',
-  CarouselPreviousSlideControlElement
-)
+export const QCarouselPreviousSlideControl: ElementComponent<CarouselPreviousSlideControlElement, CarouselPreviousSlideControlProps> =
+  createBaseElementComponent('q-carousel-previous-slide-control', CarouselPreviousSlideControlElement)
 
-export const QCarouselRotationControl: ElementComponent<CarouselRotationControlElement, CarouselRotationControlProps> = createElementComponent(
+export const QCarouselRotationControl: ElementComponent<CarouselRotationControlElement, CarouselRotationControlProps> = createBaseElementComponent(
   'q-carousel-rotation-control',
   CarouselRotationControlElement
 )
 
-export const QCarouselSlide: ElementComponent<CarouselSlideElement, CarouselSlideProps> = createElementComponent('q-carousel-slide', CarouselSlideElement)
-export const QCarouselSlides: ElementComponent<CarouselSlidesElement, CarouselSlidesProps> = createElementComponent('q-carousel-slides', CarouselSlidesElement)
-export const QCarouselTab: ElementComponent<CarouselTabElement, CarouselTabProps> = createElementComponent('q-carousel-tab', CarouselTabElement)
-export const QCarouselTabs: ElementComponent<CarouselTabsElement, CarouselTabsProps> = createElementComponent('q-carousel-tabs', CarouselTabsElement)
+export const QCarouselSlide: ElementComponent<CarouselSlideElement, CarouselSlideProps> = createBaseElementComponent('q-carousel-slide', CarouselSlideElement)
+export const QCarouselSlides: ElementComponent<CarouselSlidesElement, CarouselSlidesProps> = createBaseElementComponent(
+  'q-carousel-slides',
+  CarouselSlidesElement
+)
+export const QCarouselTab: ElementComponent<CarouselTabElement, CarouselTabProps> = createBaseElementComponent('q-carousel-tab', CarouselTabElement)
+export const QCarouselTabs: ElementComponent<CarouselTabsElement, CarouselTabsProps> = createBaseElementComponent('q-carousel-tabs', CarouselTabsElement)

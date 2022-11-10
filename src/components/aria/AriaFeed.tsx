@@ -3,7 +3,7 @@ import {
   AriaFeedArticleLabelProps,
   AriaFeedArticleProps,
   AriaFeedProps,
-  createElementComponent,
+  createBaseElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -13,19 +13,19 @@ import {
   AriaFeedElement
 } from '@queelag/web-components/elements/aria/aria.feed.element.js'
 
-export const QAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createElementComponent('q-aria-feed', AriaFeedElement)
+export const QAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent('q-aria-feed', AriaFeedElement)
 
-export const QAriaFeedArticle: ElementComponent<AriaFeedArticleElement, AriaFeedArticleProps> = createElementComponent(
+export const QAriaFeedArticle: ElementComponent<AriaFeedArticleElement, AriaFeedArticleProps> = createBaseElementComponent(
   'q-aria-feed-article',
   AriaFeedArticleElement
 )
 
-export const QAriaFeedArticleDescription: ElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionProps> = createElementComponent(
+export const QAriaFeedArticleDescription: ElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionProps> = createBaseElementComponent(
   'q-aria-feed-article-description',
   AriaFeedArticleDescriptionElement
 )
 
-export const QAriaFeedArticleLabel: ElementComponent<AriaFeedArticleLabelElement, AriaFeedArticleLabelProps> = createElementComponent(
+export const QAriaFeedArticleLabel: ElementComponent<AriaFeedArticleLabelElement, AriaFeedArticleLabelProps> = createBaseElementComponent(
   'q-aria-feed-article-label',
   AriaFeedArticleLabelElement
 )

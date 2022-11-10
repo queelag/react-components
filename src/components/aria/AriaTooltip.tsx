@@ -3,7 +3,8 @@ import {
   AriaTooltipContentProps,
   AriaTooltipProps,
   AriaTooltipTriggerProps,
-  createElementComponent,
+  createBaseElementComponent,
+  createFloatingElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -13,19 +14,19 @@ import {
   AriaTooltipTriggerElement
 } from '@queelag/web-components/elements/aria/aria.tooltip.element.js'
 
-export const QAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createElementComponent('q-aria-tooltip', AriaTooltipElement)
+export const QAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createBaseElementComponent('q-aria-tooltip', AriaTooltipElement)
 
-export const QAriaTooltipArrow: ElementComponent<AriaTooltipArrowElement, AriaTooltipArrowProps> = createElementComponent(
+export const QAriaTooltipArrow: ElementComponent<AriaTooltipArrowElement, AriaTooltipArrowProps> = createBaseElementComponent(
   'q-aria-tooltip-arrow',
   AriaTooltipArrowElement
 )
 
-export const QAriaTooltipContent: ElementComponent<AriaTooltipContentElement, AriaTooltipContentProps> = createElementComponent(
+export const QAriaTooltipContent: ElementComponent<AriaTooltipContentElement, AriaTooltipContentProps> = createFloatingElementComponent(
   'q-aria-tooltip-content',
   AriaTooltipContentElement
 )
 
-export const QAriaTooltipTrigger: ElementComponent<AriaTooltipTriggerElement, AriaTooltipTriggerProps> = createElementComponent(
+export const QAriaTooltipTrigger: ElementComponent<AriaTooltipTriggerElement, AriaTooltipTriggerProps> = createBaseElementComponent(
   'q-aria-tooltip-trigger',
   AriaTooltipTriggerElement
 )

@@ -7,7 +7,7 @@ import {
   AriaCarouselSlidesProps,
   AriaCarouselTabProps,
   AriaCarouselTabsProps,
-  createElementComponent,
+  createBaseElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -21,37 +21,35 @@ import {
   AriaCarouselTabsElement
 } from '@queelag/web-components/elements/aria/aria.carousel.element.js'
 
-export const QAriaCarousel: ElementComponent<AriaCarouselElement, AriaCarouselProps> = createElementComponent('q-aria-carousel', AriaCarouselElement)
+export const QAriaCarousel: ElementComponent<AriaCarouselElement, AriaCarouselProps> = createBaseElementComponent('q-aria-carousel', AriaCarouselElement)
 
-export const QAriaCarouselNextSlideControl: ElementComponent<AriaCarouselNextSlideControlElement, AriaCarouselNextSlideControlProps> = createElementComponent(
-  'q-aria-carousel-next-slide-control',
-  AriaCarouselNextSlideControlElement
-)
+export const QAriaCarouselNextSlideControl: ElementComponent<AriaCarouselNextSlideControlElement, AriaCarouselNextSlideControlProps> =
+  createBaseElementComponent('q-aria-carousel-next-slide-control', AriaCarouselNextSlideControlElement)
 
 export const QAriaCarouselPreviousSlideControl: ElementComponent<AriaCarouselPreviousSlideControlElement, AriaCarouselPreviousSlideControlProps> =
-  createElementComponent('q-aria-carousel-previous-slide-control', AriaCarouselPreviousSlideControlElement)
+  createBaseElementComponent('q-aria-carousel-previous-slide-control', AriaCarouselPreviousSlideControlElement)
 
-export const QAriaCarouselRotationControl: ElementComponent<AriaCarouselRotationControlElement, AriaCarouselRotationControlProps> = createElementComponent(
+export const QAriaCarouselRotationControl: ElementComponent<AriaCarouselRotationControlElement, AriaCarouselRotationControlProps> = createBaseElementComponent(
   'q-aria-carousel-rotation-control',
   AriaCarouselRotationControlElement
 )
 
-export const QAriaCarouselSlide: ElementComponent<AriaCarouselSlideElement, AriaCarouselSlideProps> = createElementComponent(
+export const QAriaCarouselSlide: ElementComponent<AriaCarouselSlideElement, AriaCarouselSlideProps> = createBaseElementComponent(
   'q-aria-carousel-slide',
   AriaCarouselSlideElement
 )
 
-export const QAriaCarouselSlides: ElementComponent<AriaCarouselSlidesElement, AriaCarouselSlidesProps> = createElementComponent(
+export const QAriaCarouselSlides: ElementComponent<AriaCarouselSlidesElement, AriaCarouselSlidesProps> = createBaseElementComponent(
   'q-aria-carousel-slides',
   AriaCarouselSlidesElement
 )
 
-export const QAriaCarouselTab: ElementComponent<AriaCarouselTabElement, AriaCarouselTabProps> = createElementComponent(
+export const QAriaCarouselTab: ElementComponent<AriaCarouselTabElement, AriaCarouselTabProps> = createBaseElementComponent(
   'q-aria-carousel-tab',
   AriaCarouselTabElement
 )
 
-export const QAriaCarouselTabs: ElementComponent<AriaCarouselTabsElement, AriaCarouselTabsProps> = createElementComponent(
+export const QAriaCarouselTabs: ElementComponent<AriaCarouselTabsElement, AriaCarouselTabsProps> = createBaseElementComponent(
   'q-aria-carousel-tabs',
   AriaCarouselTabsElement
 )

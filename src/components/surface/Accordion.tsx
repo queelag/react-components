@@ -4,7 +4,7 @@ import {
   AccordionPanelProps,
   AccordionProps,
   AccordionSectionProps,
-  createElementComponent,
+  createBaseElementComponent,
   ElementComponent
 } from '@queelag/react'
 import {
@@ -15,21 +15,24 @@ import {
   AccordionSectionElement
 } from '@queelag/web-components/elements/surface/accordion.element.js'
 
-export const QAccordion: ElementComponent<AccordionElement, AccordionProps> = createElementComponent('q-accordion', AccordionElement)
+export const QAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent('q-accordion', AccordionElement)
 
-export const QAccordionButton: ElementComponent<AccordionButtonElement, AccordionButtonProps> = createElementComponent(
+export const QAccordionButton: ElementComponent<AccordionButtonElement, AccordionButtonProps> = createBaseElementComponent(
   'q-accordion-button',
   AccordionButtonElement
 )
 
-export const QAccordionHeader: ElementComponent<AccordionHeaderElement, AccordionHeaderProps> = createElementComponent(
+export const QAccordionHeader: ElementComponent<AccordionHeaderElement, AccordionHeaderProps> = createBaseElementComponent(
   'q-accordion-header',
   AccordionHeaderElement
 )
 
-export const QAccordionPanel: ElementComponent<AccordionPanelElement, AccordionPanelProps> = createElementComponent('q-accordion-panel', AccordionPanelElement)
+export const QAccordionPanel: ElementComponent<AccordionPanelElement, AccordionPanelProps> = createBaseElementComponent(
+  'q-accordion-panel',
+  AccordionPanelElement
+)
 
-export const QAccordionSection: ElementComponent<AccordionSectionElement, AccordionSectionProps> = createElementComponent(
+export const QAccordionSection: ElementComponent<AccordionSectionElement, AccordionSectionProps> = createBaseElementComponent(
   'q-accordion-section',
   AccordionSectionElement
 )
