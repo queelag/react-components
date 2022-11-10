@@ -4,7 +4,7 @@ import {
   DisclosureElement,
   DisclosurePanelElement,
   DisclosureSectionElement
-} from '@queelag/web-components/elements/surface/disclosure.element'
+} from '@queelag/web-components/elements/surface/disclosure.element.js'
 
 export const QDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createElementComponent('q-disclosure', DisclosureElement)
 

@@ -1,5 +1,5 @@
 import { AriaListBoxOptionProps, AriaListBoxProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaListBoxElement, AriaListBoxOptionElement } from '@queelag/web-components/elements/aria/aria.list.box.element'
+import { AriaListBoxElement, AriaListBoxOptionElement } from '@queelag/web-components/elements/aria/aria.list.box.element.js'
 
 export const QAriaListBox: ElementComponent<AriaListBoxElement, AriaListBoxProps> = createElementComponent('q-aria-listbox', AriaListBoxElement)
 

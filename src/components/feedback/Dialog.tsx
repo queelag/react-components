@@ -1,5 +1,5 @@
 import { createElementComponent, DialogDescriptionProps, DialogLabelProps, DialogProps, ElementComponent } from '@queelag/react'
-import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@queelag/web-components/elements/feedback/dialog.element'
+import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@queelag/web-components/elements/feedback/dialog.element.js'
 
 export const QDialog: ElementComponent<DialogElement, DialogProps> = createElementComponent('q-dialog', DialogElement)
 

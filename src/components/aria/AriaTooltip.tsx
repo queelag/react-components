@@ -11,7 +11,7 @@ import {
   AriaTooltipContentElement,
   AriaTooltipElement,
   AriaTooltipTriggerElement
-} from '@queelag/web-components/elements/aria/aria.tooltip.element'
+} from '@queelag/web-components/elements/aria/aria.tooltip.element.js'
 
 export const QAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createElementComponent('q-aria-tooltip', AriaTooltipElement)
 

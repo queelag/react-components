@@ -11,7 +11,7 @@ import {
   AriaDisclosureElement,
   AriaDisclosurePanelElement,
   AriaDisclosureSectionElement
-} from '@queelag/web-components/elements/aria/aria.disclosure.element'
+} from '@queelag/web-components/elements/aria/aria.disclosure.element.js'
 
 export const QAriaDisclosure: ElementComponent<AriaDisclosureElement, AriaDisclosureProps> = createElementComponent('q-aria-disclosure', AriaDisclosureElement)
 

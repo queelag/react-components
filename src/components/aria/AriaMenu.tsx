@@ -1,5 +1,5 @@
 import { AriaMenuButtonProps, AriaMenuItemProps, AriaMenuProps, AriaMenuSubMenuProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaMenuButtonElement, AriaMenuElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@queelag/web-components/elements/aria/aria.menu.element'
+import { AriaMenuButtonElement, AriaMenuElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@queelag/web-components/elements/aria/aria.menu.element.js'
 
 export const QAriaMenu: ElementComponent<AriaMenuElement, AriaMenuProps> = createElementComponent('q-aria-menu', AriaMenuElement)
 export const QAriaMenuButton: ElementComponent<AriaMenuButtonElement, AriaMenuButtonProps> = createElementComponent('q-aria-menu-button', AriaMenuButtonElement)

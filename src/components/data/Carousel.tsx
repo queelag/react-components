@@ -19,7 +19,7 @@ import {
   CarouselSlidesElement,
   CarouselTabElement,
   CarouselTabsElement
-} from '@queelag/web-components/elements/data/carousel.element'
+} from '@queelag/web-components/elements/data/carousel.element.js'
 
 export const QCarousel: ElementComponent<CarouselElement, CarouselProps> = createElementComponent('q-carousel', CarouselElement)
 

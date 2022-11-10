@@ -13,7 +13,7 @@ import {
   AccordionHeaderElement,
   AccordionPanelElement,
   AccordionSectionElement
-} from '@queelag/web-components/elements/surface/accordion.element'
+} from '@queelag/web-components/elements/surface/accordion.element.js'
 
 export const QAccordion: ElementComponent<AccordionElement, AccordionProps> = createElementComponent('q-accordion', AccordionElement)
 

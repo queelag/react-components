@@ -1,5 +1,5 @@
 import { AriaDialogDescriptionProps, AriaDialogLabelProps, AriaDialogProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@queelag/web-components/elements/aria/aria.dialog.element'
+import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@queelag/web-components/elements/aria/aria.dialog.element.js'
 
 export const QAriaDialog: ElementComponent<AriaDialogElement, AriaDialogProps> = createElementComponent('q-aria-dialog', AriaDialogElement)
 

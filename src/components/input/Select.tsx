@@ -15,7 +15,7 @@ import {
   SelectInputElement,
   SelectListElement,
   SelectOptionElement
-} from '@queelag/web-components/elements/input/select.element'
+} from '@queelag/web-components/elements/input/select.element.js'
 
 export const QSelect: ElementComponent<SelectElement, SelectProps> = createElementComponent('q-select', SelectElement)
 export const QSelectButton: ElementComponent<SelectButtonElement, SelectButtonProps> = createElementComponent('q-select-button', SelectButtonElement)

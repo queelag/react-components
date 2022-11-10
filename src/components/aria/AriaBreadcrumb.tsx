@@ -1,5 +1,5 @@
 import { AriaBreadcrumbItemProps, AriaBreadcrumbListProps, AriaBreadcrumbProps, createElementComponent, ElementComponent } from '@queelag/react'
-import { AriaBreadcrumbElement, AriaBreadcrumbItemElement, AriaBreadcrumbListElement } from '@queelag/web-components/elements/aria/aria.breadcrumb.element'
+import { AriaBreadcrumbElement, AriaBreadcrumbItemElement, AriaBreadcrumbListElement } from '@queelag/web-components/elements/aria/aria.breadcrumb.element.js'
 
 export const QAriaBreadcrumb: ElementComponent<AriaBreadcrumbElement, AriaBreadcrumbProps> = createElementComponent('q-aria-breadcrumb', AriaBreadcrumbElement)
 

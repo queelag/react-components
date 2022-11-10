@@ -1,5 +1,5 @@
 import { createElementComponent, ElementComponent, MenuButtonProps, MenuItemProps, MenuProps, MenuSubMenuProps } from '@queelag/react'
-import { MenuButtonElement, MenuElement, MenuItemElement, MenuSubMenuElement } from '@queelag/web-components/elements/navigation/menu.element'
+import { MenuButtonElement, MenuElement, MenuItemElement, MenuSubMenuElement } from '@queelag/web-components/elements/navigation/menu.element.js'
 
 export const QMenu: ElementComponent<MenuElement, MenuProps> = createElementComponent('q-menu', MenuElement)
 export const QMenuButton: ElementComponent<MenuButtonElement, MenuButtonProps> = createElementComponent('q-menu-button', MenuButtonElement)

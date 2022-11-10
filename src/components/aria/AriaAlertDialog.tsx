@@ -3,7 +3,7 @@ import {
   AriaAlertDialogDescriptionElement,
   AriaAlertDialogElement,
   AriaAlertDialogLabelElement
-} from '@queelag/web-components/elements/aria/aria.alert.dialog.element'
+} from '@queelag/web-components/elements/aria/aria.alert.dialog.element.js'
 
 export const QAriaAlertDialog: ElementComponent<AriaAlertDialogElement, AriaAlertDialogProps> = createElementComponent(
   'q-aria-alert-dialog',

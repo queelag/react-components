@@ -15,7 +15,7 @@ import {
   AriaComboBoxInputElement,
   AriaComboBoxListElement,
   AriaComboBoxOptionElement
-} from '@queelag/web-components/elements/aria/aria.combo.box.element'
+} from '@queelag/web-components/elements/aria/aria.combo.box.element.js'
 
 export const QAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createElementComponent('q-aria-combobox', AriaComboBoxElement)
 

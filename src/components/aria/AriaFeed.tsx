@@ -11,7 +11,7 @@ import {
   AriaFeedArticleElement,
   AriaFeedArticleLabelElement,
   AriaFeedElement
-} from '@queelag/web-components/elements/aria/aria.feed.element'
+} from '@queelag/web-components/elements/aria/aria.feed.element.js'
 
 export const QAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createElementComponent('q-aria-feed', AriaFeedElement)
 

@@ -13,7 +13,7 @@ import {
   AriaAccordionHeaderElement,
   AriaAccordionPanelElement,
   AriaAccordionSectionElement
-} from '@queelag/web-components/elements/aria/aria.accordion.element'
+} from '@queelag/web-components/elements/aria/aria.accordion.element.js'
 
 export const QAriaAccordion: ElementComponent<AriaAccordionElement, AriaAccordionProps> = createElementComponent('q-aria-accordion', AriaAccordionElement)
 
