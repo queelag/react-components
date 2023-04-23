@@ -1,5 +1,15 @@
-import { createBaseElementComponent, createFormFieldElementComponent, ElementComponent, RadioButtonProps, RadioGroupProps } from '@queelag/react'
-import { RadioButtonElement, RadioGroupElement } from '@queelag/web-components/elements/input/radio.group.element.js'
+import { createBaseElementComponent, createFormFieldElementComponent, ElementComponent, RadioButtonProps, RadioGroupProps } from '@aracna/react'
+import { RadioButtonElementAttributes, RadioButtonElementEventMap, RadioGroupElementAttributes, RadioGroupElementEventMap } from '@aracna/web'
+import { RadioButtonElement, RadioGroupElement } from '@aracna/web-components/elements/input/radio.group.element.js'
 
-export const QRadioButton: ElementComponent<RadioButtonElement, RadioButtonProps> = createBaseElementComponent('q-radio-button', RadioButtonElement)
-export const QRadioGroup: ElementComponent<RadioGroupElement, RadioGroupProps> = createFormFieldElementComponent('q-radio-group', RadioGroupElement)
+export const AracnaRadioButton: ElementComponent<RadioButtonElement, RadioButtonProps> = createBaseElementComponent<
+  RadioButtonElement,
+  RadioButtonElementAttributes,
+  RadioButtonElementEventMap
+>('aracna-radio-button', RadioButtonElement)
+
+export const AracnaRadioGroup: ElementComponent<RadioGroupElement, RadioGroupProps> = createFormFieldElementComponent<
+  RadioGroupElement,
+  RadioGroupElementAttributes,
+  RadioGroupElementEventMap
+>('aracna-radio-group', RadioGroupElement)

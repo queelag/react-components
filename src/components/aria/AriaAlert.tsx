@@ -1,4 +1,9 @@
-import { AriaAlertProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaAlertElement } from '@queelag/web-components/elements/aria/aria.alert.element.js'
+import { AriaAlertProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AriaAlertElementAttributes, AriaAlertElementEventMap } from '@aracna/web'
+import { AriaAlertElement } from '@aracna/web-components/elements/aria/aria.alert.element.js'
 
-export const QAriaAlert: ElementComponent<AriaAlertElement, AriaAlertProps> = createBaseElementComponent('q-aria-alert', AriaAlertElement)
+export const AracnaAriaAlert: ElementComponent<AriaAlertElement, AriaAlertProps> = createBaseElementComponent<
+  AriaAlertElement,
+  AriaAlertElementAttributes,
+  AriaAlertElementEventMap
+>('aracna-aria-alert', AriaAlertElement)

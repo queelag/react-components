@@ -1,12 +1,28 @@
-import { BreadcrumbItemProps, BreadcrumbListProps, BreadcrumbProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { BreadcrumbElement, BreadcrumbItemElement, BreadcrumbListElement } from '@queelag/web-components/elements/navigation/breadcrumb.element.js'
+import { BreadcrumbItemProps, BreadcrumbListProps, BreadcrumbProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import {
+  BreadcrumbElementAttributes,
+  BreadcrumbElementEventMap,
+  BreadcrumbItemElementAttributes,
+  BreadcrumbItemElementEventMap,
+  BreadcrumbListElementAttributes,
+  BreadcrumbListElementEventMap
+} from '@aracna/web'
+import { BreadcrumbElement, BreadcrumbItemElement, BreadcrumbListElement } from '@aracna/web-components/elements/navigation/breadcrumb.element.js'
 
-export const QBreadcrumb: ElementComponent<BreadcrumbElement, BreadcrumbProps> = createBaseElementComponent('q-breadcrumb', BreadcrumbElement)
-export const QBreadcrumbItem: ElementComponent<BreadcrumbItemElement, BreadcrumbItemProps> = createBaseElementComponent(
-  'q-breadcrumb-item',
-  BreadcrumbItemElement
-)
-export const QBreadcrumbList: ElementComponent<BreadcrumbListElement, BreadcrumbListProps> = createBaseElementComponent(
-  'q-breadcrumb-list',
-  BreadcrumbListElement
-)
+export const AracnaBreadcrumb: ElementComponent<BreadcrumbElement, BreadcrumbProps> = createBaseElementComponent<
+  BreadcrumbElement,
+  BreadcrumbElementAttributes,
+  BreadcrumbElementEventMap
+>('aracna-breadcrumb', BreadcrumbElement)
+
+export const AracnaBreadcrumbItem: ElementComponent<BreadcrumbItemElement, BreadcrumbItemProps> = createBaseElementComponent<
+  BreadcrumbItemElement,
+  BreadcrumbItemElementAttributes,
+  BreadcrumbItemElementEventMap
+>('aracna-breadcrumb-item', BreadcrumbItemElement)
+
+export const AracnaBreadcrumbList: ElementComponent<BreadcrumbListElement, BreadcrumbListProps> = createBaseElementComponent<
+  BreadcrumbListElement,
+  BreadcrumbListElementAttributes,
+  BreadcrumbListElementEventMap
+>('aracna-breadcrumb-list', BreadcrumbListElement)

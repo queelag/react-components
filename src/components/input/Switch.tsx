@@ -1,4 +1,9 @@
-import { createFormFieldElementComponent, ElementComponent, SwitchProps } from '@queelag/react'
-import { SwitchElement } from '@queelag/web-components/elements/input/switch.element.js'
+import { createFormFieldElementComponent, ElementComponent, SwitchProps } from '@aracna/react'
+import { SwitchElementAttributes, SwitchElementEventMap } from '@aracna/web'
+import { SwitchElement } from '@aracna/web-components/elements/input/switch.element.js'
 
-export const QSwitch: ElementComponent<SwitchElement, SwitchProps> = createFormFieldElementComponent('q-switch', SwitchElement)
+export const AracnaSwitch: ElementComponent<SwitchElement, SwitchProps> = createFormFieldElementComponent<
+  SwitchElement,
+  SwitchElementAttributes,
+  SwitchElementEventMap
+>('aracna-switch', SwitchElement)

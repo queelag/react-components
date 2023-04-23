@@ -1,4 +1,9 @@
-import { AriaCheckBoxProps, createFormFieldElementComponent, ElementComponent } from '@queelag/react'
-import { AriaCheckBoxElement } from '@queelag/web-components/elements/aria/aria.check.box.element.js'
+import { AriaCheckBoxProps, createFormFieldElementComponent, ElementComponent } from '@aracna/react'
+import { AriaCheckBoxElementAttributes, AriaCheckBoxElementEventMap } from '@aracna/web'
+import { AriaCheckBoxElement } from '@aracna/web-components/elements/aria/aria.check.box.element.js'
 
-export const QAriaCheckBox: ElementComponent<AriaCheckBoxElement, AriaCheckBoxProps> = createFormFieldElementComponent('q-aria-checkbox', AriaCheckBoxElement)
+export const AracnaAriaCheckBox: ElementComponent<AriaCheckBoxElement, AriaCheckBoxProps> = createFormFieldElementComponent<
+  AriaCheckBoxElement,
+  AriaCheckBoxElementAttributes,
+  AriaCheckBoxElementEventMap
+>('aracna-aria-checkbox', AriaCheckBoxElement)

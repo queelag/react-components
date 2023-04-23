@@ -1,4 +1,9 @@
-import { ButtonProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { ButtonElement } from '@queelag/web-components/elements/input/button.element.js'
+import { ButtonProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { ButtonElementAttributes, ButtonElementEventMap } from '@aracna/web'
+import { ButtonElement } from '@aracna/web-components/elements/input/button.element.js'
 
-export const QButton: ElementComponent<ButtonElement, ButtonProps> = createBaseElementComponent('q-button', ButtonElement)
+export const AracnaButton: ElementComponent<ButtonElement, ButtonProps> = createBaseElementComponent<
+  ButtonElement,
+  ButtonElementAttributes,
+  ButtonElementEventMap
+>('aracna-button', ButtonElement)

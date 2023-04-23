@@ -5,17 +5,31 @@ import {
   createBaseElementComponent,
   createFocusTrapElementComponent,
   ElementComponent
-} from '@queelag/react'
-import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@queelag/web-components/elements/aria/aria.dialog.element.js'
+} from '@aracna/react'
+import {
+  AriaDialogDescriptionElementAttributes,
+  AriaDialogDescriptionElementEventMap,
+  AriaDialogElementAttributes,
+  AriaDialogElementEventMap,
+  AriaDialogLabelElementAttributes,
+  AriaDialogLabelElementEventMap
+} from '@aracna/web'
+import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@aracna/web-components/elements/aria/aria.dialog.element.js'
 
-export const QAriaDialog: ElementComponent<AriaDialogElement, AriaDialogProps> = createFocusTrapElementComponent('q-aria-dialog', AriaDialogElement)
+export const AracnaAriaDialog: ElementComponent<AriaDialogElement, AriaDialogProps> = createFocusTrapElementComponent<
+  AriaDialogElement,
+  AriaDialogElementAttributes,
+  AriaDialogElementEventMap
+>('aracna-aria-dialog', AriaDialogElement)
 
-export const QAriaDialogDescription: ElementComponent<AriaDialogDescriptionElement, AriaDialogDescriptionProps> = createBaseElementComponent(
-  'q-aria-dialog-description',
-  AriaDialogDescriptionElement
-)
+export const AracnaAriaDialogDescription: ElementComponent<AriaDialogDescriptionElement, AriaDialogDescriptionProps> = createBaseElementComponent<
+  AriaDialogDescriptionElement,
+  AriaDialogDescriptionElementAttributes,
+  AriaDialogDescriptionElementEventMap
+>('aracna-aria-dialog-description', AriaDialogDescriptionElement)
 
-export const QAriaDialogLabel: ElementComponent<AriaDialogLabelElement, AriaDialogLabelProps> = createBaseElementComponent(
-  'q-aria-dialog-label',
-  AriaDialogLabelElement
-)
+export const AracnaAriaDialogLabel: ElementComponent<AriaDialogLabelElement, AriaDialogLabelProps> = createBaseElementComponent<
+  AriaDialogLabelElement,
+  AriaDialogLabelElementAttributes,
+  AriaDialogLabelElementEventMap
+>('aracna-aria-dialog-label', AriaDialogLabelElement)

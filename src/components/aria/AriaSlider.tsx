@@ -1,9 +1,15 @@
-import { AriaSliderProps, AriaSliderThumbProps, createBaseElementComponent, createFormFieldElementComponent, ElementComponent } from '@queelag/react'
-import { AriaSliderElement, AriaSliderThumbElement } from '@queelag/web-components/elements/aria/aria.slider.element.js'
+import { AriaSliderProps, AriaSliderThumbProps, createBaseElementComponent, createFormFieldElementComponent, ElementComponent } from '@aracna/react'
+import { AriaSliderElementAttributes, AriaSliderElementEventMap, AriaSliderThumbElementAttributes, AriaSliderThumbElementEventMap } from '@aracna/web'
+import { AriaSliderElement, AriaSliderThumbElement } from '@aracna/web-components/elements/aria/aria.slider.element.js'
 
-export const QAriaSlider: ElementComponent<AriaSliderElement, AriaSliderProps> = createFormFieldElementComponent('q-aria-slider', AriaSliderElement)
+export const AracnaAriaSlider: ElementComponent<AriaSliderElement, AriaSliderProps> = createFormFieldElementComponent<
+  AriaSliderElement,
+  AriaSliderElementAttributes,
+  AriaSliderElementEventMap
+>('aracna-aria-slider', AriaSliderElement)
 
-export const QAriaSliderThumb: ElementComponent<AriaSliderThumbElement, AriaSliderThumbProps> = createBaseElementComponent(
-  'q-aria-slider-thumb',
-  AriaSliderThumbElement
-)
+export const AracnaAriaSliderThumb: ElementComponent<AriaSliderThumbElement, AriaSliderThumbProps> = createBaseElementComponent<
+  AriaSliderThumbElement,
+  AriaSliderThumbElementAttributes,
+  AriaSliderThumbElementEventMap
+>('aracna-aria-slider-thumb', AriaSliderThumbElement)

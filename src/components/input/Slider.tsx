@@ -1,5 +1,15 @@
-import { createBaseElementComponent, createFormFieldElementComponent, ElementComponent, SliderProps, SliderThumbProps } from '@queelag/react'
-import { SliderElement, SliderThumbElement } from '@queelag/web-components/elements/input/slider.element.js'
+import { createBaseElementComponent, createFormFieldElementComponent, ElementComponent, SliderProps, SliderThumbProps } from '@aracna/react'
+import { SliderElementAttributes, SliderElementEventMap, SliderThumbElementAttributes, SliderThumbElementEventMap } from '@aracna/web'
+import { SliderElement, SliderThumbElement } from '@aracna/web-components/elements/input/slider.element.js'
 
-export const QSlider: ElementComponent<SliderElement, SliderProps> = createFormFieldElementComponent('q-slider', SliderElement)
-export const QSliderThumb: ElementComponent<SliderThumbElement, SliderThumbProps> = createBaseElementComponent('q-slider-thumb', SliderThumbElement)
+export const AracnaSlider: ElementComponent<SliderElement, SliderProps> = createFormFieldElementComponent<
+  SliderElement,
+  SliderElementAttributes,
+  SliderElementEventMap
+>('aracna-slider', SliderElement)
+
+export const AracnaSliderThumb: ElementComponent<SliderThumbElement, SliderThumbProps> = createBaseElementComponent<
+  SliderThumbElement,
+  SliderThumbElementAttributes,
+  SliderThumbElementEventMap
+>('aracna-slider-thumb', SliderThumbElement)

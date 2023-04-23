@@ -5,17 +5,31 @@ import {
   createBaseElementComponent,
   createFocusTrapElementComponent,
   ElementComponent
-} from '@queelag/react'
-import { AlertDialogDescriptionElement, AlertDialogElement, AlertDialogLabelElement } from '@queelag/web-components/elements/feedback/alert.dialog.element.js'
+} from '@aracna/react'
+import {
+  AlertDialogDescriptionElementAttributes,
+  AlertDialogDescriptionElementEventMap,
+  AlertDialogElementAttributes,
+  AlertDialogElementEventMap,
+  AlertDialogLabelElementAttributes,
+  AlertDialogLabelElementEventMap
+} from '@aracna/web'
+import { AlertDialogDescriptionElement, AlertDialogElement, AlertDialogLabelElement } from '@aracna/web-components/elements/feedback/alert.dialog.element.js'
 
-export const QAlertDialog: ElementComponent<AlertDialogElement, AlertDialogProps> = createFocusTrapElementComponent('q-alert-dialog', AlertDialogElement)
+export const AracnaAlertDialog: ElementComponent<AlertDialogElement, AlertDialogProps> = createFocusTrapElementComponent<
+  AlertDialogElement,
+  AlertDialogElementAttributes,
+  AlertDialogElementEventMap
+>('aracna-alert-dialog', AlertDialogElement)
 
-export const QAlertDialogDescription: ElementComponent<AlertDialogDescriptionElement, AlertDialogDescriptionProps> = createBaseElementComponent(
-  'q-alert-dialog-description',
-  AlertDialogDescriptionElement
-)
+export const AracnaAlertDialogDescription: ElementComponent<AlertDialogDescriptionElement, AlertDialogDescriptionProps> = createBaseElementComponent<
+  AlertDialogDescriptionElement,
+  AlertDialogDescriptionElementAttributes,
+  AlertDialogDescriptionElementEventMap
+>('aracna-alert-dialog-description', AlertDialogDescriptionElement)
 
-export const QAlertDialogLabel: ElementComponent<AlertDialogLabelElement, AlertDialogLabelProps> = createBaseElementComponent(
-  'q-alert-dialog-label',
-  AlertDialogLabelElement
-)
+export const AracnaAlertDialogLabel: ElementComponent<AlertDialogLabelElement, AlertDialogLabelProps> = createBaseElementComponent<
+  AlertDialogLabelElement,
+  AlertDialogLabelElementAttributes,
+  AlertDialogLabelElementEventMap
+>('aracna-alert-dialog-label', AlertDialogLabelElement)

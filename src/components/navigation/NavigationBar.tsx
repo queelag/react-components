@@ -1,9 +1,15 @@
-import { createBaseElementComponent, ElementComponent, NavigationBarItemProps, NavigationBarProps } from '@queelag/react'
-import { NavigationBarElement, NavigationBarItemElement } from '@queelag/web-components/elements/navigation/navigation.bar.element.js'
+import { createBaseElementComponent, ElementComponent, NavigationBarItemProps, NavigationBarProps } from '@aracna/react'
+import { NavigationBarElementAttributes, NavigationBarElementEventMap, NavigationBarItemElementAttributes, NavigationBarItemElementEventMap } from '@aracna/web'
+import { NavigationBarElement, NavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation.bar.element.js'
 
-export const QNavigationBar: ElementComponent<NavigationBarElement, NavigationBarProps> = createBaseElementComponent('q-navigation-bar', NavigationBarElement)
+export const AracnaNavigationBar: ElementComponent<NavigationBarElement, NavigationBarProps> = createBaseElementComponent<
+  NavigationBarElement,
+  NavigationBarElementAttributes,
+  NavigationBarElementEventMap
+>('aracna-navigation-bar', NavigationBarElement)
 
-export const QNavigationBarItem: ElementComponent<NavigationBarItemElement, NavigationBarItemProps> = createBaseElementComponent(
-  'q-navigation-bar-item',
-  NavigationBarItemElement
-)
+export const AracnaNavigationBarItem: ElementComponent<NavigationBarItemElement, NavigationBarItemProps> = createBaseElementComponent<
+  NavigationBarItemElement,
+  NavigationBarItemElementAttributes,
+  NavigationBarItemElementEventMap
+>('aracna-navigation-bar-item', NavigationBarItemElement)

@@ -1,4 +1,9 @@
-import { ButtonGroupProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { ButtonGroupElement } from '@queelag/web-components/elements/input/button.group.element.js'
+import { ButtonGroupProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { ButtonGroupElementAttributes, ButtonGroupElementEventMap } from '@aracna/web'
+import { ButtonGroupElement } from '@aracna/web-components/elements/input/button.group.element.js'
 
-export const QButtonGroup: ElementComponent<ButtonGroupElement, ButtonGroupProps> = createBaseElementComponent('q-button-group', ButtonGroupElement)
+export const AracnaButtonGroup: ElementComponent<ButtonGroupElement, ButtonGroupProps> = createBaseElementComponent<
+  ButtonGroupElement,
+  ButtonGroupElementAttributes,
+  ButtonGroupElementEventMap
+>('aracna-button-group', ButtonGroupElement)

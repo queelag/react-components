@@ -1,5 +1,14 @@
-import { createBaseElementComponent, ElementComponent, ListItemProps, ListProps } from '@queelag/react'
-import { ListElement, ListItemElement } from '@queelag/web-components/elements/data/list.element.js'
+import { createBaseElementComponent, ElementComponent, ListItemProps, ListProps } from '@aracna/react'
+import { ListElementAttributes, ListElementEventMap, ListItemElementAttributes, ListItemElementEventMap } from '@aracna/web'
+import { ListElement, ListItemElement } from '@aracna/web-components/elements/data/list.element.js'
 
-export const QList: ElementComponent<ListElement, ListProps> = createBaseElementComponent('q-list', ListElement)
-export const QListItem: ElementComponent<ListItemElement, ListItemProps> = createBaseElementComponent('q-list-item', ListItemElement)
+export const AracnaList: ElementComponent<ListElement, ListProps> = createBaseElementComponent<ListElement, ListElementAttributes, ListElementEventMap>(
+  'aracna-list',
+  ListElement
+)
+
+export const AracnaListItem: ElementComponent<ListItemElement, ListItemProps> = createBaseElementComponent<
+  ListItemElement,
+  ListItemElementAttributes,
+  ListItemElementEventMap
+>('aracna-list-item', ListItemElement)

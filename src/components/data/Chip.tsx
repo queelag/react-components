@@ -1,4 +1,8 @@
-import { ChipProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { ChipElement } from '@queelag/web-components/elements/data/chip.element.js'
+import { ChipProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { ChipElementAttributes, ChipElementEventMap } from '@aracna/web'
+import { ChipElement } from '@aracna/web-components/elements/data/chip.element.js'
 
-export const QChip: ElementComponent<ChipElement, ChipProps> = createBaseElementComponent('q-chip', ChipElement)
+export const AracnaChip: ElementComponent<ChipElement, ChipProps> = createBaseElementComponent<ChipElement, ChipElementAttributes, ChipElementEventMap>(
+  'aracna-chip',
+  ChipElement
+)

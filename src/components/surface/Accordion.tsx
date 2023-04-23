@@ -6,33 +6,53 @@ import {
   AccordionSectionProps,
   createBaseElementComponent,
   ElementComponent
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  AccordionButtonElementAttributes,
+  AccordionButtonElementEventMap,
+  AccordionElementAttributes,
+  AccordionElementEventMap,
+  AccordionHeaderElementAttributes,
+  AccordionHeaderElementEventMap,
+  AccordionPanelElementAttributes,
+  AccordionPanelElementEventMap,
+  AccordionSectionElementAttributes,
+  AccordionSectionElementEventMap
+} from '@aracna/web'
 import {
   AccordionButtonElement,
   AccordionElement,
   AccordionHeaderElement,
   AccordionPanelElement,
   AccordionSectionElement
-} from '@queelag/web-components/elements/surface/accordion.element.js'
+} from '@aracna/web-components/elements/surface/accordion.element.js'
 
-export const QAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent('q-accordion', AccordionElement)
+export const AracnaAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent<
+  AccordionElement,
+  AccordionElementAttributes,
+  AccordionElementEventMap
+>('aracna-accordion', AccordionElement)
 
-export const QAccordionButton: ElementComponent<AccordionButtonElement, AccordionButtonProps> = createBaseElementComponent(
-  'q-accordion-button',
-  AccordionButtonElement
-)
+export const AracnaAccordionButton: ElementComponent<AccordionButtonElement, AccordionButtonProps> = createBaseElementComponent<
+  AccordionButtonElement,
+  AccordionButtonElementAttributes,
+  AccordionButtonElementEventMap
+>('aracna-accordion-button', AccordionButtonElement)
 
-export const QAccordionHeader: ElementComponent<AccordionHeaderElement, AccordionHeaderProps> = createBaseElementComponent(
-  'q-accordion-header',
-  AccordionHeaderElement
-)
+export const AracnaAccordionHeader: ElementComponent<AccordionHeaderElement, AccordionHeaderProps> = createBaseElementComponent<
+  AccordionHeaderElement,
+  AccordionHeaderElementAttributes,
+  AccordionHeaderElementEventMap
+>('aracna-accordion-header', AccordionHeaderElement)
 
-export const QAccordionPanel: ElementComponent<AccordionPanelElement, AccordionPanelProps> = createBaseElementComponent(
-  'q-accordion-panel',
-  AccordionPanelElement
-)
+export const AracnaAccordionPanel: ElementComponent<AccordionPanelElement, AccordionPanelProps> = createBaseElementComponent<
+  AccordionPanelElement,
+  AccordionPanelElementAttributes,
+  AccordionPanelElementEventMap
+>('aracna-accordion-panel', AccordionPanelElement)
 
-export const QAccordionSection: ElementComponent<AccordionSectionElement, AccordionSectionProps> = createBaseElementComponent(
-  'q-accordion-section',
-  AccordionSectionElement
-)
+export const AracnaAccordionSection: ElementComponent<AccordionSectionElement, AccordionSectionProps> = createBaseElementComponent<
+  AccordionSectionElement,
+  AccordionSectionElementAttributes,
+  AccordionSectionElementEventMap
+>('aracna-accordion-section', AccordionSectionElement)

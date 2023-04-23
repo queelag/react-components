@@ -6,27 +6,44 @@ import {
   createBaseElementComponent,
   createFloatingElementComponent,
   ElementComponent
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  AriaTooltipArrowElementAttributes,
+  AriaTooltipArrowElementEventMap,
+  AriaTooltipContentElementAttributes,
+  AriaTooltipContentElementEventMap,
+  AriaTooltipElementAttributes,
+  AriaTooltipElementEventMap,
+  AriaTooltipTriggerElementAttributes,
+  AriaTooltipTriggerElementEventMap
+} from '@aracna/web'
 import {
   AriaTooltipArrowElement,
   AriaTooltipContentElement,
   AriaTooltipElement,
   AriaTooltipTriggerElement
-} from '@queelag/web-components/elements/aria/aria.tooltip.element.js'
+} from '@aracna/web-components/elements/aria/aria.tooltip.element.js'
 
-export const QAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createBaseElementComponent('q-aria-tooltip', AriaTooltipElement)
+export const AracnaAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createBaseElementComponent<
+  AriaTooltipElement,
+  AriaTooltipElementAttributes,
+  AriaTooltipElementEventMap
+>('aracna-aria-tooltip', AriaTooltipElement)
 
-export const QAriaTooltipArrow: ElementComponent<AriaTooltipArrowElement, AriaTooltipArrowProps> = createBaseElementComponent(
-  'q-aria-tooltip-arrow',
-  AriaTooltipArrowElement
-)
+export const AracnaAriaTooltipArrow: ElementComponent<AriaTooltipArrowElement, AriaTooltipArrowProps> = createBaseElementComponent<
+  AriaTooltipArrowElement,
+  AriaTooltipArrowElementAttributes,
+  AriaTooltipArrowElementEventMap
+>('aracna-aria-tooltip-arrow', AriaTooltipArrowElement)
 
-export const QAriaTooltipContent: ElementComponent<AriaTooltipContentElement, AriaTooltipContentProps> = createFloatingElementComponent(
-  'q-aria-tooltip-content',
-  AriaTooltipContentElement
-)
+export const AracnaAriaTooltipContent: ElementComponent<AriaTooltipContentElement, AriaTooltipContentProps> = createFloatingElementComponent<
+  AriaTooltipContentElement,
+  AriaTooltipContentElementAttributes,
+  AriaTooltipContentElementEventMap
+>('aracna-aria-tooltip-content', AriaTooltipContentElement)
 
-export const QAriaTooltipTrigger: ElementComponent<AriaTooltipTriggerElement, AriaTooltipTriggerProps> = createBaseElementComponent(
-  'q-aria-tooltip-trigger',
-  AriaTooltipTriggerElement
-)
+export const AracnaAriaTooltipTrigger: ElementComponent<AriaTooltipTriggerElement, AriaTooltipTriggerProps> = createBaseElementComponent<
+  AriaTooltipTriggerElement,
+  AriaTooltipTriggerElementAttributes,
+  AriaTooltipTriggerElementEventMap
+>('aracna-aria-tooltip-trigger', AriaTooltipTriggerElement)

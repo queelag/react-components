@@ -1,4 +1,9 @@
-import { AriaLinkProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaLinkElement } from '@queelag/web-components/elements/aria/aria.link.element.js'
+import { AriaLinkProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AriaLinkElementAttributes, AriaLinkElementEventMap } from '@aracna/web'
+import { AriaLinkElement } from '@aracna/web-components/elements/aria/aria.link.element.js'
 
-export const QAriaLink: ElementComponent<AriaLinkElement, AriaLinkProps> = createBaseElementComponent('q-aria-link', AriaLinkElement)
+export const AracnaAriaLink: ElementComponent<AriaLinkElement, AriaLinkProps> = createBaseElementComponent<
+  AriaLinkElement,
+  AriaLinkElementAttributes,
+  AriaLinkElementEventMap
+>('aracna-aria-link', AriaLinkElement)

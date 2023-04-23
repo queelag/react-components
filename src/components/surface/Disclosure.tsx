@@ -5,27 +5,44 @@ import {
   DisclosureProps,
   DisclosureSectionProps,
   ElementComponent
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  DisclosureButtonElementAttributes,
+  DisclosureButtonElementEventMap,
+  DisclosureElementAttributes,
+  DisclosureElementEventMap,
+  DisclosurePanelElementAttributes,
+  DisclosurePanelElementEventMap,
+  DisclosureSectionElementAttributes,
+  DisclosureSectionElementEventMap
+} from '@aracna/web'
 import {
   DisclosureButtonElement,
   DisclosureElement,
   DisclosurePanelElement,
   DisclosureSectionElement
-} from '@queelag/web-components/elements/surface/disclosure.element.js'
+} from '@aracna/web-components/elements/surface/disclosure.element.js'
 
-export const QDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createBaseElementComponent('q-disclosure', DisclosureElement)
+export const AracnaDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createBaseElementComponent<
+  DisclosureElement,
+  DisclosureElementAttributes,
+  DisclosureElementEventMap
+>('aracna-disclosure', DisclosureElement)
 
-export const QDisclosureButton: ElementComponent<DisclosureButtonElement, DisclosureButtonProps> = createBaseElementComponent(
-  'q-disclosure-button',
-  DisclosureButtonElement
-)
+export const AracnaDisclosureButton: ElementComponent<DisclosureButtonElement, DisclosureButtonProps> = createBaseElementComponent<
+  DisclosureButtonElement,
+  DisclosureButtonElementAttributes,
+  DisclosureButtonElementEventMap
+>('aracna-disclosure-button', DisclosureButtonElement)
 
-export const QDisclosurePanel: ElementComponent<DisclosurePanelElement, DisclosurePanelProps> = createBaseElementComponent(
-  'q-disclosure-panel',
-  DisclosurePanelElement
-)
+export const AracnaDisclosurePanel: ElementComponent<DisclosurePanelElement, DisclosurePanelProps> = createBaseElementComponent<
+  DisclosurePanelElement,
+  DisclosurePanelElementAttributes,
+  DisclosurePanelElementEventMap
+>('aracna-disclosure-panel', DisclosurePanelElement)
 
-export const QDisclosureSection: ElementComponent<DisclosureSectionElement, DisclosureSectionProps> = createBaseElementComponent(
-  'q-disclosure-section',
-  DisclosureSectionElement
-)
+export const AracnaDisclosureSection: ElementComponent<DisclosureSectionElement, DisclosureSectionProps> = createBaseElementComponent<
+  DisclosureSectionElement,
+  DisclosureSectionElementAttributes,
+  DisclosureSectionElementEventMap
+>('aracna-disclosure-section', DisclosureSectionElement)

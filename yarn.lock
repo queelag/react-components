@@ -379,9 +379,9 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@queelag/core@^1.1.15":
+"@aracna/core@^1.1.15":
   version "1.1.15"
-  resolved "https://registry.yarnpkg.com/@queelag/core/-/core-1.1.15.tgz#862be4e553d01ed2c4f6f535457206e61a68cb75"
+  resolved "https://registry.yarnpkg.com/@aracna/core/-/core-1.1.15.tgz#862be4e553d01ed2c4f6f535457206e61a68cb75"
   integrity sha512-/rjwa8xwJA6vG/0YsayVqaSFQEVAfjD6p3/f/e3j4uxp9CQpncndtGxeWsAeofnOQ3KyjC0S+S4hllSgbXndDQ==
   dependencies:
     "@types/cookie" "^0.5.1"
@@ -391,19 +391,19 @@
     node-fetch-cjs "^3.2.10"
     rfc4648 "^1.5.2"
 
-"@queelag/react@^1.0.3":
+"@aracna/react@^1.0.3":
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@queelag/react/-/react-1.0.3.tgz#031d4a5bc95ff047e6df04281d49917d02bf2408"
+  resolved "https://registry.yarnpkg.com/@aracna/react/-/react-1.0.3.tgz#031d4a5bc95ff047e6df04281d49917d02bf2408"
   integrity sha512-XtI/0OYqdvzayGNIhCHicZrKGxYuR0/BhV8GUm2pmTcJQMBEd1exePktLv7MlkKRv2DGG8AmHVvaQ0SYtoxIhQ==
 
-"@queelag/web-components@^1.0.7":
+"@aracna/web-components@^1.0.7":
   version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@queelag/web-components/-/web-components-1.0.7.tgz#e1a7b058eefabbd450f30fa5ebb2f3b9d01e3685"
+  resolved "https://registry.yarnpkg.com/@aracna/web-components/-/web-components-1.0.7.tgz#e1a7b058eefabbd450f30fa5ebb2f3b9d01e3685"
   integrity sha512-fapxtYxhJFocdwvPiHDaXw0rXHgGF/OJug5wyexZPcafsT3DwjuU/5oXZJzoJDm1fp0dYMYOsVLvlGFlH2GCfQ==
 
-"@queelag/web@^1.0.11":
+"@aracna/web@^1.0.11":
   version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@queelag/web/-/web-1.0.11.tgz#9e13528fffae660156d9275d0b82e7ebbb299fc4"
+  resolved "https://registry.yarnpkg.com/@aracna/web/-/web-1.0.11.tgz#9e13528fffae660156d9275d0b82e7ebbb299fc4"
   integrity sha512-bMXC9itqMf1y/web2cj9e1MBrih4xSt7KM/HnwQDRkt+Ayu/KVq92Lc8NoQoQQ0HTau8Pxr208GBubeWJrQiDA==
 
 "@rollup/plugin-strip@^3.0.1":

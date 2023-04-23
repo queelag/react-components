@@ -6,10 +6,39 @@ import {
   MenuItemProps,
   MenuProps,
   MenuSubMenuProps
-} from '@queelag/react'
-import { MenuButtonElement, MenuElement, MenuItemElement, MenuSubMenuElement } from '@queelag/web-components/elements/navigation/menu.element.js'
+} from '@aracna/react'
+import {
+  MenuButtonElementAttributes,
+  MenuButtonElementEventMap,
+  MenuElementAttributes,
+  MenuElementEventMap,
+  MenuItemElementAttributes,
+  MenuItemElementEventMap,
+  MenuSubMenuElementAttributes,
+  MenuSubMenuElementEventMap
+} from '@aracna/web'
+import { MenuButtonElement, MenuElement, MenuItemElement, MenuSubMenuElement } from '@aracna/web-components/elements/navigation/menu.element.js'
 
-export const QMenu: ElementComponent<MenuElement, MenuProps> = createBaseElementComponent('q-menu', MenuElement)
-export const QMenuButton: ElementComponent<MenuButtonElement, MenuButtonProps> = createBaseElementComponent('q-menu-button', MenuButtonElement)
-export const QMenuItem: ElementComponent<MenuItemElement, MenuItemProps> = createBaseElementComponent('q-menu-item', MenuItemElement)
-export const QMenuSubMenu: ElementComponent<MenuSubMenuElement, MenuSubMenuProps> = createFloatingElementComponent('q-menu-submenu', MenuSubMenuElement)
+export const AracnaMenu: ElementComponent<MenuElement, MenuProps> = createBaseElementComponent<
+  MenuElement,
+  MenuElementAttributes<MenuItemElement>,
+  MenuElementEventMap
+>('aracna-menu', MenuElement)
+
+export const AracnaMenuButton: ElementComponent<MenuButtonElement, MenuButtonProps> = createBaseElementComponent<
+  MenuButtonElement,
+  MenuButtonElementAttributes,
+  MenuButtonElementEventMap
+>('aracna-menu-button', MenuButtonElement)
+
+export const AracnaMenuItem: ElementComponent<MenuItemElement, MenuItemProps> = createBaseElementComponent<
+  MenuItemElement,
+  MenuItemElementAttributes,
+  MenuItemElementEventMap
+>('aracna-menu-item', MenuItemElement)
+
+export const AracnaMenuSubMenu: ElementComponent<MenuSubMenuElement, MenuSubMenuProps> = createFloatingElementComponent<
+  MenuSubMenuElement,
+  MenuSubMenuElementAttributes,
+  MenuSubMenuElementEventMap
+>('aracna-menu-submenu', MenuSubMenuElement)

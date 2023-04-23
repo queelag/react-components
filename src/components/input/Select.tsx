@@ -9,7 +9,21 @@ import {
   SelectListProps,
   SelectOptionProps,
   SelectProps
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  SelectButtonElementAttributes,
+  SelectButtonElementEventMap,
+  SelectElementAttributes,
+  SelectElementEventMap,
+  SelectGroupElementAttributes,
+  SelectGroupElementEventMap,
+  SelectInputElementAttributes,
+  SelectInputElementEventMap,
+  SelectListElementAttributes,
+  SelectListElementEventMap,
+  SelectOptionElementAttributes,
+  SelectOptionElementEventMap
+} from '@aracna/web'
 import {
   SelectButtonElement,
   SelectElement,
@@ -17,11 +31,39 @@ import {
   SelectInputElement,
   SelectListElement,
   SelectOptionElement
-} from '@queelag/web-components/elements/input/select.element.js'
+} from '@aracna/web-components/elements/input/select.element.js'
 
-export const QSelect: ElementComponent<SelectElement, SelectProps> = createFormFieldElementComponent('q-select', SelectElement)
-export const QSelectButton: ElementComponent<SelectButtonElement, SelectButtonProps> = createBaseElementComponent('q-select-button', SelectButtonElement)
-export const QSelectGroup: ElementComponent<SelectGroupElement, SelectGroupProps> = createBaseElementComponent('q-select-group', SelectGroupElement)
-export const QSelectInput: ElementComponent<SelectInputElement, SelectInputProps> = createBaseElementComponent('q-select-input', SelectInputElement)
-export const QSelectList: ElementComponent<SelectListElement, SelectListProps> = createFloatingElementComponent('q-select-list', SelectListElement)
-export const QSelectOption: ElementComponent<SelectOptionElement, SelectOptionProps> = createBaseElementComponent('q-select-option', SelectOptionElement)
+export const AracnaSelect: ElementComponent<SelectElement, SelectProps> = createFormFieldElementComponent<
+  SelectElement,
+  SelectElementAttributes<SelectOptionElement>,
+  SelectElementEventMap
+>('aracna-select', SelectElement)
+
+export const AracnaSelectButton: ElementComponent<SelectButtonElement, SelectButtonProps> = createBaseElementComponent<
+  SelectButtonElement,
+  SelectButtonElementAttributes,
+  SelectButtonElementEventMap
+>('aracna-select-button', SelectButtonElement)
+export const AracnaSelectGroup: ElementComponent<SelectGroupElement, SelectGroupProps> = createBaseElementComponent<
+  SelectGroupElement,
+  SelectGroupElementAttributes,
+  SelectGroupElementEventMap
+>('aracna-select-group', SelectGroupElement)
+
+export const AracnaSelectInput: ElementComponent<SelectInputElement, SelectInputProps> = createBaseElementComponent<
+  SelectInputElement,
+  SelectInputElementAttributes,
+  SelectInputElementEventMap
+>('aracna-select-input', SelectInputElement)
+
+export const AracnaSelectList: ElementComponent<SelectListElement, SelectListProps> = createFloatingElementComponent<
+  SelectListElement,
+  SelectListElementAttributes,
+  SelectListElementEventMap
+>('aracna-select-list', SelectListElement)
+
+export const AracnaSelectOption: ElementComponent<SelectOptionElement, SelectOptionProps> = createBaseElementComponent<
+  SelectOptionElement,
+  SelectOptionElementAttributes,
+  SelectOptionElementEventMap
+>('aracna-select-option', SelectOptionElement)

@@ -5,24 +5,35 @@ import {
   createBaseElementComponent,
   createFocusTrapElementComponent,
   ElementComponent
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  AriaAlertDialogDescriptionElementAttributes,
+  AriaAlertDialogDescriptionElementEventMap,
+  AriaAlertDialogElementAttributes,
+  AriaAlertDialogElementEventMap,
+  AriaAlertDialogLabelElementAttributes,
+  AriaAlertDialogLabelElementEventMap
+} from '@aracna/web'
 import {
   AriaAlertDialogDescriptionElement,
   AriaAlertDialogElement,
   AriaAlertDialogLabelElement
-} from '@queelag/web-components/elements/aria/aria.alert.dialog.element.js'
+} from '@aracna/web-components/elements/aria/aria.alert.dialog.element.js'
 
-export const QAriaAlertDialog: ElementComponent<AriaAlertDialogElement, AriaAlertDialogProps> = createFocusTrapElementComponent(
-  'q-aria-alert-dialog',
-  AriaAlertDialogElement
-)
+export const AracnaAriaAlertDialog: ElementComponent<AriaAlertDialogElement, AriaAlertDialogProps> = createFocusTrapElementComponent<
+  AriaAlertDialogElement,
+  AriaAlertDialogElementAttributes,
+  AriaAlertDialogElementEventMap
+>('aracna-aria-alert-dialog', AriaAlertDialogElement)
 
-export const QAriaAlertDialogDescription: ElementComponent<AriaAlertDialogDescriptionElement, AriaAlertDialogDescriptionProps> = createBaseElementComponent(
-  'q-aria-alert-dialog-description',
-  AriaAlertDialogDescriptionElement
-)
+export const AracnaAriaAlertDialogDescription: ElementComponent<AriaAlertDialogDescriptionElement, AriaAlertDialogDescriptionProps> =
+  createBaseElementComponent<AriaAlertDialogDescriptionElement, AriaAlertDialogDescriptionElementAttributes, AriaAlertDialogDescriptionElementEventMap>(
+    'aracna-aria-alert-dialog-description',
+    AriaAlertDialogDescriptionElement
+  )
 
-export const QAriaAlertDialogLabel: ElementComponent<AriaAlertDialogLabelElement, AriaAlertDialogLabelProps> = createBaseElementComponent(
-  'q-aria-alert-dialog-label',
-  AriaAlertDialogLabelElement
-)
+export const AracnaAriaAlertDialogLabel: ElementComponent<AriaAlertDialogLabelElement, AriaAlertDialogLabelProps> = createBaseElementComponent<
+  AriaAlertDialogLabelElement,
+  AriaAlertDialogLabelElementAttributes,
+  AriaAlertDialogLabelElementEventMap
+>('aracna-aria-alert-dialog-label', AriaAlertDialogLabelElement)

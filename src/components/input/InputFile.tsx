@@ -1,4 +1,9 @@
-import { createFormFieldElementComponent, ElementComponent, InputFileProps } from '@queelag/react'
-import { InputFileElement } from '@queelag/web-components/elements/input/input.file.element.js'
+import { createFormFieldElementComponent, ElementComponent, InputFileProps } from '@aracna/react'
+import { InputFileElementAttributes, InputFileElementEventMap } from '@aracna/web'
+import { InputFileElement } from '@aracna/web-components/elements/input/input.file.element.js'
 
-export const QInputFile: ElementComponent<InputFileElement, InputFileProps> = createFormFieldElementComponent('q-input-file', InputFileElement)
+export const AracnaInputFile: ElementComponent<InputFileElement, InputFileProps> = createFormFieldElementComponent<
+  InputFileElement,
+  InputFileElementAttributes,
+  InputFileElementEventMap
+>('aracna-input-file', InputFileElement)

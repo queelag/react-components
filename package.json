@@ -1,12 +1,12 @@
 {
   "author": "Dario Sechi",
   "devDependencies": {
+    "@aracna/core": "^1.1.15",
+    "@aracna/react": "^1.0.3",
+    "@aracna/web": "^1.0.11",
+    "@aracna/web-components": "^1.0.7",
     "@floating-ui/dom": "^1.0.4",
     "@microsoft/api-extractor": "^7.33.6",
-    "@queelag/core": "^1.1.15",
-    "@queelag/react": "^1.0.3",
-    "@queelag/web": "^1.0.11",
-    "@queelag/web-components": "^1.0.7",
     "@rollup/plugin-strip": "^3.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
     "@testing-library/react": "^13.4.0",
@@ -32,16 +32,16 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "name": "@queelag/react-components",
+  "name": "@aracna/react-components",
   "peerDependencies": {
-    "@queelag/core": ">= 1.1.14",
-    "@queelag/react": ">= 1.0.3",
-    "@queelag/web": ">= 1.0.10",
-    "@queelag/web-components": ">= 1.0.6",
+    "@aracna/core": ">= 1.1.14",
+    "@aracna/react": ">= 1.0.3",
+    "@aracna/web": ">= 1.0.10",
+    "@aracna/web-components": ">= 1.0.6",
     "react": ">= 18.2.0",
     "react-dom": ">= 18.0.8"
   },
-  "repository": "https://github.com/queelag/react-components",
+  "repository": "https://github.com/aracna/react-components",
   "scripts": {
     "test": "yarn vitest run",
     "build": "rm -rf dist && yarn rollup -c && yarn api-extractor run --local",
@@ -50,5 +50,5 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "1.0.7"
+  "version": "1.0.8"
 }

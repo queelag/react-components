@@ -1,4 +1,8 @@
-import { AlertProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AlertElement } from '@queelag/web-components/elements/feedback/alert.element.js'
+import { AlertProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AlertElementAttributes, AlertElementEventMap } from '@aracna/web'
+import { AlertElement } from '@aracna/web-components/elements/feedback/alert.element.js'
 
-export const QAlert: ElementComponent<AlertElement, AlertProps> = createBaseElementComponent('q-alert', AlertElement)
+export const AracnaAlert: ElementComponent<AlertElement, AlertProps> = createBaseElementComponent<AlertElement, AlertElementAttributes, AlertElementEventMap>(
+  'aracna-alert',
+  AlertElement
+)

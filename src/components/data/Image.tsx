@@ -1,4 +1,8 @@
-import { createBaseElementComponent, ElementComponent, ImageProps } from '@queelag/react'
-import { ImageElement } from '@queelag/web-components/elements/data/image.element.js'
+import { createBaseElementComponent, ElementComponent, ImageProps } from '@aracna/react'
+import { ImageElementAttributes, ImageElementEventMap } from '@aracna/web'
+import { ImageElement } from '@aracna/web-components/elements/data/image.element.js'
 
-export const QImage: ElementComponent<ImageElement, ImageProps> = createBaseElementComponent('q-image', ImageElement)
+export const AracnaImage: ElementComponent<ImageElement, ImageProps> = createBaseElementComponent<ImageElement, ImageElementAttributes, ImageElementEventMap>(
+  'aracna-image',
+  ImageElement
+)

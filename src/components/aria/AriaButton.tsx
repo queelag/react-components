@@ -1,4 +1,9 @@
-import { AriaButtonProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaButtonElement } from '@queelag/web-components/elements/aria/aria.button.element.js'
+import { AriaButtonProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AriaButtonElementAttributes, AriaButtonElementEventMap } from '@aracna/web'
+import { AriaButtonElement } from '@aracna/web-components/elements/aria/aria.button.element.js'
 
-export const QAriaButton: ElementComponent<AriaButtonElement, AriaButtonProps> = createBaseElementComponent('q-aria-button', AriaButtonElement)
+export const AracnaAriaButton: ElementComponent<AriaButtonElement, AriaButtonProps> = createBaseElementComponent<
+  AriaButtonElement,
+  AriaButtonElementAttributes,
+  AriaButtonElementEventMap
+>('aracna-aria-button', AriaButtonElement)

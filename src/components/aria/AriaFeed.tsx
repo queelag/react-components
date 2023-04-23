@@ -5,27 +5,44 @@ import {
   AriaFeedProps,
   createBaseElementComponent,
   ElementComponent
-} from '@queelag/react'
+} from '@aracna/react'
+import {
+  AriaFeedArticleDescriptionElementAttributes,
+  AriaFeedArticleDescriptionElementEventMap,
+  AriaFeedArticleElementAttributes,
+  AriaFeedArticleElementEventMap,
+  AriaFeedArticleLabelElementAttributes,
+  AriaFeedArticleLabelElementEventMap,
+  AriaFeedElementAttributes,
+  AriaFeedElementEventMap
+} from '@aracna/web'
 import {
   AriaFeedArticleDescriptionElement,
   AriaFeedArticleElement,
   AriaFeedArticleLabelElement,
   AriaFeedElement
-} from '@queelag/web-components/elements/aria/aria.feed.element.js'
+} from '@aracna/web-components/elements/aria/aria.feed.element.js'
 
-export const QAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent('q-aria-feed', AriaFeedElement)
+export const AracnaAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent<
+  AriaFeedElement,
+  AriaFeedElementAttributes,
+  AriaFeedElementEventMap
+>('aracna-aria-feed', AriaFeedElement)
 
-export const QAriaFeedArticle: ElementComponent<AriaFeedArticleElement, AriaFeedArticleProps> = createBaseElementComponent(
-  'q-aria-feed-article',
-  AriaFeedArticleElement
-)
+export const AracnaAriaFeedArticle: ElementComponent<AriaFeedArticleElement, AriaFeedArticleProps> = createBaseElementComponent<
+  AriaFeedArticleElement,
+  AriaFeedArticleElementAttributes,
+  AriaFeedArticleElementEventMap
+>('aracna-aria-feed-article', AriaFeedArticleElement)
 
-export const QAriaFeedArticleDescription: ElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionProps> = createBaseElementComponent(
-  'q-aria-feed-article-description',
-  AriaFeedArticleDescriptionElement
-)
+export const AracnaAriaFeedArticleDescription: ElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionProps> =
+  createBaseElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionElementAttributes, AriaFeedArticleDescriptionElementEventMap>(
+    'aracna-aria-feed-article-description',
+    AriaFeedArticleDescriptionElement
+  )
 
-export const QAriaFeedArticleLabel: ElementComponent<AriaFeedArticleLabelElement, AriaFeedArticleLabelProps> = createBaseElementComponent(
-  'q-aria-feed-article-label',
-  AriaFeedArticleLabelElement
-)
+export const AracnaAriaFeedArticleLabel: ElementComponent<AriaFeedArticleLabelElement, AriaFeedArticleLabelProps> = createBaseElementComponent<
+  AriaFeedArticleLabelElement,
+  AriaFeedArticleLabelElementAttributes,
+  AriaFeedArticleLabelElementEventMap
+>('aracna-aria-feed-article-label', AriaFeedArticleLabelElement)

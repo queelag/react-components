@@ -1,12 +1,20 @@
-import { createBaseElementComponent, ElementComponent, NavigationRailItemProps, NavigationRailProps } from '@queelag/react'
-import { NavigationRailElement, NavigationRailItemElement } from '@queelag/web-components/elements/navigation/navigation.rail.element.js'
+import { createBaseElementComponent, ElementComponent, NavigationRailItemProps, NavigationRailProps } from '@aracna/react'
+import {
+  NavigationRailElementAttributes,
+  NavigationRailElementEventMap,
+  NavigationRailItemElementAttributes,
+  NavigationRailItemElementEventMap
+} from '@aracna/web'
+import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation.rail.element.js'
 
-export const QNavigationRail: ElementComponent<NavigationRailElement, NavigationRailProps> = createBaseElementComponent(
-  'q-navigation-rail',
-  NavigationRailElement
-)
+export const AracnaNavigationRail: ElementComponent<NavigationRailElement, NavigationRailProps> = createBaseElementComponent<
+  NavigationRailElement,
+  NavigationRailElementAttributes,
+  NavigationRailElementEventMap
+>('aracna-navigation-rail', NavigationRailElement)
 
-export const QNavigationRailItem: ElementComponent<NavigationRailItemElement, NavigationRailItemProps> = createBaseElementComponent(
-  'q-navigation-rail-item',
-  NavigationRailItemElement
-)
+export const AracnaNavigationRailItem: ElementComponent<NavigationRailItemElement, NavigationRailItemProps> = createBaseElementComponent<
+  NavigationRailItemElement,
+  NavigationRailItemElementAttributes,
+  NavigationRailItemElementEventMap
+>('aracna-navigation-rail-item', NavigationRailItemElement)

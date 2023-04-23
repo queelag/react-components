@@ -1,4 +1,9 @@
-import { AriaMeterProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaMeterElement } from '@queelag/web-components/elements/aria/aria.meter.element.js'
+import { AriaMeterProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AriaMeterElementAttributes, AriaMeterElementEventMap } from '@aracna/web'
+import { AriaMeterElement } from '@aracna/web-components/elements/aria/aria.meter.element.js'
 
-export const QAriaMeter: ElementComponent<AriaMeterElement, AriaMeterProps> = createBaseElementComponent('q-aria-meter', AriaMeterElement)
+export const AracnaAriaMeter: ElementComponent<AriaMeterElement, AriaMeterProps> = createBaseElementComponent<
+  AriaMeterElement,
+  AriaMeterElementAttributes,
+  AriaMeterElementEventMap
+>('aracna-aria-meter', AriaMeterElement)

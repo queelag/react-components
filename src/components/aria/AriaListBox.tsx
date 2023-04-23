@@ -1,9 +1,15 @@
-import { AriaListBoxOptionProps, AriaListBoxProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaListBoxElement, AriaListBoxOptionElement } from '@queelag/web-components/elements/aria/aria.list.box.element.js'
+import { AriaListBoxOptionProps, AriaListBoxProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import { AriaListBoxElementAttributes, AriaListBoxElementEventMap, AriaListBoxOptionElementAttributes, AriaListBoxOptionElementEventMap } from '@aracna/web'
+import { AriaListBoxElement, AriaListBoxOptionElement } from '@aracna/web-components/elements/aria/aria.list.box.element.js'
 
-export const QAriaListBox: ElementComponent<AriaListBoxElement, AriaListBoxProps> = createBaseElementComponent('q-aria-listbox', AriaListBoxElement)
+export const AracnaAriaListBox: ElementComponent<AriaListBoxElement, AriaListBoxProps> = createBaseElementComponent<
+  AriaListBoxElement,
+  AriaListBoxElementAttributes<AriaListBoxOptionElement>,
+  AriaListBoxElementEventMap
+>('aracna-aria-listbox', AriaListBoxElement)
 
-export const QAriaListBoxOption: ElementComponent<AriaListBoxOptionElement, AriaListBoxOptionProps> = createBaseElementComponent(
-  'q-aria-listbox-option',
-  AriaListBoxOptionElement
-)
+export const AracnaAriaListBoxOption: ElementComponent<AriaListBoxOptionElement, AriaListBoxOptionProps> = createBaseElementComponent<
+  AriaListBoxOptionElement,
+  AriaListBoxOptionElementAttributes,
+  AriaListBoxOptionElementEventMap
+>('aracna-aria-listbox-option', AriaListBoxOptionElement)

@@ -1,6 +1,27 @@
-import { createBaseElementComponent, ElementComponent, TabsPanelProps, TabsProps, TabsTabProps } from '@queelag/react'
-import { TabsElement, TabsPanelElement, TabsTabElement } from '@queelag/web-components/elements/navigation/tabs.element.js'
+import { createBaseElementComponent, ElementComponent, TabsPanelProps, TabsProps, TabsTabProps } from '@aracna/react'
+import {
+  TabsElementAttributes,
+  TabsElementEventMap,
+  TabsPanelElementAttributes,
+  TabsPanelElementEventMap,
+  TabsTabElementAttributes,
+  TabsTabElementEventMap
+} from '@aracna/web'
+import { TabsElement, TabsPanelElement, TabsTabElement } from '@aracna/web-components/elements/navigation/tabs.element.js'
 
-export const QTabs: ElementComponent<TabsElement, TabsProps> = createBaseElementComponent('q-tabs', TabsElement)
-export const QTabsPanel: ElementComponent<TabsPanelElement, TabsPanelProps> = createBaseElementComponent('q-tabs-panel', TabsPanelElement)
-export const QTabsTab: ElementComponent<TabsTabElement, TabsTabProps> = createBaseElementComponent('q-tabs-tab', TabsTabElement)
+export const AracnaTabs: ElementComponent<TabsElement, TabsProps> = createBaseElementComponent<TabsElement, TabsElementAttributes, TabsElementEventMap>(
+  'aracna-tabs',
+  TabsElement
+)
+
+export const AracnaTabsPanel: ElementComponent<TabsPanelElement, TabsPanelProps> = createBaseElementComponent<
+  TabsPanelElement,
+  TabsPanelElementAttributes,
+  TabsPanelElementEventMap
+>('aracna-tabs-panel', TabsPanelElement)
+
+export const AracnaTabsTab: ElementComponent<TabsTabElement, TabsTabProps> = createBaseElementComponent<
+  TabsTabElement,
+  TabsTabElementAttributes,
+  TabsTabElementEventMap
+>('aracna-tabs-tab', TabsTabElement)

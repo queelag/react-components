@@ -1,4 +1,9 @@
-import { AriaSwitchProps, createFormFieldElementComponent, ElementComponent } from '@queelag/react'
-import { AriaSwitchElement } from '@queelag/web-components/elements/aria/aria.switch.element.js'
+import { AriaSwitchProps, createFormFieldElementComponent, ElementComponent } from '@aracna/react'
+import { AriaSwitchElementAttributes, AriaSwitchElementEventMap } from '@aracna/web'
+import { AriaSwitchElement } from '@aracna/web-components/elements/aria/aria.switch.element.js'
 
-export const QAriaSwitch: ElementComponent<AriaSwitchElement, AriaSwitchProps> = createFormFieldElementComponent('q-aria-switch', AriaSwitchElement)
+export const AracnaAriaSwitch: ElementComponent<AriaSwitchElement, AriaSwitchProps> = createFormFieldElementComponent<
+  AriaSwitchElement,
+  AriaSwitchElementAttributes,
+  AriaSwitchElementEventMap
+>('aracna-aria-switch', AriaSwitchElement)

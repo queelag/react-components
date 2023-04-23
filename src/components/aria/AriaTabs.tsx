@@ -1,6 +1,28 @@
-import { AriaTabsPanelProps, AriaTabsProps, AriaTabsTabProps, createBaseElementComponent, ElementComponent } from '@queelag/react'
-import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@queelag/web-components/elements/aria/aria.tabs.element.js'
+import { AriaTabsPanelProps, AriaTabsProps, AriaTabsTabProps, createBaseElementComponent, ElementComponent } from '@aracna/react'
+import {
+  AriaTabsElementAttributes,
+  AriaTabsElementEventMap,
+  AriaTabsPanelElementAttributes,
+  AriaTabsPanelElementEventMap,
+  AriaTabsTabElementAttributes,
+  AriaTabsTabElementEventMap
+} from '@aracna/web'
+import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@aracna/web-components/elements/aria/aria.tabs.element.js'
 
-export const QAriaTabs: ElementComponent<AriaTabsElement, AriaTabsProps> = createBaseElementComponent('q-aria-tabs', AriaTabsElement)
-export const QAriaTabsPanel: ElementComponent<AriaTabsPanelElement, AriaTabsPanelProps> = createBaseElementComponent('q-aria-tabs-panel', AriaTabsPanelElement)
-export const QAriaTabsTab: ElementComponent<AriaTabsTabElement, AriaTabsTabProps> = createBaseElementComponent('q-aria-tabs-tab', AriaTabsTabElement)
+export const AracnaAriaTabs: ElementComponent<AriaTabsElement, AriaTabsProps> = createBaseElementComponent<
+  AriaTabsElement,
+  AriaTabsElementAttributes,
+  AriaTabsElementEventMap
+>('aracna-aria-tabs', AriaTabsElement)
+
+export const AracnaAriaTabsPanel: ElementComponent<AriaTabsPanelElement, AriaTabsPanelProps> = createBaseElementComponent<
+  AriaTabsPanelElement,
+  AriaTabsPanelElementAttributes,
+  AriaTabsPanelElementEventMap
+>('aracna-aria-tabs-panel', AriaTabsPanelElement)
+
+export const AracnaAriaTabsTab: ElementComponent<AriaTabsTabElement, AriaTabsTabProps> = createBaseElementComponent<
+  AriaTabsTabElement,
+  AriaTabsTabElementAttributes,
+  AriaTabsTabElementEventMap
+>('aracna-aria-tabs-tab', AriaTabsTabElement)

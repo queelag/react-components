@@ -5,14 +5,31 @@ import {
   DialogLabelProps,
   DialogProps,
   ElementComponent
-} from '@queelag/react'
-import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@queelag/web-components/elements/feedback/dialog.element.js'
+} from '@aracna/react'
+import {
+  DialogDescriptionElementAttributes,
+  DialogDescriptionElementEventMap,
+  DialogElementAttributes,
+  DialogElementEventMap,
+  DialogLabelElementAttributes,
+  DialogLabelElementEventMap
+} from '@aracna/web'
+import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@aracna/web-components/elements/feedback/dialog.element.js'
 
-export const QDialog: ElementComponent<DialogElement, DialogProps> = createFocusTrapElementComponent('q-dialog', DialogElement)
+export const AracnaDialog: ElementComponent<DialogElement, DialogProps> = createFocusTrapElementComponent<
+  DialogElement,
+  DialogElementAttributes,
+  DialogElementEventMap
+>('aracna-dialog', DialogElement)
 
-export const QDialogDescription: ElementComponent<DialogDescriptionElement, DialogDescriptionProps> = createBaseElementComponent(
-  'q-dialog-description',
-  DialogDescriptionElement
-)
+export const AracnaDialogDescription: ElementComponent<DialogDescriptionElement, DialogDescriptionProps> = createBaseElementComponent<
+  DialogDescriptionElement,
+  DialogDescriptionElementAttributes,
+  DialogDescriptionElementEventMap
+>('aracna-dialog-description', DialogDescriptionElement)
 
-export const QDialogLabel: ElementComponent<DialogLabelElement, DialogLabelProps> = createBaseElementComponent('q-dialog-label', DialogLabelElement)
+export const AracnaDialogLabel: ElementComponent<DialogLabelElement, DialogLabelProps> = createBaseElementComponent<
+  DialogLabelElement,
+  DialogLabelElementAttributes,
+  DialogLabelElementEventMap
+>('aracna-dialog-label', DialogLabelElement)
