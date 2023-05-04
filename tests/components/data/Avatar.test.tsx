@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 import { describe, it } from 'vitest'
-import { QAvatar } from '../../../src'
+import { AracnaAvatar } from '../../../src/components/data/Avatar'
 
 describe('Avatar', () => {
   it('renders', () => {
-    render(<QAvatar />)
+    render(<AracnaAvatar />)
     console.log(document.body.innerHTML)
   })
 })
