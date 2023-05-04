@@ -31,7 +31,7 @@ import {
   AriaComboBoxInputElement,
   AriaComboBoxListElement,
   AriaComboBoxOptionElement
-} from '@aracna/web-components/elements/aria/aria.combo.box.element'
+} from '@aracna/web-components/elements/aria/aria.combo.box.element.js'
 
 export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createFormFieldElementComponent<
   AriaComboBoxElement,

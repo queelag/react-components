@@ -17,7 +17,7 @@ import {
   TooltipTriggerElementAttributes,
   TooltipTriggerElementEventMap
 } from '@aracna/web'
-import { TooltipArrowElement, TooltipContentElement, TooltipElement, TooltipTriggerElement } from '@aracna/web-components/elements/data/tooltip.element'
+import { TooltipArrowElement, TooltipContentElement, TooltipElement, TooltipTriggerElement } from '@aracna/web-components/elements/data/tooltip.element.js'
 
 export const AracnaTooltip: ElementComponent<TooltipElement, TooltipProps> = createBaseElementComponent<
   TooltipElement,

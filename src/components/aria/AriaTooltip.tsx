@@ -22,7 +22,7 @@ import {
   AriaTooltipContentElement,
   AriaTooltipElement,
   AriaTooltipTriggerElement
-} from '@aracna/web-components/elements/aria/aria.tooltip.element'
+} from '@aracna/web-components/elements/aria/aria.tooltip.element.js'
 
 export const AracnaAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createBaseElementComponent<
   AriaTooltipElement,

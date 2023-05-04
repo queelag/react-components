@@ -31,7 +31,7 @@ import {
   SelectInputElement,
   SelectListElement,
   SelectOptionElement
-} from '@aracna/web-components/elements/input/select.element'
+} from '@aracna/web-components/elements/input/select.element.js'
 
 export const AracnaSelect: ElementComponent<SelectElement, SelectProps> = createFormFieldElementComponent<
   SelectElement,

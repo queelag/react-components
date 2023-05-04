@@ -14,7 +14,7 @@ import {
   AriaDialogLabelElementAttributes,
   AriaDialogLabelElementEventMap
 } from '@aracna/web'
-import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@aracna/web-components/elements/aria/aria.dialog.element'
+import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@aracna/web-components/elements/aria/aria.dialog.element.js'
 
 export const AracnaAriaDialog: ElementComponent<AriaDialogElement, AriaDialogProps> = createFocusTrapElementComponent<
   AriaDialogElement,

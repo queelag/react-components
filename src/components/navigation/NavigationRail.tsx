@@ -5,7 +5,7 @@ import {
   NavigationRailItemElementAttributes,
   NavigationRailItemElementEventMap
 } from '@aracna/web'
-import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation.rail.element'
+import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation.rail.element.js'
 
 export const AracnaNavigationRail: ElementComponent<NavigationRailElement, NavigationRailProps> = createBaseElementComponent<
   NavigationRailElement,

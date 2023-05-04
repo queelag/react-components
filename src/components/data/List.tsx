@@ -1,6 +1,6 @@
 import { createBaseElementComponent, ElementComponent, ListItemProps, ListProps } from '@aracna/react'
 import { ListElementAttributes, ListElementEventMap, ListItemElementAttributes, ListItemElementEventMap } from '@aracna/web'
-import { ListElement, ListItemElement } from '@aracna/web-components/elements/data/list.element'
+import { ListElement, ListItemElement } from '@aracna/web-components/elements/data/list.element.js'
 
 export const AracnaList: ElementComponent<ListElement, ListProps> = createBaseElementComponent<ListElement, ListElementAttributes, ListElementEventMap>(
   'aracna-list',

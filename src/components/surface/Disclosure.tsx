@@ -21,7 +21,7 @@ import {
   DisclosureElement,
   DisclosurePanelElement,
   DisclosureSectionElement
-} from '@aracna/web-components/elements/surface/disclosure.element'
+} from '@aracna/web-components/elements/surface/disclosure.element.js'
 
 export const AracnaDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createBaseElementComponent<
   DisclosureElement,
