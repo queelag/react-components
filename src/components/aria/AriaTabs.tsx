@@ -7,7 +7,7 @@ import {
   AriaTabsTabElementAttributes,
   AriaTabsTabElementEventMap
 } from '@aracna/web'
-import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@aracna/web-components/elements/aria/aria.tabs.element.js'
+import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@aracna/web-components/elements/aria/aria.tabs.element'
 
 export const AracnaAriaTabs: ElementComponent<AriaTabsElement, AriaTabsProps> = createBaseElementComponent<
   AriaTabsElement,

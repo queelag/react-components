@@ -1,6 +1,6 @@
 import { AriaRadioButtonProps, AriaRadioGroupProps, createBaseElementComponent, createFormFieldElementComponent, ElementComponent } from '@aracna/react'
 import { AriaRadioButtonElementAttributes, AriaRadioButtonElementEventMap, AriaRadioGroupElementAttributes, AriaRadioGroupElementEventMap } from '@aracna/web'
-import { AriaRadioButtonElement, AriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria.radio.group.element.js'
+import { AriaRadioButtonElement, AriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria.radio.group.element'
 
 export const AracnaAriaRadioButton: ElementComponent<AriaRadioButtonElement, AriaRadioButtonProps> = createFormFieldElementComponent<
   AriaRadioButtonElement,

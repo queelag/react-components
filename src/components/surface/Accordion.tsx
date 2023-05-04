@@ -25,7 +25,7 @@ import {
   AccordionHeaderElement,
   AccordionPanelElement,
   AccordionSectionElement
-} from '@aracna/web-components/elements/surface/accordion.element.js'
+} from '@aracna/web-components/elements/surface/accordion.element'
 
 export const AracnaAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent<
   AccordionElement,

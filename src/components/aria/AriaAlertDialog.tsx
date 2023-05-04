@@ -18,7 +18,7 @@ import {
   AriaAlertDialogDescriptionElement,
   AriaAlertDialogElement,
   AriaAlertDialogLabelElement
-} from '@aracna/web-components/elements/aria/aria.alert.dialog.element.js'
+} from '@aracna/web-components/elements/aria/aria.alert.dialog.element'
 
 export const AracnaAriaAlertDialog: ElementComponent<AriaAlertDialogElement, AriaAlertDialogProps> = createFocusTrapElementComponent<
   AriaAlertDialogElement,

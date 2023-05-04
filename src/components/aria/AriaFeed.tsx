@@ -21,7 +21,7 @@ import {
   AriaFeedArticleElement,
   AriaFeedArticleLabelElement,
   AriaFeedElement
-} from '@aracna/web-components/elements/aria/aria.feed.element.js'
+} from '@aracna/web-components/elements/aria/aria.feed.element'
 
 export const AracnaAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent<
   AriaFeedElement,

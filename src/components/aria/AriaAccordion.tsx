@@ -25,7 +25,7 @@ import {
   AriaAccordionHeaderElement,
   AriaAccordionPanelElement,
   AriaAccordionSectionElement
-} from '@aracna/web-components/elements/aria/aria.accordion.element.js'
+} from '@aracna/web-components/elements/aria/aria.accordion.element'
 
 export const AracnaAriaAccordion: ElementComponent<AriaAccordionElement, AriaAccordionProps> = createBaseElementComponent<
   AriaAccordionElement,

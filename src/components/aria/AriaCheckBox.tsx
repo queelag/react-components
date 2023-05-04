@@ -1,6 +1,6 @@
 import { AriaCheckBoxProps, createFormFieldElementComponent, ElementComponent } from '@aracna/react'
 import { AriaCheckBoxElementAttributes, AriaCheckBoxElementEventMap } from '@aracna/web'
-import { AriaCheckBoxElement } from '@aracna/web-components/elements/aria/aria.check.box.element.js'
+import { AriaCheckBoxElement } from '@aracna/web-components/elements/aria/aria.check.box.element'
 
 export const AracnaAriaCheckBox: ElementComponent<AriaCheckBoxElement, AriaCheckBoxProps> = createFormFieldElementComponent<
   AriaCheckBoxElement,

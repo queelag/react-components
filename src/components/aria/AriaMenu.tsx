@@ -17,7 +17,7 @@ import {
   AriaMenuSubMenuElementAttributes,
   AriaMenuSubMenuElementEventMap
 } from '@aracna/web'
-import { AriaMenuButtonElement, AriaMenuElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@aracna/web-components/elements/aria/aria.menu.element.js'
+import { AriaMenuButtonElement, AriaMenuElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@aracna/web-components/elements/aria/aria.menu.element'
 
 export const AracnaAriaMenu: ElementComponent<AriaMenuElement, AriaMenuProps> = createBaseElementComponent<
   AriaMenuElement,
