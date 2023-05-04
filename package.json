@@ -30,7 +30,6 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "module": "index.mjs",
   "name": "@aracna/react-components",
   "peerDependencies": {
     "@aracna/core": ">= 1.1.0",
@@ -52,5 +51,6 @@
     "deploy": "yarn test && yarn build && yarn tarball && yarn publish dist/*.tgz"
   },
   "sideEffects": false,
+  "type": "module",
   "version": "1.0.11"
 }
