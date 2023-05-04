@@ -28,7 +28,7 @@ for (let element of await glob('./src/components/**/*.tsx')) {
     bundle: true,
     entryPoints: [element],
     format: 'cjs',
-    outfile: element.replace('src', 'dist').replace('.tsx', '.cjs'),
+    outfile: element.replace('src', 'dist').replace('.tsx', '.cjs.js'),
     platform: 'browser',
     treeShaking: true
   }).catch(() => process.exit(1))
