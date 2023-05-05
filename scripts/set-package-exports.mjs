@@ -13,7 +13,7 @@ for (let path of await glob('src/components/**/*.ts')) {
   PACKAGE.exports[`./components/${folder}/${name}.js`] = {
     import: `./components/${folder}/${name}.js`,
     require: {
-      default: `./components/${folder}/${name}.cjs.js`,
+      default: `./components/${folder}/${name}.cjs`,
       types: `./components/${folder}/${name}.d.ts`
     }
   }
