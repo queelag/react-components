@@ -1,32 +1,406 @@
 {
   "author": "Dario Sechi",
   "devDependencies": {
-    "@aracna/core": "latest",
-    "@aracna/react": "latest",
-    "@aracna/web": "latest",
-    "@aracna/web-components": "latest",
-    "@floating-ui/dom": "latest",
-    "@microsoft/api-extractor": "latest",
-    "@testing-library/react": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@vitejs/plugin-react": "latest",
-    "@vitest/coverage-c8": "latest",
-    "@vitest/ui": "latest",
-    "dompurify": "latest",
-    "esbuild": "latest",
-    "focus-trap": "latest",
-    "glob": "latest",
-    "jsdom": "latest",
-    "lit": "latest",
-    "prettier": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "tabbable": "latest",
-    "tslib": "latest",
-    "typedoc": "latest",
-    "typescript": "latest",
-    "vitest": "latest"
+    "@aracna/core": "^1.1.25",
+    "@aracna/react": "^1.0.17",
+    "@aracna/web": "^1.0.24",
+    "@aracna/web-components": "^1.0.22",
+    "@floating-ui/dom": "^1.2.7",
+    "@microsoft/api-extractor": "^7.34.8",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.5",
+    "@types/react-dom": "^18.2.3",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/coverage-c8": "^0.31.0",
+    "@vitest/ui": "^0.31.0",
+    "dompurify": "^3.0.2",
+    "esbuild": "^0.17.18",
+    "esbuild-plugin-globals": "^0.2.0",
+    "focus-trap": "^7.4.0",
+    "glob": "^10.2.2",
+    "jsdom": "^22.0.0",
+    "lit": "^2.7.4",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tabbable": "^6.1.2",
+    "tslib": "^2.5.0",
+    "typedoc": "^0.24.6",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": {
+        "default": "./index.cjs.js",
+        "types": "./index.d.ts"
+      }
+    },
+    "./surface/disclosure": {
+      "import": "./components/surface/disclosure.js",
+      "require": {
+        "default": "./components/surface/disclosure.cjs.js",
+        "types": "./components/surface/disclosure.d.ts"
+      }
+    },
+    "./surface/accordion": {
+      "import": "./components/surface/accordion.js",
+      "require": {
+        "default": "./components/surface/accordion.cjs.js",
+        "types": "./components/surface/accordion.d.ts"
+      }
+    },
+    "./navigation/tabs": {
+      "import": "./components/navigation/tabs.js",
+      "require": {
+        "default": "./components/navigation/tabs.cjs.js",
+        "types": "./components/navigation/tabs.d.ts"
+      }
+    },
+    "./navigation/navigation-rail": {
+      "import": "./components/navigation/navigation-rail.js",
+      "require": {
+        "default": "./components/navigation/navigation-rail.cjs.js",
+        "types": "./components/navigation/navigation-rail.d.ts"
+      }
+    },
+    "./navigation/navigation-bar": {
+      "import": "./components/navigation/navigation-bar.js",
+      "require": {
+        "default": "./components/navigation/navigation-bar.cjs.js",
+        "types": "./components/navigation/navigation-bar.d.ts"
+      }
+    },
+    "./navigation/menu": {
+      "import": "./components/navigation/menu.js",
+      "require": {
+        "default": "./components/navigation/menu.cjs.js",
+        "types": "./components/navigation/menu.d.ts"
+      }
+    },
+    "./navigation/breadcrumb": {
+      "import": "./components/navigation/breadcrumb.js",
+      "require": {
+        "default": "./components/navigation/breadcrumb.cjs.js",
+        "types": "./components/navigation/breadcrumb.d.ts"
+      }
+    },
+    "./layout/divider": {
+      "import": "./components/layout/divider.js",
+      "require": {
+        "default": "./components/layout/divider.cjs.js",
+        "types": "./components/layout/divider.d.ts"
+      }
+    },
+    "./input/text-area": {
+      "import": "./components/input/text-area.js",
+      "require": {
+        "default": "./components/input/text-area.cjs.js",
+        "types": "./components/input/text-area.d.ts"
+      }
+    },
+    "./input/switch": {
+      "import": "./components/input/switch.js",
+      "require": {
+        "default": "./components/input/switch.cjs.js",
+        "types": "./components/input/switch.d.ts"
+      }
+    },
+    "./input/slider": {
+      "import": "./components/input/slider.js",
+      "require": {
+        "default": "./components/input/slider.cjs.js",
+        "types": "./components/input/slider.d.ts"
+      }
+    },
+    "./input/select": {
+      "import": "./components/input/select.js",
+      "require": {
+        "default": "./components/input/select.cjs.js",
+        "types": "./components/input/select.d.ts"
+      }
+    },
+    "./input/radio-group": {
+      "import": "./components/input/radio-group.js",
+      "require": {
+        "default": "./components/input/radio-group.cjs.js",
+        "types": "./components/input/radio-group.d.ts"
+      }
+    },
+    "./input/input": {
+      "import": "./components/input/input.js",
+      "require": {
+        "default": "./components/input/input.cjs.js",
+        "types": "./components/input/input.d.ts"
+      }
+    },
+    "./input/input-file": {
+      "import": "./components/input/input-file.js",
+      "require": {
+        "default": "./components/input/input-file.cjs.js",
+        "types": "./components/input/input-file.d.ts"
+      }
+    },
+    "./input/form": {
+      "import": "./components/input/form.js",
+      "require": {
+        "default": "./components/input/form.cjs.js",
+        "types": "./components/input/form.d.ts"
+      }
+    },
+    "./input/check-box": {
+      "import": "./components/input/check-box.js",
+      "require": {
+        "default": "./components/input/check-box.cjs.js",
+        "types": "./components/input/check-box.d.ts"
+      }
+    },
+    "./input/button": {
+      "import": "./components/input/button.js",
+      "require": {
+        "default": "./components/input/button.cjs.js",
+        "types": "./components/input/button.d.ts"
+      }
+    },
+    "./input/button-group": {
+      "import": "./components/input/button-group.js",
+      "require": {
+        "default": "./components/input/button-group.cjs.js",
+        "types": "./components/input/button-group.d.ts"
+      }
+    },
+    "./feedback/meter": {
+      "import": "./components/feedback/meter.js",
+      "require": {
+        "default": "./components/feedback/meter.cjs.js",
+        "types": "./components/feedback/meter.d.ts"
+      }
+    },
+    "./feedback/dialog": {
+      "import": "./components/feedback/dialog.js",
+      "require": {
+        "default": "./components/feedback/dialog.cjs.js",
+        "types": "./components/feedback/dialog.d.ts"
+      }
+    },
+    "./feedback/alert": {
+      "import": "./components/feedback/alert.js",
+      "require": {
+        "default": "./components/feedback/alert.cjs.js",
+        "types": "./components/feedback/alert.d.ts"
+      }
+    },
+    "./feedback/alert-dialog": {
+      "import": "./components/feedback/alert-dialog.js",
+      "require": {
+        "default": "./components/feedback/alert-dialog.cjs.js",
+        "types": "./components/feedback/alert-dialog.d.ts"
+      }
+    },
+    "./data/tooltip": {
+      "import": "./components/data/tooltip.js",
+      "require": {
+        "default": "./components/data/tooltip.cjs.js",
+        "types": "./components/data/tooltip.d.ts"
+      }
+    },
+    "./data/list": {
+      "import": "./components/data/list.js",
+      "require": {
+        "default": "./components/data/list.cjs.js",
+        "types": "./components/data/list.d.ts"
+      }
+    },
+    "./data/image": {
+      "import": "./components/data/image.js",
+      "require": {
+        "default": "./components/data/image.cjs.js",
+        "types": "./components/data/image.d.ts"
+      }
+    },
+    "./data/icon": {
+      "import": "./components/data/icon.js",
+      "require": {
+        "default": "./components/data/icon.cjs.js",
+        "types": "./components/data/icon.d.ts"
+      }
+    },
+    "./data/feed": {
+      "import": "./components/data/feed.js",
+      "require": {
+        "default": "./components/data/feed.cjs.js",
+        "types": "./components/data/feed.d.ts"
+      }
+    },
+    "./data/chip": {
+      "import": "./components/data/chip.js",
+      "require": {
+        "default": "./components/data/chip.cjs.js",
+        "types": "./components/data/chip.d.ts"
+      }
+    },
+    "./data/carousel": {
+      "import": "./components/data/carousel.js",
+      "require": {
+        "default": "./components/data/carousel.cjs.js",
+        "types": "./components/data/carousel.d.ts"
+      }
+    },
+    "./data/badge": {
+      "import": "./components/data/badge.js",
+      "require": {
+        "default": "./components/data/badge.cjs.js",
+        "types": "./components/data/badge.d.ts"
+      }
+    },
+    "./data/avatar": {
+      "import": "./components/data/avatar.js",
+      "require": {
+        "default": "./components/data/avatar.cjs.js",
+        "types": "./components/data/avatar.d.ts"
+      }
+    },
+    "./aria/aria-tooltip": {
+      "import": "./components/aria/aria-tooltip.js",
+      "require": {
+        "default": "./components/aria/aria-tooltip.cjs.js",
+        "types": "./components/aria/aria-tooltip.d.ts"
+      }
+    },
+    "./aria/aria-tabs": {
+      "import": "./components/aria/aria-tabs.js",
+      "require": {
+        "default": "./components/aria/aria-tabs.cjs.js",
+        "types": "./components/aria/aria-tabs.d.ts"
+      }
+    },
+    "./aria/aria-switch": {
+      "import": "./components/aria/aria-switch.js",
+      "require": {
+        "default": "./components/aria/aria-switch.cjs.js",
+        "types": "./components/aria/aria-switch.d.ts"
+      }
+    },
+    "./aria/aria-slider": {
+      "import": "./components/aria/aria-slider.js",
+      "require": {
+        "default": "./components/aria/aria-slider.cjs.js",
+        "types": "./components/aria/aria-slider.d.ts"
+      }
+    },
+    "./aria/aria-radio-group": {
+      "import": "./components/aria/aria-radio-group.js",
+      "require": {
+        "default": "./components/aria/aria-radio-group.cjs.js",
+        "types": "./components/aria/aria-radio-group.d.ts"
+      }
+    },
+    "./aria/aria-meter": {
+      "import": "./components/aria/aria-meter.js",
+      "require": {
+        "default": "./components/aria/aria-meter.cjs.js",
+        "types": "./components/aria/aria-meter.d.ts"
+      }
+    },
+    "./aria/aria-menu": {
+      "import": "./components/aria/aria-menu.js",
+      "require": {
+        "default": "./components/aria/aria-menu.cjs.js",
+        "types": "./components/aria/aria-menu.d.ts"
+      }
+    },
+    "./aria/aria-list-box": {
+      "import": "./components/aria/aria-list-box.js",
+      "require": {
+        "default": "./components/aria/aria-list-box.cjs.js",
+        "types": "./components/aria/aria-list-box.d.ts"
+      }
+    },
+    "./aria/aria-link": {
+      "import": "./components/aria/aria-link.js",
+      "require": {
+        "default": "./components/aria/aria-link.cjs.js",
+        "types": "./components/aria/aria-link.d.ts"
+      }
+    },
+    "./aria/aria-feed": {
+      "import": "./components/aria/aria-feed.js",
+      "require": {
+        "default": "./components/aria/aria-feed.cjs.js",
+        "types": "./components/aria/aria-feed.d.ts"
+      }
+    },
+    "./aria/aria-disclosure": {
+      "import": "./components/aria/aria-disclosure.js",
+      "require": {
+        "default": "./components/aria/aria-disclosure.cjs.js",
+        "types": "./components/aria/aria-disclosure.d.ts"
+      }
+    },
+    "./aria/aria-dialog": {
+      "import": "./components/aria/aria-dialog.js",
+      "require": {
+        "default": "./components/aria/aria-dialog.cjs.js",
+        "types": "./components/aria/aria-dialog.d.ts"
+      }
+    },
+    "./aria/aria-combo-box": {
+      "import": "./components/aria/aria-combo-box.js",
+      "require": {
+        "default": "./components/aria/aria-combo-box.cjs.js",
+        "types": "./components/aria/aria-combo-box.d.ts"
+      }
+    },
+    "./aria/aria-check-box": {
+      "import": "./components/aria/aria-check-box.js",
+      "require": {
+        "default": "./components/aria/aria-check-box.cjs.js",
+        "types": "./components/aria/aria-check-box.d.ts"
+      }
+    },
+    "./aria/aria-carousel": {
+      "import": "./components/aria/aria-carousel.js",
+      "require": {
+        "default": "./components/aria/aria-carousel.cjs.js",
+        "types": "./components/aria/aria-carousel.d.ts"
+      }
+    },
+    "./aria/aria-button": {
+      "import": "./components/aria/aria-button.js",
+      "require": {
+        "default": "./components/aria/aria-button.cjs.js",
+        "types": "./components/aria/aria-button.d.ts"
+      }
+    },
+    "./aria/aria-breadcrumb": {
+      "import": "./components/aria/aria-breadcrumb.js",
+      "require": {
+        "default": "./components/aria/aria-breadcrumb.cjs.js",
+        "types": "./components/aria/aria-breadcrumb.d.ts"
+      }
+    },
+    "./aria/aria-alert": {
+      "import": "./components/aria/aria-alert.js",
+      "require": {
+        "default": "./components/aria/aria-alert.cjs.js",
+        "types": "./components/aria/aria-alert.d.ts"
+      }
+    },
+    "./aria/aria-alert-dialog": {
+      "import": "./components/aria/aria-alert-dialog.js",
+      "require": {
+        "default": "./components/aria/aria-alert-dialog.cjs.js",
+        "types": "./components/aria/aria-alert-dialog.d.ts"
+      }
+    },
+    "./aria/aria-accordion": {
+      "import": "./components/aria/aria-accordion.js",
+      "require": {
+        "default": "./components/aria/aria-accordion.cjs.js",
+        "types": "./components/aria/aria-accordion.d.ts"
+      }
+    }
   },
   "license": "MIT",
   "main": "index.js",
@@ -40,13 +414,9 @@
     "react-dom": ">= 18.2.0"
   },
   "repository": "https://github.com/aracna/react-components",
-  "resolutions": {
-    "@types/react": "18.2.5",
-    "@types/react-dom": "18.0.11"
-  },
   "scripts": {
     "test": "yarn vitest run",
-    "build": "rm -rf dist && node esbuild.mjs && yarn tsc && node scripts/emit.cjs.declarations.mjs && yarn api-extractor run --local",
+    "build": "rm -rf dist && node esbuild.mjs && yarn tsc && yarn api-extractor run --local",
     "tarball": "yarn version && cp LICENSE package.json README.md dist/. && cd dist && yarn pack",
     "deploy": "yarn test && yarn build && yarn tarball && yarn publish dist/*.tgz"
   },
