@@ -33,364 +33,364 @@
     "./components/surface/disclosure.js": {
       "import": "./components/surface/disclosure.js",
       "require": {
-        "default": "./components/surface/disclosure.cjs.js",
+        "default": "./components/surface/disclosure.cjs",
         "types": "./components/surface/disclosure.d.ts"
       }
     },
     "./components/surface/accordion.js": {
       "import": "./components/surface/accordion.js",
       "require": {
-        "default": "./components/surface/accordion.cjs.js",
+        "default": "./components/surface/accordion.cjs",
         "types": "./components/surface/accordion.d.ts"
       }
     },
     "./components/navigation/tabs.js": {
       "import": "./components/navigation/tabs.js",
       "require": {
-        "default": "./components/navigation/tabs.cjs.js",
+        "default": "./components/navigation/tabs.cjs",
         "types": "./components/navigation/tabs.d.ts"
       }
     },
     "./components/navigation/navigation-rail.js": {
       "import": "./components/navigation/navigation-rail.js",
       "require": {
-        "default": "./components/navigation/navigation-rail.cjs.js",
+        "default": "./components/navigation/navigation-rail.cjs",
         "types": "./components/navigation/navigation-rail.d.ts"
       }
     },
     "./components/navigation/navigation-bar.js": {
       "import": "./components/navigation/navigation-bar.js",
       "require": {
-        "default": "./components/navigation/navigation-bar.cjs.js",
+        "default": "./components/navigation/navigation-bar.cjs",
         "types": "./components/navigation/navigation-bar.d.ts"
       }
     },
     "./components/navigation/menu.js": {
       "import": "./components/navigation/menu.js",
       "require": {
-        "default": "./components/navigation/menu.cjs.js",
+        "default": "./components/navigation/menu.cjs",
         "types": "./components/navigation/menu.d.ts"
       }
     },
     "./components/navigation/breadcrumb.js": {
       "import": "./components/navigation/breadcrumb.js",
       "require": {
-        "default": "./components/navigation/breadcrumb.cjs.js",
+        "default": "./components/navigation/breadcrumb.cjs",
         "types": "./components/navigation/breadcrumb.d.ts"
       }
     },
     "./components/layout/divider.js": {
       "import": "./components/layout/divider.js",
       "require": {
-        "default": "./components/layout/divider.cjs.js",
+        "default": "./components/layout/divider.cjs",
         "types": "./components/layout/divider.d.ts"
       }
     },
     "./components/input/text-area.js": {
       "import": "./components/input/text-area.js",
       "require": {
-        "default": "./components/input/text-area.cjs.js",
+        "default": "./components/input/text-area.cjs",
         "types": "./components/input/text-area.d.ts"
       }
     },
     "./components/input/switch.js": {
       "import": "./components/input/switch.js",
       "require": {
-        "default": "./components/input/switch.cjs.js",
+        "default": "./components/input/switch.cjs",
         "types": "./components/input/switch.d.ts"
       }
     },
     "./components/input/slider.js": {
       "import": "./components/input/slider.js",
       "require": {
-        "default": "./components/input/slider.cjs.js",
+        "default": "./components/input/slider.cjs",
         "types": "./components/input/slider.d.ts"
       }
     },
     "./components/input/select.js": {
       "import": "./components/input/select.js",
       "require": {
-        "default": "./components/input/select.cjs.js",
+        "default": "./components/input/select.cjs",
         "types": "./components/input/select.d.ts"
       }
     },
     "./components/input/radio-group.js": {
       "import": "./components/input/radio-group.js",
       "require": {
-        "default": "./components/input/radio-group.cjs.js",
+        "default": "./components/input/radio-group.cjs",
         "types": "./components/input/radio-group.d.ts"
       }
     },
     "./components/input/input.js": {
       "import": "./components/input/input.js",
       "require": {
-        "default": "./components/input/input.cjs.js",
+        "default": "./components/input/input.cjs",
         "types": "./components/input/input.d.ts"
       }
     },
     "./components/input/input-file.js": {
       "import": "./components/input/input-file.js",
       "require": {
-        "default": "./components/input/input-file.cjs.js",
+        "default": "./components/input/input-file.cjs",
         "types": "./components/input/input-file.d.ts"
       }
     },
     "./components/input/form.js": {
       "import": "./components/input/form.js",
       "require": {
-        "default": "./components/input/form.cjs.js",
+        "default": "./components/input/form.cjs",
         "types": "./components/input/form.d.ts"
       }
     },
     "./components/input/check-box.js": {
       "import": "./components/input/check-box.js",
       "require": {
-        "default": "./components/input/check-box.cjs.js",
+        "default": "./components/input/check-box.cjs",
         "types": "./components/input/check-box.d.ts"
       }
     },
     "./components/input/button.js": {
       "import": "./components/input/button.js",
       "require": {
-        "default": "./components/input/button.cjs.js",
+        "default": "./components/input/button.cjs",
         "types": "./components/input/button.d.ts"
       }
     },
     "./components/input/button-group.js": {
       "import": "./components/input/button-group.js",
       "require": {
-        "default": "./components/input/button-group.cjs.js",
+        "default": "./components/input/button-group.cjs",
         "types": "./components/input/button-group.d.ts"
       }
     },
     "./components/feedback/meter.js": {
       "import": "./components/feedback/meter.js",
       "require": {
-        "default": "./components/feedback/meter.cjs.js",
+        "default": "./components/feedback/meter.cjs",
         "types": "./components/feedback/meter.d.ts"
       }
     },
     "./components/feedback/dialog.js": {
       "import": "./components/feedback/dialog.js",
       "require": {
-        "default": "./components/feedback/dialog.cjs.js",
+        "default": "./components/feedback/dialog.cjs",
         "types": "./components/feedback/dialog.d.ts"
       }
     },
     "./components/feedback/alert.js": {
       "import": "./components/feedback/alert.js",
       "require": {
-        "default": "./components/feedback/alert.cjs.js",
+        "default": "./components/feedback/alert.cjs",
         "types": "./components/feedback/alert.d.ts"
       }
     },
     "./components/feedback/alert-dialog.js": {
       "import": "./components/feedback/alert-dialog.js",
       "require": {
-        "default": "./components/feedback/alert-dialog.cjs.js",
+        "default": "./components/feedback/alert-dialog.cjs",
         "types": "./components/feedback/alert-dialog.d.ts"
       }
     },
     "./components/data/tooltip.js": {
       "import": "./components/data/tooltip.js",
       "require": {
-        "default": "./components/data/tooltip.cjs.js",
+        "default": "./components/data/tooltip.cjs",
         "types": "./components/data/tooltip.d.ts"
       }
     },
     "./components/data/list.js": {
       "import": "./components/data/list.js",
       "require": {
-        "default": "./components/data/list.cjs.js",
+        "default": "./components/data/list.cjs",
         "types": "./components/data/list.d.ts"
       }
     },
     "./components/data/image.js": {
       "import": "./components/data/image.js",
       "require": {
-        "default": "./components/data/image.cjs.js",
+        "default": "./components/data/image.cjs",
         "types": "./components/data/image.d.ts"
       }
     },
     "./components/data/icon.js": {
       "import": "./components/data/icon.js",
       "require": {
-        "default": "./components/data/icon.cjs.js",
+        "default": "./components/data/icon.cjs",
         "types": "./components/data/icon.d.ts"
       }
     },
     "./components/data/feed.js": {
       "import": "./components/data/feed.js",
       "require": {
-        "default": "./components/data/feed.cjs.js",
+        "default": "./components/data/feed.cjs",
         "types": "./components/data/feed.d.ts"
       }
     },
     "./components/data/chip.js": {
       "import": "./components/data/chip.js",
       "require": {
-        "default": "./components/data/chip.cjs.js",
+        "default": "./components/data/chip.cjs",
         "types": "./components/data/chip.d.ts"
       }
     },
     "./components/data/carousel.js": {
       "import": "./components/data/carousel.js",
       "require": {
-        "default": "./components/data/carousel.cjs.js",
+        "default": "./components/data/carousel.cjs",
         "types": "./components/data/carousel.d.ts"
       }
     },
     "./components/data/badge.js": {
       "import": "./components/data/badge.js",
       "require": {
-        "default": "./components/data/badge.cjs.js",
+        "default": "./components/data/badge.cjs",
         "types": "./components/data/badge.d.ts"
       }
     },
     "./components/data/avatar.js": {
       "import": "./components/data/avatar.js",
       "require": {
-        "default": "./components/data/avatar.cjs.js",
+        "default": "./components/data/avatar.cjs",
         "types": "./components/data/avatar.d.ts"
       }
     },
     "./components/aria/aria-tooltip.js": {
       "import": "./components/aria/aria-tooltip.js",
       "require": {
-        "default": "./components/aria/aria-tooltip.cjs.js",
+        "default": "./components/aria/aria-tooltip.cjs",
         "types": "./components/aria/aria-tooltip.d.ts"
       }
     },
     "./components/aria/aria-tabs.js": {
       "import": "./components/aria/aria-tabs.js",
       "require": {
-        "default": "./components/aria/aria-tabs.cjs.js",
+        "default": "./components/aria/aria-tabs.cjs",
         "types": "./components/aria/aria-tabs.d.ts"
       }
     },
     "./components/aria/aria-switch.js": {
       "import": "./components/aria/aria-switch.js",
       "require": {
-        "default": "./components/aria/aria-switch.cjs.js",
+        "default": "./components/aria/aria-switch.cjs",
         "types": "./components/aria/aria-switch.d.ts"
       }
     },
     "./components/aria/aria-slider.js": {
       "import": "./components/aria/aria-slider.js",
       "require": {
-        "default": "./components/aria/aria-slider.cjs.js",
+        "default": "./components/aria/aria-slider.cjs",
         "types": "./components/aria/aria-slider.d.ts"
       }
     },
     "./components/aria/aria-radio-group.js": {
       "import": "./components/aria/aria-radio-group.js",
       "require": {
-        "default": "./components/aria/aria-radio-group.cjs.js",
+        "default": "./components/aria/aria-radio-group.cjs",
         "types": "./components/aria/aria-radio-group.d.ts"
       }
     },
     "./components/aria/aria-meter.js": {
       "import": "./components/aria/aria-meter.js",
       "require": {
-        "default": "./components/aria/aria-meter.cjs.js",
+        "default": "./components/aria/aria-meter.cjs",
         "types": "./components/aria/aria-meter.d.ts"
       }
     },
     "./components/aria/aria-menu.js": {
       "import": "./components/aria/aria-menu.js",
       "require": {
-        "default": "./components/aria/aria-menu.cjs.js",
+        "default": "./components/aria/aria-menu.cjs",
         "types": "./components/aria/aria-menu.d.ts"
       }
     },
     "./components/aria/aria-list-box.js": {
       "import": "./components/aria/aria-list-box.js",
       "require": {
-        "default": "./components/aria/aria-list-box.cjs.js",
+        "default": "./components/aria/aria-list-box.cjs",
         "types": "./components/aria/aria-list-box.d.ts"
       }
     },
     "./components/aria/aria-link.js": {
       "import": "./components/aria/aria-link.js",
       "require": {
-        "default": "./components/aria/aria-link.cjs.js",
+        "default": "./components/aria/aria-link.cjs",
         "types": "./components/aria/aria-link.d.ts"
       }
     },
     "./components/aria/aria-feed.js": {
       "import": "./components/aria/aria-feed.js",
       "require": {
-        "default": "./components/aria/aria-feed.cjs.js",
+        "default": "./components/aria/aria-feed.cjs",
         "types": "./components/aria/aria-feed.d.ts"
       }
     },
     "./components/aria/aria-disclosure.js": {
       "import": "./components/aria/aria-disclosure.js",
       "require": {
-        "default": "./components/aria/aria-disclosure.cjs.js",
+        "default": "./components/aria/aria-disclosure.cjs",
         "types": "./components/aria/aria-disclosure.d.ts"
       }
     },
     "./components/aria/aria-dialog.js": {
       "import": "./components/aria/aria-dialog.js",
       "require": {
-        "default": "./components/aria/aria-dialog.cjs.js",
+        "default": "./components/aria/aria-dialog.cjs",
         "types": "./components/aria/aria-dialog.d.ts"
       }
     },
     "./components/aria/aria-combo-box.js": {
       "import": "./components/aria/aria-combo-box.js",
       "require": {
-        "default": "./components/aria/aria-combo-box.cjs.js",
+        "default": "./components/aria/aria-combo-box.cjs",
         "types": "./components/aria/aria-combo-box.d.ts"
       }
     },
     "./components/aria/aria-check-box.js": {
       "import": "./components/aria/aria-check-box.js",
       "require": {
-        "default": "./components/aria/aria-check-box.cjs.js",
+        "default": "./components/aria/aria-check-box.cjs",
         "types": "./components/aria/aria-check-box.d.ts"
       }
     },
     "./components/aria/aria-carousel.js": {
       "import": "./components/aria/aria-carousel.js",
       "require": {
-        "default": "./components/aria/aria-carousel.cjs.js",
+        "default": "./components/aria/aria-carousel.cjs",
         "types": "./components/aria/aria-carousel.d.ts"
       }
     },
     "./components/aria/aria-button.js": {
       "import": "./components/aria/aria-button.js",
       "require": {
-        "default": "./components/aria/aria-button.cjs.js",
+        "default": "./components/aria/aria-button.cjs",
         "types": "./components/aria/aria-button.d.ts"
       }
     },
     "./components/aria/aria-breadcrumb.js": {
       "import": "./components/aria/aria-breadcrumb.js",
       "require": {
-        "default": "./components/aria/aria-breadcrumb.cjs.js",
+        "default": "./components/aria/aria-breadcrumb.cjs",
         "types": "./components/aria/aria-breadcrumb.d.ts"
       }
     },
     "./components/aria/aria-alert.js": {
       "import": "./components/aria/aria-alert.js",
       "require": {
-        "default": "./components/aria/aria-alert.cjs.js",
+        "default": "./components/aria/aria-alert.cjs",
         "types": "./components/aria/aria-alert.d.ts"
       }
     },
     "./components/aria/aria-alert-dialog.js": {
       "import": "./components/aria/aria-alert-dialog.js",
       "require": {
-        "default": "./components/aria/aria-alert-dialog.cjs.js",
+        "default": "./components/aria/aria-alert-dialog.cjs",
         "types": "./components/aria/aria-alert-dialog.d.ts"
       }
     },
     "./components/aria/aria-accordion.js": {
       "import": "./components/aria/aria-accordion.js",
       "require": {
-        "default": "./components/aria/aria-accordion.cjs.js",
+        "default": "./components/aria/aria-accordion.cjs",
         "types": "./components/aria/aria-accordion.d.ts"
       }
     }
