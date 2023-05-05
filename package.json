@@ -403,7 +403,8 @@
     }
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs.js",
+  "module": "index.js",
   "name": "@aracna/react-components",
   "peerDependencies": {
     "@aracna/core": ">= 1.1.0",
