@@ -7,7 +7,7 @@ import type {
   AriaListBoxOptionElementAttributes,
   AriaListBoxOptionElementEventMap
 } from '@aracna/web'
-import { AriaListBoxElement, AriaListBoxOptionElement } from '@aracna/web-components/aria/aria-list-box'
+import { AriaListBoxElement, AriaListBoxOptionElement } from '@aracna/web-components/elements/aria/aria-list-box-element.js'
 
 export const AracnaAriaListBox: ElementComponent<AriaListBoxElement, AriaListBoxProps> = createBaseElementComponent<
   AriaListBoxElement,

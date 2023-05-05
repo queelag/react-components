@@ -11,7 +11,7 @@ import type {
   FeedArticleLabelElementAttributes,
   FeedArticleLabelElementEventMap
 } from '@aracna/web'
-import { FeedElement, FeedArticleElement, FeedArticleDescriptionElement, FeedArticleLabelElement } from '@aracna/web-components/data/feed'
+import { FeedElement, FeedArticleElement, FeedArticleDescriptionElement, FeedArticleLabelElement } from '@aracna/web-components/elements/data/feed-element.js'
 
 export const AracnaFeed: ElementComponent<FeedElement, FeedProps> = createBaseElementComponent<FeedElement, FeedElementAttributes, FeedElementEventMap>(
   'aracna-feed',

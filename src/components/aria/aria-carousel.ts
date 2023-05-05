@@ -37,7 +37,7 @@ import {
   AriaCarouselSlidesElement,
   AriaCarouselTabElement,
   AriaCarouselTabsElement
-} from '@aracna/web-components/aria/aria-carousel'
+} from '@aracna/web-components/elements/aria/aria-carousel-element.js'
 
 export const AracnaAriaCarousel: ElementComponent<AriaCarouselElement, AriaCarouselProps> = createBaseElementComponent<
   AriaCarouselElement,

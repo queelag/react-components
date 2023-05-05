@@ -9,7 +9,7 @@ import type {
   AlertDialogLabelElementAttributes,
   AlertDialogLabelElementEventMap
 } from '@aracna/web'
-import { AlertDialogElement, AlertDialogDescriptionElement, AlertDialogLabelElement } from '@aracna/web-components/feedback/alert-dialog'
+import { AlertDialogElement, AlertDialogDescriptionElement, AlertDialogLabelElement } from '@aracna/web-components/elements/feedback/alert-dialog-element.js'
 
 export const AracnaAlertDialog: ElementComponent<AlertDialogElement, AlertDialogProps> = createFocusTrapElementComponent<
   AlertDialogElement,

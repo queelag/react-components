@@ -61,7 +61,7 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
       import type { ElementComponent } from '@aracna/react'
       import type { ${elements.map(({ element }) => `${element.replace('Element', 'Props')}`).join(', ')} } from '@aracna/react'
       import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web'
-      import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/${folder}/${name.replace('-element', '')}'
+      import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}.js'
 
       ${elements
         .map(({ element, tag }) =>

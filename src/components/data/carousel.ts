@@ -37,7 +37,7 @@ import {
   CarouselSlidesElement,
   CarouselTabElement,
   CarouselTabsElement
-} from '@aracna/web-components/data/carousel'
+} from '@aracna/web-components/elements/data/carousel-element.js'
 
 export const AracnaCarousel: ElementComponent<CarouselElement, CarouselProps> = createBaseElementComponent<
   CarouselElement,

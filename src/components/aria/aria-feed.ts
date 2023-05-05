@@ -11,7 +11,12 @@ import type {
   AriaFeedArticleLabelElementAttributes,
   AriaFeedArticleLabelElementEventMap
 } from '@aracna/web'
-import { AriaFeedElement, AriaFeedArticleElement, AriaFeedArticleDescriptionElement, AriaFeedArticleLabelElement } from '@aracna/web-components/aria/aria-feed'
+import {
+  AriaFeedElement,
+  AriaFeedArticleElement,
+  AriaFeedArticleDescriptionElement,
+  AriaFeedArticleLabelElement
+} from '@aracna/web-components/elements/aria/aria-feed-element.js'
 
 export const AracnaAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent<
   AriaFeedElement,

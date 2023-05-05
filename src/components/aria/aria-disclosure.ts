@@ -16,7 +16,7 @@ import {
   AriaDisclosureButtonElement,
   AriaDisclosurePanelElement,
   AriaDisclosureSectionElement
-} from '@aracna/web-components/aria/aria-disclosure'
+} from '@aracna/web-components/elements/aria/aria-disclosure-element.js'
 
 export const AracnaAriaDisclosure: ElementComponent<AriaDisclosureElement, AriaDisclosureProps> = createBaseElementComponent<
   AriaDisclosureElement,

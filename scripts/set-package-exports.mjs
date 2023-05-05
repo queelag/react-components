@@ -18,7 +18,7 @@ for (let path of await glob('src/components/**/*.ts')) {
   folder = path.replace('src/components/', '').split('/')[0]
   name = path.replace('src/components/').split('/')[1].replace('.ts', '')
 
-  PACKAGE.exports[`./${folder}/${name}`] = {
+  PACKAGE.exports[`./components/${folder}/${name}.js`] = {
     import: `./components/${folder}/${name}.js`,
     require: {
       default: `./components/${folder}/${name}.cjs.js`,

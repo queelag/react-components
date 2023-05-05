@@ -9,7 +9,7 @@ import type {
   BreadcrumbListElementAttributes,
   BreadcrumbListElementEventMap
 } from '@aracna/web'
-import { BreadcrumbElement, BreadcrumbItemElement, BreadcrumbListElement } from '@aracna/web-components/navigation/breadcrumb'
+import { BreadcrumbElement, BreadcrumbItemElement, BreadcrumbListElement } from '@aracna/web-components/elements/navigation/breadcrumb-element.js'
 
 export const AracnaBreadcrumb: ElementComponent<BreadcrumbElement, BreadcrumbProps> = createBaseElementComponent<
   BreadcrumbElement,

@@ -11,7 +11,7 @@ import type {
   MenuSubMenuElementAttributes,
   MenuSubMenuElementEventMap
 } from '@aracna/web'
-import { MenuElement, MenuButtonElement, MenuItemElement, MenuSubMenuElement } from '@aracna/web-components/navigation/menu'
+import { MenuElement, MenuButtonElement, MenuItemElement, MenuSubMenuElement } from '@aracna/web-components/elements/navigation/menu-element.js'
 
 export const AracnaMenu: ElementComponent<MenuElement, MenuProps> = createBaseElementComponent<
   MenuElement,

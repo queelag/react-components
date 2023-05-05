@@ -9,7 +9,7 @@ import type {
   AriaBreadcrumbListElementAttributes,
   AriaBreadcrumbListElementEventMap
 } from '@aracna/web'
-import { AriaBreadcrumbElement, AriaBreadcrumbItemElement, AriaBreadcrumbListElement } from '@aracna/web-components/aria/aria-breadcrumb'
+import { AriaBreadcrumbElement, AriaBreadcrumbItemElement, AriaBreadcrumbListElement } from '@aracna/web-components/elements/aria/aria-breadcrumb-element.js'
 
 export const AracnaAriaBreadcrumb: ElementComponent<AriaBreadcrumbElement, AriaBreadcrumbProps> = createBaseElementComponent<
   AriaBreadcrumbElement,

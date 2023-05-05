@@ -22,7 +22,7 @@ import {
   SelectInputElement,
   SelectListElement,
   SelectOptionElement
-} from '@aracna/web-components/input/select'
+} from '@aracna/web-components/elements/input/select-element.js'
 
 export const AracnaSelect: ElementComponent<SelectElement, SelectProps> = createFloatingElementComponent<
   SelectElement,

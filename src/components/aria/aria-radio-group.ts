@@ -7,7 +7,7 @@ import type {
   AriaRadioGroupElementAttributes,
   AriaRadioGroupElementEventMap
 } from '@aracna/web'
-import { AriaRadioButtonElement, AriaRadioGroupElement } from '@aracna/web-components/aria/aria-radio-group'
+import { AriaRadioButtonElement, AriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria-radio-group-element.js'
 
 export const AracnaAriaRadioButton: ElementComponent<AriaRadioButtonElement, AriaRadioButtonProps> = createBaseElementComponent<
   AriaRadioButtonElement,

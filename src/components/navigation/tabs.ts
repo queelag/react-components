@@ -9,7 +9,7 @@ import type {
   TabsTabElementAttributes,
   TabsTabElementEventMap
 } from '@aracna/web'
-import { TabsElement, TabsPanelElement, TabsTabElement } from '@aracna/web-components/navigation/tabs'
+import { TabsElement, TabsPanelElement, TabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element.js'
 
 export const AracnaTabs: ElementComponent<TabsElement, TabsProps> = createBaseElementComponent<TabsElement, TabsElementAttributes, TabsElementEventMap>(
   'aracna-tabs',

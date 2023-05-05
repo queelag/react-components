@@ -11,7 +11,12 @@ import type {
   AriaTooltipTriggerElementAttributes,
   AriaTooltipTriggerElementEventMap
 } from '@aracna/web'
-import { AriaTooltipElement, AriaTooltipArrowElement, AriaTooltipContentElement, AriaTooltipTriggerElement } from '@aracna/web-components/aria/aria-tooltip'
+import {
+  AriaTooltipElement,
+  AriaTooltipArrowElement,
+  AriaTooltipContentElement,
+  AriaTooltipTriggerElement
+} from '@aracna/web-components/elements/aria/aria-tooltip-element.js'
 
 export const AracnaAriaTooltip: ElementComponent<AriaTooltipElement, AriaTooltipProps> = createBaseElementComponent<
   AriaTooltipElement,

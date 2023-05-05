@@ -2,7 +2,7 @@ import { createBaseElementComponent, createFormFieldElementComponent } from '@ar
 import type { ElementComponent } from '@aracna/react'
 import type { RadioGroupProps, RadioButtonProps } from '@aracna/react'
 import type { RadioGroupElementAttributes, RadioGroupElementEventMap, RadioButtonElementAttributes, RadioButtonElementEventMap } from '@aracna/web'
-import { RadioGroupElement, RadioButtonElement } from '@aracna/web-components/input/radio-group'
+import { RadioGroupElement, RadioButtonElement } from '@aracna/web-components/elements/input/radio-group-element.js'
 
 export const AracnaRadioGroup: ElementComponent<RadioGroupElement, RadioGroupProps> = createFormFieldElementComponent<
   RadioGroupElement,

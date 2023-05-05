@@ -2,7 +2,7 @@ import { createBaseElementComponent, createFormFieldElementComponent } from '@ar
 import type { ElementComponent } from '@aracna/react'
 import type { AriaSwitchProps } from '@aracna/react'
 import type { AriaSwitchElementAttributes, AriaSwitchElementEventMap } from '@aracna/web'
-import { AriaSwitchElement } from '@aracna/web-components/aria/aria-switch'
+import { AriaSwitchElement } from '@aracna/web-components/elements/aria/aria-switch-element.js'
 
 export const AracnaAriaSwitch: ElementComponent<AriaSwitchElement, AriaSwitchProps> = createFormFieldElementComponent<
   AriaSwitchElement,
