@@ -417,7 +417,7 @@
   "repository": "https://github.com/aracna/react-components",
   "scripts": {
     "test": "yarn vitest run",
-    "build": "rm -rf dist && node esbuild.mjs && yarn tsc && yarn api-extractor run --local",
+    "build": "rm -rf dist && node esbuild.mjs && yarn tsc && node scripts/emit-cjs-declarations.mjs && yarn api-extractor run --local",
     "tarball": "yarn version && cp LICENSE package.json README.md dist/. && cd dist && yarn pack",
     "deploy": "yarn test && yarn build && yarn tarball && yarn publish dist/*.tgz"
   },
