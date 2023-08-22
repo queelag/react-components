@@ -11,7 +11,6 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.4",
-    "@vitest/coverage-c8": "^0.33.0",
     "@vitest/ui": "^0.34.2",
     "dompurify": "^3.0.5",
     "esbuild": "^0.19.2",
@@ -415,5 +414,8 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "1.0.26"
+  "version": "1.0.26",
+  "dependencies": {
+    "@vitest/coverage-v8": "^0.34.2"
+  }
 }
