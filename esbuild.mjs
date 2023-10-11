@@ -1,3 +1,4 @@
+import { getPascalCaseString } from '@aracna/core'
 import { build } from 'esbuild'
 import globals from 'esbuild-plugin-globals'
 import { glob } from 'glob'
@@ -60,6 +61,7 @@ for (let component of await glob('./src/components/**/*.ts')) {
     bundle: true,
     entryPoints: [component],
     format: 'iife',
+    globalName: 'Aracna' + getPascalCaseString(component.replace(/src\/components\/[a-z]+\//, '').replace('.ts', '')),
     outfile: component.replace('src', 'dist').replace('.ts', '.iife.js'),
     platform: 'browser',
     plugins: [globals({ react: 'React' })],
