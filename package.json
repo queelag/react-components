@@ -6,7 +6,6 @@
     "@aracna/web": "^1.0.35",
     "@aracna/web-components": "^1.0.34",
     "@floating-ui/dom": "^1.5.1",
-    "@microsoft/api-extractor": "^7.36.4",
     "@testing-library/react": "^14.0.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
@@ -29,6 +28,53 @@
     "typescript": "^5.1.6",
     "vitest": "^0.34.2"
   },
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    },
+    "./components/aria/*": {
+      "import": "./components/aria/*.js",
+      "require": "./components/aria/*.cjs",
+      "types": "./components/aria/*.d.ts"
+    },
+    "./components/core/*": {
+      "import": "./components/core/*.js",
+      "require": "./components/core/*.cjs",
+      "types": "./components/core/*.d.ts"
+    },
+    "./components/data/*": {
+      "import": "./components/data/*.js",
+      "require": "./components/data/*.cjs",
+      "types": "./components/data/*.d.ts"
+    },
+    "./components/feedback/*": {
+      "import": "./components/feedback/*.js",
+      "require": "./components/feedback/*.cjs",
+      "types": "./components/feedback/*.d.ts"
+    },
+    "./components/input/*": {
+      "import": "./components/input/*.js",
+      "require": "./components/input/*.cjs",
+      "types": "./components/input/*.d.ts"
+    },
+    "./components/layout/*": {
+      "import": "./components/layout/*.js",
+      "require": "./components/layout/*.cjs",
+      "types": "./components/layout/*.d.ts"
+    },
+    "./components/navigation/*": {
+      "import": "./components/navigation/*.js",
+      "require": "./components/navigation/*.cjs",
+      "types": "./components/navigation/*.d.ts"
+    },
+    "./components/surface/*": {
+      "import": "./components/surface/*.js",
+      "require": "./components/surface/*.cjs",
+      "types": "./components/surface/*.d.ts"
+    }
+  },
   "license": "MIT",
   "main": "index.cjs",
   "module": "index.js",
@@ -43,8 +89,8 @@
   "repository": "https://github.com/aracna/react-components",
   "scripts": {
     "test": "yarn vitest run",
-    "build": "rm -rf dist && node esbuild.mjs && yarn tsc && node scripts/emit-cjs-declarations.mjs && yarn api-extractor run --local",
-    "tarball": "yarn version && cp LICENSE package.json README.md dist/. && node scripts/set-package-exports.mjs && cd dist && yarn pack",
+    "build": "rm -rf dist && node esbuild.mjs && yarn tsc",
+    "tarball": "yarn version && cp LICENSE package.json README.md dist/. && cd dist && yarn pack",
     "deploy": "yarn test && yarn build && yarn tarball && yarn publish dist/*.tgz"
   },
   "sideEffects": false,

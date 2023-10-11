@@ -1,13 +1,12 @@
+import type { ElementComponent, NavigationBarItemProps, NavigationBarProps } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { NavigationBarProps, NavigationBarItemProps } from '@aracna/react'
 import type {
   NavigationBarElementAttributes,
   NavigationBarElementEventMap,
   NavigationBarItemElementAttributes,
   NavigationBarItemElementEventMap
 } from '@aracna/web'
-import { NavigationBarElement, NavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation-bar-element.js'
+import { NavigationBarElement, NavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation-bar-element'
 
 export const AracnaNavigationBar: ElementComponent<NavigationBarElement, NavigationBarProps> = createBaseElementComponent<
   NavigationBarElement,

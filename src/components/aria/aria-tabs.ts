@@ -1,6 +1,5 @@
+import type { AriaTabsPanelProps, AriaTabsProps, AriaTabsTabProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaTabsProps, AriaTabsPanelProps, AriaTabsTabProps } from '@aracna/react'
 import type {
   AriaTabsElementAttributes,
   AriaTabsElementEventMap,
@@ -9,7 +8,7 @@ import type {
   AriaTabsTabElementAttributes,
   AriaTabsTabElementEventMap
 } from '@aracna/web'
-import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@aracna/web-components/elements/aria/aria-tabs-element.js'
+import { AriaTabsElement, AriaTabsPanelElement, AriaTabsTabElement } from '@aracna/web-components/elements/aria/aria-tabs-element'
 
 export const AracnaAriaTabs: ElementComponent<AriaTabsElement, AriaTabsProps> = createBaseElementComponent<
   AriaTabsElement,

@@ -1,17 +1,16 @@
+import type { ElementComponent, MenuButtonProps, MenuItemProps, MenuProps, MenuSubMenuProps } from '@aracna/react'
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { MenuProps, MenuButtonProps, MenuItemProps, MenuSubMenuProps } from '@aracna/react'
 import type {
-  MenuElementAttributes,
-  MenuElementEventMap,
   MenuButtonElementAttributes,
   MenuButtonElementEventMap,
+  MenuElementAttributes,
+  MenuElementEventMap,
   MenuItemElementAttributes,
   MenuItemElementEventMap,
   MenuSubMenuElementAttributes,
   MenuSubMenuElementEventMap
 } from '@aracna/web'
-import { MenuElement, MenuButtonElement, MenuItemElement, MenuSubMenuElement } from '@aracna/web-components/elements/navigation/menu-element.js'
+import { MenuButtonElement, MenuElement, MenuItemElement, MenuSubMenuElement } from '@aracna/web-components/elements/navigation/menu-element'
 
 export const AracnaMenu: ElementComponent<MenuElement, MenuProps> = createBaseElementComponent<
   MenuElement,

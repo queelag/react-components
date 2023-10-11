@@ -1,8 +1,7 @@
+import type { AriaSliderProps, AriaSliderThumbProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaSliderProps, AriaSliderThumbProps } from '@aracna/react'
 import type { AriaSliderElementAttributes, AriaSliderElementEventMap, AriaSliderThumbElementAttributes, AriaSliderThumbElementEventMap } from '@aracna/web'
-import { AriaSliderElement, AriaSliderThumbElement } from '@aracna/web-components/elements/aria/aria-slider-element.js'
+import { AriaSliderElement, AriaSliderThumbElement } from '@aracna/web-components/elements/aria/aria-slider-element'
 
 export const AracnaAriaSlider: ElementComponent<AriaSliderElement, AriaSliderProps> = createFormFieldElementComponent<
   AriaSliderElement,

@@ -1,8 +1,7 @@
+import type { ElementComponent, SliderProps, SliderThumbProps } from '@aracna/react'
 import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { SliderProps, SliderThumbProps } from '@aracna/react'
 import type { SliderElementAttributes, SliderElementEventMap, SliderThumbElementAttributes, SliderThumbElementEventMap } from '@aracna/web'
-import { SliderElement, SliderThumbElement } from '@aracna/web-components/elements/input/slider-element.js'
+import { SliderElement, SliderThumbElement } from '@aracna/web-components/elements/input/slider-element'
 
 export const AracnaSlider: ElementComponent<SliderElement, SliderProps> = createFormFieldElementComponent<
   SliderElement,

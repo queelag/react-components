@@ -1,11 +1,10 @@
+import type { AccordionButtonProps, AccordionHeaderProps, AccordionPanelProps, AccordionProps, AccordionSectionProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AccordionProps, AccordionButtonProps, AccordionHeaderProps, AccordionPanelProps, AccordionSectionProps } from '@aracna/react'
 import type {
-  AccordionElementAttributes,
-  AccordionElementEventMap,
   AccordionButtonElementAttributes,
   AccordionButtonElementEventMap,
+  AccordionElementAttributes,
+  AccordionElementEventMap,
   AccordionHeaderElementAttributes,
   AccordionHeaderElementEventMap,
   AccordionPanelElementAttributes,
@@ -14,12 +13,12 @@ import type {
   AccordionSectionElementEventMap
 } from '@aracna/web'
 import {
-  AccordionElement,
   AccordionButtonElement,
+  AccordionElement,
   AccordionHeaderElement,
   AccordionPanelElement,
   AccordionSectionElement
-} from '@aracna/web-components/elements/surface/accordion-element.js'
+} from '@aracna/web-components/elements/surface/accordion-element'
 
 export const AracnaAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent<
   AccordionElement,

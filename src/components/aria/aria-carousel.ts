@@ -1,15 +1,15 @@
-import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
 import type {
-  AriaCarouselProps,
   AriaCarouselNextSlideControlProps,
   AriaCarouselPreviousSlideControlProps,
+  AriaCarouselProps,
   AriaCarouselRotationControlProps,
   AriaCarouselSlideProps,
   AriaCarouselSlidesProps,
   AriaCarouselTabProps,
-  AriaCarouselTabsProps
+  AriaCarouselTabsProps,
+  ElementComponent
 } from '@aracna/react'
+import { createBaseElementComponent } from '@aracna/react'
 import type {
   AriaCarouselElementAttributes,
   AriaCarouselElementEventMap,
@@ -37,7 +37,7 @@ import {
   AriaCarouselSlidesElement,
   AriaCarouselTabElement,
   AriaCarouselTabsElement
-} from '@aracna/web-components/elements/aria/aria-carousel-element.js'
+} from '@aracna/web-components/elements/aria/aria-carousel-element'
 
 export const AracnaAriaCarousel: ElementComponent<AriaCarouselElement, AriaCarouselProps> = createBaseElementComponent<
   AriaCarouselElement,

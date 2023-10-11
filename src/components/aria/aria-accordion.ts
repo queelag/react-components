@@ -1,11 +1,17 @@
-import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaAccordionProps, AriaAccordionButtonProps, AriaAccordionHeaderProps, AriaAccordionPanelProps, AriaAccordionSectionProps } from '@aracna/react'
 import type {
-  AriaAccordionElementAttributes,
-  AriaAccordionElementEventMap,
+  AriaAccordionButtonProps,
+  AriaAccordionHeaderProps,
+  AriaAccordionPanelProps,
+  AriaAccordionProps,
+  AriaAccordionSectionProps,
+  ElementComponent
+} from '@aracna/react'
+import { createBaseElementComponent } from '@aracna/react'
+import type {
   AriaAccordionButtonElementAttributes,
   AriaAccordionButtonElementEventMap,
+  AriaAccordionElementAttributes,
+  AriaAccordionElementEventMap,
   AriaAccordionHeaderElementAttributes,
   AriaAccordionHeaderElementEventMap,
   AriaAccordionPanelElementAttributes,
@@ -14,12 +20,12 @@ import type {
   AriaAccordionSectionElementEventMap
 } from '@aracna/web'
 import {
-  AriaAccordionElement,
   AriaAccordionButtonElement,
+  AriaAccordionElement,
   AriaAccordionHeaderElement,
   AriaAccordionPanelElement,
   AriaAccordionSectionElement
-} from '@aracna/web-components/elements/aria/aria-accordion-element.js'
+} from '@aracna/web-components/elements/aria/aria-accordion-element'
 
 export const AracnaAriaAccordion: ElementComponent<AriaAccordionElement, AriaAccordionProps> = createBaseElementComponent<
   AriaAccordionElement,

@@ -1,15 +1,14 @@
+import type { AriaDialogDescriptionProps, AriaDialogLabelProps, AriaDialogProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaDialogProps, AriaDialogDescriptionProps, AriaDialogLabelProps } from '@aracna/react'
 import type {
-  AriaDialogElementAttributes,
-  AriaDialogElementEventMap,
   AriaDialogDescriptionElementAttributes,
   AriaDialogDescriptionElementEventMap,
+  AriaDialogElementAttributes,
+  AriaDialogElementEventMap,
   AriaDialogLabelElementAttributes,
   AriaDialogLabelElementEventMap
 } from '@aracna/web'
-import { AriaDialogElement, AriaDialogDescriptionElement, AriaDialogLabelElement } from '@aracna/web-components/elements/aria/aria-dialog-element.js'
+import { AriaDialogDescriptionElement, AriaDialogElement, AriaDialogLabelElement } from '@aracna/web-components/elements/aria/aria-dialog-element'
 
 export const AracnaAriaDialog: ElementComponent<AriaDialogElement, AriaDialogProps> = createFocusTrapElementComponent<
   AriaDialogElement,

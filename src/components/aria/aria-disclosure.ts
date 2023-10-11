@@ -1,22 +1,21 @@
+import type { AriaDisclosureButtonProps, AriaDisclosurePanelProps, AriaDisclosureProps, AriaDisclosureSectionProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaDisclosureProps, AriaDisclosureButtonProps, AriaDisclosurePanelProps, AriaDisclosureSectionProps } from '@aracna/react'
 import type {
-  AriaDisclosureElementAttributes,
-  AriaDisclosureElementEventMap,
   AriaDisclosureButtonElementAttributes,
   AriaDisclosureButtonElementEventMap,
+  AriaDisclosureElementAttributes,
+  AriaDisclosureElementEventMap,
   AriaDisclosurePanelElementAttributes,
   AriaDisclosurePanelElementEventMap,
   AriaDisclosureSectionElementAttributes,
   AriaDisclosureSectionElementEventMap
 } from '@aracna/web'
 import {
-  AriaDisclosureElement,
   AriaDisclosureButtonElement,
+  AriaDisclosureElement,
   AriaDisclosurePanelElement,
   AriaDisclosureSectionElement
-} from '@aracna/web-components/elements/aria/aria-disclosure-element.js'
+} from '@aracna/web-components/elements/aria/aria-disclosure-element'
 
 export const AracnaAriaDisclosure: ElementComponent<AriaDisclosureElement, AriaDisclosureProps> = createBaseElementComponent<
   AriaDisclosureElement,

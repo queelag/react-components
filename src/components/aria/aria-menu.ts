@@ -1,17 +1,16 @@
+import type { AriaMenuButtonProps, AriaMenuItemProps, AriaMenuProps, AriaMenuSubMenuProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { AriaMenuProps, AriaMenuButtonProps, AriaMenuItemProps, AriaMenuSubMenuProps } from '@aracna/react'
 import type {
-  AriaMenuElementAttributes,
-  AriaMenuElementEventMap,
   AriaMenuButtonElementAttributes,
   AriaMenuButtonElementEventMap,
+  AriaMenuElementAttributes,
+  AriaMenuElementEventMap,
   AriaMenuItemElementAttributes,
   AriaMenuItemElementEventMap,
   AriaMenuSubMenuElementAttributes,
   AriaMenuSubMenuElementEventMap
 } from '@aracna/web'
-import { AriaMenuElement, AriaMenuButtonElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@aracna/web-components/elements/aria/aria-menu-element.js'
+import { AriaMenuButtonElement, AriaMenuElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@aracna/web-components/elements/aria/aria-menu-element'
 
 export const AracnaAriaMenu: ElementComponent<AriaMenuElement, AriaMenuProps> = createBaseElementComponent<
   AriaMenuElement,

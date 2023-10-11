@@ -1,18 +1,18 @@
-import { createBaseElementComponent, createFormFieldElementComponent, createFloatingElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
 import type {
-  AriaComboBoxProps,
   AriaComboBoxButtonProps,
   AriaComboBoxGroupProps,
   AriaComboBoxInputProps,
   AriaComboBoxListProps,
-  AriaComboBoxOptionProps
+  AriaComboBoxOptionProps,
+  AriaComboBoxProps,
+  ElementComponent
 } from '@aracna/react'
+import { createBaseElementComponent, createFloatingElementComponent, createFormFieldElementComponent } from '@aracna/react'
 import type {
-  AriaComboBoxElementAttributes,
-  AriaComboBoxElementEventMap,
   AriaComboBoxButtonElementAttributes,
   AriaComboBoxButtonElementEventMap,
+  AriaComboBoxElementAttributes,
+  AriaComboBoxElementEventMap,
   AriaComboBoxGroupElementAttributes,
   AriaComboBoxGroupElementEventMap,
   AriaComboBoxInputElementAttributes,
@@ -23,13 +23,13 @@ import type {
   AriaComboBoxOptionElementEventMap
 } from '@aracna/web'
 import {
-  AriaComboBoxElement,
   AriaComboBoxButtonElement,
+  AriaComboBoxElement,
   AriaComboBoxGroupElement,
   AriaComboBoxInputElement,
   AriaComboBoxListElement,
   AriaComboBoxOptionElement
-} from '@aracna/web-components/elements/aria/aria-combo-box-element.js'
+} from '@aracna/web-components/elements/aria/aria-combo-box-element'
 
 export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createFormFieldElementComponent<
   AriaComboBoxElement,

@@ -1,13 +1,12 @@
+import type { ElementComponent, NavigationRailItemProps, NavigationRailProps } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { NavigationRailProps, NavigationRailItemProps } from '@aracna/react'
 import type {
   NavigationRailElementAttributes,
   NavigationRailElementEventMap,
   NavigationRailItemElementAttributes,
   NavigationRailItemElementEventMap
 } from '@aracna/web'
-import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element.js'
+import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
 
 export const AracnaNavigationRail: ElementComponent<NavigationRailElement, NavigationRailProps> = createBaseElementComponent<
   NavigationRailElement,

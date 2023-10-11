@@ -1,15 +1,15 @@
-import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
 import type {
-  CarouselProps,
   CarouselNextSlideControlProps,
   CarouselPreviousSlideControlProps,
+  CarouselProps,
   CarouselRotationControlProps,
   CarouselSlideProps,
   CarouselSlidesProps,
   CarouselTabProps,
-  CarouselTabsProps
+  CarouselTabsProps,
+  ElementComponent
 } from '@aracna/react'
+import { createBaseElementComponent } from '@aracna/react'
 import type {
   CarouselElementAttributes,
   CarouselElementEventMap,
@@ -37,7 +37,7 @@ import {
   CarouselSlidesElement,
   CarouselTabElement,
   CarouselTabsElement
-} from '@aracna/web-components/elements/data/carousel-element.js'
+} from '@aracna/web-components/elements/data/carousel-element'
 
 export const AracnaCarousel: ElementComponent<CarouselElement, CarouselProps> = createBaseElementComponent<
   CarouselElement,

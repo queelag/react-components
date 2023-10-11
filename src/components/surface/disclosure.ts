@@ -1,22 +1,21 @@
+import type { DisclosureButtonProps, DisclosurePanelProps, DisclosureProps, DisclosureSectionProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { DisclosureProps, DisclosureButtonProps, DisclosurePanelProps, DisclosureSectionProps } from '@aracna/react'
 import type {
-  DisclosureElementAttributes,
-  DisclosureElementEventMap,
   DisclosureButtonElementAttributes,
   DisclosureButtonElementEventMap,
+  DisclosureElementAttributes,
+  DisclosureElementEventMap,
   DisclosurePanelElementAttributes,
   DisclosurePanelElementEventMap,
   DisclosureSectionElementAttributes,
   DisclosureSectionElementEventMap
 } from '@aracna/web'
 import {
-  DisclosureElement,
   DisclosureButtonElement,
+  DisclosureElement,
   DisclosurePanelElement,
   DisclosureSectionElement
-} from '@aracna/web-components/elements/surface/disclosure-element.js'
+} from '@aracna/web-components/elements/surface/disclosure-element'
 
 export const AracnaDisclosure: ElementComponent<DisclosureElement, DisclosureProps> = createBaseElementComponent<
   DisclosureElement,

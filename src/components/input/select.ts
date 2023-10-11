@@ -1,11 +1,10 @@
+import type { ElementComponent, SelectButtonProps, SelectGroupProps, SelectInputProps, SelectListProps, SelectOptionProps, SelectProps } from '@aracna/react'
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
-import type { ElementComponent } from '@aracna/react'
-import type { SelectProps, SelectButtonProps, SelectGroupProps, SelectInputProps, SelectListProps, SelectOptionProps } from '@aracna/react'
 import type {
-  SelectElementAttributes,
-  SelectElementEventMap,
   SelectButtonElementAttributes,
   SelectButtonElementEventMap,
+  SelectElementAttributes,
+  SelectElementEventMap,
   SelectGroupElementAttributes,
   SelectGroupElementEventMap,
   SelectInputElementAttributes,
@@ -16,13 +15,13 @@ import type {
   SelectOptionElementEventMap
 } from '@aracna/web'
 import {
-  SelectElement,
   SelectButtonElement,
+  SelectElement,
   SelectGroupElement,
   SelectInputElement,
   SelectListElement,
   SelectOptionElement
-} from '@aracna/web-components/elements/input/select-element.js'
+} from '@aracna/web-components/elements/input/select-element'
 
 export const AracnaSelect: ElementComponent<SelectElement, SelectProps> = createFloatingElementComponent<
   SelectElement,
