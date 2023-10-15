@@ -1,17 +1,11 @@
-import type {
-  AriaAccordionButtonProps,
-  AriaAccordionHeaderProps,
-  AriaAccordionPanelProps,
-  AriaAccordionProps,
-  AriaAccordionSectionProps,
-  ElementComponent
-} from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaAccordionProps, AriaAccordionButtonProps, AriaAccordionHeaderProps, AriaAccordionPanelProps, AriaAccordionSectionProps } from '@aracna/react'
 import type {
-  AriaAccordionButtonElementAttributes,
-  AriaAccordionButtonElementEventMap,
   AriaAccordionElementAttributes,
   AriaAccordionElementEventMap,
+  AriaAccordionButtonElementAttributes,
+  AriaAccordionButtonElementEventMap,
   AriaAccordionHeaderElementAttributes,
   AriaAccordionHeaderElementEventMap,
   AriaAccordionPanelElementAttributes,
@@ -20,8 +14,8 @@ import type {
   AriaAccordionSectionElementEventMap
 } from '@aracna/web'
 import {
-  AriaAccordionButtonElement,
   AriaAccordionElement,
+  AriaAccordionButtonElement,
   AriaAccordionHeaderElement,
   AriaAccordionPanelElement,
   AriaAccordionSectionElement

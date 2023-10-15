@@ -1,14 +1,15 @@
-import type { DialogDescriptionProps, DialogLabelProps, DialogProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { DialogProps, DialogDescriptionProps, DialogLabelProps } from '@aracna/react'
 import type {
-  DialogDescriptionElementAttributes,
-  DialogDescriptionElementEventMap,
   DialogElementAttributes,
   DialogElementEventMap,
+  DialogDescriptionElementAttributes,
+  DialogDescriptionElementEventMap,
   DialogLabelElementAttributes,
   DialogLabelElementEventMap
 } from '@aracna/web'
-import { DialogDescriptionElement, DialogElement, DialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
+import { DialogElement, DialogDescriptionElement, DialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
 
 export const AracnaDialog: ElementComponent<DialogElement, DialogProps> = createFocusTrapElementComponent<
   DialogElement,

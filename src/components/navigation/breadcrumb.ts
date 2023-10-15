@@ -1,5 +1,6 @@
-import type { BreadcrumbItemProps, BreadcrumbListProps, BreadcrumbProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { BreadcrumbProps, BreadcrumbItemProps, BreadcrumbListProps } from '@aracna/react'
 import type {
   BreadcrumbElementAttributes,
   BreadcrumbElementEventMap,

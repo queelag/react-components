@@ -1,5 +1,6 @@
-import type { AriaListBoxOptionProps, AriaListBoxProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaListBoxProps, AriaListBoxOptionProps } from '@aracna/react'
 import type {
   AriaListBoxElementAttributes,
   AriaListBoxElementEventMap,

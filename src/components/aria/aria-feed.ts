@@ -1,20 +1,21 @@
-import type { AriaFeedArticleDescriptionProps, AriaFeedArticleLabelProps, AriaFeedArticleProps, AriaFeedProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaFeedProps, AriaFeedArticleProps, AriaFeedArticleDescriptionProps, AriaFeedArticleLabelProps } from '@aracna/react'
 import type {
-  AriaFeedArticleDescriptionElementAttributes,
-  AriaFeedArticleDescriptionElementEventMap,
+  AriaFeedElementAttributes,
+  AriaFeedElementEventMap,
   AriaFeedArticleElementAttributes,
   AriaFeedArticleElementEventMap,
+  AriaFeedArticleDescriptionElementAttributes,
+  AriaFeedArticleDescriptionElementEventMap,
   AriaFeedArticleLabelElementAttributes,
-  AriaFeedArticleLabelElementEventMap,
-  AriaFeedElementAttributes,
-  AriaFeedElementEventMap
+  AriaFeedArticleLabelElementEventMap
 } from '@aracna/web'
 import {
-  AriaFeedArticleDescriptionElement,
+  AriaFeedElement,
   AriaFeedArticleElement,
-  AriaFeedArticleLabelElement,
-  AriaFeedElement
+  AriaFeedArticleDescriptionElement,
+  AriaFeedArticleLabelElement
 } from '@aracna/web-components/elements/aria/aria-feed-element'
 
 export const AracnaAriaFeed: ElementComponent<AriaFeedElement, AriaFeedProps> = createBaseElementComponent<

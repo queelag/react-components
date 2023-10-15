@@ -1,5 +1,6 @@
-import type { AriaLinkProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaLinkProps } from '@aracna/react'
 import type { AriaLinkElementAttributes, AriaLinkElementEventMap } from '@aracna/web'
 import { AriaLinkElement } from '@aracna/web-components/elements/aria/aria-link-element'
 

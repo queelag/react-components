@@ -1,5 +1,6 @@
-import type { AriaRadioButtonProps, AriaRadioGroupProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaRadioButtonProps, AriaRadioGroupProps } from '@aracna/react'
 import type {
   AriaRadioButtonElementAttributes,
   AriaRadioButtonElementEventMap,

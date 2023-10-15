@@ -37,6 +37,18 @@ const EXTENDS = new Map([
   ['TextAreaElement', 'FormField']
 ])
 
+const EVENTS = new Map([
+  ['AriaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['AriaSliderElement', ['slider-change']],
+  ['AriaSliderThumbElement', ['slider-thumb-move']],
+  ['AriaTabsTabElement', ['tabs-tab-selection']],
+  ['ButtonElement', ['button-click']],
+  ['CarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['SliderElement', ['slider-change']],
+  ['SliderThumbElement', ['slider-thumb-move']],
+  ['TabsTabElement', ['tabs-tab-selection']]
+])
+
 await rm('src/components', { force: true, recursive: true })
 await mkdir('src/components')
 await writeFile('src/index.ts', '')
@@ -61,7 +73,7 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
       import type { ElementComponent } from '@aracna/react'
       import type { ${elements.map(({ element }) => `${element.replace('Element', 'Props')}`).join(', ')} } from '@aracna/react'
       import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web'
-      import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}.js'
+      import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'
 
       ${elements
         .map(({ element, tag }) =>
@@ -69,14 +81,14 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
             `export const Aracna${element.replace('Element', '')}: ElementComponent<${element}, ${element.replace('Element', 'Props')}> = `,
             `create${EXTENDS.get(element) ?? 'Base'}ElementComponent`,
             `<${element}, ${element}Attributes${GENERICS.has(element) ? `<${GENERICS.get(element)}>` : ''}, ${element}EventMap>`,
-            `('${tag}', ${element})`
+            `('${tag}', ${element}${EVENTS.has(element) ? `, ${JSON.stringify(EVENTS.get(element))}` : ''})`
           ].join('')
         )
         .join('\n\n')}
     </script>
   `
 
-  ts = format(ts.replace(/<\/?script>/gm, ''), {
+  ts = await format(ts.replace(/<\/?script>/gm, ''), {
     jsxSingleQuote: true,
     parser: 'babel-ts',
     printWidth: 160,

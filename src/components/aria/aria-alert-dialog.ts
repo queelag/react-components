@@ -1,16 +1,17 @@
-import type { AriaAlertDialogDescriptionProps, AriaAlertDialogLabelProps, AriaAlertDialogProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaAlertDialogProps, AriaAlertDialogDescriptionProps, AriaAlertDialogLabelProps } from '@aracna/react'
 import type {
-  AriaAlertDialogDescriptionElementAttributes,
-  AriaAlertDialogDescriptionElementEventMap,
   AriaAlertDialogElementAttributes,
   AriaAlertDialogElementEventMap,
+  AriaAlertDialogDescriptionElementAttributes,
+  AriaAlertDialogDescriptionElementEventMap,
   AriaAlertDialogLabelElementAttributes,
   AriaAlertDialogLabelElementEventMap
 } from '@aracna/web'
 import {
-  AriaAlertDialogDescriptionElement,
   AriaAlertDialogElement,
+  AriaAlertDialogDescriptionElement,
   AriaAlertDialogLabelElement
 } from '@aracna/web-components/elements/aria/aria-alert-dialog-element'
 

@@ -1,5 +1,6 @@
-import type { BadgeProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { BadgeProps } from '@aracna/react'
 import type { BadgeElementAttributes, BadgeElementEventMap } from '@aracna/web'
 import { BadgeElement } from '@aracna/web-components/elements/data/badge-element'
 

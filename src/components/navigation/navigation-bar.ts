@@ -1,5 +1,6 @@
-import type { ElementComponent, NavigationBarItemProps, NavigationBarProps } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { NavigationBarProps, NavigationBarItemProps } from '@aracna/react'
 import type {
   NavigationBarElementAttributes,
   NavigationBarElementEventMap,

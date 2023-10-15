@@ -1,18 +1,18 @@
+import { createBaseElementComponent, createFormFieldElementComponent, createFloatingElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
 import type {
+  AriaComboBoxProps,
   AriaComboBoxButtonProps,
   AriaComboBoxGroupProps,
   AriaComboBoxInputProps,
   AriaComboBoxListProps,
-  AriaComboBoxOptionProps,
-  AriaComboBoxProps,
-  ElementComponent
+  AriaComboBoxOptionProps
 } from '@aracna/react'
-import { createBaseElementComponent, createFloatingElementComponent, createFormFieldElementComponent } from '@aracna/react'
 import type {
-  AriaComboBoxButtonElementAttributes,
-  AriaComboBoxButtonElementEventMap,
   AriaComboBoxElementAttributes,
   AriaComboBoxElementEventMap,
+  AriaComboBoxButtonElementAttributes,
+  AriaComboBoxButtonElementEventMap,
   AriaComboBoxGroupElementAttributes,
   AriaComboBoxGroupElementEventMap,
   AriaComboBoxInputElementAttributes,
@@ -23,8 +23,8 @@ import type {
   AriaComboBoxOptionElementEventMap
 } from '@aracna/web'
 import {
-  AriaComboBoxButtonElement,
   AriaComboBoxElement,
+  AriaComboBoxButtonElement,
   AriaComboBoxGroupElement,
   AriaComboBoxInputElement,
   AriaComboBoxListElement,

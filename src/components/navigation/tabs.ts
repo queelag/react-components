@@ -1,5 +1,6 @@
-import type { ElementComponent, TabsPanelProps, TabsProps, TabsTabProps } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { TabsProps, TabsPanelProps, TabsTabProps } from '@aracna/react'
 import type {
   TabsElementAttributes,
   TabsElementEventMap,
@@ -25,4 +26,4 @@ export const AracnaTabsTab: ElementComponent<TabsTabElement, TabsTabProps> = cre
   TabsTabElement,
   TabsTabElementAttributes,
   TabsTabElementEventMap
->('aracna-tabs-tab', TabsTabElement)
+>('aracna-tabs-tab', TabsTabElement, ['tabs-tab-selection'])

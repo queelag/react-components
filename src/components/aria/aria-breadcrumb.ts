@@ -1,5 +1,6 @@
-import type { AriaBreadcrumbItemProps, AriaBreadcrumbListProps, AriaBreadcrumbProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaBreadcrumbProps, AriaBreadcrumbItemProps, AriaBreadcrumbListProps } from '@aracna/react'
 import type {
   AriaBreadcrumbElementAttributes,
   AriaBreadcrumbElementEventMap,

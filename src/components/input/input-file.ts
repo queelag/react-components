@@ -1,5 +1,6 @@
-import type { ElementComponent, InputFileProps } from '@aracna/react'
-import { createFormFieldElementComponent } from '@aracna/react'
+import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { InputFileProps } from '@aracna/react'
 import type { InputFileElementAttributes, InputFileElementEventMap } from '@aracna/web'
 import { InputFileElement } from '@aracna/web-components/elements/input/input-file-element'
 

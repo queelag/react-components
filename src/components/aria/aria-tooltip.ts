@@ -1,19 +1,20 @@
-import type { AriaTooltipArrowProps, AriaTooltipContentProps, AriaTooltipProps, AriaTooltipTriggerProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AriaTooltipProps, AriaTooltipArrowProps, AriaTooltipContentProps, AriaTooltipTriggerProps } from '@aracna/react'
 import type {
+  AriaTooltipElementAttributes,
+  AriaTooltipElementEventMap,
   AriaTooltipArrowElementAttributes,
   AriaTooltipArrowElementEventMap,
   AriaTooltipContentElementAttributes,
   AriaTooltipContentElementEventMap,
-  AriaTooltipElementAttributes,
-  AriaTooltipElementEventMap,
   AriaTooltipTriggerElementAttributes,
   AriaTooltipTriggerElementEventMap
 } from '@aracna/web'
 import {
+  AriaTooltipElement,
   AriaTooltipArrowElement,
   AriaTooltipContentElement,
-  AriaTooltipElement,
   AriaTooltipTriggerElement
 } from '@aracna/web-components/elements/aria/aria-tooltip-element'
 

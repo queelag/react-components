@@ -1,5 +1,6 @@
-import type { ElementComponent, TextAreaProps } from '@aracna/react'
-import { createFormFieldElementComponent } from '@aracna/react'
+import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { TextAreaProps } from '@aracna/react'
 import type { TextAreaElementAttributes, TextAreaElementEventMap } from '@aracna/web'
 import { TextAreaElement } from '@aracna/web-components/elements/input/text-area-element'
 

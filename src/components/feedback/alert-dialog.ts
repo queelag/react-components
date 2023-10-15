@@ -1,14 +1,15 @@
-import type { AlertDialogDescriptionProps, AlertDialogLabelProps, AlertDialogProps, ElementComponent } from '@aracna/react'
 import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { AlertDialogProps, AlertDialogDescriptionProps, AlertDialogLabelProps } from '@aracna/react'
 import type {
-  AlertDialogDescriptionElementAttributes,
-  AlertDialogDescriptionElementEventMap,
   AlertDialogElementAttributes,
   AlertDialogElementEventMap,
+  AlertDialogDescriptionElementAttributes,
+  AlertDialogDescriptionElementEventMap,
   AlertDialogLabelElementAttributes,
   AlertDialogLabelElementEventMap
 } from '@aracna/web'
-import { AlertDialogDescriptionElement, AlertDialogElement, AlertDialogLabelElement } from '@aracna/web-components/elements/feedback/alert-dialog-element'
+import { AlertDialogElement, AlertDialogDescriptionElement, AlertDialogLabelElement } from '@aracna/web-components/elements/feedback/alert-dialog-element'
 
 export const AracnaAlertDialog: ElementComponent<AlertDialogElement, AlertDialogProps> = createFocusTrapElementComponent<
   AlertDialogElement,

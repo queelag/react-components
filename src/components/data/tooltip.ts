@@ -1,16 +1,17 @@
-import type { ElementComponent, TooltipArrowProps, TooltipContentProps, TooltipProps, TooltipTriggerProps } from '@aracna/react'
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
+import type { ElementComponent } from '@aracna/react'
+import type { TooltipProps, TooltipArrowProps, TooltipContentProps, TooltipTriggerProps } from '@aracna/react'
 import type {
+  TooltipElementAttributes,
+  TooltipElementEventMap,
   TooltipArrowElementAttributes,
   TooltipArrowElementEventMap,
   TooltipContentElementAttributes,
   TooltipContentElementEventMap,
-  TooltipElementAttributes,
-  TooltipElementEventMap,
   TooltipTriggerElementAttributes,
   TooltipTriggerElementEventMap
 } from '@aracna/web'
-import { TooltipArrowElement, TooltipContentElement, TooltipElement, TooltipTriggerElement } from '@aracna/web-components/elements/data/tooltip-element'
+import { TooltipElement, TooltipArrowElement, TooltipContentElement, TooltipTriggerElement } from '@aracna/web-components/elements/data/tooltip-element'
 
 export const AracnaTooltip: ElementComponent<TooltipElement, TooltipProps> = createBaseElementComponent<
   TooltipElement,
