@@ -44,6 +44,7 @@ const EVENTS = new Map([
   ['AriaTabsTabElement', ['tabs-tab-selection']],
   ['ButtonElement', ['button-click']],
   ['CarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['FormElement', ['form-submit']],
   ['SliderElement', ['slider-change']],
   ['SliderThumbElement', ['slider-thumb-move']],
   ['TabsTabElement', ['tabs-tab-selection']]
