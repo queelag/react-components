@@ -1,12 +1,12 @@
 import { createBaseElementComponent, createFormFieldElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
 import type {
-  AriaComboBoxProps,
-  AriaComboBoxButtonProps,
-  AriaComboBoxGroupProps,
-  AriaComboBoxInputProps,
-  AriaComboBoxListProps,
-  AriaComboBoxOptionProps
+  AracnaAriaComboBoxProps,
+  AracnaAriaComboBoxButtonProps,
+  AracnaAriaComboBoxGroupProps,
+  AracnaAriaComboBoxInputProps,
+  AracnaAriaComboBoxListProps,
+  AracnaAriaComboBoxOptionProps
 } from '@aracna/react'
 import type {
   AriaComboBoxElementAttributes,
@@ -31,37 +31,37 @@ import {
   AriaComboBoxOptionElement
 } from '@aracna/web-components/elements/aria/aria-combo-box-element'
 
-export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AriaComboBoxProps> = createFormFieldElementComponent<
+export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AracnaAriaComboBoxProps> = createFormFieldElementComponent<
   AriaComboBoxElement,
   AriaComboBoxElementAttributes<AriaComboBoxOptionElement>,
   AriaComboBoxElementEventMap
 >('aracna-aria-combobox', AriaComboBoxElement)
 
-export const AracnaAriaComboBoxButton: ElementComponent<AriaComboBoxButtonElement, AriaComboBoxButtonProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxButton: ElementComponent<AriaComboBoxButtonElement, AracnaAriaComboBoxButtonProps> = createBaseElementComponent<
   AriaComboBoxButtonElement,
   AriaComboBoxButtonElementAttributes,
   AriaComboBoxButtonElementEventMap
 >('aracna-aria-combobox-button', AriaComboBoxButtonElement)
 
-export const AracnaAriaComboBoxGroup: ElementComponent<AriaComboBoxGroupElement, AriaComboBoxGroupProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxGroup: ElementComponent<AriaComboBoxGroupElement, AracnaAriaComboBoxGroupProps> = createBaseElementComponent<
   AriaComboBoxGroupElement,
   AriaComboBoxGroupElementAttributes,
   AriaComboBoxGroupElementEventMap
 >('aracna-aria-combobox-group', AriaComboBoxGroupElement)
 
-export const AracnaAriaComboBoxInput: ElementComponent<AriaComboBoxInputElement, AriaComboBoxInputProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxInput: ElementComponent<AriaComboBoxInputElement, AracnaAriaComboBoxInputProps> = createBaseElementComponent<
   AriaComboBoxInputElement,
   AriaComboBoxInputElementAttributes,
   AriaComboBoxInputElementEventMap
 >('aracna-aria-combobox-input', AriaComboBoxInputElement)
 
-export const AracnaAriaComboBoxList: ElementComponent<AriaComboBoxListElement, AriaComboBoxListProps> = createFloatingElementComponent<
+export const AracnaAriaComboBoxList: ElementComponent<AriaComboBoxListElement, AracnaAriaComboBoxListProps> = createFloatingElementComponent<
   AriaComboBoxListElement,
   AriaComboBoxListElementAttributes,
   AriaComboBoxListElementEventMap
 >('aracna-aria-combobox-list', AriaComboBoxListElement)
 
-export const AracnaAriaComboBoxOption: ElementComponent<AriaComboBoxOptionElement, AriaComboBoxOptionProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxOption: ElementComponent<AriaComboBoxOptionElement, AracnaAriaComboBoxOptionProps> = createBaseElementComponent<
   AriaComboBoxOptionElement,
   AriaComboBoxOptionElementAttributes,
   AriaComboBoxOptionElementEventMap

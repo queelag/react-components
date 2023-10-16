@@ -1,6 +1,12 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AccordionProps, AccordionButtonProps, AccordionHeaderProps, AccordionPanelProps, AccordionSectionProps } from '@aracna/react'
+import type {
+  AracnaAccordionProps,
+  AracnaAccordionButtonProps,
+  AracnaAccordionHeaderProps,
+  AracnaAccordionPanelProps,
+  AracnaAccordionSectionProps
+} from '@aracna/react'
 import type {
   AccordionElementAttributes,
   AccordionElementEventMap,
@@ -21,31 +27,31 @@ import {
   AccordionSectionElement
 } from '@aracna/web-components/elements/surface/accordion-element'
 
-export const AracnaAccordion: ElementComponent<AccordionElement, AccordionProps> = createBaseElementComponent<
+export const AracnaAccordion: ElementComponent<AccordionElement, AracnaAccordionProps> = createBaseElementComponent<
   AccordionElement,
   AccordionElementAttributes,
   AccordionElementEventMap
 >('aracna-accordion', AccordionElement)
 
-export const AracnaAccordionButton: ElementComponent<AccordionButtonElement, AccordionButtonProps> = createBaseElementComponent<
+export const AracnaAccordionButton: ElementComponent<AccordionButtonElement, AracnaAccordionButtonProps> = createBaseElementComponent<
   AccordionButtonElement,
   AccordionButtonElementAttributes,
   AccordionButtonElementEventMap
 >('aracna-accordion-button', AccordionButtonElement)
 
-export const AracnaAccordionHeader: ElementComponent<AccordionHeaderElement, AccordionHeaderProps> = createBaseElementComponent<
+export const AracnaAccordionHeader: ElementComponent<AccordionHeaderElement, AracnaAccordionHeaderProps> = createBaseElementComponent<
   AccordionHeaderElement,
   AccordionHeaderElementAttributes,
   AccordionHeaderElementEventMap
 >('aracna-accordion-header', AccordionHeaderElement)
 
-export const AracnaAccordionPanel: ElementComponent<AccordionPanelElement, AccordionPanelProps> = createBaseElementComponent<
+export const AracnaAccordionPanel: ElementComponent<AccordionPanelElement, AracnaAccordionPanelProps> = createBaseElementComponent<
   AccordionPanelElement,
   AccordionPanelElementAttributes,
   AccordionPanelElementEventMap
 >('aracna-accordion-panel', AccordionPanelElement)
 
-export const AracnaAccordionSection: ElementComponent<AccordionSectionElement, AccordionSectionProps> = createBaseElementComponent<
+export const AracnaAccordionSection: ElementComponent<AccordionSectionElement, AracnaAccordionSectionProps> = createBaseElementComponent<
   AccordionSectionElement,
   AccordionSectionElementAttributes,
   AccordionSectionElementEventMap

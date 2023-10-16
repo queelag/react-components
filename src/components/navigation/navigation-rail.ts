@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { NavigationRailProps, NavigationRailItemProps } from '@aracna/react'
+import type { AracnaNavigationRailProps, AracnaNavigationRailItemProps } from '@aracna/react'
 import type {
   NavigationRailElementAttributes,
   NavigationRailElementEventMap,
@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web'
 import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
 
-export const AracnaNavigationRail: ElementComponent<NavigationRailElement, NavigationRailProps> = createBaseElementComponent<
+export const AracnaNavigationRail: ElementComponent<NavigationRailElement, AracnaNavigationRailProps> = createBaseElementComponent<
   NavigationRailElement,
   NavigationRailElementAttributes,
   NavigationRailElementEventMap
 >('aracna-navigation-rail', NavigationRailElement)
 
-export const AracnaNavigationRailItem: ElementComponent<NavigationRailItemElement, NavigationRailItemProps> = createBaseElementComponent<
+export const AracnaNavigationRailItem: ElementComponent<NavigationRailItemElement, AracnaNavigationRailItemProps> = createBaseElementComponent<
   NavigationRailItemElement,
   NavigationRailItemElementAttributes,
   NavigationRailItemElementEventMap
