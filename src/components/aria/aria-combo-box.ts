@@ -35,7 +35,7 @@ export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AracnaAri
   AriaComboBoxElement,
   AriaComboBoxElementAttributes<AriaComboBoxOptionElement>,
   AriaComboBoxElementEventMap
->('aracna-aria-combobox', AriaComboBoxElement)
+>('aracna-aria-combobox', AriaComboBoxElement, ['combo-box-collapse', 'combo-box-expand'])
 
 export const AracnaAriaComboBoxButton: ElementComponent<AriaComboBoxButtonElement, AracnaAriaComboBoxButtonProps> = createBaseElementComponent<
   AriaComboBoxButtonElement,
@@ -65,4 +65,4 @@ export const AracnaAriaComboBoxOption: ElementComponent<AriaComboBoxOptionElemen
   AriaComboBoxOptionElement,
   AriaComboBoxOptionElementAttributes,
   AriaComboBoxOptionElementEventMap
->('aracna-aria-combobox-option', AriaComboBoxOptionElement)
+>('aracna-aria-combobox-option', AriaComboBoxOptionElement, ['combo-box-option-select'])

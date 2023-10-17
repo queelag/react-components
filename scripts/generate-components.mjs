@@ -39,12 +39,16 @@ const EXTENDS = new Map([
 
 const EVENTS = new Map([
   ['AriaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['AriaComboBoxElement', ['combo-box-collapse', 'combo-box-expand']],
+  ['AriaComboBoxOptionElement', ['combo-box-option-select']],
   ['AriaSliderElement', ['slider-change']],
   ['AriaSliderThumbElement', ['slider-thumb-move']],
   ['AriaTabsTabElement', ['tabs-tab-selection']],
   ['ButtonElement', ['button-click']],
   ['CarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
   ['FormElement', ['form-submit']],
+  ['SelectElement', ['combo-box-collapse', 'combo-box-expand']],
+  ['SelectOptionElement', ['combo-box-option-select']],
   ['SliderElement', ['slider-change']],
   ['SliderThumbElement', ['slider-thumb-move']],
   ['TabsTabElement', ['tabs-tab-selection']]

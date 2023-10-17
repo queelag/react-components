@@ -35,7 +35,7 @@ export const AracnaSelect: ElementComponent<SelectElement, AracnaSelectProps> = 
   SelectElement,
   SelectElementAttributes<SelectOptionElement>,
   SelectElementEventMap
->('aracna-select', SelectElement)
+>('aracna-select', SelectElement, ['combo-box-collapse', 'combo-box-expand'])
 
 export const AracnaSelectButton: ElementComponent<SelectButtonElement, AracnaSelectButtonProps> = createBaseElementComponent<
   SelectButtonElement,
@@ -65,4 +65,4 @@ export const AracnaSelectOption: ElementComponent<SelectOptionElement, AracnaSel
   SelectOptionElement,
   SelectOptionElementAttributes,
   SelectOptionElementEventMap
->('aracna-select-option', SelectOptionElement)
+>('aracna-select-option', SelectOptionElement, ['combo-box-option-select'])
