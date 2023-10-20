@@ -15,7 +15,7 @@ export const AracnaAlertDialog: ElementComponent<AlertDialogElement, AracnaAlert
   AlertDialogElement,
   AlertDialogElementAttributes,
   AlertDialogElementEventMap
->('aracna-alert-dialog', AlertDialogElement)
+>('aracna-alert-dialog', AlertDialogElement, ['dialog-close', 'dialog-open'])
 
 export const AracnaAlertDialogDescription: ElementComponent<AlertDialogDescriptionElement, AracnaAlertDialogDescriptionProps> = createBaseElementComponent<
   AlertDialogDescriptionElement,

@@ -15,7 +15,7 @@ export const AracnaDialog: ElementComponent<DialogElement, AracnaDialogProps> = 
   DialogElement,
   DialogElementAttributes,
   DialogElementEventMap
->('aracna-dialog', DialogElement)
+>('aracna-dialog', DialogElement, ['dialog-close', 'dialog-open'])
 
 export const AracnaDialogDescription: ElementComponent<DialogDescriptionElement, AracnaDialogDescriptionProps> = createBaseElementComponent<
   DialogDescriptionElement,
