@@ -1,4 +1,4 @@
-import { createBaseElementComponent, createFormFieldElementComponent } from '@aracna/react'
+import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
 import type { AracnaAriaRadioButtonProps, AracnaAriaRadioGroupProps } from '@aracna/react'
 import type {
@@ -15,7 +15,7 @@ export const AracnaAriaRadioButton: ElementComponent<AriaRadioButtonElement, Ara
   AriaRadioButtonElementEventMap
 >('aracna-aria-radio-button', AriaRadioButtonElement)
 
-export const AracnaAriaRadioGroup: ElementComponent<AriaRadioGroupElement, AracnaAriaRadioGroupProps> = createFormFieldElementComponent<
+export const AracnaAriaRadioGroup: ElementComponent<AriaRadioGroupElement, AracnaAriaRadioGroupProps> = createFormControlElementComponent<
   AriaRadioGroupElement,
   AriaRadioGroupElementAttributes,
   AriaRadioGroupElementEventMap

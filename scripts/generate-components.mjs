@@ -22,19 +22,19 @@ const EXTENDS = new Map([
   ['AriaAlertDialogElement', 'FocusTrap'],
   ['AriaDialogElement', 'FocusTrap'],
   ['DialogElement', 'FocusTrap'],
-  ['AriaCheckBoxElement', 'FormField'],
-  ['AriaComboBoxElement', 'FormField'],
-  ['AriaRadioGroupElement', 'FormField'],
-  ['AriaSliderElement', 'FormField'],
-  ['AriaSwitchElement', 'FormField'],
-  ['CheckBoxElement', 'FormField'],
-  ['ComboBoxElement', 'FormField'],
-  ['InputElement', 'FormField'],
-  ['InputFileElement', 'FormField'],
-  ['RadioGroupElement', 'FormField'],
-  ['SliderElement', 'FormField'],
-  ['SwitchElement', 'FormField'],
-  ['TextAreaElement', 'FormField']
+  ['AriaCheckBoxElement', 'FormControl'],
+  ['AriaComboBoxElement', 'FormControl'],
+  ['AriaRadioGroupElement', 'FormControl'],
+  ['AriaSliderElement', 'FormControl'],
+  ['AriaSwitchElement', 'FormControl'],
+  ['CheckBoxElement', 'FormControl'],
+  ['ComboBoxElement', 'FormControl'],
+  ['InputElement', 'FormControl'],
+  ['InputFileElement', 'FormControl'],
+  ['RadioGroupElement', 'FormControl'],
+  ['SliderElement', 'FormControl'],
+  ['SwitchElement', 'FormControl'],
+  ['TextAreaElement', 'FormControl']
 ])
 
 const EVENTS = new Map([

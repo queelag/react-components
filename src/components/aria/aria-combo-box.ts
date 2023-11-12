@@ -1,4 +1,4 @@
-import { createBaseElementComponent, createFormFieldElementComponent, createFloatingElementComponent } from '@aracna/react'
+import { createBaseElementComponent, createFormControlElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
 import type {
   AracnaAriaComboBoxProps,
@@ -31,7 +31,7 @@ import {
   AriaComboBoxOptionElement
 } from '@aracna/web-components/elements/aria/aria-combo-box-element'
 
-export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AracnaAriaComboBoxProps> = createFormFieldElementComponent<
+export const AracnaAriaComboBox: ElementComponent<AriaComboBoxElement, AracnaAriaComboBoxProps> = createFormControlElementComponent<
   AriaComboBoxElement,
   AriaComboBoxElementAttributes<AriaComboBoxOptionElement>,
   AriaComboBoxElementEventMap
