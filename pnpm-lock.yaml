@@ -6,17 +6,17 @@ settings:
 
 devDependencies:
   '@aracna/core':
-    specifier: ^1.1.59
-    version: 1.1.59
+    specifier: ^1.1.62
+    version: 1.1.62
   '@aracna/react':
-    specifier: ^1.0.41
-    version: 1.0.41(@aracna/core@1.1.59)(@aracna/web@1.0.60)(@types/react@18.2.37)(react@18.2.0)
+    specifier: ^1.0.43
+    version: 1.0.43(@aracna/core@1.1.62)(@aracna/web@1.0.64)(@types/react@18.2.37)(react@18.2.0)
   '@aracna/web':
-    specifier: ^1.0.60
-    version: 1.0.60(@aracna/core@1.1.59)
+    specifier: ^1.0.64
+    version: 1.0.64(@aracna/core@1.1.62)
   '@aracna/web-components':
-    specifier: ^1.0.69
-    version: 1.0.69(@aracna/core@1.1.59)(@aracna/web@1.0.60)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@2.8.0)(tabbable@6.2.0)
+    specifier: ^1.0.71
+    version: 1.0.71(@aracna/core@1.1.62)(@aracna/web@1.0.64)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@2.8.0)(tabbable@6.2.0)
   '@floating-ui/dom':
     specifier: ^1.5.3
     version: 1.5.3
@@ -94,8 +94,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@aracna/core@1.1.59:
-    resolution: {integrity: sha512-3J6aMZkrPAijoHZ9791bGN/sZJO38vZf7IEV5GlqXXKmAoKn72p232ggvHroiaC98dNgL+Zx4qf5+5/2h0dZpQ==}
+  /@aracna/core@1.1.62:
+    resolution: {integrity: sha512-WvrAxubKljt+GVmhlsvZI+D36x9qi81Yt0bzdY6npTW/Xov1UbAiPM3xrd2xQP9E9Ej8rWVdwcTFPG+AoaXjbA==}
     engines: {node: '>=20', pnpm: '>=8'}
     dependencies:
       '@types/cookie': 0.5.4
@@ -105,23 +105,23 @@ packages:
       rfc4648: 1.5.3
     dev: true
 
-  /@aracna/react@1.0.41(@aracna/core@1.1.59)(@aracna/web@1.0.60)(@types/react@18.2.37)(react@18.2.0):
-    resolution: {integrity: sha512-KOPGDLGo9t9/BXCnBMY/9AbuCj/fFDm91AGhVkfMjcCLvdjrhvwiEizLOelp2ThGPpxs6EApAolGd4IbYMD6Nw==}
+  /@aracna/react@1.0.43(@aracna/core@1.1.62)(@aracna/web@1.0.64)(@types/react@18.2.37)(react@18.2.0):
+    resolution: {integrity: sha512-DHGDAckAJdJKzcGRqVoPd/6nB6GOopzRO1k5dp+ShcKeAKZ65WVrp7Tg2tX5vcuhIxhWmE4KO/HkMF7xm+XW+g==}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
       '@aracna/web': '>= 1.0.0'
       react: '>= 18.2.0'
     dependencies:
-      '@aracna/core': 1.1.59
-      '@aracna/web': 1.0.60(@aracna/core@1.1.59)
+      '@aracna/core': 1.1.62
+      '@aracna/web': 1.0.64(@aracna/core@1.1.62)
       '@lit/react': 1.0.2(@types/react@18.2.37)
       react: 18.2.0
     transitivePeerDependencies:
       - '@types/react'
     dev: true
 
-  /@aracna/web-components@1.0.69(@aracna/core@1.1.59)(@aracna/web@1.0.60)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@2.8.0)(tabbable@6.2.0):
-    resolution: {integrity: sha512-XEN3rzWw3mhbjGOZaPA+bWaWhJiuwLLnome4zxqyZpsVWQI+CvFdG9FmbKbtgDPz6xlon6p5mVeVDMciE45dTw==}
+  /@aracna/web-components@1.0.71(@aracna/core@1.1.62)(@aracna/web@1.0.64)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@2.8.0)(tabbable@6.2.0):
+    resolution: {integrity: sha512-w02xQRnU6kyHMi74C4r2FSJUfTJcpiY15uD4p11HuRU/uUajK5qVVxZMDztolr7MTNASso6aHiEVBKCbpD6K0Q==}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
       '@aracna/web': '>= 1.0.0'
@@ -141,8 +141,8 @@ packages:
       tabbable:
         optional: true
     dependencies:
-      '@aracna/core': 1.1.59
-      '@aracna/web': 1.0.60(@aracna/core@1.1.59)
+      '@aracna/core': 1.1.62
+      '@aracna/web': 1.0.64(@aracna/core@1.1.62)
       '@floating-ui/dom': 1.5.3
       dompurify: 3.0.6
       focus-trap: 7.5.4
@@ -151,12 +151,12 @@ packages:
       tabbable: 6.2.0
     dev: true
 
-  /@aracna/web@1.0.60(@aracna/core@1.1.59):
-    resolution: {integrity: sha512-oKG/s23QvSiywkhZk0SferJdrvVdRUPeZiv8LFTeUvAWGkj6B0LB0uM2eBLi+J/uEPZR/JCTKCI4tPyKrvrQVg==}
+  /@aracna/web@1.0.64(@aracna/core@1.1.62):
+    resolution: {integrity: sha512-fWSzY8GMqqvsB93W5/PU21nYPbrz9e0V+BtmvePIvYYt3tIyDJCBF4k8M1fWUPxbyqLcfqO2Mox9AtaRLhCwLQ==}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
     dependencies:
-      '@aracna/core': 1.1.59
+      '@aracna/core': 1.1.62
     dev: true
 
   /@babel/code-frame@7.22.13:
