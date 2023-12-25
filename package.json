@@ -1,10 +1,10 @@
 {
   "author": "Dario Sechi",
   "devDependencies": {
-    "@aracna/core": "^1.1.73",
-    "@aracna/react": "^1.0.43",
-    "@aracna/web": "^1.0.66",
-    "@aracna/web-components": "^1.0.72",
+    "@aracna/core": "^1.1.77",
+    "@aracna/react": "^1.0.45",
+    "@aracna/web": "^1.0.69",
+    "@aracna/web-components": "^1.0.76",
     "@floating-ui/dom": "^1.5.3",
     "@lit-labs/react": "^2.1.2",
     "@testing-library/react": "^14.1.2",
@@ -27,6 +27,10 @@
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
     "vitest": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
   },
   "exports": {
     ".": {

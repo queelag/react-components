@@ -6,17 +6,17 @@ settings:
 
 devDependencies:
   '@aracna/core':
-    specifier: ^1.1.73
-    version: 1.1.73
+    specifier: ^1.1.77
+    version: 1.1.77
   '@aracna/react':
-    specifier: ^1.0.43
-    version: 1.0.43(@aracna/core@1.1.73)(@aracna/web@1.0.66)(@types/react@18.2.45)(react@18.2.0)
+    specifier: ^1.0.45
+    version: 1.0.45(@aracna/core@1.1.77)(@aracna/web@1.0.69)(@types/react@18.2.45)(react@18.2.0)
   '@aracna/web':
-    specifier: ^1.0.66
-    version: 1.0.66(@aracna/core@1.1.73)
+    specifier: ^1.0.69
+    version: 1.0.69(@aracna/core@1.1.77)
   '@aracna/web-components':
-    specifier: ^1.0.72
-    version: 1.0.72(@aracna/core@1.1.73)(@aracna/web@1.0.66)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@3.1.0)(tabbable@6.2.0)
+    specifier: ^1.0.76
+    version: 1.0.76(@aracna/core@1.1.77)(@aracna/web@1.0.69)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@3.1.0)(tabbable@6.2.0)
   '@floating-ui/dom':
     specifier: ^1.5.3
     version: 1.5.3
@@ -94,9 +94,9 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: true
 
-  /@aracna/core@1.1.73:
-    resolution: {integrity: sha512-zeSykz8QWZecDjRMhl7Z5E+X2BN8jLjBUFQQ0HGPhgwr2ppNNV1RiuAXcqT1I0xITnagKcp962jL1bMXdk2C+g==}
-    engines: {node: '>=20', pnpm: '>=8'}
+  /@aracna/core@1.1.77:
+    resolution: {integrity: sha512-LvM1kgaUW2I64Ey7FyHYSx0jrH0wJFI7xbLgu97iwbGmzxN7mXZ9EZvonZQha/qI2TAfy3xHKC28lrX7OAFWUA==}
+    engines: {node: '>=16', pnpm: '>=8'}
     dependencies:
       '@types/cookie': 0.6.0
       cookie: 0.6.0
@@ -105,23 +105,25 @@ packages:
       rfc4648: 1.5.3
     dev: true
 
-  /@aracna/react@1.0.43(@aracna/core@1.1.73)(@aracna/web@1.0.66)(@types/react@18.2.45)(react@18.2.0):
-    resolution: {integrity: sha512-DHGDAckAJdJKzcGRqVoPd/6nB6GOopzRO1k5dp+ShcKeAKZ65WVrp7Tg2tX5vcuhIxhWmE4KO/HkMF7xm+XW+g==}
+  /@aracna/react@1.0.45(@aracna/core@1.1.77)(@aracna/web@1.0.69)(@types/react@18.2.45)(react@18.2.0):
+    resolution: {integrity: sha512-7E9RGqNi8gQFhMc6E+zZ4uZAHHhhoLuvs6qdUzEdU93fcFcRGyuqK/7xfusfPr6ocBh4/b7kgd7vKI3+QzctWg==}
+    engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
       '@aracna/web': '>= 1.0.0'
       react: '>= 18.2.0'
     dependencies:
-      '@aracna/core': 1.1.73
-      '@aracna/web': 1.0.66(@aracna/core@1.1.73)
+      '@aracna/core': 1.1.77
+      '@aracna/web': 1.0.69(@aracna/core@1.1.77)
       '@lit/react': 1.0.2(@types/react@18.2.45)
       react: 18.2.0
     transitivePeerDependencies:
       - '@types/react'
     dev: true
 
-  /@aracna/web-components@1.0.72(@aracna/core@1.1.73)(@aracna/web@1.0.66)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@3.1.0)(tabbable@6.2.0):
-    resolution: {integrity: sha512-Mx5IKhLSVQ+jo04sOH+Eu19+SWZqpG1aFJkDhpwqHh+7V0sIyueiiMgNzNmZoxhBd1zexZlHW2Msya8+VuhXRQ==}
+  /@aracna/web-components@1.0.76(@aracna/core@1.1.77)(@aracna/web@1.0.69)(@floating-ui/dom@1.5.3)(dompurify@3.0.6)(focus-trap@7.5.4)(lit-html@3.1.0)(lit@3.1.0)(tabbable@6.2.0):
+    resolution: {integrity: sha512-FyIQ9iOwi1Rq5Prg7uc+xPGjHZ77uziRGt9cogpbWWGog8u2+n5O3jF3EBuBY8B1Ei+09Gl4YlJzXS+ZCe5fpg==}
+    engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
       '@aracna/web': '>= 1.0.0'
@@ -141,8 +143,8 @@ packages:
       tabbable:
         optional: true
     dependencies:
-      '@aracna/core': 1.1.73
-      '@aracna/web': 1.0.66(@aracna/core@1.1.73)
+      '@aracna/core': 1.1.77
+      '@aracna/web': 1.0.69(@aracna/core@1.1.77)
       '@floating-ui/dom': 1.5.3
       dompurify: 3.0.6
       focus-trap: 7.5.4
@@ -151,12 +153,13 @@ packages:
       tabbable: 6.2.0
     dev: true
 
-  /@aracna/web@1.0.66(@aracna/core@1.1.73):
-    resolution: {integrity: sha512-/+e7xNBxCuQJaa1/SxwvpJrsCymsaf28ThrWVg3Mjffq9+q2DyYVJKmZDcmuyjVF24FBLpz2qVO75EV09SDaTw==}
+  /@aracna/web@1.0.69(@aracna/core@1.1.77):
+    resolution: {integrity: sha512-uE0jf6El+Vy6kUlzMKS7yMUH4VArZfhhVhVHx7pDXH02Bl2erIb73FHlF7057cBcqQ4tc8f4XaKW8AMnjRa+Dw==}
+    engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
     dependencies:
-      '@aracna/core': 1.1.73
+      '@aracna/core': 1.1.77
     dev: true
 
   /@babel/code-frame@7.23.5:
