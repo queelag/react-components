@@ -1,5 +1,5 @@
 import { removeArrayDuplicates } from '@aracna/core'
-import { appendFile, mkdir, readFile, rm, writeFile } from 'fs/promises'
+import { mkdir, readFile, rm, writeFile } from 'fs/promises'
 import { glob } from 'glob'
 import { format } from 'prettier'
 
@@ -58,7 +58,6 @@ const EVENTS = new Map([
 
 await rm('src/components', { force: true, recursive: true })
 await mkdir('src/components')
-await writeFile('src/index.ts', '')
 
 for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface}/*-element.js')) {
   let folder, name, dts, elements, ts
@@ -108,5 +107,4 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
 
   await mkdir(`src/components/${folder}`, { recursive: true })
   await writeFile(`src/components/${folder}/${name.replace('-element', '')}.ts`, ts)
-  await appendFile('src/index.ts', `export * from './components/${folder}/${name.replace('-element', '')}.js'\n`)
 }
