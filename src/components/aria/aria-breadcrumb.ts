@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaAriaBreadcrumbProps, AracnaAracnaAriaBreadcrumbItemProps, AracnaAracnaAriaBreadcrumbListProps } from '../../definitions/props.js'
+import type { AracnaAriaBreadcrumbProps, AracnaAriaBreadcrumbItemProps, AracnaAriaBreadcrumbListProps } from '../../definitions/props.js'
 import type {
   AracnaAriaBreadcrumbElementAttributes,
   AracnaAriaBreadcrumbElementEventMap,
@@ -15,19 +15,19 @@ import {
   AracnaAriaBreadcrumbListElement
 } from '@aracna/web-components/elements/aria/aria-breadcrumb-element'
 
-export const AracnaAriaBreadcrumb: ElementComponent<AracnaAriaBreadcrumbElement, AracnaAracnaAriaBreadcrumbProps> = createBaseElementComponent<
+export const AracnaAriaBreadcrumb: ElementComponent<AracnaAriaBreadcrumbElement, AracnaAriaBreadcrumbProps> = createBaseElementComponent<
   AracnaAriaBreadcrumbElement,
   AracnaAriaBreadcrumbElementAttributes,
   AracnaAriaBreadcrumbElementEventMap
 >('aracna-aria-breadcrumb', AracnaAriaBreadcrumbElement)
 
-export const AracnaAriaBreadcrumbItem: ElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAracnaAriaBreadcrumbItemProps> = createBaseElementComponent<
+export const AracnaAriaBreadcrumbItem: ElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAriaBreadcrumbItemProps> = createBaseElementComponent<
   AracnaAriaBreadcrumbItemElement,
   AracnaAriaBreadcrumbItemElementAttributes,
   AracnaAriaBreadcrumbItemElementEventMap
 >('aracna-aria-breadcrumb-item', AracnaAriaBreadcrumbItemElement)
 
-export const AracnaAriaBreadcrumbList: ElementComponent<AracnaAriaBreadcrumbListElement, AracnaAracnaAriaBreadcrumbListProps> = createBaseElementComponent<
+export const AracnaAriaBreadcrumbList: ElementComponent<AracnaAriaBreadcrumbListElement, AracnaAriaBreadcrumbListProps> = createBaseElementComponent<
   AracnaAriaBreadcrumbListElement,
   AracnaAriaBreadcrumbListElementAttributes,
   AracnaAriaBreadcrumbListElementEventMap

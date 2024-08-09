@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaAriaListProps, AracnaAracnaAriaListItemProps } from '../../definitions/props.js'
+import type { AracnaAriaListProps, AracnaAriaListItemProps } from '../../definitions/props.js'
 import type {
   AracnaAriaListElementAttributes,
   AracnaAriaListElementEventMap,
@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaListElement, AracnaAriaListItemElement } from '@aracna/web-components/elements/aria/aria-list-element'
 
-export const AracnaAriaList: ElementComponent<AracnaAriaListElement, AracnaAracnaAriaListProps> = createBaseElementComponent<
+export const AracnaAriaList: ElementComponent<AracnaAriaListElement, AracnaAriaListProps> = createBaseElementComponent<
   AracnaAriaListElement,
   AracnaAriaListElementAttributes,
   AracnaAriaListElementEventMap
 >('aracna-aria-list', AracnaAriaListElement)
 
-export const AracnaAriaListItem: ElementComponent<AracnaAriaListItemElement, AracnaAracnaAriaListItemProps> = createBaseElementComponent<
+export const AracnaAriaListItem: ElementComponent<AracnaAriaListItemElement, AracnaAriaListItemProps> = createBaseElementComponent<
   AracnaAriaListItemElement,
   AracnaAriaListItemElementAttributes,
   AracnaAriaListItemElementEventMap

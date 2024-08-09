@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaNavigationBarProps, AracnaAracnaNavigationBarItemProps } from '../../definitions/props.js'
+import type { AracnaNavigationBarProps, AracnaNavigationBarItemProps } from '../../definitions/props.js'
 import type {
   AracnaNavigationBarElementAttributes,
   AracnaNavigationBarElementEventMap,
@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaNavigationBarElement, AracnaNavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation-bar-element'
 
-export const AracnaNavigationBar: ElementComponent<AracnaNavigationBarElement, AracnaAracnaNavigationBarProps> = createBaseElementComponent<
+export const AracnaNavigationBar: ElementComponent<AracnaNavigationBarElement, AracnaNavigationBarProps> = createBaseElementComponent<
   AracnaNavigationBarElement,
   AracnaNavigationBarElementAttributes,
   AracnaNavigationBarElementEventMap
 >('aracna-navigation-bar', AracnaNavigationBarElement)
 
-export const AracnaNavigationBarItem: ElementComponent<AracnaNavigationBarItemElement, AracnaAracnaNavigationBarItemProps> = createBaseElementComponent<
+export const AracnaNavigationBarItem: ElementComponent<AracnaNavigationBarItemElement, AracnaNavigationBarItemProps> = createBaseElementComponent<
   AracnaNavigationBarItemElement,
   AracnaNavigationBarItemElementAttributes,
   AracnaNavigationBarItemElementEventMap

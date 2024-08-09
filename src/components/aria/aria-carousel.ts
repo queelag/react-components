@@ -1,14 +1,14 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
 import type {
-  AracnaAracnaAriaCarouselProps,
-  AracnaAracnaAriaCarouselNextSlideControlProps,
-  AracnaAracnaAriaCarouselPreviousSlideControlProps,
-  AracnaAracnaAriaCarouselRotationControlProps,
-  AracnaAracnaAriaCarouselSlideProps,
-  AracnaAracnaAriaCarouselSlidesProps,
-  AracnaAracnaAriaCarouselTabProps,
-  AracnaAracnaAriaCarouselTabsProps
+  AracnaAriaCarouselProps,
+  AracnaAriaCarouselNextSlideControlProps,
+  AracnaAriaCarouselPreviousSlideControlProps,
+  AracnaAriaCarouselRotationControlProps,
+  AracnaAriaCarouselSlideProps,
+  AracnaAriaCarouselSlidesProps,
+  AracnaAriaCarouselTabProps,
+  AracnaAriaCarouselTabsProps
 } from '../../definitions/props.js'
 import type {
   AracnaAriaCarouselElementAttributes,
@@ -39,13 +39,13 @@ import {
   AracnaAriaCarouselTabsElement
 } from '@aracna/web-components/elements/aria/aria-carousel-element'
 
-export const AracnaAriaCarousel: ElementComponent<AracnaAriaCarouselElement, AracnaAracnaAriaCarouselProps> = createBaseElementComponent<
+export const AracnaAriaCarousel: ElementComponent<AracnaAriaCarouselElement, AracnaAriaCarouselProps> = createBaseElementComponent<
   AracnaAriaCarouselElement,
   AracnaAriaCarouselElementAttributes,
   AracnaAriaCarouselElementEventMap
 >('aracna-aria-carousel', AracnaAriaCarouselElement)
 
-export const AracnaAriaCarouselNextSlideControl: ElementComponent<AracnaAriaCarouselNextSlideControlElement, AracnaAracnaAriaCarouselNextSlideControlProps> =
+export const AracnaAriaCarouselNextSlideControl: ElementComponent<AracnaAriaCarouselNextSlideControlElement, AracnaAriaCarouselNextSlideControlProps> =
   createBaseElementComponent<
     AracnaAriaCarouselNextSlideControlElement,
     AracnaAriaCarouselNextSlideControlElementAttributes,
@@ -54,39 +54,39 @@ export const AracnaAriaCarouselNextSlideControl: ElementComponent<AracnaAriaCaro
 
 export const AracnaAriaCarouselPreviousSlideControl: ElementComponent<
   AracnaAriaCarouselPreviousSlideControlElement,
-  AracnaAracnaAriaCarouselPreviousSlideControlProps
+  AracnaAriaCarouselPreviousSlideControlProps
 > = createBaseElementComponent<
   AracnaAriaCarouselPreviousSlideControlElement,
   AracnaAriaCarouselPreviousSlideControlElementAttributes,
   AracnaAriaCarouselPreviousSlideControlElementEventMap
 >('aracna-aria-carousel-previous-slide-control', AracnaAriaCarouselPreviousSlideControlElement)
 
-export const AracnaAriaCarouselRotationControl: ElementComponent<AracnaAriaCarouselRotationControlElement, AracnaAracnaAriaCarouselRotationControlProps> =
+export const AracnaAriaCarouselRotationControl: ElementComponent<AracnaAriaCarouselRotationControlElement, AracnaAriaCarouselRotationControlProps> =
   createBaseElementComponent<
     AracnaAriaCarouselRotationControlElement,
     AracnaAriaCarouselRotationControlElementAttributes,
     AracnaAriaCarouselRotationControlElementEventMap
   >('aracna-aria-carousel-rotation-control', AracnaAriaCarouselRotationControlElement)
 
-export const AracnaAriaCarouselSlide: ElementComponent<AracnaAriaCarouselSlideElement, AracnaAracnaAriaCarouselSlideProps> = createBaseElementComponent<
+export const AracnaAriaCarouselSlide: ElementComponent<AracnaAriaCarouselSlideElement, AracnaAriaCarouselSlideProps> = createBaseElementComponent<
   AracnaAriaCarouselSlideElement,
   AracnaAriaCarouselSlideElementAttributes,
   AracnaAriaCarouselSlideElementEventMap
 >('aracna-aria-carousel-slide', AracnaAriaCarouselSlideElement, ['carousel-slide-activate', 'carousel-slide-deactive'])
 
-export const AracnaAriaCarouselSlides: ElementComponent<AracnaAriaCarouselSlidesElement, AracnaAracnaAriaCarouselSlidesProps> = createBaseElementComponent<
+export const AracnaAriaCarouselSlides: ElementComponent<AracnaAriaCarouselSlidesElement, AracnaAriaCarouselSlidesProps> = createBaseElementComponent<
   AracnaAriaCarouselSlidesElement,
   AracnaAriaCarouselSlidesElementAttributes,
   AracnaAriaCarouselSlidesElementEventMap
 >('aracna-aria-carousel-slides', AracnaAriaCarouselSlidesElement)
 
-export const AracnaAriaCarouselTab: ElementComponent<AracnaAriaCarouselTabElement, AracnaAracnaAriaCarouselTabProps> = createBaseElementComponent<
+export const AracnaAriaCarouselTab: ElementComponent<AracnaAriaCarouselTabElement, AracnaAriaCarouselTabProps> = createBaseElementComponent<
   AracnaAriaCarouselTabElement,
   AracnaAriaCarouselTabElementAttributes,
   AracnaAriaCarouselTabElementEventMap
 >('aracna-aria-carousel-tab', AracnaAriaCarouselTabElement)
 
-export const AracnaAriaCarouselTabs: ElementComponent<AracnaAriaCarouselTabsElement, AracnaAracnaAriaCarouselTabsProps> = createBaseElementComponent<
+export const AracnaAriaCarouselTabs: ElementComponent<AracnaAriaCarouselTabsElement, AracnaAriaCarouselTabsProps> = createBaseElementComponent<
   AracnaAriaCarouselTabsElement,
   AracnaAriaCarouselTabsElementAttributes,
   AracnaAriaCarouselTabsElementEventMap

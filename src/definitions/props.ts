@@ -188,6 +188,26 @@ import type {
   AracnaAriaAccordionPanelElementEventMap,
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap,
+  AracnaDisclosureElementAttributes,
+  AracnaDisclosureElementEventMap,
+  AracnaDisclosureButtonElementAttributes,
+  AracnaDisclosureButtonElementEventMap,
+  AracnaDisclosurePanelElementAttributes,
+  AracnaDisclosurePanelElementEventMap,
+  AracnaDisclosureSectionElementAttributes,
+  AracnaDisclosureSectionElementEventMap,
+  AracnaCardElementAttributes,
+  AracnaCardElementEventMap,
+  AracnaAccordionElementAttributes,
+  AracnaAccordionElementEventMap,
+  AracnaAccordionButtonElementAttributes,
+  AracnaAccordionButtonElementEventMap,
+  AracnaAccordionHeaderElementAttributes,
+  AracnaAccordionHeaderElementEventMap,
+  AracnaAccordionPanelElementAttributes,
+  AracnaAccordionPanelElementEventMap,
+  AracnaAccordionSectionElementAttributes,
+  AracnaAccordionSectionElementEventMap,
   AracnaTabsElementAttributes,
   AracnaTabsElementEventMap,
   AracnaTabsPanelElementAttributes,
@@ -216,26 +236,6 @@ import type {
   AracnaBreadcrumbItemElementEventMap,
   AracnaBreadcrumbListElementAttributes,
   AracnaBreadcrumbListElementEventMap,
-  AracnaDisclosureElementAttributes,
-  AracnaDisclosureElementEventMap,
-  AracnaDisclosureButtonElementAttributes,
-  AracnaDisclosureButtonElementEventMap,
-  AracnaDisclosurePanelElementAttributes,
-  AracnaDisclosurePanelElementEventMap,
-  AracnaDisclosureSectionElementAttributes,
-  AracnaDisclosureSectionElementEventMap,
-  AracnaCardElementAttributes,
-  AracnaCardElementEventMap,
-  AracnaAccordionElementAttributes,
-  AracnaAccordionElementEventMap,
-  AracnaAccordionButtonElementAttributes,
-  AracnaAccordionButtonElementEventMap,
-  AracnaAccordionHeaderElementAttributes,
-  AracnaAccordionHeaderElementEventMap,
-  AracnaAccordionPanelElementAttributes,
-  AracnaAccordionPanelElementEventMap,
-  AracnaAccordionSectionElementAttributes,
-  AracnaAccordionSectionElementEventMap,
   AracnaTextAreaElementAttributes,
   AracnaTextAreaElementEventMap,
   AracnaSwitchElementAttributes,
@@ -390,20 +390,6 @@ import type {
   AracnaAriaAccordionPanelElement,
   AracnaAriaAccordionSectionElement
 } from '@aracna/web-components/elements/aria/aria-accordion-element'
-import type { AracnaTabsElement, AracnaTabsPanelElement, AracnaTabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element'
-import type { AracnaNavigationRailElement, AracnaNavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
-import type { AracnaNavigationBarElement, AracnaNavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation-bar-element'
-import type {
-  AracnaMenuElement,
-  AracnaMenuButtonElement,
-  AracnaMenuItemElement,
-  AracnaMenuSubMenuElement
-} from '@aracna/web-components/elements/navigation/menu-element'
-import type {
-  AracnaBreadcrumbElement,
-  AracnaBreadcrumbItemElement,
-  AracnaBreadcrumbListElement
-} from '@aracna/web-components/elements/navigation/breadcrumb-element'
 import type {
   AracnaDisclosureElement,
   AracnaDisclosureButtonElement,
@@ -418,6 +404,20 @@ import type {
   AracnaAccordionPanelElement,
   AracnaAccordionSectionElement
 } from '@aracna/web-components/elements/surface/accordion-element'
+import type { AracnaTabsElement, AracnaTabsPanelElement, AracnaTabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element'
+import type { AracnaNavigationRailElement, AracnaNavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
+import type { AracnaNavigationBarElement, AracnaNavigationBarItemElement } from '@aracna/web-components/elements/navigation/navigation-bar-element'
+import type {
+  AracnaMenuElement,
+  AracnaMenuButtonElement,
+  AracnaMenuItemElement,
+  AracnaMenuSubMenuElement
+} from '@aracna/web-components/elements/navigation/menu-element'
+import type {
+  AracnaBreadcrumbElement,
+  AracnaBreadcrumbItemElement,
+  AracnaBreadcrumbListElement
+} from '@aracna/web-components/elements/navigation/breadcrumb-element'
 import type { AracnaTextAreaElement } from '@aracna/web-components/elements/input/text-area-element'
 import type { AracnaSwitchElement } from '@aracna/web-components/elements/input/switch-element'
 import type { AracnaSliderElement, AracnaSliderThumbElement } from '@aracna/web-components/elements/input/slider-element'
@@ -439,544 +439,508 @@ import type { AracnaButtonGroupElement } from '@aracna/web-components/elements/i
 import type { AracnaButtonElement } from '@aracna/web-components/elements/input/button-element'
 import type { ElementComponentProps } from '@aracna/react'
 
-export type AracnaAracnaMeterProps = ElementComponentProps<AracnaMeterElement, AracnaMeterElementAttributes, AracnaMeterElementEventMap>
+export type AracnaMeterProps = ElementComponentProps<AracnaMeterElement, AracnaMeterElementAttributes, AracnaMeterElementEventMap>
 
-export type AracnaAracnaDialogProps = ElementComponentProps<AracnaDialogElement, AracnaDialogElementAttributes, AracnaDialogElementEventMap>
-export type AracnaAracnaDialogDescriptionProps = ElementComponentProps<
+export type AracnaDialogProps = ElementComponentProps<AracnaDialogElement, AracnaDialogElementAttributes, AracnaDialogElementEventMap>
+export type AracnaDialogDescriptionProps = ElementComponentProps<
   AracnaDialogDescriptionElement,
   AracnaDialogDescriptionElementAttributes,
   AracnaDialogDescriptionElementEventMap
 >
-export type AracnaAracnaDialogLabelProps = ElementComponentProps<AracnaDialogLabelElement, AracnaDialogLabelElementAttributes, AracnaDialogLabelElementEventMap>
+export type AracnaDialogLabelProps = ElementComponentProps<AracnaDialogLabelElement, AracnaDialogLabelElementAttributes, AracnaDialogLabelElementEventMap>
 
-export type AracnaAracnaAlertProps = ElementComponentProps<AracnaAlertElement, AracnaAlertElementAttributes, AracnaAlertElementEventMap>
+export type AracnaAlertProps = ElementComponentProps<AracnaAlertElement, AracnaAlertElementAttributes, AracnaAlertElementEventMap>
 
-export type AracnaAracnaAlertDialogProps = ElementComponentProps<AracnaAlertDialogElement, AracnaAlertDialogElementAttributes, AracnaAlertDialogElementEventMap>
-export type AracnaAracnaAlertDialogDescriptionProps = ElementComponentProps<
+export type AracnaAlertDialogProps = ElementComponentProps<AracnaAlertDialogElement, AracnaAlertDialogElementAttributes, AracnaAlertDialogElementEventMap>
+export type AracnaAlertDialogDescriptionProps = ElementComponentProps<
   AracnaAlertDialogDescriptionElement,
   AracnaAlertDialogDescriptionElementAttributes,
   AracnaAlertDialogDescriptionElementEventMap
 >
-export type AracnaAracnaAlertDialogLabelProps = ElementComponentProps<
+export type AracnaAlertDialogLabelProps = ElementComponentProps<
   AracnaAlertDialogLabelElement,
   AracnaAlertDialogLabelElementAttributes,
   AracnaAlertDialogLabelElementEventMap
 >
 
-export type AracnaAracnaTooltipProps = ElementComponentProps<AracnaTooltipElement, AracnaTooltipElementAttributes, AracnaTooltipElementEventMap>
-export type AracnaAracnaTooltipArrowProps = ElementComponentProps<
-  AracnaTooltipArrowElement,
-  AracnaTooltipArrowElementAttributes,
-  AracnaTooltipArrowElementEventMap
->
-export type AracnaAracnaTooltipContentProps = ElementComponentProps<
+export type AracnaTooltipProps = ElementComponentProps<AracnaTooltipElement, AracnaTooltipElementAttributes, AracnaTooltipElementEventMap>
+export type AracnaTooltipArrowProps = ElementComponentProps<AracnaTooltipArrowElement, AracnaTooltipArrowElementAttributes, AracnaTooltipArrowElementEventMap>
+export type AracnaTooltipContentProps = ElementComponentProps<
   AracnaTooltipContentElement,
   AracnaTooltipContentElementAttributes,
   AracnaTooltipContentElementEventMap
 >
-export type AracnaAracnaTooltipTriggerProps = ElementComponentProps<
+export type AracnaTooltipTriggerProps = ElementComponentProps<
   AracnaTooltipTriggerElement,
   AracnaTooltipTriggerElementAttributes,
   AracnaTooltipTriggerElementEventMap
 >
 
-export type AracnaAracnaQrCodeProps = ElementComponentProps<AracnaQrCodeElement, AracnaQrCodeElementAttributes, AracnaQrCodeElementEventMap>
+export type AracnaQrCodeProps = ElementComponentProps<AracnaQrCodeElement, AracnaQrCodeElementAttributes, AracnaQrCodeElementEventMap>
 
-export type AracnaAracnaListProps<T = any> = ElementComponentProps<AracnaListElement, AracnaListElementAttributes<T>, AracnaListElementEventMap>
-export type AracnaAracnaListItemProps = ElementComponentProps<AracnaListItemElement, AracnaListItemElementAttributes, AracnaListItemElementEventMap>
+export type AracnaListProps<T = any> = ElementComponentProps<AracnaListElement, AracnaListElementAttributes<T>, AracnaListElementEventMap>
+export type AracnaListItemProps = ElementComponentProps<AracnaListItemElement, AracnaListItemElementAttributes, AracnaListItemElementEventMap>
 
-export type AracnaAracnaImageProps = ElementComponentProps<AracnaImageElement, AracnaImageElementAttributes, AracnaImageElementEventMap>
+export type AracnaImageProps = ElementComponentProps<AracnaImageElement, AracnaImageElementAttributes, AracnaImageElementEventMap>
 
-export type AracnaAracnaIconProps = ElementComponentProps<AracnaIconElement, AracnaIconElementAttributes, AracnaIconElementEventMap>
+export type AracnaIconProps = ElementComponentProps<AracnaIconElement, AracnaIconElementAttributes, AracnaIconElementEventMap>
 
-export type AracnaAracnaFeedProps<T = any> = ElementComponentProps<AracnaFeedElement, AracnaFeedElementAttributes<T>, AracnaFeedElementEventMap>
-export type AracnaAracnaFeedArticleProps = ElementComponentProps<AracnaFeedArticleElement, AracnaFeedArticleElementAttributes, AracnaFeedArticleElementEventMap>
-export type AracnaAracnaFeedArticleDescriptionProps = ElementComponentProps<
+export type AracnaFeedProps<T = any> = ElementComponentProps<AracnaFeedElement, AracnaFeedElementAttributes<T>, AracnaFeedElementEventMap>
+export type AracnaFeedArticleProps = ElementComponentProps<AracnaFeedArticleElement, AracnaFeedArticleElementAttributes, AracnaFeedArticleElementEventMap>
+export type AracnaFeedArticleDescriptionProps = ElementComponentProps<
   AracnaFeedArticleDescriptionElement,
   AracnaFeedArticleDescriptionElementAttributes,
   AracnaFeedArticleDescriptionElementEventMap
 >
-export type AracnaAracnaFeedArticleLabelProps = ElementComponentProps<
+export type AracnaFeedArticleLabelProps = ElementComponentProps<
   AracnaFeedArticleLabelElement,
   AracnaFeedArticleLabelElementAttributes,
   AracnaFeedArticleLabelElementEventMap
 >
 
-export type AracnaAracnaChipProps = ElementComponentProps<AracnaChipElement, AracnaChipElementAttributes, AracnaChipElementEventMap>
+export type AracnaChipProps = ElementComponentProps<AracnaChipElement, AracnaChipElementAttributes, AracnaChipElementEventMap>
 
-export type AracnaAracnaCarouselProps<T = any> = ElementComponentProps<AracnaCarouselElement, AracnaCarouselElementAttributes<T>, AracnaCarouselElementEventMap>
-export type AracnaAracnaCarouselNextSlideControlProps = ElementComponentProps<
+export type AracnaCarouselProps<T = any> = ElementComponentProps<AracnaCarouselElement, AracnaCarouselElementAttributes<T>, AracnaCarouselElementEventMap>
+export type AracnaCarouselNextSlideControlProps = ElementComponentProps<
   AracnaCarouselNextSlideControlElement,
   AracnaCarouselNextSlideControlElementAttributes,
   AracnaCarouselNextSlideControlElementEventMap
 >
-export type AracnaAracnaCarouselPreviousSlideControlProps = ElementComponentProps<
+export type AracnaCarouselPreviousSlideControlProps = ElementComponentProps<
   AracnaCarouselPreviousSlideControlElement,
   AracnaCarouselPreviousSlideControlElementAttributes,
   AracnaCarouselPreviousSlideControlElementEventMap
 >
-export type AracnaAracnaCarouselRotationControlProps = ElementComponentProps<
+export type AracnaCarouselRotationControlProps = ElementComponentProps<
   AracnaCarouselRotationControlElement,
   AracnaCarouselRotationControlElementAttributes,
   AracnaCarouselRotationControlElementEventMap
 >
-export type AracnaAracnaCarouselSlideProps = ElementComponentProps<
+export type AracnaCarouselSlideProps = ElementComponentProps<
   AracnaCarouselSlideElement,
   AracnaCarouselSlideElementAttributes,
   AracnaCarouselSlideElementEventMap
 >
-export type AracnaAracnaCarouselSlidesProps = ElementComponentProps<
+export type AracnaCarouselSlidesProps = ElementComponentProps<
   AracnaCarouselSlidesElement,
   AracnaCarouselSlidesElementAttributes,
   AracnaCarouselSlidesElementEventMap
 >
-export type AracnaAracnaCarouselTabProps = ElementComponentProps<AracnaCarouselTabElement, AracnaCarouselTabElementAttributes, AracnaCarouselTabElementEventMap>
-export type AracnaAracnaCarouselTabsProps = ElementComponentProps<
-  AracnaCarouselTabsElement,
-  AracnaCarouselTabsElementAttributes,
-  AracnaCarouselTabsElementEventMap
->
+export type AracnaCarouselTabProps = ElementComponentProps<AracnaCarouselTabElement, AracnaCarouselTabElementAttributes, AracnaCarouselTabElementEventMap>
+export type AracnaCarouselTabsProps = ElementComponentProps<AracnaCarouselTabsElement, AracnaCarouselTabsElementAttributes, AracnaCarouselTabsElementEventMap>
 
-export type AracnaAracnaBadgeProps = ElementComponentProps<AracnaBadgeElement, AracnaBadgeElementAttributes, AracnaBadgeElementEventMap>
+export type AracnaBadgeProps = ElementComponentProps<AracnaBadgeElement, AracnaBadgeElementAttributes, AracnaBadgeElementEventMap>
 
-export type AracnaAracnaAvatarProps = ElementComponentProps<AracnaAvatarElement, AracnaAvatarElementAttributes, AracnaAvatarElementEventMap>
+export type AracnaAvatarProps = ElementComponentProps<AracnaAvatarElement, AracnaAvatarElementAttributes, AracnaAvatarElementEventMap>
 
-export type AracnaAracnaDividerProps = ElementComponentProps<AracnaDividerElement, AracnaDividerElementAttributes, AracnaDividerElementEventMap>
+export type AracnaDividerProps = ElementComponentProps<AracnaDividerElement, AracnaDividerElementAttributes, AracnaDividerElementEventMap>
 
-export type AracnaAracnaAriaTooltipProps = ElementComponentProps<AracnaAriaTooltipElement, AracnaAriaTooltipElementAttributes, AracnaAriaTooltipElementEventMap>
-export type AracnaAracnaAriaTooltipArrowProps = ElementComponentProps<
+export type AracnaAriaTooltipProps = ElementComponentProps<AracnaAriaTooltipElement, AracnaAriaTooltipElementAttributes, AracnaAriaTooltipElementEventMap>
+export type AracnaAriaTooltipArrowProps = ElementComponentProps<
   AracnaAriaTooltipArrowElement,
   AracnaAriaTooltipArrowElementAttributes,
   AracnaAriaTooltipArrowElementEventMap
 >
-export type AracnaAracnaAriaTooltipContentProps = ElementComponentProps<
+export type AracnaAriaTooltipContentProps = ElementComponentProps<
   AracnaAriaTooltipContentElement,
   AracnaAriaTooltipContentElementAttributes,
   AracnaAriaTooltipContentElementEventMap
 >
-export type AracnaAracnaAriaTooltipTriggerProps = ElementComponentProps<
+export type AracnaAriaTooltipTriggerProps = ElementComponentProps<
   AracnaAriaTooltipTriggerElement,
   AracnaAriaTooltipTriggerElementAttributes,
   AracnaAriaTooltipTriggerElementEventMap
 >
 
-export type AracnaAracnaAriaTabsProps = ElementComponentProps<AracnaAriaTabsElement, AracnaAriaTabsElementAttributes, AracnaAriaTabsElementEventMap>
-export type AracnaAracnaAriaTabsPanelProps = ElementComponentProps<
+export type AracnaAriaTabsProps = ElementComponentProps<AracnaAriaTabsElement, AracnaAriaTabsElementAttributes, AracnaAriaTabsElementEventMap>
+export type AracnaAriaTabsPanelProps = ElementComponentProps<
   AracnaAriaTabsPanelElement,
   AracnaAriaTabsPanelElementAttributes,
   AracnaAriaTabsPanelElementEventMap
 >
-export type AracnaAracnaAriaTabsTabProps = ElementComponentProps<AracnaAriaTabsTabElement, AracnaAriaTabsTabElementAttributes, AracnaAriaTabsTabElementEventMap>
+export type AracnaAriaTabsTabProps = ElementComponentProps<AracnaAriaTabsTabElement, AracnaAriaTabsTabElementAttributes, AracnaAriaTabsTabElementEventMap>
 
-export type AracnaAracnaAriaSwitchProps = ElementComponentProps<AracnaAriaSwitchElement, AracnaAriaSwitchElementAttributes, AracnaAriaSwitchElementEventMap>
+export type AracnaAriaSwitchProps = ElementComponentProps<AracnaAriaSwitchElement, AracnaAriaSwitchElementAttributes, AracnaAriaSwitchElementEventMap>
 
-export type AracnaAracnaAriaSliderProps = ElementComponentProps<AracnaAriaSliderElement, AracnaAriaSliderElementAttributes, AracnaAriaSliderElementEventMap>
-export type AracnaAracnaAriaSliderThumbProps = ElementComponentProps<
+export type AracnaAriaSliderProps = ElementComponentProps<AracnaAriaSliderElement, AracnaAriaSliderElementAttributes, AracnaAriaSliderElementEventMap>
+export type AracnaAriaSliderThumbProps = ElementComponentProps<
   AracnaAriaSliderThumbElement,
   AracnaAriaSliderThumbElementAttributes,
   AracnaAriaSliderThumbElementEventMap
 >
 
-export type AracnaAracnaAriaRadioButtonProps = ElementComponentProps<
+export type AracnaAriaRadioButtonProps = ElementComponentProps<
   AracnaAriaRadioButtonElement,
   AracnaAriaRadioButtonElementAttributes,
   AracnaAriaRadioButtonElementEventMap
 >
-export type AracnaAracnaAriaRadioGroupProps = ElementComponentProps<
+export type AracnaAriaRadioGroupProps = ElementComponentProps<
   AracnaAriaRadioGroupElement,
   AracnaAriaRadioGroupElementAttributes,
   AracnaAriaRadioGroupElementEventMap
 >
 
-export type AracnaAracnaAriaMeterProps = ElementComponentProps<AracnaAriaMeterElement, AracnaAriaMeterElementAttributes, AracnaAriaMeterElementEventMap>
+export type AracnaAriaMeterProps = ElementComponentProps<AracnaAriaMeterElement, AracnaAriaMeterElementAttributes, AracnaAriaMeterElementEventMap>
 
-export type AracnaAracnaAriaMenuProps = ElementComponentProps<
+export type AracnaAriaMenuProps = ElementComponentProps<
   AracnaAriaMenuElement,
   AracnaAriaMenuElementAttributes<AracnaAriaMenuItemElement>,
   AracnaAriaMenuElementEventMap
 >
-export type AracnaAracnaAriaMenuButtonProps = ElementComponentProps<
+export type AracnaAriaMenuButtonProps = ElementComponentProps<
   AracnaAriaMenuButtonElement,
   AracnaAriaMenuButtonElementAttributes,
   AracnaAriaMenuButtonElementEventMap
 >
-export type AracnaAracnaAriaMenuItemProps = ElementComponentProps<
-  AracnaAriaMenuItemElement,
-  AracnaAriaMenuItemElementAttributes,
-  AracnaAriaMenuItemElementEventMap
->
-export type AracnaAracnaAriaMenuSubMenuProps = ElementComponentProps<
+export type AracnaAriaMenuItemProps = ElementComponentProps<AracnaAriaMenuItemElement, AracnaAriaMenuItemElementAttributes, AracnaAriaMenuItemElementEventMap>
+export type AracnaAriaMenuSubMenuProps = ElementComponentProps<
   AracnaAriaMenuSubMenuElement,
   AracnaAriaMenuSubMenuElementAttributes,
   AracnaAriaMenuSubMenuElementEventMap
 >
 
-export type AracnaAracnaAriaListProps = ElementComponentProps<AracnaAriaListElement, AracnaAriaListElementAttributes, AracnaAriaListElementEventMap>
-export type AracnaAracnaAriaListItemProps = ElementComponentProps<
-  AracnaAriaListItemElement,
-  AracnaAriaListItemElementAttributes,
-  AracnaAriaListItemElementEventMap
->
+export type AracnaAriaListProps = ElementComponentProps<AracnaAriaListElement, AracnaAriaListElementAttributes, AracnaAriaListElementEventMap>
+export type AracnaAriaListItemProps = ElementComponentProps<AracnaAriaListItemElement, AracnaAriaListItemElementAttributes, AracnaAriaListItemElementEventMap>
 
-export type AracnaAracnaAriaListBoxProps = ElementComponentProps<
+export type AracnaAriaListBoxProps = ElementComponentProps<
   AracnaAriaListBoxElement,
   AracnaAriaListBoxElementAttributes<AracnaAriaListBoxOptionElement>,
   AracnaAriaListBoxElementEventMap
 >
-export type AracnaAracnaAriaListBoxOptionProps = ElementComponentProps<
+export type AracnaAriaListBoxOptionProps = ElementComponentProps<
   AracnaAriaListBoxOptionElement,
   AracnaAriaListBoxOptionElementAttributes,
   AracnaAriaListBoxOptionElementEventMap
 >
 
-export type AracnaAracnaAriaLinkProps = ElementComponentProps<AracnaAriaLinkElement, AracnaAriaLinkElementAttributes, AracnaAriaLinkElementEventMap>
+export type AracnaAriaLinkProps = ElementComponentProps<AracnaAriaLinkElement, AracnaAriaLinkElementAttributes, AracnaAriaLinkElementEventMap>
 
-export type AracnaAracnaAriaFeedProps = ElementComponentProps<AracnaAriaFeedElement, AracnaAriaFeedElementAttributes, AracnaAriaFeedElementEventMap>
-export type AracnaAracnaAriaFeedArticleProps = ElementComponentProps<
+export type AracnaAriaFeedProps = ElementComponentProps<AracnaAriaFeedElement, AracnaAriaFeedElementAttributes, AracnaAriaFeedElementEventMap>
+export type AracnaAriaFeedArticleProps = ElementComponentProps<
   AracnaAriaFeedArticleElement,
   AracnaAriaFeedArticleElementAttributes,
   AracnaAriaFeedArticleElementEventMap
 >
-export type AracnaAracnaAriaFeedArticleDescriptionProps = ElementComponentProps<
+export type AracnaAriaFeedArticleDescriptionProps = ElementComponentProps<
   AracnaAriaFeedArticleDescriptionElement,
   AracnaAriaFeedArticleDescriptionElementAttributes,
   AracnaAriaFeedArticleDescriptionElementEventMap
 >
-export type AracnaAracnaAriaFeedArticleLabelProps = ElementComponentProps<
+export type AracnaAriaFeedArticleLabelProps = ElementComponentProps<
   AracnaAriaFeedArticleLabelElement,
   AracnaAriaFeedArticleLabelElementAttributes,
   AracnaAriaFeedArticleLabelElementEventMap
 >
 
-export type AracnaAracnaAriaDisclosureProps = ElementComponentProps<
+export type AracnaAriaDisclosureProps = ElementComponentProps<
   AracnaAriaDisclosureElement,
   AracnaAriaDisclosureElementAttributes,
   AracnaAriaDisclosureElementEventMap
 >
-export type AracnaAracnaAriaDisclosureButtonProps = ElementComponentProps<
+export type AracnaAriaDisclosureButtonProps = ElementComponentProps<
   AracnaAriaDisclosureButtonElement,
   AracnaAriaDisclosureButtonElementAttributes,
   AracnaAriaDisclosureButtonElementEventMap
 >
-export type AracnaAracnaAriaDisclosurePanelProps = ElementComponentProps<
+export type AracnaAriaDisclosurePanelProps = ElementComponentProps<
   AracnaAriaDisclosurePanelElement,
   AracnaAriaDisclosurePanelElementAttributes,
   AracnaAriaDisclosurePanelElementEventMap
 >
-export type AracnaAracnaAriaDisclosureSectionProps = ElementComponentProps<
+export type AracnaAriaDisclosureSectionProps = ElementComponentProps<
   AracnaAriaDisclosureSectionElement,
   AracnaAriaDisclosureSectionElementAttributes,
   AracnaAriaDisclosureSectionElementEventMap
 >
 
-export type AracnaAracnaAriaDialogProps = ElementComponentProps<AracnaAriaDialogElement, AracnaAriaDialogElementAttributes, AracnaAriaDialogElementEventMap>
-export type AracnaAracnaAriaDialogDescriptionProps = ElementComponentProps<
+export type AracnaAriaDialogProps = ElementComponentProps<AracnaAriaDialogElement, AracnaAriaDialogElementAttributes, AracnaAriaDialogElementEventMap>
+export type AracnaAriaDialogDescriptionProps = ElementComponentProps<
   AracnaAriaDialogDescriptionElement,
   AracnaAriaDialogDescriptionElementAttributes,
   AracnaAriaDialogDescriptionElementEventMap
 >
-export type AracnaAracnaAriaDialogLabelProps = ElementComponentProps<
+export type AracnaAriaDialogLabelProps = ElementComponentProps<
   AracnaAriaDialogLabelElement,
   AracnaAriaDialogLabelElementAttributes,
   AracnaAriaDialogLabelElementEventMap
 >
 
-export type AracnaAracnaAriaComboBoxProps = ElementComponentProps<
+export type AracnaAriaComboBoxProps = ElementComponentProps<
   AracnaAriaComboBoxElement,
   AracnaAriaComboBoxElementAttributes<AracnaAriaComboBoxOptionElement>,
   AracnaAriaComboBoxElementEventMap
 >
-export type AracnaAracnaAriaComboBoxButtonProps = ElementComponentProps<
+export type AracnaAriaComboBoxButtonProps = ElementComponentProps<
   AracnaAriaComboBoxButtonElement,
   AracnaAriaComboBoxButtonElementAttributes,
   AracnaAriaComboBoxButtonElementEventMap
 >
-export type AracnaAracnaAriaComboBoxGroupProps = ElementComponentProps<
+export type AracnaAriaComboBoxGroupProps = ElementComponentProps<
   AracnaAriaComboBoxGroupElement,
   AracnaAriaComboBoxGroupElementAttributes,
   AracnaAriaComboBoxGroupElementEventMap
 >
-export type AracnaAracnaAriaComboBoxInputProps = ElementComponentProps<
+export type AracnaAriaComboBoxInputProps = ElementComponentProps<
   AracnaAriaComboBoxInputElement,
   AracnaAriaComboBoxInputElementAttributes,
   AracnaAriaComboBoxInputElementEventMap
 >
-export type AracnaAracnaAriaComboBoxListProps = ElementComponentProps<
+export type AracnaAriaComboBoxListProps = ElementComponentProps<
   AracnaAriaComboBoxListElement,
   AracnaAriaComboBoxListElementAttributes,
   AracnaAriaComboBoxListElementEventMap
 >
-export type AracnaAracnaAriaComboBoxOptionProps = ElementComponentProps<
+export type AracnaAriaComboBoxOptionProps = ElementComponentProps<
   AracnaAriaComboBoxOptionElement,
   AracnaAriaComboBoxOptionElementAttributes,
   AracnaAriaComboBoxOptionElementEventMap
 >
 
-export type AracnaAracnaAriaCheckBoxProps = ElementComponentProps<
-  AracnaAriaCheckBoxElement,
-  AracnaAriaCheckBoxElementAttributes,
-  AracnaAriaCheckBoxElementEventMap
->
+export type AracnaAriaCheckBoxProps = ElementComponentProps<AracnaAriaCheckBoxElement, AracnaAriaCheckBoxElementAttributes, AracnaAriaCheckBoxElementEventMap>
 
-export type AracnaAracnaAriaCarouselProps = ElementComponentProps<
-  AracnaAriaCarouselElement,
-  AracnaAriaCarouselElementAttributes,
-  AracnaAriaCarouselElementEventMap
->
-export type AracnaAracnaAriaCarouselNextSlideControlProps = ElementComponentProps<
+export type AracnaAriaCarouselProps = ElementComponentProps<AracnaAriaCarouselElement, AracnaAriaCarouselElementAttributes, AracnaAriaCarouselElementEventMap>
+export type AracnaAriaCarouselNextSlideControlProps = ElementComponentProps<
   AracnaAriaCarouselNextSlideControlElement,
   AracnaAriaCarouselNextSlideControlElementAttributes,
   AracnaAriaCarouselNextSlideControlElementEventMap
 >
-export type AracnaAracnaAriaCarouselPreviousSlideControlProps = ElementComponentProps<
+export type AracnaAriaCarouselPreviousSlideControlProps = ElementComponentProps<
   AracnaAriaCarouselPreviousSlideControlElement,
   AracnaAriaCarouselPreviousSlideControlElementAttributes,
   AracnaAriaCarouselPreviousSlideControlElementEventMap
 >
-export type AracnaAracnaAriaCarouselRotationControlProps = ElementComponentProps<
+export type AracnaAriaCarouselRotationControlProps = ElementComponentProps<
   AracnaAriaCarouselRotationControlElement,
   AracnaAriaCarouselRotationControlElementAttributes,
   AracnaAriaCarouselRotationControlElementEventMap
 >
-export type AracnaAracnaAriaCarouselSlideProps = ElementComponentProps<
+export type AracnaAriaCarouselSlideProps = ElementComponentProps<
   AracnaAriaCarouselSlideElement,
   AracnaAriaCarouselSlideElementAttributes,
   AracnaAriaCarouselSlideElementEventMap
 >
-export type AracnaAracnaAriaCarouselSlidesProps = ElementComponentProps<
+export type AracnaAriaCarouselSlidesProps = ElementComponentProps<
   AracnaAriaCarouselSlidesElement,
   AracnaAriaCarouselSlidesElementAttributes,
   AracnaAriaCarouselSlidesElementEventMap
 >
-export type AracnaAracnaAriaCarouselTabProps = ElementComponentProps<
+export type AracnaAriaCarouselTabProps = ElementComponentProps<
   AracnaAriaCarouselTabElement,
   AracnaAriaCarouselTabElementAttributes,
   AracnaAriaCarouselTabElementEventMap
 >
-export type AracnaAracnaAriaCarouselTabsProps = ElementComponentProps<
+export type AracnaAriaCarouselTabsProps = ElementComponentProps<
   AracnaAriaCarouselTabsElement,
   AracnaAriaCarouselTabsElementAttributes,
   AracnaAriaCarouselTabsElementEventMap
 >
 
-export type AracnaAracnaAriaButtonProps = ElementComponentProps<AracnaAriaButtonElement, AracnaAriaButtonElementAttributes, AracnaAriaButtonElementEventMap>
+export type AracnaAriaButtonProps = ElementComponentProps<AracnaAriaButtonElement, AracnaAriaButtonElementAttributes, AracnaAriaButtonElementEventMap>
 
-export type AracnaAracnaAriaBreadcrumbProps = ElementComponentProps<
+export type AracnaAriaBreadcrumbProps = ElementComponentProps<
   AracnaAriaBreadcrumbElement,
   AracnaAriaBreadcrumbElementAttributes,
   AracnaAriaBreadcrumbElementEventMap
 >
-export type AracnaAracnaAriaBreadcrumbItemProps = ElementComponentProps<
+export type AracnaAriaBreadcrumbItemProps = ElementComponentProps<
   AracnaAriaBreadcrumbItemElement,
   AracnaAriaBreadcrumbItemElementAttributes,
   AracnaAriaBreadcrumbItemElementEventMap
 >
-export type AracnaAracnaAriaBreadcrumbListProps = ElementComponentProps<
+export type AracnaAriaBreadcrumbListProps = ElementComponentProps<
   AracnaAriaBreadcrumbListElement,
   AracnaAriaBreadcrumbListElementAttributes,
   AracnaAriaBreadcrumbListElementEventMap
 >
 
-export type AracnaAracnaAriaAlertProps = ElementComponentProps<AracnaAriaAlertElement, AracnaAriaAlertElementAttributes, AracnaAriaAlertElementEventMap>
+export type AracnaAriaAlertProps = ElementComponentProps<AracnaAriaAlertElement, AracnaAriaAlertElementAttributes, AracnaAriaAlertElementEventMap>
 
-export type AracnaAracnaAriaAlertDialogProps = ElementComponentProps<
+export type AracnaAriaAlertDialogProps = ElementComponentProps<
   AracnaAriaAlertDialogElement,
   AracnaAriaAlertDialogElementAttributes,
   AracnaAriaAlertDialogElementEventMap
 >
-export type AracnaAracnaAriaAlertDialogDescriptionProps = ElementComponentProps<
+export type AracnaAriaAlertDialogDescriptionProps = ElementComponentProps<
   AracnaAriaAlertDialogDescriptionElement,
   AracnaAriaAlertDialogDescriptionElementAttributes,
   AracnaAriaAlertDialogDescriptionElementEventMap
 >
-export type AracnaAracnaAriaAlertDialogLabelProps = ElementComponentProps<
+export type AracnaAriaAlertDialogLabelProps = ElementComponentProps<
   AracnaAriaAlertDialogLabelElement,
   AracnaAriaAlertDialogLabelElementAttributes,
   AracnaAriaAlertDialogLabelElementEventMap
 >
 
-export type AracnaAracnaAriaAccordionProps = ElementComponentProps<
+export type AracnaAriaAccordionProps = ElementComponentProps<
   AracnaAriaAccordionElement,
   AracnaAriaAccordionElementAttributes,
   AracnaAriaAccordionElementEventMap
 >
-export type AracnaAracnaAriaAccordionButtonProps = ElementComponentProps<
+export type AracnaAriaAccordionButtonProps = ElementComponentProps<
   AracnaAriaAccordionButtonElement,
   AracnaAriaAccordionButtonElementAttributes,
   AracnaAriaAccordionButtonElementEventMap
 >
-export type AracnaAracnaAriaAccordionHeaderProps = ElementComponentProps<
+export type AracnaAriaAccordionHeaderProps = ElementComponentProps<
   AracnaAriaAccordionHeaderElement,
   AracnaAriaAccordionHeaderElementAttributes,
   AracnaAriaAccordionHeaderElementEventMap
 >
-export type AracnaAracnaAriaAccordionPanelProps = ElementComponentProps<
+export type AracnaAriaAccordionPanelProps = ElementComponentProps<
   AracnaAriaAccordionPanelElement,
   AracnaAriaAccordionPanelElementAttributes,
   AracnaAriaAccordionPanelElementEventMap
 >
-export type AracnaAracnaAriaAccordionSectionProps = ElementComponentProps<
+export type AracnaAriaAccordionSectionProps = ElementComponentProps<
   AracnaAriaAccordionSectionElement,
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap
 >
 
-export type AracnaAracnaTabsProps<T = any> = ElementComponentProps<AracnaTabsElement, AracnaTabsElementAttributes<T>, AracnaTabsElementEventMap>
-export type AracnaAracnaTabsPanelProps = ElementComponentProps<AracnaTabsPanelElement, AracnaTabsPanelElementAttributes, AracnaTabsPanelElementEventMap>
-export type AracnaAracnaTabsTabProps = ElementComponentProps<AracnaTabsTabElement, AracnaTabsTabElementAttributes, AracnaTabsTabElementEventMap>
-
-export type AracnaAracnaNavigationRailProps<T = any> = ElementComponentProps<
-  AracnaNavigationRailElement,
-  AracnaNavigationRailElementAttributes<T>,
-  AracnaNavigationRailElementEventMap
->
-export type AracnaAracnaNavigationRailItemProps = ElementComponentProps<
-  AracnaNavigationRailItemElement,
-  AracnaNavigationRailItemElementAttributes,
-  AracnaNavigationRailItemElementEventMap
->
-
-export type AracnaAracnaNavigationBarProps<T = any> = ElementComponentProps<
-  AracnaNavigationBarElement,
-  AracnaNavigationBarElementAttributes<T>,
-  AracnaNavigationBarElementEventMap
->
-export type AracnaAracnaNavigationBarItemProps = ElementComponentProps<
-  AracnaNavigationBarItemElement,
-  AracnaNavigationBarItemElementAttributes,
-  AracnaNavigationBarItemElementEventMap
->
-
-export type AracnaAracnaMenuProps<T = any> = ElementComponentProps<
-  AracnaMenuElement,
-  AracnaMenuElementAttributes<AracnaMenuItemElement, T>,
-  AracnaMenuElementEventMap
->
-export type AracnaAracnaMenuButtonProps = ElementComponentProps<AracnaMenuButtonElement, AracnaMenuButtonElementAttributes, AracnaMenuButtonElementEventMap>
-export type AracnaAracnaMenuItemProps<T = any> = ElementComponentProps<AracnaMenuItemElement, AracnaMenuItemElementAttributes<T>, AracnaMenuItemElementEventMap>
-export type AracnaAracnaMenuSubMenuProps = ElementComponentProps<AracnaMenuSubMenuElement, AracnaMenuSubMenuElementAttributes, AracnaMenuSubMenuElementEventMap>
-
-export type AracnaAracnaBreadcrumbProps<T = any> = ElementComponentProps<
-  AracnaBreadcrumbElement,
-  AracnaBreadcrumbElementAttributes<T>,
-  AracnaBreadcrumbElementEventMap
->
-export type AracnaAracnaBreadcrumbItemProps = ElementComponentProps<
-  AracnaBreadcrumbItemElement,
-  AracnaBreadcrumbItemElementAttributes,
-  AracnaBreadcrumbItemElementEventMap
->
-export type AracnaAracnaBreadcrumbListProps = ElementComponentProps<
-  AracnaBreadcrumbListElement,
-  AracnaBreadcrumbListElementAttributes,
-  AracnaBreadcrumbListElementEventMap
->
-
-export type AracnaAracnaDisclosureProps<T = any> = ElementComponentProps<
+export type AracnaDisclosureProps<T = any> = ElementComponentProps<
   AracnaDisclosureElement,
   AracnaDisclosureElementAttributes<T>,
   AracnaDisclosureElementEventMap
 >
-export type AracnaAracnaDisclosureButtonProps = ElementComponentProps<
+export type AracnaDisclosureButtonProps = ElementComponentProps<
   AracnaDisclosureButtonElement,
   AracnaDisclosureButtonElementAttributes,
   AracnaDisclosureButtonElementEventMap
 >
-export type AracnaAracnaDisclosurePanelProps = ElementComponentProps<
+export type AracnaDisclosurePanelProps = ElementComponentProps<
   AracnaDisclosurePanelElement,
   AracnaDisclosurePanelElementAttributes,
   AracnaDisclosurePanelElementEventMap
 >
-export type AracnaAracnaDisclosureSectionProps = ElementComponentProps<
+export type AracnaDisclosureSectionProps = ElementComponentProps<
   AracnaDisclosureSectionElement,
   AracnaDisclosureSectionElementAttributes,
   AracnaDisclosureSectionElementEventMap
 >
 
-export type AracnaAracnaCardProps = ElementComponentProps<AracnaCardElement, AracnaCardElementAttributes, AracnaCardElementEventMap>
+export type AracnaCardProps = ElementComponentProps<AracnaCardElement, AracnaCardElementAttributes, AracnaCardElementEventMap>
 
-export type AracnaAracnaAccordionProps<T = any> = ElementComponentProps<
-  AracnaAccordionElement,
-  AracnaAccordionElementAttributes<T>,
-  AracnaAccordionElementEventMap
->
-export type AracnaAracnaAccordionButtonProps = ElementComponentProps<
+export type AracnaAccordionProps<T = any> = ElementComponentProps<AracnaAccordionElement, AracnaAccordionElementAttributes<T>, AracnaAccordionElementEventMap>
+export type AracnaAccordionButtonProps = ElementComponentProps<
   AracnaAccordionButtonElement,
   AracnaAccordionButtonElementAttributes,
   AracnaAccordionButtonElementEventMap
 >
-export type AracnaAracnaAccordionHeaderProps = ElementComponentProps<
+export type AracnaAccordionHeaderProps = ElementComponentProps<
   AracnaAccordionHeaderElement,
   AracnaAccordionHeaderElementAttributes,
   AracnaAccordionHeaderElementEventMap
 >
-export type AracnaAracnaAccordionPanelProps = ElementComponentProps<
+export type AracnaAccordionPanelProps = ElementComponentProps<
   AracnaAccordionPanelElement,
   AracnaAccordionPanelElementAttributes,
   AracnaAccordionPanelElementEventMap
 >
-export type AracnaAracnaAccordionSectionProps = ElementComponentProps<
+export type AracnaAccordionSectionProps = ElementComponentProps<
   AracnaAccordionSectionElement,
   AracnaAccordionSectionElementAttributes,
   AracnaAccordionSectionElementEventMap
 >
 
-export type AracnaAracnaTextAreaProps = ElementComponentProps<AracnaTextAreaElement, AracnaTextAreaElementAttributes, AracnaTextAreaElementEventMap>
+export type AracnaTabsProps<T = any> = ElementComponentProps<AracnaTabsElement, AracnaTabsElementAttributes<T>, AracnaTabsElementEventMap>
+export type AracnaTabsPanelProps = ElementComponentProps<AracnaTabsPanelElement, AracnaTabsPanelElementAttributes, AracnaTabsPanelElementEventMap>
+export type AracnaTabsTabProps = ElementComponentProps<AracnaTabsTabElement, AracnaTabsTabElementAttributes, AracnaTabsTabElementEventMap>
 
-export type AracnaAracnaSwitchProps = ElementComponentProps<AracnaSwitchElement, AracnaSwitchElementAttributes, AracnaSwitchElementEventMap>
+export type AracnaNavigationRailProps<T = any> = ElementComponentProps<
+  AracnaNavigationRailElement,
+  AracnaNavigationRailElementAttributes<T>,
+  AracnaNavigationRailElementEventMap
+>
+export type AracnaNavigationRailItemProps = ElementComponentProps<
+  AracnaNavigationRailItemElement,
+  AracnaNavigationRailItemElementAttributes,
+  AracnaNavigationRailItemElementEventMap
+>
 
-export type AracnaAracnaSliderProps<T = any> = ElementComponentProps<AracnaSliderElement, AracnaSliderElementAttributes<T>, AracnaSliderElementEventMap>
-export type AracnaAracnaSliderThumbProps = ElementComponentProps<AracnaSliderThumbElement, AracnaSliderThumbElementAttributes, AracnaSliderThumbElementEventMap>
+export type AracnaNavigationBarProps<T = any> = ElementComponentProps<
+  AracnaNavigationBarElement,
+  AracnaNavigationBarElementAttributes<T>,
+  AracnaNavigationBarElementEventMap
+>
+export type AracnaNavigationBarItemProps = ElementComponentProps<
+  AracnaNavigationBarItemElement,
+  AracnaNavigationBarItemElementAttributes,
+  AracnaNavigationBarItemElementEventMap
+>
 
-export type AracnaAracnaSelectProps<T = any> = ElementComponentProps<
+export type AracnaMenuProps<T = any> = ElementComponentProps<
+  AracnaMenuElement,
+  AracnaMenuElementAttributes<AracnaMenuItemElement, T>,
+  AracnaMenuElementEventMap
+>
+export type AracnaMenuButtonProps = ElementComponentProps<AracnaMenuButtonElement, AracnaMenuButtonElementAttributes, AracnaMenuButtonElementEventMap>
+export type AracnaMenuItemProps<T = any> = ElementComponentProps<AracnaMenuItemElement, AracnaMenuItemElementAttributes<T>, AracnaMenuItemElementEventMap>
+export type AracnaMenuSubMenuProps = ElementComponentProps<AracnaMenuSubMenuElement, AracnaMenuSubMenuElementAttributes, AracnaMenuSubMenuElementEventMap>
+
+export type AracnaBreadcrumbProps<T = any> = ElementComponentProps<
+  AracnaBreadcrumbElement,
+  AracnaBreadcrumbElementAttributes<T>,
+  AracnaBreadcrumbElementEventMap
+>
+export type AracnaBreadcrumbItemProps = ElementComponentProps<
+  AracnaBreadcrumbItemElement,
+  AracnaBreadcrumbItemElementAttributes,
+  AracnaBreadcrumbItemElementEventMap
+>
+export type AracnaBreadcrumbListProps = ElementComponentProps<
+  AracnaBreadcrumbListElement,
+  AracnaBreadcrumbListElementAttributes,
+  AracnaBreadcrumbListElementEventMap
+>
+
+export type AracnaTextAreaProps = ElementComponentProps<AracnaTextAreaElement, AracnaTextAreaElementAttributes, AracnaTextAreaElementEventMap>
+
+export type AracnaSwitchProps = ElementComponentProps<AracnaSwitchElement, AracnaSwitchElementAttributes, AracnaSwitchElementEventMap>
+
+export type AracnaSliderProps<T = any> = ElementComponentProps<AracnaSliderElement, AracnaSliderElementAttributes<T>, AracnaSliderElementEventMap>
+export type AracnaSliderThumbProps = ElementComponentProps<AracnaSliderThumbElement, AracnaSliderThumbElementAttributes, AracnaSliderThumbElementEventMap>
+
+export type AracnaSelectProps<T = any> = ElementComponentProps<
   AracnaSelectElement,
   AracnaSelectElementAttributes<AracnaSelectOptionElement, T>,
   AracnaSelectElementEventMap
 >
-export type AracnaAracnaSelectButtonProps = ElementComponentProps<
-  AracnaSelectButtonElement,
-  AracnaSelectButtonElementAttributes,
-  AracnaSelectButtonElementEventMap
->
-export type AracnaAracnaSelectGroupProps = ElementComponentProps<AracnaSelectGroupElement, AracnaSelectGroupElementAttributes, AracnaSelectGroupElementEventMap>
-export type AracnaAracnaSelectInputProps = ElementComponentProps<AracnaSelectInputElement, AracnaSelectInputElementAttributes, AracnaSelectInputElementEventMap>
-export type AracnaAracnaSelectListProps = ElementComponentProps<AracnaSelectListElement, AracnaSelectListElementAttributes, AracnaSelectListElementEventMap>
-export type AracnaAracnaSelectOptionProps = ElementComponentProps<
-  AracnaSelectOptionElement,
-  AracnaSelectOptionElementAttributes,
-  AracnaSelectOptionElementEventMap
->
+export type AracnaSelectButtonProps = ElementComponentProps<AracnaSelectButtonElement, AracnaSelectButtonElementAttributes, AracnaSelectButtonElementEventMap>
+export type AracnaSelectGroupProps = ElementComponentProps<AracnaSelectGroupElement, AracnaSelectGroupElementAttributes, AracnaSelectGroupElementEventMap>
+export type AracnaSelectInputProps = ElementComponentProps<AracnaSelectInputElement, AracnaSelectInputElementAttributes, AracnaSelectInputElementEventMap>
+export type AracnaSelectListProps = ElementComponentProps<AracnaSelectListElement, AracnaSelectListElementAttributes, AracnaSelectListElementEventMap>
+export type AracnaSelectOptionProps = ElementComponentProps<AracnaSelectOptionElement, AracnaSelectOptionElementAttributes, AracnaSelectOptionElementEventMap>
 
-export type AracnaAracnaRadioGroupProps<T = any> = ElementComponentProps<
+export type AracnaRadioGroupProps<T = any> = ElementComponentProps<
   AracnaRadioGroupElement,
   AracnaRadioGroupElementAttributes<T>,
   AracnaRadioGroupElementEventMap
 >
-export type AracnaAracnaRadioButtonProps = ElementComponentProps<AracnaRadioButtonElement, AracnaRadioButtonElementAttributes, AracnaRadioButtonElementEventMap>
+export type AracnaRadioButtonProps = ElementComponentProps<AracnaRadioButtonElement, AracnaRadioButtonElementAttributes, AracnaRadioButtonElementEventMap>
 
-export type AracnaAracnaListBoxProps = ElementComponentProps<
+export type AracnaListBoxProps = ElementComponentProps<
   AracnaListBoxElement,
   AracnaListBoxElementAttributes<AracnaListBoxOptionElement>,
   AracnaListBoxElementEventMap
 >
-export type AracnaAracnaListBoxOptionProps = ElementComponentProps<
+export type AracnaListBoxOptionProps = ElementComponentProps<
   AracnaListBoxOptionElement,
   AracnaListBoxOptionElementAttributes,
   AracnaListBoxOptionElementEventMap
 >
 
-export type AracnaAracnaInputFileProps = ElementComponentProps<AracnaInputFileElement, AracnaInputFileElementAttributes, AracnaInputFileElementEventMap>
+export type AracnaInputFileProps = ElementComponentProps<AracnaInputFileElement, AracnaInputFileElementAttributes, AracnaInputFileElementEventMap>
 
-export type AracnaAracnaInputProps = ElementComponentProps<AracnaInputElement, AracnaInputElementAttributes, AracnaInputElementEventMap>
+export type AracnaInputProps = ElementComponentProps<AracnaInputElement, AracnaInputElementAttributes, AracnaInputElementEventMap>
 
-export type AracnaAracnaFormProps<T = any> = ElementComponentProps<AracnaFormElement, AracnaFormElementAttributes<T>, AracnaFormElementEventMap>
+export type AracnaFormProps<T = any> = ElementComponentProps<AracnaFormElement, AracnaFormElementAttributes<T>, AracnaFormElementEventMap>
 
-export type AracnaAracnaCheckBoxProps = ElementComponentProps<AracnaCheckBoxElement, AracnaCheckBoxElementAttributes, AracnaCheckBoxElementEventMap>
+export type AracnaCheckBoxProps = ElementComponentProps<AracnaCheckBoxElement, AracnaCheckBoxElementAttributes, AracnaCheckBoxElementEventMap>
 
-export type AracnaAracnaButtonGroupProps<T = any> = ElementComponentProps<
+export type AracnaButtonGroupProps<T = any> = ElementComponentProps<
   AracnaButtonGroupElement,
   AracnaButtonGroupElementAttributes<T>,
   AracnaButtonGroupElementEventMap
 >
 
-export type AracnaAracnaButtonProps = ElementComponentProps<AracnaButtonElement, AracnaButtonElementAttributes, AracnaButtonElementEventMap>
+export type AracnaButtonProps = ElementComponentProps<AracnaButtonElement, AracnaButtonElementAttributes, AracnaButtonElementEventMap>

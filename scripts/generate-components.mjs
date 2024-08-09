@@ -79,14 +79,14 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
         )
       )} } from '@aracna/react'
       import type { ElementComponent } from '@aracna/react'
-      import type { ${elements.map(({ element }) => `Aracna${element.replace('Element', 'Props')}`).join(', ')} } from '../../definitions/props.js'
+      import type { ${elements.map(({ element }) => `${element.replace('Element', 'Props')}`).join(', ')} } from '../../definitions/props.js'
       import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web-components'
       import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'
 
       ${elements
         .map(({ element, tag }) =>
           [
-            `export const ${element.replace('Element', '')}: ElementComponent<${element}, Aracna${element.replace('Element', 'Props')}> = `,
+            `export const ${element.replace('Element', '')}: ElementComponent<${element}, ${element.replace('Element', 'Props')}> = `,
             `create${EXTENDS.get(element) ?? 'Base'}ElementComponent`,
             `<${element}, ${element}Attributes${GENERICS.has(element) ? `<${GENERICS.get(element)}>` : ''}, ${element}EventMap>`,
             `('${tag}', ${element}${EVENTS.has(element) ? `, ${JSON.stringify(EVENTS.get(element))}` : ''})`

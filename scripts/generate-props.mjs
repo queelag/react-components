@@ -50,7 +50,7 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
       ${elements
         .map((element) =>
           [
-            `export type Aracna${element.replace('Element', '')}Props`,
+            `export type ${element.replace('Element', '')}Props`,
             GENERICS.get(element)?.[0] === 'T' ? `<T = any>` : GENERICS.get(element)?.[1] === 'T' ? '<T = any>' : '',
             ` = ElementComponentProps<${element}, ${element}Attributes`,
             GENERICS.has(element) ? `<${[...GENERICS.get(element)].join(',')}>` : '',

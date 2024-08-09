@@ -1,6 +1,6 @@
 import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaAlertDialogProps, AracnaAracnaAlertDialogDescriptionProps, AracnaAracnaAlertDialogLabelProps } from '../../definitions/props.js'
+import type { AracnaAlertDialogProps, AracnaAlertDialogDescriptionProps, AracnaAlertDialogLabelProps } from '../../definitions/props.js'
 import type {
   AracnaAlertDialogElementAttributes,
   AracnaAlertDialogElementEventMap,
@@ -15,19 +15,19 @@ import {
   AracnaAlertDialogLabelElement
 } from '@aracna/web-components/elements/feedback/alert-dialog-element'
 
-export const AracnaAlertDialog: ElementComponent<AracnaAlertDialogElement, AracnaAracnaAlertDialogProps> = createFocusTrapElementComponent<
+export const AracnaAlertDialog: ElementComponent<AracnaAlertDialogElement, AracnaAlertDialogProps> = createFocusTrapElementComponent<
   AracnaAlertDialogElement,
   AracnaAlertDialogElementAttributes,
   AracnaAlertDialogElementEventMap
 >('aracna-alert-dialog', AracnaAlertDialogElement, ['dialog-close', 'dialog-open'])
 
-export const AracnaAlertDialogDescription: ElementComponent<AracnaAlertDialogDescriptionElement, AracnaAracnaAlertDialogDescriptionProps> =
+export const AracnaAlertDialogDescription: ElementComponent<AracnaAlertDialogDescriptionElement, AracnaAlertDialogDescriptionProps> =
   createBaseElementComponent<AracnaAlertDialogDescriptionElement, AracnaAlertDialogDescriptionElementAttributes, AracnaAlertDialogDescriptionElementEventMap>(
     'aracna-alert-dialog-description',
     AracnaAlertDialogDescriptionElement
   )
 
-export const AracnaAlertDialogLabel: ElementComponent<AracnaAlertDialogLabelElement, AracnaAracnaAlertDialogLabelProps> = createBaseElementComponent<
+export const AracnaAlertDialogLabel: ElementComponent<AracnaAlertDialogLabelElement, AracnaAlertDialogLabelProps> = createBaseElementComponent<
   AracnaAlertDialogLabelElement,
   AracnaAlertDialogLabelElementAttributes,
   AracnaAlertDialogLabelElementEventMap

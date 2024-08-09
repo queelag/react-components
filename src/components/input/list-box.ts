@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaListBoxProps, AracnaAracnaListBoxOptionProps } from '../../definitions/props.js'
+import type { AracnaListBoxProps, AracnaListBoxOptionProps } from '../../definitions/props.js'
 import type {
   AracnaListBoxElementAttributes,
   AracnaListBoxElementEventMap,
@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaListBoxElement, AracnaListBoxOptionElement } from '@aracna/web-components/elements/input/list-box-element'
 
-export const AracnaListBox: ElementComponent<AracnaListBoxElement, AracnaAracnaListBoxProps> = createBaseElementComponent<
+export const AracnaListBox: ElementComponent<AracnaListBoxElement, AracnaListBoxProps> = createBaseElementComponent<
   AracnaListBoxElement,
   AracnaListBoxElementAttributes,
   AracnaListBoxElementEventMap
 >('aracna-listbox', AracnaListBoxElement)
 
-export const AracnaListBoxOption: ElementComponent<AracnaListBoxOptionElement, AracnaAracnaListBoxOptionProps> = createBaseElementComponent<
+export const AracnaListBoxOption: ElementComponent<AracnaListBoxOptionElement, AracnaListBoxOptionProps> = createBaseElementComponent<
   AracnaListBoxOptionElement,
   AracnaListBoxOptionElementAttributes,
   AracnaListBoxOptionElementEventMap

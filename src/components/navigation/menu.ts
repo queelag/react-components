@@ -1,6 +1,6 @@
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaMenuProps, AracnaAracnaMenuButtonProps, AracnaAracnaMenuItemProps, AracnaAracnaMenuSubMenuProps } from '../../definitions/props.js'
+import type { AracnaMenuProps, AracnaMenuButtonProps, AracnaMenuItemProps, AracnaMenuSubMenuProps } from '../../definitions/props.js'
 import type {
   AracnaMenuElementAttributes,
   AracnaMenuElementEventMap,
@@ -18,25 +18,25 @@ import {
   AracnaMenuSubMenuElement
 } from '@aracna/web-components/elements/navigation/menu-element'
 
-export const AracnaMenu: ElementComponent<AracnaMenuElement, AracnaAracnaMenuProps> = createBaseElementComponent<
+export const AracnaMenu: ElementComponent<AracnaMenuElement, AracnaMenuProps> = createBaseElementComponent<
   AracnaMenuElement,
   AracnaMenuElementAttributes<AracnaMenuItemElement>,
   AracnaMenuElementEventMap
 >('aracna-menu', AracnaMenuElement)
 
-export const AracnaMenuButton: ElementComponent<AracnaMenuButtonElement, AracnaAracnaMenuButtonProps> = createBaseElementComponent<
+export const AracnaMenuButton: ElementComponent<AracnaMenuButtonElement, AracnaMenuButtonProps> = createBaseElementComponent<
   AracnaMenuButtonElement,
   AracnaMenuButtonElementAttributes,
   AracnaMenuButtonElementEventMap
 >('aracna-menu-button', AracnaMenuButtonElement)
 
-export const AracnaMenuItem: ElementComponent<AracnaMenuItemElement, AracnaAracnaMenuItemProps> = createBaseElementComponent<
+export const AracnaMenuItem: ElementComponent<AracnaMenuItemElement, AracnaMenuItemProps> = createBaseElementComponent<
   AracnaMenuItemElement,
   AracnaMenuItemElementAttributes,
   AracnaMenuItemElementEventMap
 >('aracna-menu-item', AracnaMenuItemElement)
 
-export const AracnaMenuSubMenu: ElementComponent<AracnaMenuSubMenuElement, AracnaAracnaMenuSubMenuProps> = createFloatingElementComponent<
+export const AracnaMenuSubMenu: ElementComponent<AracnaMenuSubMenuElement, AracnaMenuSubMenuProps> = createFloatingElementComponent<
   AracnaMenuSubMenuElement,
   AracnaMenuSubMenuElementAttributes,
   AracnaMenuSubMenuElementEventMap

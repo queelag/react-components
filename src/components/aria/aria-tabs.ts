@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaAriaTabsProps, AracnaAracnaAriaTabsPanelProps, AracnaAracnaAriaTabsTabProps } from '../../definitions/props.js'
+import type { AracnaAriaTabsProps, AracnaAriaTabsPanelProps, AracnaAriaTabsTabProps } from '../../definitions/props.js'
 import type {
   AracnaAriaTabsElementAttributes,
   AracnaAriaTabsElementEventMap,
@@ -11,19 +11,19 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaTabsElement, AracnaAriaTabsPanelElement, AracnaAriaTabsTabElement } from '@aracna/web-components/elements/aria/aria-tabs-element'
 
-export const AracnaAriaTabs: ElementComponent<AracnaAriaTabsElement, AracnaAracnaAriaTabsProps> = createBaseElementComponent<
+export const AracnaAriaTabs: ElementComponent<AracnaAriaTabsElement, AracnaAriaTabsProps> = createBaseElementComponent<
   AracnaAriaTabsElement,
   AracnaAriaTabsElementAttributes,
   AracnaAriaTabsElementEventMap
 >('aracna-aria-tabs', AracnaAriaTabsElement)
 
-export const AracnaAriaTabsPanel: ElementComponent<AracnaAriaTabsPanelElement, AracnaAracnaAriaTabsPanelProps> = createBaseElementComponent<
+export const AracnaAriaTabsPanel: ElementComponent<AracnaAriaTabsPanelElement, AracnaAriaTabsPanelProps> = createBaseElementComponent<
   AracnaAriaTabsPanelElement,
   AracnaAriaTabsPanelElementAttributes,
   AracnaAriaTabsPanelElementEventMap
 >('aracna-aria-tabs-panel', AracnaAriaTabsPanelElement)
 
-export const AracnaAriaTabsTab: ElementComponent<AracnaAriaTabsTabElement, AracnaAracnaAriaTabsTabProps> = createBaseElementComponent<
+export const AracnaAriaTabsTab: ElementComponent<AracnaAriaTabsTabElement, AracnaAriaTabsTabProps> = createBaseElementComponent<
   AracnaAriaTabsTabElement,
   AracnaAriaTabsTabElementAttributes,
   AracnaAriaTabsTabElementEventMap

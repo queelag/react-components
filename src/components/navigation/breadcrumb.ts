@@ -1,6 +1,6 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAracnaBreadcrumbProps, AracnaAracnaBreadcrumbItemProps, AracnaAracnaBreadcrumbListProps } from '../../definitions/props.js'
+import type { AracnaBreadcrumbProps, AracnaBreadcrumbItemProps, AracnaBreadcrumbListProps } from '../../definitions/props.js'
 import type {
   AracnaBreadcrumbElementAttributes,
   AracnaBreadcrumbElementEventMap,
@@ -15,19 +15,19 @@ import {
   AracnaBreadcrumbListElement
 } from '@aracna/web-components/elements/navigation/breadcrumb-element'
 
-export const AracnaBreadcrumb: ElementComponent<AracnaBreadcrumbElement, AracnaAracnaBreadcrumbProps> = createBaseElementComponent<
+export const AracnaBreadcrumb: ElementComponent<AracnaBreadcrumbElement, AracnaBreadcrumbProps> = createBaseElementComponent<
   AracnaBreadcrumbElement,
   AracnaBreadcrumbElementAttributes,
   AracnaBreadcrumbElementEventMap
 >('aracna-breadcrumb', AracnaBreadcrumbElement)
 
-export const AracnaBreadcrumbItem: ElementComponent<AracnaBreadcrumbItemElement, AracnaAracnaBreadcrumbItemProps> = createBaseElementComponent<
+export const AracnaBreadcrumbItem: ElementComponent<AracnaBreadcrumbItemElement, AracnaBreadcrumbItemProps> = createBaseElementComponent<
   AracnaBreadcrumbItemElement,
   AracnaBreadcrumbItemElementAttributes,
   AracnaBreadcrumbItemElementEventMap
 >('aracna-breadcrumb-item', AracnaBreadcrumbItemElement)
 
-export const AracnaBreadcrumbList: ElementComponent<AracnaBreadcrumbListElement, AracnaAracnaBreadcrumbListProps> = createBaseElementComponent<
+export const AracnaBreadcrumbList: ElementComponent<AracnaBreadcrumbListElement, AracnaBreadcrumbListProps> = createBaseElementComponent<
   AracnaBreadcrumbListElement,
   AracnaBreadcrumbListElementAttributes,
   AracnaBreadcrumbListElementEventMap
