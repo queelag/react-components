@@ -1,16 +1,22 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaListProps, AracnaListItemProps } from '@aracna/react'
-import type { ListElementAttributes, ListElementEventMap, ListItemElementAttributes, ListItemElementEventMap } from '@aracna/web'
-import { ListElement, ListItemElement } from '@aracna/web-components/elements/data/list-element'
+import type { AracnaAracnaListProps, AracnaAracnaListItemProps } from '../../definitions/props.js'
+import type {
+  AracnaListElementAttributes,
+  AracnaListElementEventMap,
+  AracnaListItemElementAttributes,
+  AracnaListItemElementEventMap
+} from '@aracna/web-components'
+import { AracnaListElement, AracnaListItemElement } from '@aracna/web-components/elements/data/list-element'
 
-export const AracnaList: ElementComponent<ListElement, AracnaListProps> = createBaseElementComponent<ListElement, ListElementAttributes, ListElementEventMap>(
-  'aracna-list',
-  ListElement
-)
+export const AracnaAracnaList: ElementComponent<AracnaListElement, AracnaAracnaListProps> = createBaseElementComponent<
+  AracnaListElement,
+  AracnaListElementAttributes,
+  AracnaListElementEventMap
+>('aracna-list', AracnaListElement)
 
-export const AracnaListItem: ElementComponent<ListItemElement, AracnaListItemProps> = createBaseElementComponent<
-  ListItemElement,
-  ListItemElementAttributes,
-  ListItemElementEventMap
->('aracna-list-item', ListItemElement)
+export const AracnaAracnaListItem: ElementComponent<AracnaListItemElement, AracnaAracnaListItemProps> = createBaseElementComponent<
+  AracnaListItemElement,
+  AracnaListItemElementAttributes,
+  AracnaListItemElementEventMap
+>('aracna-list-item', AracnaListItemElement)

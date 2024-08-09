@@ -1,22 +1,22 @@
 import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaRadioButtonProps, AracnaAriaRadioGroupProps } from '@aracna/react'
+import type { AracnaAracnaAriaRadioButtonProps, AracnaAracnaAriaRadioGroupProps } from '../../definitions/props.js'
 import type {
-  AriaRadioButtonElementAttributes,
-  AriaRadioButtonElementEventMap,
-  AriaRadioGroupElementAttributes,
-  AriaRadioGroupElementEventMap
-} from '@aracna/web'
-import { AriaRadioButtonElement, AriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria-radio-group-element'
+  AracnaAriaRadioButtonElementAttributes,
+  AracnaAriaRadioButtonElementEventMap,
+  AracnaAriaRadioGroupElementAttributes,
+  AracnaAriaRadioGroupElementEventMap
+} from '@aracna/web-components'
+import { AracnaAriaRadioButtonElement, AracnaAriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria-radio-group-element'
 
-export const AracnaAriaRadioButton: ElementComponent<AriaRadioButtonElement, AracnaAriaRadioButtonProps> = createBaseElementComponent<
-  AriaRadioButtonElement,
-  AriaRadioButtonElementAttributes,
-  AriaRadioButtonElementEventMap
->('aracna-aria-radio-button', AriaRadioButtonElement)
+export const AracnaAracnaAriaRadioButton: ElementComponent<AracnaAriaRadioButtonElement, AracnaAracnaAriaRadioButtonProps> = createBaseElementComponent<
+  AracnaAriaRadioButtonElement,
+  AracnaAriaRadioButtonElementAttributes,
+  AracnaAriaRadioButtonElementEventMap
+>('aracna-aria-radio-button', AracnaAriaRadioButtonElement)
 
-export const AracnaAriaRadioGroup: ElementComponent<AriaRadioGroupElement, AracnaAriaRadioGroupProps> = createFormControlElementComponent<
-  AriaRadioGroupElement,
-  AriaRadioGroupElementAttributes,
-  AriaRadioGroupElementEventMap
->('aracna-aria-radio-group', AriaRadioGroupElement)
+export const AracnaAracnaAriaRadioGroup: ElementComponent<AracnaAriaRadioGroupElement, AracnaAracnaAriaRadioGroupProps> = createFormControlElementComponent<
+  AracnaAriaRadioGroupElement,
+  AracnaAriaRadioGroupElementAttributes,
+  AracnaAriaRadioGroupElementEventMap
+>('aracna-aria-radio-group', AracnaAriaRadioGroupElement)

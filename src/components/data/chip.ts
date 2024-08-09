@@ -1,10 +1,11 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaChipProps } from '@aracna/react'
-import type { ChipElementAttributes, ChipElementEventMap } from '@aracna/web'
-import { ChipElement } from '@aracna/web-components/elements/data/chip-element'
+import type { AracnaAracnaChipProps } from '../../definitions/props.js'
+import type { AracnaChipElementAttributes, AracnaChipElementEventMap } from '@aracna/web-components'
+import { AracnaChipElement } from '@aracna/web-components/elements/data/chip-element'
 
-export const AracnaChip: ElementComponent<ChipElement, AracnaChipProps> = createBaseElementComponent<ChipElement, ChipElementAttributes, ChipElementEventMap>(
-  'aracna-chip',
-  ChipElement
-)
+export const AracnaAracnaChip: ElementComponent<AracnaChipElement, AracnaAracnaChipProps> = createBaseElementComponent<
+  AracnaChipElement,
+  AracnaChipElementAttributes,
+  AracnaChipElementEventMap
+>('aracna-chip', AracnaChipElement)

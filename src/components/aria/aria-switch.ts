@@ -1,11 +1,11 @@
 import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaSwitchProps } from '@aracna/react'
-import type { AriaSwitchElementAttributes, AriaSwitchElementEventMap } from '@aracna/web'
-import { AriaSwitchElement } from '@aracna/web-components/elements/aria/aria-switch-element'
+import type { AracnaAracnaAriaSwitchProps } from '../../definitions/props.js'
+import type { AracnaAriaSwitchElementAttributes, AracnaAriaSwitchElementEventMap } from '@aracna/web-components'
+import { AracnaAriaSwitchElement } from '@aracna/web-components/elements/aria/aria-switch-element'
 
-export const AracnaAriaSwitch: ElementComponent<AriaSwitchElement, AracnaAriaSwitchProps> = createFormControlElementComponent<
-  AriaSwitchElement,
-  AriaSwitchElementAttributes,
-  AriaSwitchElementEventMap
->('aracna-aria-switch', AriaSwitchElement)
+export const AracnaAracnaAriaSwitch: ElementComponent<AracnaAriaSwitchElement, AracnaAracnaAriaSwitchProps> = createFormControlElementComponent<
+  AracnaAriaSwitchElement,
+  AracnaAriaSwitchElementAttributes,
+  AracnaAriaSwitchElementEventMap
+>('aracna-aria-switch', AracnaAriaSwitchElement)

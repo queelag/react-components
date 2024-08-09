@@ -1,22 +1,22 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaListBoxProps, AracnaAriaListBoxOptionProps } from '@aracna/react'
+import type { AracnaAracnaAriaListBoxProps, AracnaAracnaAriaListBoxOptionProps } from '../../definitions/props.js'
 import type {
-  AriaListBoxElementAttributes,
-  AriaListBoxElementEventMap,
-  AriaListBoxOptionElementAttributes,
-  AriaListBoxOptionElementEventMap
-} from '@aracna/web'
-import { AriaListBoxElement, AriaListBoxOptionElement } from '@aracna/web-components/elements/aria/aria-list-box-element'
+  AracnaAriaListBoxElementAttributes,
+  AracnaAriaListBoxElementEventMap,
+  AracnaAriaListBoxOptionElementAttributes,
+  AracnaAriaListBoxOptionElementEventMap
+} from '@aracna/web-components'
+import { AracnaAriaListBoxElement, AracnaAriaListBoxOptionElement } from '@aracna/web-components/elements/aria/aria-list-box-element'
 
-export const AracnaAriaListBox: ElementComponent<AriaListBoxElement, AracnaAriaListBoxProps> = createBaseElementComponent<
-  AriaListBoxElement,
-  AriaListBoxElementAttributes<AriaListBoxOptionElement>,
-  AriaListBoxElementEventMap
->('aracna-aria-listbox', AriaListBoxElement)
+export const AracnaAracnaAriaListBox: ElementComponent<AracnaAriaListBoxElement, AracnaAracnaAriaListBoxProps> = createBaseElementComponent<
+  AracnaAriaListBoxElement,
+  AracnaAriaListBoxElementAttributes<AracnaAriaListBoxOptionElement>,
+  AracnaAriaListBoxElementEventMap
+>('aracna-aria-listbox', AracnaAriaListBoxElement)
 
-export const AracnaAriaListBoxOption: ElementComponent<AriaListBoxOptionElement, AracnaAriaListBoxOptionProps> = createBaseElementComponent<
-  AriaListBoxOptionElement,
-  AriaListBoxOptionElementAttributes,
-  AriaListBoxOptionElementEventMap
->('aracna-aria-listbox-option', AriaListBoxOptionElement)
+export const AracnaAracnaAriaListBoxOption: ElementComponent<AracnaAriaListBoxOptionElement, AracnaAracnaAriaListBoxOptionProps> = createBaseElementComponent<
+  AracnaAriaListBoxOptionElement,
+  AracnaAriaListBoxOptionElementAttributes,
+  AracnaAriaListBoxOptionElementEventMap
+>('aracna-aria-listbox-option', AracnaAriaListBoxOptionElement)

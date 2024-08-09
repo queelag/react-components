@@ -1,38 +1,48 @@
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaMenuProps, AracnaAriaMenuButtonProps, AracnaAriaMenuItemProps, AracnaAriaMenuSubMenuProps } from '@aracna/react'
 import type {
-  AriaMenuElementAttributes,
-  AriaMenuElementEventMap,
-  AriaMenuButtonElementAttributes,
-  AriaMenuButtonElementEventMap,
-  AriaMenuItemElementAttributes,
-  AriaMenuItemElementEventMap,
-  AriaMenuSubMenuElementAttributes,
-  AriaMenuSubMenuElementEventMap
-} from '@aracna/web'
-import { AriaMenuElement, AriaMenuButtonElement, AriaMenuItemElement, AriaMenuSubMenuElement } from '@aracna/web-components/elements/aria/aria-menu-element'
+  AracnaAracnaAriaMenuProps,
+  AracnaAracnaAriaMenuButtonProps,
+  AracnaAracnaAriaMenuItemProps,
+  AracnaAracnaAriaMenuSubMenuProps
+} from '../../definitions/props.js'
+import type {
+  AracnaAriaMenuElementAttributes,
+  AracnaAriaMenuElementEventMap,
+  AracnaAriaMenuButtonElementAttributes,
+  AracnaAriaMenuButtonElementEventMap,
+  AracnaAriaMenuItemElementAttributes,
+  AracnaAriaMenuItemElementEventMap,
+  AracnaAriaMenuSubMenuElementAttributes,
+  AracnaAriaMenuSubMenuElementEventMap
+} from '@aracna/web-components'
+import {
+  AracnaAriaMenuElement,
+  AracnaAriaMenuButtonElement,
+  AracnaAriaMenuItemElement,
+  AracnaAriaMenuSubMenuElement
+} from '@aracna/web-components/elements/aria/aria-menu-element'
 
-export const AracnaAriaMenu: ElementComponent<AriaMenuElement, AracnaAriaMenuProps> = createBaseElementComponent<
-  AriaMenuElement,
-  AriaMenuElementAttributes<AriaMenuItemElement>,
-  AriaMenuElementEventMap
->('aracna-aria-menu', AriaMenuElement)
+export const AracnaAracnaAriaMenu: ElementComponent<AracnaAriaMenuElement, AracnaAracnaAriaMenuProps> = createBaseElementComponent<
+  AracnaAriaMenuElement,
+  AracnaAriaMenuElementAttributes<AracnaAriaMenuItemElement>,
+  AracnaAriaMenuElementEventMap
+>('aracna-aria-menu', AracnaAriaMenuElement)
 
-export const AracnaAriaMenuButton: ElementComponent<AriaMenuButtonElement, AracnaAriaMenuButtonProps> = createBaseElementComponent<
-  AriaMenuButtonElement,
-  AriaMenuButtonElementAttributes,
-  AriaMenuButtonElementEventMap
->('aracna-aria-menu-button', AriaMenuButtonElement)
+export const AracnaAracnaAriaMenuButton: ElementComponent<AracnaAriaMenuButtonElement, AracnaAracnaAriaMenuButtonProps> = createBaseElementComponent<
+  AracnaAriaMenuButtonElement,
+  AracnaAriaMenuButtonElementAttributes,
+  AracnaAriaMenuButtonElementEventMap
+>('aracna-aria-menu-button', AracnaAriaMenuButtonElement)
 
-export const AracnaAriaMenuItem: ElementComponent<AriaMenuItemElement, AracnaAriaMenuItemProps> = createBaseElementComponent<
-  AriaMenuItemElement,
-  AriaMenuItemElementAttributes,
-  AriaMenuItemElementEventMap
->('aracna-aria-menu-item', AriaMenuItemElement)
+export const AracnaAracnaAriaMenuItem: ElementComponent<AracnaAriaMenuItemElement, AracnaAracnaAriaMenuItemProps> = createBaseElementComponent<
+  AracnaAriaMenuItemElement,
+  AracnaAriaMenuItemElementAttributes,
+  AracnaAriaMenuItemElementEventMap
+>('aracna-aria-menu-item', AracnaAriaMenuItemElement)
 
-export const AracnaAriaMenuSubMenu: ElementComponent<AriaMenuSubMenuElement, AracnaAriaMenuSubMenuProps> = createFloatingElementComponent<
-  AriaMenuSubMenuElement,
-  AriaMenuSubMenuElementAttributes,
-  AriaMenuSubMenuElementEventMap
->('aracna-aria-menu-submenu', AriaMenuSubMenuElement)
+export const AracnaAracnaAriaMenuSubMenu: ElementComponent<AracnaAriaMenuSubMenuElement, AracnaAracnaAriaMenuSubMenuProps> = createFloatingElementComponent<
+  AracnaAriaMenuSubMenuElement,
+  AracnaAriaMenuSubMenuElementAttributes,
+  AracnaAriaMenuSubMenuElementEventMap
+>('aracna-aria-menu-submenu', AracnaAriaMenuSubMenuElement)

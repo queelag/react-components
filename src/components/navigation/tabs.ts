@@ -1,29 +1,30 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaTabsProps, AracnaTabsPanelProps, AracnaTabsTabProps } from '@aracna/react'
+import type { AracnaAracnaTabsProps, AracnaAracnaTabsPanelProps, AracnaAracnaTabsTabProps } from '../../definitions/props.js'
 import type {
-  TabsElementAttributes,
-  TabsElementEventMap,
-  TabsPanelElementAttributes,
-  TabsPanelElementEventMap,
-  TabsTabElementAttributes,
-  TabsTabElementEventMap
-} from '@aracna/web'
-import { TabsElement, TabsPanelElement, TabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element'
+  AracnaTabsElementAttributes,
+  AracnaTabsElementEventMap,
+  AracnaTabsPanelElementAttributes,
+  AracnaTabsPanelElementEventMap,
+  AracnaTabsTabElementAttributes,
+  AracnaTabsTabElementEventMap
+} from '@aracna/web-components'
+import { AracnaTabsElement, AracnaTabsPanelElement, AracnaTabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element'
 
-export const AracnaTabs: ElementComponent<TabsElement, AracnaTabsProps> = createBaseElementComponent<TabsElement, TabsElementAttributes, TabsElementEventMap>(
-  'aracna-tabs',
-  TabsElement
-)
+export const AracnaAracnaTabs: ElementComponent<AracnaTabsElement, AracnaAracnaTabsProps> = createBaseElementComponent<
+  AracnaTabsElement,
+  AracnaTabsElementAttributes,
+  AracnaTabsElementEventMap
+>('aracna-tabs', AracnaTabsElement)
 
-export const AracnaTabsPanel: ElementComponent<TabsPanelElement, AracnaTabsPanelProps> = createBaseElementComponent<
-  TabsPanelElement,
-  TabsPanelElementAttributes,
-  TabsPanelElementEventMap
->('aracna-tabs-panel', TabsPanelElement)
+export const AracnaAracnaTabsPanel: ElementComponent<AracnaTabsPanelElement, AracnaAracnaTabsPanelProps> = createBaseElementComponent<
+  AracnaTabsPanelElement,
+  AracnaTabsPanelElementAttributes,
+  AracnaTabsPanelElementEventMap
+>('aracna-tabs-panel', AracnaTabsPanelElement)
 
-export const AracnaTabsTab: ElementComponent<TabsTabElement, AracnaTabsTabProps> = createBaseElementComponent<
-  TabsTabElement,
-  TabsTabElementAttributes,
-  TabsTabElementEventMap
->('aracna-tabs-tab', TabsTabElement, ['tabs-tab-selection'])
+export const AracnaAracnaTabsTab: ElementComponent<AracnaTabsTabElement, AracnaAracnaTabsTabProps> = createBaseElementComponent<
+  AracnaTabsTabElement,
+  AracnaTabsTabElementAttributes,
+  AracnaTabsTabElementEventMap
+>('aracna-tabs-tab', AracnaTabsTabElement, ['tabs-tab-selection'])

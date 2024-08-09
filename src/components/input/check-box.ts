@@ -1,11 +1,11 @@
 import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaCheckBoxProps } from '@aracna/react'
-import type { CheckBoxElementAttributes, CheckBoxElementEventMap } from '@aracna/web'
-import { CheckBoxElement } from '@aracna/web-components/elements/input/check-box-element'
+import type { AracnaAracnaCheckBoxProps } from '../../definitions/props.js'
+import type { AracnaCheckBoxElementAttributes, AracnaCheckBoxElementEventMap } from '@aracna/web-components'
+import { AracnaCheckBoxElement } from '@aracna/web-components/elements/input/check-box-element'
 
-export const AracnaCheckBox: ElementComponent<CheckBoxElement, AracnaCheckBoxProps> = createFormControlElementComponent<
-  CheckBoxElement,
-  CheckBoxElementAttributes,
-  CheckBoxElementEventMap
->('aracna-checkbox', CheckBoxElement)
+export const AracnaAracnaCheckBox: ElementComponent<AracnaCheckBoxElement, AracnaAracnaCheckBoxProps> = createFormControlElementComponent<
+  AracnaCheckBoxElement,
+  AracnaCheckBoxElementAttributes,
+  AracnaCheckBoxElementEventMap
+>('aracna-checkbox', AracnaCheckBoxElement)

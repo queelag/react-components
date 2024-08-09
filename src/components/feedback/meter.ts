@@ -1,11 +1,11 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaMeterProps } from '@aracna/react'
-import type { MeterElementAttributes, MeterElementEventMap } from '@aracna/web'
-import { MeterElement } from '@aracna/web-components/elements/feedback/meter-element'
+import type { AracnaAracnaMeterProps } from '../../definitions/props.js'
+import type { AracnaMeterElementAttributes, AracnaMeterElementEventMap } from '@aracna/web-components'
+import { AracnaMeterElement } from '@aracna/web-components/elements/feedback/meter-element'
 
-export const AracnaMeter: ElementComponent<MeterElement, AracnaMeterProps> = createBaseElementComponent<
-  MeterElement,
-  MeterElementAttributes,
-  MeterElementEventMap
->('aracna-meter', MeterElement)
+export const AracnaAracnaMeter: ElementComponent<AracnaMeterElement, AracnaAracnaMeterProps> = createBaseElementComponent<
+  AracnaMeterElement,
+  AracnaMeterElementAttributes,
+  AracnaMeterElementEventMap
+>('aracna-meter', AracnaMeterElement)

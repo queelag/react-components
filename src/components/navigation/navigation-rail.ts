@@ -1,22 +1,22 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaNavigationRailProps, AracnaNavigationRailItemProps } from '@aracna/react'
+import type { AracnaAracnaNavigationRailProps, AracnaAracnaNavigationRailItemProps } from '../../definitions/props.js'
 import type {
-  NavigationRailElementAttributes,
-  NavigationRailElementEventMap,
-  NavigationRailItemElementAttributes,
-  NavigationRailItemElementEventMap
-} from '@aracna/web'
-import { NavigationRailElement, NavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
+  AracnaNavigationRailElementAttributes,
+  AracnaNavigationRailElementEventMap,
+  AracnaNavigationRailItemElementAttributes,
+  AracnaNavigationRailItemElementEventMap
+} from '@aracna/web-components'
+import { AracnaNavigationRailElement, AracnaNavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
 
-export const AracnaNavigationRail: ElementComponent<NavigationRailElement, AracnaNavigationRailProps> = createBaseElementComponent<
-  NavigationRailElement,
-  NavigationRailElementAttributes,
-  NavigationRailElementEventMap
->('aracna-navigation-rail', NavigationRailElement)
+export const AracnaAracnaNavigationRail: ElementComponent<AracnaNavigationRailElement, AracnaAracnaNavigationRailProps> = createBaseElementComponent<
+  AracnaNavigationRailElement,
+  AracnaNavigationRailElementAttributes,
+  AracnaNavigationRailElementEventMap
+>('aracna-navigation-rail', AracnaNavigationRailElement)
 
-export const AracnaNavigationRailItem: ElementComponent<NavigationRailItemElement, AracnaNavigationRailItemProps> = createBaseElementComponent<
-  NavigationRailItemElement,
-  NavigationRailItemElementAttributes,
-  NavigationRailItemElementEventMap
->('aracna-navigation-rail-item', NavigationRailItemElement)
+export const AracnaAracnaNavigationRailItem: ElementComponent<AracnaNavigationRailItemElement, AracnaAracnaNavigationRailItemProps> =
+  createBaseElementComponent<AracnaNavigationRailItemElement, AracnaNavigationRailItemElementAttributes, AracnaNavigationRailItemElementEventMap>(
+    'aracna-navigation-rail-item',
+    AracnaNavigationRailItemElement
+  )

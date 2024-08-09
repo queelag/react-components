@@ -1,48 +1,48 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
 import type {
-  AracnaAriaDisclosureProps,
-  AracnaAriaDisclosureButtonProps,
-  AracnaAriaDisclosurePanelProps,
-  AracnaAriaDisclosureSectionProps
-} from '@aracna/react'
+  AracnaAracnaAriaDisclosureProps,
+  AracnaAracnaAriaDisclosureButtonProps,
+  AracnaAracnaAriaDisclosurePanelProps,
+  AracnaAracnaAriaDisclosureSectionProps
+} from '../../definitions/props.js'
 import type {
-  AriaDisclosureElementAttributes,
-  AriaDisclosureElementEventMap,
-  AriaDisclosureButtonElementAttributes,
-  AriaDisclosureButtonElementEventMap,
-  AriaDisclosurePanelElementAttributes,
-  AriaDisclosurePanelElementEventMap,
-  AriaDisclosureSectionElementAttributes,
-  AriaDisclosureSectionElementEventMap
-} from '@aracna/web'
+  AracnaAriaDisclosureElementAttributes,
+  AracnaAriaDisclosureElementEventMap,
+  AracnaAriaDisclosureButtonElementAttributes,
+  AracnaAriaDisclosureButtonElementEventMap,
+  AracnaAriaDisclosurePanelElementAttributes,
+  AracnaAriaDisclosurePanelElementEventMap,
+  AracnaAriaDisclosureSectionElementAttributes,
+  AracnaAriaDisclosureSectionElementEventMap
+} from '@aracna/web-components'
 import {
-  AriaDisclosureElement,
-  AriaDisclosureButtonElement,
-  AriaDisclosurePanelElement,
-  AriaDisclosureSectionElement
+  AracnaAriaDisclosureElement,
+  AracnaAriaDisclosureButtonElement,
+  AracnaAriaDisclosurePanelElement,
+  AracnaAriaDisclosureSectionElement
 } from '@aracna/web-components/elements/aria/aria-disclosure-element'
 
-export const AracnaAriaDisclosure: ElementComponent<AriaDisclosureElement, AracnaAriaDisclosureProps> = createBaseElementComponent<
-  AriaDisclosureElement,
-  AriaDisclosureElementAttributes,
-  AriaDisclosureElementEventMap
->('aracna-aria-disclosure', AriaDisclosureElement)
+export const AracnaAracnaAriaDisclosure: ElementComponent<AracnaAriaDisclosureElement, AracnaAracnaAriaDisclosureProps> = createBaseElementComponent<
+  AracnaAriaDisclosureElement,
+  AracnaAriaDisclosureElementAttributes,
+  AracnaAriaDisclosureElementEventMap
+>('aracna-aria-disclosure', AracnaAriaDisclosureElement)
 
-export const AracnaAriaDisclosureButton: ElementComponent<AriaDisclosureButtonElement, AracnaAriaDisclosureButtonProps> = createBaseElementComponent<
-  AriaDisclosureButtonElement,
-  AriaDisclosureButtonElementAttributes,
-  AriaDisclosureButtonElementEventMap
->('aracna-aria-disclosure-button', AriaDisclosureButtonElement)
+export const AracnaAracnaAriaDisclosureButton: ElementComponent<AracnaAriaDisclosureButtonElement, AracnaAracnaAriaDisclosureButtonProps> =
+  createBaseElementComponent<AracnaAriaDisclosureButtonElement, AracnaAriaDisclosureButtonElementAttributes, AracnaAriaDisclosureButtonElementEventMap>(
+    'aracna-aria-disclosure-button',
+    AracnaAriaDisclosureButtonElement
+  )
 
-export const AracnaAriaDisclosurePanel: ElementComponent<AriaDisclosurePanelElement, AracnaAriaDisclosurePanelProps> = createBaseElementComponent<
-  AriaDisclosurePanelElement,
-  AriaDisclosurePanelElementAttributes,
-  AriaDisclosurePanelElementEventMap
->('aracna-aria-disclosure-panel', AriaDisclosurePanelElement)
+export const AracnaAracnaAriaDisclosurePanel: ElementComponent<AracnaAriaDisclosurePanelElement, AracnaAracnaAriaDisclosurePanelProps> =
+  createBaseElementComponent<AracnaAriaDisclosurePanelElement, AracnaAriaDisclosurePanelElementAttributes, AracnaAriaDisclosurePanelElementEventMap>(
+    'aracna-aria-disclosure-panel',
+    AracnaAriaDisclosurePanelElement
+  )
 
-export const AracnaAriaDisclosureSection: ElementComponent<AriaDisclosureSectionElement, AracnaAriaDisclosureSectionProps> = createBaseElementComponent<
-  AriaDisclosureSectionElement,
-  AriaDisclosureSectionElementAttributes,
-  AriaDisclosureSectionElementEventMap
->('aracna-aria-disclosure-section', AriaDisclosureSectionElement)
+export const AracnaAracnaAriaDisclosureSection: ElementComponent<AracnaAriaDisclosureSectionElement, AracnaAracnaAriaDisclosureSectionProps> =
+  createBaseElementComponent<AracnaAriaDisclosureSectionElement, AracnaAriaDisclosureSectionElementAttributes, AracnaAriaDisclosureSectionElementEventMap>(
+    'aracna-aria-disclosure-section',
+    AracnaAriaDisclosureSectionElement
+  )

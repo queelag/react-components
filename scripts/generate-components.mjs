@@ -4,56 +4,56 @@ import { glob } from 'glob'
 import { format } from 'prettier'
 
 const GENERICS = new Map([
-  ['AriaMenuElement', 'AriaMenuItemElement'],
-  ['AriaListBoxElement', 'AriaListBoxOptionElement'],
-  ['AriaComboBoxElement', 'AriaComboBoxOptionElement'],
-  ['SelectElement', 'SelectOptionElement'],
-  ['MenuElement', 'MenuItemElement']
+  ['AracnaAriaMenuElement', 'AracnaAriaMenuItemElement'],
+  ['AracnaAriaListBoxElement', 'AracnaAriaListBoxOptionElement'],
+  ['AracnaAriaComboBoxElement', 'AracnaAriaComboBoxOptionElement'],
+  ['AracnaSelectElement', 'AracnaSelectOptionElement'],
+  ['AracnaMenuElement', 'AracnaMenuItemElement']
 ])
 
 const EXTENDS = new Map([
-  ['AriaComboBoxListElement', 'Floating'],
-  ['AriaMenuSubMenuElement', 'Floating'],
-  ['AriaTooltipContentElement', 'Floating'],
-  ['MenuSubMenuElement', 'Floating'],
-  ['SelectElement', 'Floating'],
-  ['TooltipContentElement', 'Floating'],
-  ['AlertDialogElement', 'FocusTrap'],
-  ['AriaAlertDialogElement', 'FocusTrap'],
-  ['AriaDialogElement', 'FocusTrap'],
-  ['DialogElement', 'FocusTrap'],
-  ['AriaCheckBoxElement', 'FormControl'],
-  ['AriaComboBoxElement', 'FormControl'],
-  ['AriaRadioGroupElement', 'FormControl'],
-  ['AriaSliderElement', 'FormControl'],
-  ['AriaSwitchElement', 'FormControl'],
-  ['CheckBoxElement', 'FormControl'],
-  ['ComboBoxElement', 'FormControl'],
-  ['InputElement', 'FormControl'],
-  ['InputFileElement', 'FormControl'],
-  ['RadioGroupElement', 'FormControl'],
-  ['SliderElement', 'FormControl'],
-  ['SwitchElement', 'FormControl'],
-  ['TextAreaElement', 'FormControl']
+  ['AracnaAriaComboBoxListElement', 'Floating'],
+  ['AracnaAriaMenuSubMenuElement', 'Floating'],
+  ['AracnaAriaTooltipContentElement', 'Floating'],
+  ['AracnaMenuSubMenuElement', 'Floating'],
+  ['AracnaSelectElement', 'Floating'],
+  ['AracnaTooltipContentElement', 'Floating'],
+  ['AracnaAlertDialogElement', 'FocusTrap'],
+  ['AracnaAriaAlertDialogElement', 'FocusTrap'],
+  ['AracnaAriaDialogElement', 'FocusTrap'],
+  ['AracnaDialogElement', 'FocusTrap'],
+  ['AracnaAriaCheckBoxElement', 'FormControl'],
+  ['AracnaAriaComboBoxElement', 'FormControl'],
+  ['AracnaAriaRadioGroupElement', 'FormControl'],
+  ['AracnaAriaSliderElement', 'FormControl'],
+  ['AracnaAriaSwitchElement', 'FormControl'],
+  ['AracnaCheckBoxElement', 'FormControl'],
+  ['AracnaComboBoxElement', 'FormControl'],
+  ['AracnaInputElement', 'FormControl'],
+  ['AracnaInputFileElement', 'FormControl'],
+  ['AracnaRadioGroupElement', 'FormControl'],
+  ['AracnaSliderElement', 'FormControl'],
+  ['AracnaSwitchElement', 'FormControl'],
+  ['AracnaTextAreaElement', 'FormControl']
 ])
 
 const EVENTS = new Map([
-  ['AlertDialogElement', ['dialog-close', 'dialog-open']],
-  ['AriaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
-  ['AriaComboBoxElement', ['combo-box-collapse', 'combo-box-expand']],
-  ['AriaComboBoxOptionElement', ['combo-box-option-select']],
-  ['AriaSliderElement', ['slider-change']],
-  ['AriaSliderThumbElement', ['slider-thumb-move']],
-  ['AriaTabsTabElement', ['tabs-tab-selection']],
-  ['ButtonElement', ['button-click']],
-  ['CarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
-  ['DialogElement', ['dialog-close', 'dialog-open']],
-  ['FormElement', ['form-submit']],
-  ['SelectElement', ['combo-box-collapse', 'combo-box-expand']],
-  ['SelectOptionElement', ['combo-box-option-select']],
-  ['SliderElement', ['slider-change']],
-  ['SliderThumbElement', ['slider-thumb-move']],
-  ['TabsTabElement', ['tabs-tab-selection']]
+  ['AracnaAlertDialogElement', ['dialog-close', 'dialog-open']],
+  ['AracnaAriaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['AracnaAriaComboBoxElement', ['combo-box-collapse', 'combo-box-expand']],
+  ['AracnaAriaComboBoxOptionElement', ['combo-box-option-select']],
+  ['AracnaAriaSliderElement', ['slider-change']],
+  ['AracnaAriaSliderThumbElement', ['slider-thumb-move']],
+  ['AracnaAriaTabsTabElement', ['tabs-tab-selection']],
+  ['AracnaButtonElement', ['button-click']],
+  ['AracnaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['AracnaDialogElement', ['dialog-close', 'dialog-open']],
+  ['AracnaFormElement', ['form-submit']],
+  ['AracnaSelectElement', ['combo-box-collapse', 'combo-box-expand']],
+  ['AracnaSelectOptionElement', ['combo-box-option-select']],
+  ['AracnaSliderElement', ['slider-change']],
+  ['AracnaSliderThumbElement', ['slider-thumb-move']],
+  ['AracnaTabsTabElement', ['tabs-tab-selection']]
 ])
 
 await rm('src/components', { force: true, recursive: true })
@@ -67,7 +67,9 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
   name = path.replace('node_modules/@aracna/web-components/elements/', '').split('/')[1].replace('.js', '')
 
   dts = await readFile(path.replace('.js', '.d.ts'), 'utf8')
-  elements = dts.match(/'aracna-[a-z-]+': [a-zA-Z]+/gm).map((match) => ({ element: match.split(':')[1].trim(), tag: match.split(':')[0].replace(/'/g, '') }))
+  elements = dts
+    .match(/'aracna-[a-z-]+': [a-zA-Z]+/gm)
+    .map((match) => ({ element: 'Aracna' + match.split(':')[1].trim(), tag: match.split(':')[0].replace(/'/g, '') }))
 
   ts = /* HTML */ `
     <script>
@@ -78,8 +80,8 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
         )
       )} } from '@aracna/react'
       import type { ElementComponent } from '@aracna/react'
-      import type { ${elements.map(({ element }) => `Aracna${element.replace('Element', 'Props')}`).join(', ')} } from '@aracna/react'
-      import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web'
+      import type { ${elements.map(({ element }) => `Aracna${element.replace('Element', 'Props')}`).join(', ')} } from '../../definitions/props.js'
+      import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web-components'
       import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'
 
       ${elements

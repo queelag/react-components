@@ -1,11 +1,11 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAvatarProps } from '@aracna/react'
-import type { AvatarElementAttributes, AvatarElementEventMap } from '@aracna/web'
-import { AvatarElement } from '@aracna/web-components/elements/data/avatar-element'
+import type { AracnaAracnaAvatarProps } from '../../definitions/props.js'
+import type { AracnaAvatarElementAttributes, AracnaAvatarElementEventMap } from '@aracna/web-components'
+import { AracnaAvatarElement } from '@aracna/web-components/elements/data/avatar-element'
 
-export const AracnaAvatar: ElementComponent<AvatarElement, AracnaAvatarProps> = createBaseElementComponent<
-  AvatarElement,
-  AvatarElementAttributes,
-  AvatarElementEventMap
->('aracna-avatar', AvatarElement)
+export const AracnaAracnaAvatar: ElementComponent<AracnaAvatarElement, AracnaAracnaAvatarProps> = createBaseElementComponent<
+  AracnaAvatarElement,
+  AracnaAvatarElementAttributes,
+  AracnaAvatarElementEventMap
+>('aracna-avatar', AracnaAvatarElement)

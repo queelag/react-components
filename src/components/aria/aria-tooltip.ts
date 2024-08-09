@@ -1,43 +1,48 @@
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaTooltipProps, AracnaAriaTooltipArrowProps, AracnaAriaTooltipContentProps, AracnaAriaTooltipTriggerProps } from '@aracna/react'
 import type {
-  AriaTooltipElementAttributes,
-  AriaTooltipElementEventMap,
-  AriaTooltipArrowElementAttributes,
-  AriaTooltipArrowElementEventMap,
-  AriaTooltipContentElementAttributes,
-  AriaTooltipContentElementEventMap,
-  AriaTooltipTriggerElementAttributes,
-  AriaTooltipTriggerElementEventMap
-} from '@aracna/web'
+  AracnaAracnaAriaTooltipProps,
+  AracnaAracnaAriaTooltipArrowProps,
+  AracnaAracnaAriaTooltipContentProps,
+  AracnaAracnaAriaTooltipTriggerProps
+} from '../../definitions/props.js'
+import type {
+  AracnaAriaTooltipElementAttributes,
+  AracnaAriaTooltipElementEventMap,
+  AracnaAriaTooltipArrowElementAttributes,
+  AracnaAriaTooltipArrowElementEventMap,
+  AracnaAriaTooltipContentElementAttributes,
+  AracnaAriaTooltipContentElementEventMap,
+  AracnaAriaTooltipTriggerElementAttributes,
+  AracnaAriaTooltipTriggerElementEventMap
+} from '@aracna/web-components'
 import {
-  AriaTooltipElement,
-  AriaTooltipArrowElement,
-  AriaTooltipContentElement,
-  AriaTooltipTriggerElement
+  AracnaAriaTooltipElement,
+  AracnaAriaTooltipArrowElement,
+  AracnaAriaTooltipContentElement,
+  AracnaAriaTooltipTriggerElement
 } from '@aracna/web-components/elements/aria/aria-tooltip-element'
 
-export const AracnaAriaTooltip: ElementComponent<AriaTooltipElement, AracnaAriaTooltipProps> = createBaseElementComponent<
-  AriaTooltipElement,
-  AriaTooltipElementAttributes,
-  AriaTooltipElementEventMap
->('aracna-aria-tooltip', AriaTooltipElement)
+export const AracnaAracnaAriaTooltip: ElementComponent<AracnaAriaTooltipElement, AracnaAracnaAriaTooltipProps> = createBaseElementComponent<
+  AracnaAriaTooltipElement,
+  AracnaAriaTooltipElementAttributes,
+  AracnaAriaTooltipElementEventMap
+>('aracna-aria-tooltip', AracnaAriaTooltipElement)
 
-export const AracnaAriaTooltipArrow: ElementComponent<AriaTooltipArrowElement, AracnaAriaTooltipArrowProps> = createBaseElementComponent<
-  AriaTooltipArrowElement,
-  AriaTooltipArrowElementAttributes,
-  AriaTooltipArrowElementEventMap
->('aracna-aria-tooltip-arrow', AriaTooltipArrowElement)
+export const AracnaAracnaAriaTooltipArrow: ElementComponent<AracnaAriaTooltipArrowElement, AracnaAracnaAriaTooltipArrowProps> = createBaseElementComponent<
+  AracnaAriaTooltipArrowElement,
+  AracnaAriaTooltipArrowElementAttributes,
+  AracnaAriaTooltipArrowElementEventMap
+>('aracna-aria-tooltip-arrow', AracnaAriaTooltipArrowElement)
 
-export const AracnaAriaTooltipContent: ElementComponent<AriaTooltipContentElement, AracnaAriaTooltipContentProps> = createFloatingElementComponent<
-  AriaTooltipContentElement,
-  AriaTooltipContentElementAttributes,
-  AriaTooltipContentElementEventMap
->('aracna-aria-tooltip-content', AriaTooltipContentElement)
+export const AracnaAracnaAriaTooltipContent: ElementComponent<AracnaAriaTooltipContentElement, AracnaAracnaAriaTooltipContentProps> =
+  createFloatingElementComponent<AracnaAriaTooltipContentElement, AracnaAriaTooltipContentElementAttributes, AracnaAriaTooltipContentElementEventMap>(
+    'aracna-aria-tooltip-content',
+    AracnaAriaTooltipContentElement
+  )
 
-export const AracnaAriaTooltipTrigger: ElementComponent<AriaTooltipTriggerElement, AracnaAriaTooltipTriggerProps> = createBaseElementComponent<
-  AriaTooltipTriggerElement,
-  AriaTooltipTriggerElementAttributes,
-  AriaTooltipTriggerElementEventMap
->('aracna-aria-tooltip-trigger', AriaTooltipTriggerElement)
+export const AracnaAracnaAriaTooltipTrigger: ElementComponent<AracnaAriaTooltipTriggerElement, AracnaAracnaAriaTooltipTriggerProps> =
+  createBaseElementComponent<AracnaAriaTooltipTriggerElement, AracnaAriaTooltipTriggerElementAttributes, AracnaAriaTooltipTriggerElementEventMap>(
+    'aracna-aria-tooltip-trigger',
+    AracnaAriaTooltipTriggerElement
+  )

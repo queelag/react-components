@@ -1,38 +1,48 @@
 import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaTooltipProps, AracnaTooltipArrowProps, AracnaTooltipContentProps, AracnaTooltipTriggerProps } from '@aracna/react'
 import type {
-  TooltipElementAttributes,
-  TooltipElementEventMap,
-  TooltipArrowElementAttributes,
-  TooltipArrowElementEventMap,
-  TooltipContentElementAttributes,
-  TooltipContentElementEventMap,
-  TooltipTriggerElementAttributes,
-  TooltipTriggerElementEventMap
-} from '@aracna/web'
-import { TooltipElement, TooltipArrowElement, TooltipContentElement, TooltipTriggerElement } from '@aracna/web-components/elements/data/tooltip-element'
+  AracnaAracnaTooltipProps,
+  AracnaAracnaTooltipArrowProps,
+  AracnaAracnaTooltipContentProps,
+  AracnaAracnaTooltipTriggerProps
+} from '../../definitions/props.js'
+import type {
+  AracnaTooltipElementAttributes,
+  AracnaTooltipElementEventMap,
+  AracnaTooltipArrowElementAttributes,
+  AracnaTooltipArrowElementEventMap,
+  AracnaTooltipContentElementAttributes,
+  AracnaTooltipContentElementEventMap,
+  AracnaTooltipTriggerElementAttributes,
+  AracnaTooltipTriggerElementEventMap
+} from '@aracna/web-components'
+import {
+  AracnaTooltipElement,
+  AracnaTooltipArrowElement,
+  AracnaTooltipContentElement,
+  AracnaTooltipTriggerElement
+} from '@aracna/web-components/elements/data/tooltip-element'
 
-export const AracnaTooltip: ElementComponent<TooltipElement, AracnaTooltipProps> = createBaseElementComponent<
-  TooltipElement,
-  TooltipElementAttributes,
-  TooltipElementEventMap
->('aracna-tooltip', TooltipElement)
+export const AracnaAracnaTooltip: ElementComponent<AracnaTooltipElement, AracnaAracnaTooltipProps> = createBaseElementComponent<
+  AracnaTooltipElement,
+  AracnaTooltipElementAttributes,
+  AracnaTooltipElementEventMap
+>('aracna-tooltip', AracnaTooltipElement)
 
-export const AracnaTooltipArrow: ElementComponent<TooltipArrowElement, AracnaTooltipArrowProps> = createBaseElementComponent<
-  TooltipArrowElement,
-  TooltipArrowElementAttributes,
-  TooltipArrowElementEventMap
->('aracna-tooltip-arrow', TooltipArrowElement)
+export const AracnaAracnaTooltipArrow: ElementComponent<AracnaTooltipArrowElement, AracnaAracnaTooltipArrowProps> = createBaseElementComponent<
+  AracnaTooltipArrowElement,
+  AracnaTooltipArrowElementAttributes,
+  AracnaTooltipArrowElementEventMap
+>('aracna-tooltip-arrow', AracnaTooltipArrowElement)
 
-export const AracnaTooltipContent: ElementComponent<TooltipContentElement, AracnaTooltipContentProps> = createFloatingElementComponent<
-  TooltipContentElement,
-  TooltipContentElementAttributes,
-  TooltipContentElementEventMap
->('aracna-tooltip-content', TooltipContentElement)
+export const AracnaAracnaTooltipContent: ElementComponent<AracnaTooltipContentElement, AracnaAracnaTooltipContentProps> = createFloatingElementComponent<
+  AracnaTooltipContentElement,
+  AracnaTooltipContentElementAttributes,
+  AracnaTooltipContentElementEventMap
+>('aracna-tooltip-content', AracnaTooltipContentElement)
 
-export const AracnaTooltipTrigger: ElementComponent<TooltipTriggerElement, AracnaTooltipTriggerProps> = createBaseElementComponent<
-  TooltipTriggerElement,
-  TooltipTriggerElementAttributes,
-  TooltipTriggerElementEventMap
->('aracna-tooltip-trigger', TooltipTriggerElement)
+export const AracnaAracnaTooltipTrigger: ElementComponent<AracnaTooltipTriggerElement, AracnaAracnaTooltipTriggerProps> = createBaseElementComponent<
+  AracnaTooltipTriggerElement,
+  AracnaTooltipTriggerElementAttributes,
+  AracnaTooltipTriggerElementEventMap
+>('aracna-tooltip-trigger', AracnaTooltipTriggerElement)

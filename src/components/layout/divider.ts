@@ -1,11 +1,11 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaDividerProps } from '@aracna/react'
-import type { DividerElementAttributes, DividerElementEventMap } from '@aracna/web'
-import { DividerElement } from '@aracna/web-components/elements/layout/divider-element'
+import type { AracnaAracnaDividerProps } from '../../definitions/props.js'
+import type { AracnaDividerElementAttributes, AracnaDividerElementEventMap } from '@aracna/web-components'
+import { AracnaDividerElement } from '@aracna/web-components/elements/layout/divider-element'
 
-export const AracnaDivider: ElementComponent<DividerElement, AracnaDividerProps> = createBaseElementComponent<
-  DividerElement,
-  DividerElementAttributes,
-  DividerElementEventMap
->('aracna-divider', DividerElement)
+export const AracnaAracnaDivider: ElementComponent<AracnaDividerElement, AracnaAracnaDividerProps> = createBaseElementComponent<
+  AracnaDividerElement,
+  AracnaDividerElementAttributes,
+  AracnaDividerElementEventMap
+>('aracna-divider', AracnaDividerElement)

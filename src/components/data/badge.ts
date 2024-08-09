@@ -1,11 +1,11 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaBadgeProps } from '@aracna/react'
-import type { BadgeElementAttributes, BadgeElementEventMap } from '@aracna/web'
-import { BadgeElement } from '@aracna/web-components/elements/data/badge-element'
+import type { AracnaAracnaBadgeProps } from '../../definitions/props.js'
+import type { AracnaBadgeElementAttributes, AracnaBadgeElementEventMap } from '@aracna/web-components'
+import { AracnaBadgeElement } from '@aracna/web-components/elements/data/badge-element'
 
-export const AracnaBadge: ElementComponent<BadgeElement, AracnaBadgeProps> = createBaseElementComponent<
-  BadgeElement,
-  BadgeElementAttributes,
-  BadgeElementEventMap
->('aracna-badge', BadgeElement)
+export const AracnaAracnaBadge: ElementComponent<AracnaBadgeElement, AracnaAracnaBadgeProps> = createBaseElementComponent<
+  AracnaBadgeElement,
+  AracnaBadgeElementAttributes,
+  AracnaBadgeElementEventMap
+>('aracna-badge', AracnaBadgeElement)

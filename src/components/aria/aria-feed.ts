@@ -1,43 +1,49 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaFeedProps, AracnaAriaFeedArticleProps, AracnaAriaFeedArticleDescriptionProps, AracnaAriaFeedArticleLabelProps } from '@aracna/react'
 import type {
-  AriaFeedElementAttributes,
-  AriaFeedElementEventMap,
-  AriaFeedArticleElementAttributes,
-  AriaFeedArticleElementEventMap,
-  AriaFeedArticleDescriptionElementAttributes,
-  AriaFeedArticleDescriptionElementEventMap,
-  AriaFeedArticleLabelElementAttributes,
-  AriaFeedArticleLabelElementEventMap
-} from '@aracna/web'
+  AracnaAracnaAriaFeedProps,
+  AracnaAracnaAriaFeedArticleProps,
+  AracnaAracnaAriaFeedArticleDescriptionProps,
+  AracnaAracnaAriaFeedArticleLabelProps
+} from '../../definitions/props.js'
+import type {
+  AracnaAriaFeedElementAttributes,
+  AracnaAriaFeedElementEventMap,
+  AracnaAriaFeedArticleElementAttributes,
+  AracnaAriaFeedArticleElementEventMap,
+  AracnaAriaFeedArticleDescriptionElementAttributes,
+  AracnaAriaFeedArticleDescriptionElementEventMap,
+  AracnaAriaFeedArticleLabelElementAttributes,
+  AracnaAriaFeedArticleLabelElementEventMap
+} from '@aracna/web-components'
 import {
-  AriaFeedElement,
-  AriaFeedArticleElement,
-  AriaFeedArticleDescriptionElement,
-  AriaFeedArticleLabelElement
+  AracnaAriaFeedElement,
+  AracnaAriaFeedArticleElement,
+  AracnaAriaFeedArticleDescriptionElement,
+  AracnaAriaFeedArticleLabelElement
 } from '@aracna/web-components/elements/aria/aria-feed-element'
 
-export const AracnaAriaFeed: ElementComponent<AriaFeedElement, AracnaAriaFeedProps> = createBaseElementComponent<
-  AriaFeedElement,
-  AriaFeedElementAttributes,
-  AriaFeedElementEventMap
->('aracna-aria-feed', AriaFeedElement)
+export const AracnaAracnaAriaFeed: ElementComponent<AracnaAriaFeedElement, AracnaAracnaAriaFeedProps> = createBaseElementComponent<
+  AracnaAriaFeedElement,
+  AracnaAriaFeedElementAttributes,
+  AracnaAriaFeedElementEventMap
+>('aracna-aria-feed', AracnaAriaFeedElement)
 
-export const AracnaAriaFeedArticle: ElementComponent<AriaFeedArticleElement, AracnaAriaFeedArticleProps> = createBaseElementComponent<
-  AriaFeedArticleElement,
-  AriaFeedArticleElementAttributes,
-  AriaFeedArticleElementEventMap
->('aracna-aria-feed-article', AriaFeedArticleElement)
+export const AracnaAracnaAriaFeedArticle: ElementComponent<AracnaAriaFeedArticleElement, AracnaAracnaAriaFeedArticleProps> = createBaseElementComponent<
+  AracnaAriaFeedArticleElement,
+  AracnaAriaFeedArticleElementAttributes,
+  AracnaAriaFeedArticleElementEventMap
+>('aracna-aria-feed-article', AracnaAriaFeedArticleElement)
 
-export const AracnaAriaFeedArticleDescription: ElementComponent<AriaFeedArticleDescriptionElement, AracnaAriaFeedArticleDescriptionProps> =
-  createBaseElementComponent<AriaFeedArticleDescriptionElement, AriaFeedArticleDescriptionElementAttributes, AriaFeedArticleDescriptionElementEventMap>(
-    'aracna-aria-feed-article-description',
-    AriaFeedArticleDescriptionElement
+export const AracnaAracnaAriaFeedArticleDescription: ElementComponent<AracnaAriaFeedArticleDescriptionElement, AracnaAracnaAriaFeedArticleDescriptionProps> =
+  createBaseElementComponent<
+    AracnaAriaFeedArticleDescriptionElement,
+    AracnaAriaFeedArticleDescriptionElementAttributes,
+    AracnaAriaFeedArticleDescriptionElementEventMap
+  >('aracna-aria-feed-article-description', AracnaAriaFeedArticleDescriptionElement)
+
+export const AracnaAracnaAriaFeedArticleLabel: ElementComponent<AracnaAriaFeedArticleLabelElement, AracnaAracnaAriaFeedArticleLabelProps> =
+  createBaseElementComponent<AracnaAriaFeedArticleLabelElement, AracnaAriaFeedArticleLabelElementAttributes, AracnaAriaFeedArticleLabelElementEventMap>(
+    'aracna-aria-feed-article-label',
+    AracnaAriaFeedArticleLabelElement
   )
-
-export const AracnaAriaFeedArticleLabel: ElementComponent<AriaFeedArticleLabelElement, AracnaAriaFeedArticleLabelProps> = createBaseElementComponent<
-  AriaFeedArticleLabelElement,
-  AriaFeedArticleLabelElementAttributes,
-  AriaFeedArticleLabelElementEventMap
->('aracna-aria-feed-article-label', AriaFeedArticleLabelElement)

@@ -1,30 +1,34 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
-import type { AracnaAriaBreadcrumbProps, AracnaAriaBreadcrumbItemProps, AracnaAriaBreadcrumbListProps } from '@aracna/react'
+import type { AracnaAracnaAriaBreadcrumbProps, AracnaAracnaAriaBreadcrumbItemProps, AracnaAracnaAriaBreadcrumbListProps } from '../../definitions/props.js'
 import type {
-  AriaBreadcrumbElementAttributes,
-  AriaBreadcrumbElementEventMap,
-  AriaBreadcrumbItemElementAttributes,
-  AriaBreadcrumbItemElementEventMap,
-  AriaBreadcrumbListElementAttributes,
-  AriaBreadcrumbListElementEventMap
-} from '@aracna/web'
-import { AriaBreadcrumbElement, AriaBreadcrumbItemElement, AriaBreadcrumbListElement } from '@aracna/web-components/elements/aria/aria-breadcrumb-element'
+  AracnaAriaBreadcrumbElementAttributes,
+  AracnaAriaBreadcrumbElementEventMap,
+  AracnaAriaBreadcrumbItemElementAttributes,
+  AracnaAriaBreadcrumbItemElementEventMap,
+  AracnaAriaBreadcrumbListElementAttributes,
+  AracnaAriaBreadcrumbListElementEventMap
+} from '@aracna/web-components'
+import {
+  AracnaAriaBreadcrumbElement,
+  AracnaAriaBreadcrumbItemElement,
+  AracnaAriaBreadcrumbListElement
+} from '@aracna/web-components/elements/aria/aria-breadcrumb-element'
 
-export const AracnaAriaBreadcrumb: ElementComponent<AriaBreadcrumbElement, AracnaAriaBreadcrumbProps> = createBaseElementComponent<
-  AriaBreadcrumbElement,
-  AriaBreadcrumbElementAttributes,
-  AriaBreadcrumbElementEventMap
->('aracna-aria-breadcrumb', AriaBreadcrumbElement)
+export const AracnaAracnaAriaBreadcrumb: ElementComponent<AracnaAriaBreadcrumbElement, AracnaAracnaAriaBreadcrumbProps> = createBaseElementComponent<
+  AracnaAriaBreadcrumbElement,
+  AracnaAriaBreadcrumbElementAttributes,
+  AracnaAriaBreadcrumbElementEventMap
+>('aracna-aria-breadcrumb', AracnaAriaBreadcrumbElement)
 
-export const AracnaAriaBreadcrumbItem: ElementComponent<AriaBreadcrumbItemElement, AracnaAriaBreadcrumbItemProps> = createBaseElementComponent<
-  AriaBreadcrumbItemElement,
-  AriaBreadcrumbItemElementAttributes,
-  AriaBreadcrumbItemElementEventMap
->('aracna-aria-breadcrumb-item', AriaBreadcrumbItemElement)
+export const AracnaAracnaAriaBreadcrumbItem: ElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAracnaAriaBreadcrumbItemProps> =
+  createBaseElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAriaBreadcrumbItemElementAttributes, AracnaAriaBreadcrumbItemElementEventMap>(
+    'aracna-aria-breadcrumb-item',
+    AracnaAriaBreadcrumbItemElement
+  )
 
-export const AracnaAriaBreadcrumbList: ElementComponent<AriaBreadcrumbListElement, AracnaAriaBreadcrumbListProps> = createBaseElementComponent<
-  AriaBreadcrumbListElement,
-  AriaBreadcrumbListElementAttributes,
-  AriaBreadcrumbListElementEventMap
->('aracna-aria-breadcrumb-list', AriaBreadcrumbListElement)
+export const AracnaAracnaAriaBreadcrumbList: ElementComponent<AracnaAriaBreadcrumbListElement, AracnaAracnaAriaBreadcrumbListProps> =
+  createBaseElementComponent<AracnaAriaBreadcrumbListElement, AracnaAriaBreadcrumbListElementAttributes, AracnaAriaBreadcrumbListElementEventMap>(
+    'aracna-aria-breadcrumb-list',
+    AracnaAriaBreadcrumbListElement
+  )
