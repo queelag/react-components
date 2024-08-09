@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaRadioButtonElement, AracnaAriaRadioGroupElement } from '@aracna/web-components/elements/aria/aria-radio-group-element'
 
-export const AracnaAracnaAriaRadioButton: ElementComponent<AracnaAriaRadioButtonElement, AracnaAracnaAriaRadioButtonProps> = createBaseElementComponent<
+export const AracnaAriaRadioButton: ElementComponent<AracnaAriaRadioButtonElement, AracnaAracnaAriaRadioButtonProps> = createBaseElementComponent<
   AracnaAriaRadioButtonElement,
   AracnaAriaRadioButtonElementAttributes,
   AracnaAriaRadioButtonElementEventMap
 >('aracna-aria-radio-button', AracnaAriaRadioButtonElement)
 
-export const AracnaAracnaAriaRadioGroup: ElementComponent<AracnaAriaRadioGroupElement, AracnaAracnaAriaRadioGroupProps> = createFormControlElementComponent<
+export const AracnaAriaRadioGroup: ElementComponent<AracnaAriaRadioGroupElement, AracnaAracnaAriaRadioGroupProps> = createFormControlElementComponent<
   AracnaAriaRadioGroupElement,
   AracnaAriaRadioGroupElementAttributes,
   AracnaAriaRadioGroupElementEventMap

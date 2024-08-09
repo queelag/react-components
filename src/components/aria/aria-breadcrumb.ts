@@ -15,20 +15,20 @@ import {
   AracnaAriaBreadcrumbListElement
 } from '@aracna/web-components/elements/aria/aria-breadcrumb-element'
 
-export const AracnaAracnaAriaBreadcrumb: ElementComponent<AracnaAriaBreadcrumbElement, AracnaAracnaAriaBreadcrumbProps> = createBaseElementComponent<
+export const AracnaAriaBreadcrumb: ElementComponent<AracnaAriaBreadcrumbElement, AracnaAracnaAriaBreadcrumbProps> = createBaseElementComponent<
   AracnaAriaBreadcrumbElement,
   AracnaAriaBreadcrumbElementAttributes,
   AracnaAriaBreadcrumbElementEventMap
 >('aracna-aria-breadcrumb', AracnaAriaBreadcrumbElement)
 
-export const AracnaAracnaAriaBreadcrumbItem: ElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAracnaAriaBreadcrumbItemProps> =
-  createBaseElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAriaBreadcrumbItemElementAttributes, AracnaAriaBreadcrumbItemElementEventMap>(
-    'aracna-aria-breadcrumb-item',
-    AracnaAriaBreadcrumbItemElement
-  )
+export const AracnaAriaBreadcrumbItem: ElementComponent<AracnaAriaBreadcrumbItemElement, AracnaAracnaAriaBreadcrumbItemProps> = createBaseElementComponent<
+  AracnaAriaBreadcrumbItemElement,
+  AracnaAriaBreadcrumbItemElementAttributes,
+  AracnaAriaBreadcrumbItemElementEventMap
+>('aracna-aria-breadcrumb-item', AracnaAriaBreadcrumbItemElement)
 
-export const AracnaAracnaAriaBreadcrumbList: ElementComponent<AracnaAriaBreadcrumbListElement, AracnaAracnaAriaBreadcrumbListProps> =
-  createBaseElementComponent<AracnaAriaBreadcrumbListElement, AracnaAriaBreadcrumbListElementAttributes, AracnaAriaBreadcrumbListElementEventMap>(
-    'aracna-aria-breadcrumb-list',
-    AracnaAriaBreadcrumbListElement
-  )
+export const AracnaAriaBreadcrumbList: ElementComponent<AracnaAriaBreadcrumbListElement, AracnaAracnaAriaBreadcrumbListProps> = createBaseElementComponent<
+  AracnaAriaBreadcrumbListElement,
+  AracnaAriaBreadcrumbListElementAttributes,
+  AracnaAriaBreadcrumbListElementEventMap
+>('aracna-aria-breadcrumb-list', AracnaAriaBreadcrumbListElement)

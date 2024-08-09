@@ -31,39 +31,38 @@ import {
   AracnaAriaComboBoxOptionElement
 } from '@aracna/web-components/elements/aria/aria-combo-box-element'
 
-export const AracnaAracnaAriaComboBox: ElementComponent<AracnaAriaComboBoxElement, AracnaAracnaAriaComboBoxProps> = createFormControlElementComponent<
+export const AracnaAriaComboBox: ElementComponent<AracnaAriaComboBoxElement, AracnaAracnaAriaComboBoxProps> = createFormControlElementComponent<
   AracnaAriaComboBoxElement,
   AracnaAriaComboBoxElementAttributes<AracnaAriaComboBoxOptionElement>,
   AracnaAriaComboBoxElementEventMap
 >('aracna-aria-combobox', AracnaAriaComboBoxElement, ['combo-box-collapse', 'combo-box-expand'])
 
-export const AracnaAracnaAriaComboBoxButton: ElementComponent<AracnaAriaComboBoxButtonElement, AracnaAracnaAriaComboBoxButtonProps> =
-  createBaseElementComponent<AracnaAriaComboBoxButtonElement, AracnaAriaComboBoxButtonElementAttributes, AracnaAriaComboBoxButtonElementEventMap>(
-    'aracna-aria-combobox-button',
-    AracnaAriaComboBoxButtonElement
-  )
+export const AracnaAriaComboBoxButton: ElementComponent<AracnaAriaComboBoxButtonElement, AracnaAracnaAriaComboBoxButtonProps> = createBaseElementComponent<
+  AracnaAriaComboBoxButtonElement,
+  AracnaAriaComboBoxButtonElementAttributes,
+  AracnaAriaComboBoxButtonElementEventMap
+>('aracna-aria-combobox-button', AracnaAriaComboBoxButtonElement)
 
-export const AracnaAracnaAriaComboBoxGroup: ElementComponent<AracnaAriaComboBoxGroupElement, AracnaAracnaAriaComboBoxGroupProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxGroup: ElementComponent<AracnaAriaComboBoxGroupElement, AracnaAracnaAriaComboBoxGroupProps> = createBaseElementComponent<
   AracnaAriaComboBoxGroupElement,
   AracnaAriaComboBoxGroupElementAttributes,
   AracnaAriaComboBoxGroupElementEventMap
 >('aracna-aria-combobox-group', AracnaAriaComboBoxGroupElement)
 
-export const AracnaAracnaAriaComboBoxInput: ElementComponent<AracnaAriaComboBoxInputElement, AracnaAracnaAriaComboBoxInputProps> = createBaseElementComponent<
+export const AracnaAriaComboBoxInput: ElementComponent<AracnaAriaComboBoxInputElement, AracnaAracnaAriaComboBoxInputProps> = createBaseElementComponent<
   AracnaAriaComboBoxInputElement,
   AracnaAriaComboBoxInputElementAttributes,
   AracnaAriaComboBoxInputElementEventMap
 >('aracna-aria-combobox-input', AracnaAriaComboBoxInputElement)
 
-export const AracnaAracnaAriaComboBoxList: ElementComponent<AracnaAriaComboBoxListElement, AracnaAracnaAriaComboBoxListProps> = createFloatingElementComponent<
+export const AracnaAriaComboBoxList: ElementComponent<AracnaAriaComboBoxListElement, AracnaAracnaAriaComboBoxListProps> = createFloatingElementComponent<
   AracnaAriaComboBoxListElement,
   AracnaAriaComboBoxListElementAttributes,
   AracnaAriaComboBoxListElementEventMap
 >('aracna-aria-combobox-list', AracnaAriaComboBoxListElement)
 
-export const AracnaAracnaAriaComboBoxOption: ElementComponent<AracnaAriaComboBoxOptionElement, AracnaAracnaAriaComboBoxOptionProps> =
-  createBaseElementComponent<AracnaAriaComboBoxOptionElement, AracnaAriaComboBoxOptionElementAttributes, AracnaAriaComboBoxOptionElementEventMap>(
-    'aracna-aria-combobox-option',
-    AracnaAriaComboBoxOptionElement,
-    ['combo-box-option-select']
-  )
+export const AracnaAriaComboBoxOption: ElementComponent<AracnaAriaComboBoxOptionElement, AracnaAracnaAriaComboBoxOptionProps> = createBaseElementComponent<
+  AracnaAriaComboBoxOptionElement,
+  AracnaAriaComboBoxOptionElementAttributes,
+  AracnaAriaComboBoxOptionElementEventMap
+>('aracna-aria-combobox-option', AracnaAriaComboBoxOptionElement, ['combo-box-option-select'])

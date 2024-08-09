@@ -9,14 +9,14 @@ import type {
 } from '@aracna/web-components'
 import { AracnaNavigationRailElement, AracnaNavigationRailItemElement } from '@aracna/web-components/elements/navigation/navigation-rail-element'
 
-export const AracnaAracnaNavigationRail: ElementComponent<AracnaNavigationRailElement, AracnaAracnaNavigationRailProps> = createBaseElementComponent<
+export const AracnaNavigationRail: ElementComponent<AracnaNavigationRailElement, AracnaAracnaNavigationRailProps> = createBaseElementComponent<
   AracnaNavigationRailElement,
   AracnaNavigationRailElementAttributes,
   AracnaNavigationRailElementEventMap
 >('aracna-navigation-rail', AracnaNavigationRailElement)
 
-export const AracnaAracnaNavigationRailItem: ElementComponent<AracnaNavigationRailItemElement, AracnaAracnaNavigationRailItemProps> =
-  createBaseElementComponent<AracnaNavigationRailItemElement, AracnaNavigationRailItemElementAttributes, AracnaNavigationRailItemElementEventMap>(
-    'aracna-navigation-rail-item',
-    AracnaNavigationRailItemElement
-  )
+export const AracnaNavigationRailItem: ElementComponent<AracnaNavigationRailItemElement, AracnaAracnaNavigationRailItemProps> = createBaseElementComponent<
+  AracnaNavigationRailItemElement,
+  AracnaNavigationRailItemElementAttributes,
+  AracnaNavigationRailItemElementEventMap
+>('aracna-navigation-rail-item', AracnaNavigationRailItemElement)

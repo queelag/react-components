@@ -4,7 +4,7 @@ import type { AracnaAracnaInputProps } from '../../definitions/props.js'
 import type { AracnaInputElementAttributes, AracnaInputElementEventMap } from '@aracna/web-components'
 import { AracnaInputElement } from '@aracna/web-components/elements/input/input-element'
 
-export const AracnaAracnaInput: ElementComponent<AracnaInputElement, AracnaAracnaInputProps> = createFormControlElementComponent<
+export const AracnaInput: ElementComponent<AracnaInputElement, AracnaAracnaInputProps> = createFormControlElementComponent<
   AracnaInputElement,
   AracnaInputElementAttributes,
   AracnaInputElementEventMap

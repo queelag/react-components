@@ -23,25 +23,25 @@ import {
   AracnaDisclosureSectionElement
 } from '@aracna/web-components/elements/surface/disclosure-element'
 
-export const AracnaAracnaDisclosure: ElementComponent<AracnaDisclosureElement, AracnaAracnaDisclosureProps> = createBaseElementComponent<
+export const AracnaDisclosure: ElementComponent<AracnaDisclosureElement, AracnaAracnaDisclosureProps> = createBaseElementComponent<
   AracnaDisclosureElement,
   AracnaDisclosureElementAttributes,
   AracnaDisclosureElementEventMap
 >('aracna-disclosure', AracnaDisclosureElement)
 
-export const AracnaAracnaDisclosureButton: ElementComponent<AracnaDisclosureButtonElement, AracnaAracnaDisclosureButtonProps> = createBaseElementComponent<
+export const AracnaDisclosureButton: ElementComponent<AracnaDisclosureButtonElement, AracnaAracnaDisclosureButtonProps> = createBaseElementComponent<
   AracnaDisclosureButtonElement,
   AracnaDisclosureButtonElementAttributes,
   AracnaDisclosureButtonElementEventMap
 >('aracna-disclosure-button', AracnaDisclosureButtonElement)
 
-export const AracnaAracnaDisclosurePanel: ElementComponent<AracnaDisclosurePanelElement, AracnaAracnaDisclosurePanelProps> = createBaseElementComponent<
+export const AracnaDisclosurePanel: ElementComponent<AracnaDisclosurePanelElement, AracnaAracnaDisclosurePanelProps> = createBaseElementComponent<
   AracnaDisclosurePanelElement,
   AracnaDisclosurePanelElementAttributes,
   AracnaDisclosurePanelElementEventMap
 >('aracna-disclosure-panel', AracnaDisclosurePanelElement)
 
-export const AracnaAracnaDisclosureSection: ElementComponent<AracnaDisclosureSectionElement, AracnaAracnaDisclosureSectionProps> = createBaseElementComponent<
+export const AracnaDisclosureSection: ElementComponent<AracnaDisclosureSectionElement, AracnaAracnaDisclosureSectionProps> = createBaseElementComponent<
   AracnaDisclosureSectionElement,
   AracnaDisclosureSectionElementAttributes,
   AracnaDisclosureSectionElementEventMap

@@ -4,7 +4,7 @@ import type { AracnaAracnaAriaLinkProps } from '../../definitions/props.js'
 import type { AracnaAriaLinkElementAttributes, AracnaAriaLinkElementEventMap } from '@aracna/web-components'
 import { AracnaAriaLinkElement } from '@aracna/web-components/elements/aria/aria-link-element'
 
-export const AracnaAracnaAriaLink: ElementComponent<AracnaAriaLinkElement, AracnaAracnaAriaLinkProps> = createBaseElementComponent<
+export const AracnaAriaLink: ElementComponent<AracnaAriaLinkElement, AracnaAracnaAriaLinkProps> = createBaseElementComponent<
   AracnaAriaLinkElement,
   AracnaAriaLinkElementAttributes,
   AracnaAriaLinkElementEventMap

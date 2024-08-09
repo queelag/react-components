@@ -4,7 +4,7 @@ import type { AracnaAracnaBadgeProps } from '../../definitions/props.js'
 import type { AracnaBadgeElementAttributes, AracnaBadgeElementEventMap } from '@aracna/web-components'
 import { AracnaBadgeElement } from '@aracna/web-components/elements/data/badge-element'
 
-export const AracnaAracnaBadge: ElementComponent<AracnaBadgeElement, AracnaAracnaBadgeProps> = createBaseElementComponent<
+export const AracnaBadge: ElementComponent<AracnaBadgeElement, AracnaAracnaBadgeProps> = createBaseElementComponent<
   AracnaBadgeElement,
   AracnaBadgeElementAttributes,
   AracnaBadgeElementEventMap

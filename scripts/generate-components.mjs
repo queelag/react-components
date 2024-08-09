@@ -87,7 +87,7 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
       ${elements
         .map(({ element, tag }) =>
           [
-            `export const Aracna${element.replace('Element', '')}: ElementComponent<${element}, Aracna${element.replace('Element', 'Props')}> = `,
+            `export const ${element.replace('Element', '')}: ElementComponent<${element}, Aracna${element.replace('Element', 'Props')}> = `,
             `create${EXTENDS.get(element) ?? 'Base'}ElementComponent`,
             `<${element}, ${element}Attributes${GENERICS.has(element) ? `<${GENERICS.get(element)}>` : ''}, ${element}EventMap>`,
             `('${tag}', ${element}${EVENTS.has(element) ? `, ${JSON.stringify(EVENTS.get(element))}` : ''})`

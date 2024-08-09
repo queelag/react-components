@@ -11,19 +11,19 @@ import type {
 } from '@aracna/web-components'
 import { AracnaTabsElement, AracnaTabsPanelElement, AracnaTabsTabElement } from '@aracna/web-components/elements/navigation/tabs-element'
 
-export const AracnaAracnaTabs: ElementComponent<AracnaTabsElement, AracnaAracnaTabsProps> = createBaseElementComponent<
+export const AracnaTabs: ElementComponent<AracnaTabsElement, AracnaAracnaTabsProps> = createBaseElementComponent<
   AracnaTabsElement,
   AracnaTabsElementAttributes,
   AracnaTabsElementEventMap
 >('aracna-tabs', AracnaTabsElement)
 
-export const AracnaAracnaTabsPanel: ElementComponent<AracnaTabsPanelElement, AracnaAracnaTabsPanelProps> = createBaseElementComponent<
+export const AracnaTabsPanel: ElementComponent<AracnaTabsPanelElement, AracnaAracnaTabsPanelProps> = createBaseElementComponent<
   AracnaTabsPanelElement,
   AracnaTabsPanelElementAttributes,
   AracnaTabsPanelElementEventMap
 >('aracna-tabs-panel', AracnaTabsPanelElement)
 
-export const AracnaAracnaTabsTab: ElementComponent<AracnaTabsTabElement, AracnaAracnaTabsTabProps> = createBaseElementComponent<
+export const AracnaTabsTab: ElementComponent<AracnaTabsTabElement, AracnaAracnaTabsTabProps> = createBaseElementComponent<
   AracnaTabsTabElement,
   AracnaTabsTabElementAttributes,
   AracnaTabsTabElementEventMap

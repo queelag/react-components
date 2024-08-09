@@ -31,37 +31,37 @@ import {
   AracnaSelectOptionElement
 } from '@aracna/web-components/elements/input/select-element'
 
-export const AracnaAracnaSelect: ElementComponent<AracnaSelectElement, AracnaAracnaSelectProps> = createFloatingElementComponent<
+export const AracnaSelect: ElementComponent<AracnaSelectElement, AracnaAracnaSelectProps> = createFloatingElementComponent<
   AracnaSelectElement,
   AracnaSelectElementAttributes<AracnaSelectOptionElement>,
   AracnaSelectElementEventMap
 >('aracna-select', AracnaSelectElement, ['combo-box-collapse', 'combo-box-expand'])
 
-export const AracnaAracnaSelectButton: ElementComponent<AracnaSelectButtonElement, AracnaAracnaSelectButtonProps> = createBaseElementComponent<
+export const AracnaSelectButton: ElementComponent<AracnaSelectButtonElement, AracnaAracnaSelectButtonProps> = createBaseElementComponent<
   AracnaSelectButtonElement,
   AracnaSelectButtonElementAttributes,
   AracnaSelectButtonElementEventMap
 >('aracna-select-button', AracnaSelectButtonElement)
 
-export const AracnaAracnaSelectGroup: ElementComponent<AracnaSelectGroupElement, AracnaAracnaSelectGroupProps> = createBaseElementComponent<
+export const AracnaSelectGroup: ElementComponent<AracnaSelectGroupElement, AracnaAracnaSelectGroupProps> = createBaseElementComponent<
   AracnaSelectGroupElement,
   AracnaSelectGroupElementAttributes,
   AracnaSelectGroupElementEventMap
 >('aracna-select-group', AracnaSelectGroupElement)
 
-export const AracnaAracnaSelectInput: ElementComponent<AracnaSelectInputElement, AracnaAracnaSelectInputProps> = createBaseElementComponent<
+export const AracnaSelectInput: ElementComponent<AracnaSelectInputElement, AracnaAracnaSelectInputProps> = createBaseElementComponent<
   AracnaSelectInputElement,
   AracnaSelectInputElementAttributes,
   AracnaSelectInputElementEventMap
 >('aracna-select-input', AracnaSelectInputElement)
 
-export const AracnaAracnaSelectList: ElementComponent<AracnaSelectListElement, AracnaAracnaSelectListProps> = createBaseElementComponent<
+export const AracnaSelectList: ElementComponent<AracnaSelectListElement, AracnaAracnaSelectListProps> = createBaseElementComponent<
   AracnaSelectListElement,
   AracnaSelectListElementAttributes,
   AracnaSelectListElementEventMap
 >('aracna-select-list', AracnaSelectListElement)
 
-export const AracnaAracnaSelectOption: ElementComponent<AracnaSelectOptionElement, AracnaAracnaSelectOptionProps> = createBaseElementComponent<
+export const AracnaSelectOption: ElementComponent<AracnaSelectOptionElement, AracnaAracnaSelectOptionProps> = createBaseElementComponent<
   AracnaSelectOptionElement,
   AracnaSelectOptionElementAttributes,
   AracnaSelectOptionElementEventMap

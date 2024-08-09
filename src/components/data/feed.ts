@@ -23,25 +23,25 @@ import {
   AracnaFeedArticleLabelElement
 } from '@aracna/web-components/elements/data/feed-element'
 
-export const AracnaAracnaFeed: ElementComponent<AracnaFeedElement, AracnaAracnaFeedProps> = createBaseElementComponent<
+export const AracnaFeed: ElementComponent<AracnaFeedElement, AracnaAracnaFeedProps> = createBaseElementComponent<
   AracnaFeedElement,
   AracnaFeedElementAttributes,
   AracnaFeedElementEventMap
 >('aracna-feed', AracnaFeedElement)
 
-export const AracnaAracnaFeedArticle: ElementComponent<AracnaFeedArticleElement, AracnaAracnaFeedArticleProps> = createBaseElementComponent<
+export const AracnaFeedArticle: ElementComponent<AracnaFeedArticleElement, AracnaAracnaFeedArticleProps> = createBaseElementComponent<
   AracnaFeedArticleElement,
   AracnaFeedArticleElementAttributes,
   AracnaFeedArticleElementEventMap
 >('aracna-feed-article', AracnaFeedArticleElement)
 
-export const AracnaAracnaFeedArticleDescription: ElementComponent<AracnaFeedArticleDescriptionElement, AracnaAracnaFeedArticleDescriptionProps> =
+export const AracnaFeedArticleDescription: ElementComponent<AracnaFeedArticleDescriptionElement, AracnaAracnaFeedArticleDescriptionProps> =
   createBaseElementComponent<AracnaFeedArticleDescriptionElement, AracnaFeedArticleDescriptionElementAttributes, AracnaFeedArticleDescriptionElementEventMap>(
     'aracna-feed-article-description',
     AracnaFeedArticleDescriptionElement
   )
 
-export const AracnaAracnaFeedArticleLabel: ElementComponent<AracnaFeedArticleLabelElement, AracnaAracnaFeedArticleLabelProps> = createBaseElementComponent<
+export const AracnaFeedArticleLabel: ElementComponent<AracnaFeedArticleLabelElement, AracnaAracnaFeedArticleLabelProps> = createBaseElementComponent<
   AracnaFeedArticleLabelElement,
   AracnaFeedArticleLabelElementAttributes,
   AracnaFeedArticleLabelElementEventMap

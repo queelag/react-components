@@ -4,7 +4,7 @@ import type { AracnaAracnaAriaMeterProps } from '../../definitions/props.js'
 import type { AracnaAriaMeterElementAttributes, AracnaAriaMeterElementEventMap } from '@aracna/web-components'
 import { AracnaAriaMeterElement } from '@aracna/web-components/elements/aria/aria-meter-element'
 
-export const AracnaAracnaAriaMeter: ElementComponent<AracnaAriaMeterElement, AracnaAracnaAriaMeterProps> = createBaseElementComponent<
+export const AracnaAriaMeter: ElementComponent<AracnaAriaMeterElement, AracnaAracnaAriaMeterProps> = createBaseElementComponent<
   AracnaAriaMeterElement,
   AracnaAriaMeterElementAttributes,
   AracnaAriaMeterElementEventMap

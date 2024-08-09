@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaListBoxElement, AracnaListBoxOptionElement } from '@aracna/web-components/elements/input/list-box-element'
 
-export const AracnaAracnaListBox: ElementComponent<AracnaListBoxElement, AracnaAracnaListBoxProps> = createBaseElementComponent<
+export const AracnaListBox: ElementComponent<AracnaListBoxElement, AracnaAracnaListBoxProps> = createBaseElementComponent<
   AracnaListBoxElement,
   AracnaListBoxElementAttributes,
   AracnaListBoxElementEventMap
 >('aracna-listbox', AracnaListBoxElement)
 
-export const AracnaAracnaListBoxOption: ElementComponent<AracnaListBoxOptionElement, AracnaAracnaListBoxOptionProps> = createBaseElementComponent<
+export const AracnaListBoxOption: ElementComponent<AracnaListBoxOptionElement, AracnaAracnaListBoxOptionProps> = createBaseElementComponent<
   AracnaListBoxOptionElement,
   AracnaListBoxOptionElementAttributes,
   AracnaListBoxOptionElementEventMap

@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaListElement, AracnaListItemElement } from '@aracna/web-components/elements/data/list-element'
 
-export const AracnaAracnaList: ElementComponent<AracnaListElement, AracnaAracnaListProps> = createBaseElementComponent<
+export const AracnaList: ElementComponent<AracnaListElement, AracnaAracnaListProps> = createBaseElementComponent<
   AracnaListElement,
   AracnaListElementAttributes,
   AracnaListElementEventMap
 >('aracna-list', AracnaListElement)
 
-export const AracnaAracnaListItem: ElementComponent<AracnaListItemElement, AracnaAracnaListItemProps> = createBaseElementComponent<
+export const AracnaListItem: ElementComponent<AracnaListItemElement, AracnaAracnaListItemProps> = createBaseElementComponent<
   AracnaListItemElement,
   AracnaListItemElementAttributes,
   AracnaListItemElementEventMap

@@ -15,19 +15,19 @@ import {
   AracnaAriaDialogLabelElement
 } from '@aracna/web-components/elements/aria/aria-dialog-element'
 
-export const AracnaAracnaAriaDialog: ElementComponent<AracnaAriaDialogElement, AracnaAracnaAriaDialogProps> = createFocusTrapElementComponent<
+export const AracnaAriaDialog: ElementComponent<AracnaAriaDialogElement, AracnaAracnaAriaDialogProps> = createFocusTrapElementComponent<
   AracnaAriaDialogElement,
   AracnaAriaDialogElementAttributes,
   AracnaAriaDialogElementEventMap
 >('aracna-aria-dialog', AracnaAriaDialogElement)
 
-export const AracnaAracnaAriaDialogDescription: ElementComponent<AracnaAriaDialogDescriptionElement, AracnaAracnaAriaDialogDescriptionProps> =
+export const AracnaAriaDialogDescription: ElementComponent<AracnaAriaDialogDescriptionElement, AracnaAracnaAriaDialogDescriptionProps> =
   createBaseElementComponent<AracnaAriaDialogDescriptionElement, AracnaAriaDialogDescriptionElementAttributes, AracnaAriaDialogDescriptionElementEventMap>(
     'aracna-aria-dialog-description',
     AracnaAriaDialogDescriptionElement
   )
 
-export const AracnaAracnaAriaDialogLabel: ElementComponent<AracnaAriaDialogLabelElement, AracnaAracnaAriaDialogLabelProps> = createBaseElementComponent<
+export const AracnaAriaDialogLabel: ElementComponent<AracnaAriaDialogLabelElement, AracnaAracnaAriaDialogLabelProps> = createBaseElementComponent<
   AracnaAriaDialogLabelElement,
   AracnaAriaDialogLabelElementAttributes,
   AracnaAriaDialogLabelElementEventMap

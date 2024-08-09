@@ -19,20 +19,20 @@ import {
   AracnaAriaAlertDialogLabelElement
 } from '@aracna/web-components/elements/aria/aria-alert-dialog-element'
 
-export const AracnaAracnaAriaAlertDialog: ElementComponent<AracnaAriaAlertDialogElement, AracnaAracnaAriaAlertDialogProps> = createFocusTrapElementComponent<
+export const AracnaAriaAlertDialog: ElementComponent<AracnaAriaAlertDialogElement, AracnaAracnaAriaAlertDialogProps> = createFocusTrapElementComponent<
   AracnaAriaAlertDialogElement,
   AracnaAriaAlertDialogElementAttributes,
   AracnaAriaAlertDialogElementEventMap
 >('aracna-aria-alert-dialog', AracnaAriaAlertDialogElement)
 
-export const AracnaAracnaAriaAlertDialogDescription: ElementComponent<AracnaAriaAlertDialogDescriptionElement, AracnaAracnaAriaAlertDialogDescriptionProps> =
+export const AracnaAriaAlertDialogDescription: ElementComponent<AracnaAriaAlertDialogDescriptionElement, AracnaAracnaAriaAlertDialogDescriptionProps> =
   createBaseElementComponent<
     AracnaAriaAlertDialogDescriptionElement,
     AracnaAriaAlertDialogDescriptionElementAttributes,
     AracnaAriaAlertDialogDescriptionElementEventMap
   >('aracna-aria-alert-dialog-description', AracnaAriaAlertDialogDescriptionElement)
 
-export const AracnaAracnaAriaAlertDialogLabel: ElementComponent<AracnaAriaAlertDialogLabelElement, AracnaAracnaAriaAlertDialogLabelProps> =
+export const AracnaAriaAlertDialogLabel: ElementComponent<AracnaAriaAlertDialogLabelElement, AracnaAracnaAriaAlertDialogLabelProps> =
   createBaseElementComponent<AracnaAriaAlertDialogLabelElement, AracnaAriaAlertDialogLabelElementAttributes, AracnaAriaAlertDialogLabelElementEventMap>(
     'aracna-aria-alert-dialog-label',
     AracnaAriaAlertDialogLabelElement

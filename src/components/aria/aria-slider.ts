@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaSliderElement, AracnaAriaSliderThumbElement } from '@aracna/web-components/elements/aria/aria-slider-element'
 
-export const AracnaAracnaAriaSlider: ElementComponent<AracnaAriaSliderElement, AracnaAracnaAriaSliderProps> = createFormControlElementComponent<
+export const AracnaAriaSlider: ElementComponent<AracnaAriaSliderElement, AracnaAracnaAriaSliderProps> = createFormControlElementComponent<
   AracnaAriaSliderElement,
   AracnaAriaSliderElementAttributes,
   AracnaAriaSliderElementEventMap
 >('aracna-aria-slider', AracnaAriaSliderElement, ['slider-change'])
 
-export const AracnaAracnaAriaSliderThumb: ElementComponent<AracnaAriaSliderThumbElement, AracnaAracnaAriaSliderThumbProps> = createBaseElementComponent<
+export const AracnaAriaSliderThumb: ElementComponent<AracnaAriaSliderThumbElement, AracnaAracnaAriaSliderThumbProps> = createBaseElementComponent<
   AracnaAriaSliderThumbElement,
   AracnaAriaSliderThumbElementAttributes,
   AracnaAriaSliderThumbElementEventMap

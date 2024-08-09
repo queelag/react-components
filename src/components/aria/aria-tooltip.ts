@@ -23,26 +23,26 @@ import {
   AracnaAriaTooltipTriggerElement
 } from '@aracna/web-components/elements/aria/aria-tooltip-element'
 
-export const AracnaAracnaAriaTooltip: ElementComponent<AracnaAriaTooltipElement, AracnaAracnaAriaTooltipProps> = createBaseElementComponent<
+export const AracnaAriaTooltip: ElementComponent<AracnaAriaTooltipElement, AracnaAracnaAriaTooltipProps> = createBaseElementComponent<
   AracnaAriaTooltipElement,
   AracnaAriaTooltipElementAttributes,
   AracnaAriaTooltipElementEventMap
 >('aracna-aria-tooltip', AracnaAriaTooltipElement)
 
-export const AracnaAracnaAriaTooltipArrow: ElementComponent<AracnaAriaTooltipArrowElement, AracnaAracnaAriaTooltipArrowProps> = createBaseElementComponent<
+export const AracnaAriaTooltipArrow: ElementComponent<AracnaAriaTooltipArrowElement, AracnaAracnaAriaTooltipArrowProps> = createBaseElementComponent<
   AracnaAriaTooltipArrowElement,
   AracnaAriaTooltipArrowElementAttributes,
   AracnaAriaTooltipArrowElementEventMap
 >('aracna-aria-tooltip-arrow', AracnaAriaTooltipArrowElement)
 
-export const AracnaAracnaAriaTooltipContent: ElementComponent<AracnaAriaTooltipContentElement, AracnaAracnaAriaTooltipContentProps> =
-  createFloatingElementComponent<AracnaAriaTooltipContentElement, AracnaAriaTooltipContentElementAttributes, AracnaAriaTooltipContentElementEventMap>(
-    'aracna-aria-tooltip-content',
-    AracnaAriaTooltipContentElement
-  )
+export const AracnaAriaTooltipContent: ElementComponent<AracnaAriaTooltipContentElement, AracnaAracnaAriaTooltipContentProps> = createFloatingElementComponent<
+  AracnaAriaTooltipContentElement,
+  AracnaAriaTooltipContentElementAttributes,
+  AracnaAriaTooltipContentElementEventMap
+>('aracna-aria-tooltip-content', AracnaAriaTooltipContentElement)
 
-export const AracnaAracnaAriaTooltipTrigger: ElementComponent<AracnaAriaTooltipTriggerElement, AracnaAracnaAriaTooltipTriggerProps> =
-  createBaseElementComponent<AracnaAriaTooltipTriggerElement, AracnaAriaTooltipTriggerElementAttributes, AracnaAriaTooltipTriggerElementEventMap>(
-    'aracna-aria-tooltip-trigger',
-    AracnaAriaTooltipTriggerElement
-  )
+export const AracnaAriaTooltipTrigger: ElementComponent<AracnaAriaTooltipTriggerElement, AracnaAracnaAriaTooltipTriggerProps> = createBaseElementComponent<
+  AracnaAriaTooltipTriggerElement,
+  AracnaAriaTooltipTriggerElementAttributes,
+  AracnaAriaTooltipTriggerElementEventMap
+>('aracna-aria-tooltip-trigger', AracnaAriaTooltipTriggerElement)

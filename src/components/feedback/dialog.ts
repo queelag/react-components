@@ -11,19 +11,19 @@ import type {
 } from '@aracna/web-components'
 import { AracnaDialogElement, AracnaDialogDescriptionElement, AracnaDialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
 
-export const AracnaAracnaDialog: ElementComponent<AracnaDialogElement, AracnaAracnaDialogProps> = createFocusTrapElementComponent<
+export const AracnaDialog: ElementComponent<AracnaDialogElement, AracnaAracnaDialogProps> = createFocusTrapElementComponent<
   AracnaDialogElement,
   AracnaDialogElementAttributes,
   AracnaDialogElementEventMap
 >('aracna-dialog', AracnaDialogElement, ['dialog-close', 'dialog-open'])
 
-export const AracnaAracnaDialogDescription: ElementComponent<AracnaDialogDescriptionElement, AracnaAracnaDialogDescriptionProps> = createBaseElementComponent<
+export const AracnaDialogDescription: ElementComponent<AracnaDialogDescriptionElement, AracnaAracnaDialogDescriptionProps> = createBaseElementComponent<
   AracnaDialogDescriptionElement,
   AracnaDialogDescriptionElementAttributes,
   AracnaDialogDescriptionElementEventMap
 >('aracna-dialog-description', AracnaDialogDescriptionElement)
 
-export const AracnaAracnaDialogLabel: ElementComponent<AracnaDialogLabelElement, AracnaAracnaDialogLabelProps> = createBaseElementComponent<
+export const AracnaDialogLabel: ElementComponent<AracnaDialogLabelElement, AracnaAracnaDialogLabelProps> = createBaseElementComponent<
   AracnaDialogLabelElement,
   AracnaDialogLabelElementAttributes,
   AracnaDialogLabelElementEventMap

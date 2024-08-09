@@ -4,7 +4,7 @@ import type { AracnaAracnaCheckBoxProps } from '../../definitions/props.js'
 import type { AracnaCheckBoxElementAttributes, AracnaCheckBoxElementEventMap } from '@aracna/web-components'
 import { AracnaCheckBoxElement } from '@aracna/web-components/elements/input/check-box-element'
 
-export const AracnaAracnaCheckBox: ElementComponent<AracnaCheckBoxElement, AracnaAracnaCheckBoxProps> = createFormControlElementComponent<
+export const AracnaCheckBox: ElementComponent<AracnaCheckBoxElement, AracnaAracnaCheckBoxProps> = createFormControlElementComponent<
   AracnaCheckBoxElement,
   AracnaCheckBoxElementAttributes,
   AracnaCheckBoxElementEventMap

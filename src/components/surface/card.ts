@@ -4,7 +4,7 @@ import type { AracnaAracnaCardProps } from '../../definitions/props.js'
 import type { AracnaCardElementAttributes, AracnaCardElementEventMap } from '@aracna/web-components'
 import { AracnaCardElement } from '@aracna/web-components/elements/surface/card-element'
 
-export const AracnaAracnaCard: ElementComponent<AracnaCardElement, AracnaAracnaCardProps> = createBaseElementComponent<
+export const AracnaCard: ElementComponent<AracnaCardElement, AracnaAracnaCardProps> = createBaseElementComponent<
   AracnaCardElement,
   AracnaCardElementAttributes,
   AracnaCardElementEventMap

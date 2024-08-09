@@ -4,7 +4,7 @@ import type { AracnaAracnaSwitchProps } from '../../definitions/props.js'
 import type { AracnaSwitchElementAttributes, AracnaSwitchElementEventMap } from '@aracna/web-components'
 import { AracnaSwitchElement } from '@aracna/web-components/elements/input/switch-element'
 
-export const AracnaAracnaSwitch: ElementComponent<AracnaSwitchElement, AracnaAracnaSwitchProps> = createFormControlElementComponent<
+export const AracnaSwitch: ElementComponent<AracnaSwitchElement, AracnaAracnaSwitchProps> = createFormControlElementComponent<
   AracnaSwitchElement,
   AracnaSwitchElementAttributes,
   AracnaSwitchElementEventMap

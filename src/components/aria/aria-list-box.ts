@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaListBoxElement, AracnaAriaListBoxOptionElement } from '@aracna/web-components/elements/aria/aria-list-box-element'
 
-export const AracnaAracnaAriaListBox: ElementComponent<AracnaAriaListBoxElement, AracnaAracnaAriaListBoxProps> = createBaseElementComponent<
+export const AracnaAriaListBox: ElementComponent<AracnaAriaListBoxElement, AracnaAracnaAriaListBoxProps> = createBaseElementComponent<
   AracnaAriaListBoxElement,
   AracnaAriaListBoxElementAttributes<AracnaAriaListBoxOptionElement>,
   AracnaAriaListBoxElementEventMap
 >('aracna-aria-listbox', AracnaAriaListBoxElement)
 
-export const AracnaAracnaAriaListBoxOption: ElementComponent<AracnaAriaListBoxOptionElement, AracnaAracnaAriaListBoxOptionProps> = createBaseElementComponent<
+export const AracnaAriaListBoxOption: ElementComponent<AracnaAriaListBoxOptionElement, AracnaAracnaAriaListBoxOptionProps> = createBaseElementComponent<
   AracnaAriaListBoxOptionElement,
   AracnaAriaListBoxOptionElementAttributes,
   AracnaAriaListBoxOptionElementEventMap

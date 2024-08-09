@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaSliderElement, AracnaSliderThumbElement } from '@aracna/web-components/elements/input/slider-element'
 
-export const AracnaAracnaSlider: ElementComponent<AracnaSliderElement, AracnaAracnaSliderProps> = createFormControlElementComponent<
+export const AracnaSlider: ElementComponent<AracnaSliderElement, AracnaAracnaSliderProps> = createFormControlElementComponent<
   AracnaSliderElement,
   AracnaSliderElementAttributes,
   AracnaSliderElementEventMap
 >('aracna-slider', AracnaSliderElement, ['slider-change'])
 
-export const AracnaAracnaSliderThumb: ElementComponent<AracnaSliderThumbElement, AracnaAracnaSliderThumbProps> = createBaseElementComponent<
+export const AracnaSliderThumb: ElementComponent<AracnaSliderThumbElement, AracnaAracnaSliderThumbProps> = createBaseElementComponent<
   AracnaSliderThumbElement,
   AracnaSliderThumbElementAttributes,
   AracnaSliderThumbElementEventMap

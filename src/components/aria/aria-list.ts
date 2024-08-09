@@ -9,13 +9,13 @@ import type {
 } from '@aracna/web-components'
 import { AracnaAriaListElement, AracnaAriaListItemElement } from '@aracna/web-components/elements/aria/aria-list-element'
 
-export const AracnaAracnaAriaList: ElementComponent<AracnaAriaListElement, AracnaAracnaAriaListProps> = createBaseElementComponent<
+export const AracnaAriaList: ElementComponent<AracnaAriaListElement, AracnaAracnaAriaListProps> = createBaseElementComponent<
   AracnaAriaListElement,
   AracnaAriaListElementAttributes,
   AracnaAriaListElementEventMap
 >('aracna-aria-list', AracnaAriaListElement)
 
-export const AracnaAracnaAriaListItem: ElementComponent<AracnaAriaListItemElement, AracnaAracnaAriaListItemProps> = createBaseElementComponent<
+export const AracnaAriaListItem: ElementComponent<AracnaAriaListItemElement, AracnaAracnaAriaListItemProps> = createBaseElementComponent<
   AracnaAriaListItemElement,
   AracnaAriaListItemElementAttributes,
   AracnaAriaListItemElementEventMap
