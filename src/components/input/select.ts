@@ -1,5 +1,7 @@
-import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFormControlElementComponent } from '../../functions/create-form-control-element-component.js'
+import { createFloatingElementComponent } from '../../functions/create-floating-element-component.js'
 import type {
   AracnaSelectProps,
   AracnaSelectButtonProps,
@@ -31,11 +33,11 @@ import {
   AracnaSelectOptionElement
 } from '@aracna/web-components/elements/input/select-element'
 
-export const AracnaSelect: ElementComponent<AracnaSelectElement, AracnaSelectProps> = createFloatingElementComponent<
+export const AracnaSelect: ElementComponent<AracnaSelectElement, AracnaSelectProps> = createFormControlElementComponent<
   AracnaSelectElement,
   AracnaSelectElementAttributes<AracnaSelectOptionElement>,
   AracnaSelectElementEventMap
->('aracna-select', AracnaSelectElement, ['combo-box-collapse', 'combo-box-expand'])
+>('aracna-select', AracnaSelectElement, ['collapse', 'expand'])
 
 export const AracnaSelectButton: ElementComponent<AracnaSelectButtonElement, AracnaSelectButtonProps> = createBaseElementComponent<
   AracnaSelectButtonElement,
@@ -55,7 +57,7 @@ export const AracnaSelectInput: ElementComponent<AracnaSelectInputElement, Aracn
   AracnaSelectInputElementEventMap
 >('aracna-select-input', AracnaSelectInputElement)
 
-export const AracnaSelectList: ElementComponent<AracnaSelectListElement, AracnaSelectListProps> = createBaseElementComponent<
+export const AracnaSelectList: ElementComponent<AracnaSelectListElement, AracnaSelectListProps> = createFloatingElementComponent<
   AracnaSelectListElement,
   AracnaSelectListElementAttributes,
   AracnaSelectListElementEventMap
@@ -65,4 +67,4 @@ export const AracnaSelectOption: ElementComponent<AracnaSelectOptionElement, Ara
   AracnaSelectOptionElement,
   AracnaSelectOptionElementAttributes,
   AracnaSelectOptionElementEventMap
->('aracna-select-option', AracnaSelectOptionElement, ['combo-box-option-select'])
+>('aracna-select-option', AracnaSelectOptionElement, ['select', 'unselect'])

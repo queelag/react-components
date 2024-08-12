@@ -1,5 +1,7 @@
-import { createBaseElementComponent, createFormControlElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFormControlElementComponent } from '../../functions/create-form-control-element-component.js'
+import { createFloatingElementComponent } from '../../functions/create-floating-element-component.js'
 import type {
   AracnaAriaComboBoxProps,
   AracnaAriaComboBoxButtonProps,
@@ -35,7 +37,7 @@ export const AracnaAriaComboBox: ElementComponent<AracnaAriaComboBoxElement, Ara
   AracnaAriaComboBoxElement,
   AracnaAriaComboBoxElementAttributes<AracnaAriaComboBoxOptionElement>,
   AracnaAriaComboBoxElementEventMap
->('aracna-aria-combobox', AracnaAriaComboBoxElement, ['combo-box-collapse', 'combo-box-expand'])
+>('aracna-aria-combobox', AracnaAriaComboBoxElement, ['collapse', 'expand'])
 
 export const AracnaAriaComboBoxButton: ElementComponent<AracnaAriaComboBoxButtonElement, AracnaAriaComboBoxButtonProps> = createBaseElementComponent<
   AracnaAriaComboBoxButtonElement,
@@ -65,4 +67,4 @@ export const AracnaAriaComboBoxOption: ElementComponent<AracnaAriaComboBoxOption
   AracnaAriaComboBoxOptionElement,
   AracnaAriaComboBoxOptionElementAttributes,
   AracnaAriaComboBoxOptionElementEventMap
->('aracna-aria-combobox-option', AracnaAriaComboBoxOptionElement, ['combo-box-option-select'])
+>('aracna-aria-combobox-option', AracnaAriaComboBoxOptionElement, ['select', 'unselect'])

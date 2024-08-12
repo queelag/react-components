@@ -1,5 +1,6 @@
-import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFormControlElementComponent } from '../../functions/create-form-control-element-component.js'
 import type { AracnaAriaRadioButtonProps, AracnaAriaRadioGroupProps } from '../../definitions/props.js'
 import type {
   AracnaAriaRadioButtonElementAttributes,
@@ -13,7 +14,7 @@ export const AracnaAriaRadioButton: ElementComponent<AracnaAriaRadioButtonElemen
   AracnaAriaRadioButtonElement,
   AracnaAriaRadioButtonElementAttributes,
   AracnaAriaRadioButtonElementEventMap
->('aracna-aria-radio-button', AracnaAriaRadioButtonElement)
+>('aracna-aria-radio-button', AracnaAriaRadioButtonElement, ['check', 'uncheck'])
 
 export const AracnaAriaRadioGroup: ElementComponent<AracnaAriaRadioGroupElement, AracnaAriaRadioGroupProps> = createFormControlElementComponent<
   AracnaAriaRadioGroupElement,

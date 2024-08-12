@@ -1,5 +1,6 @@
-import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFloatingElementComponent } from '../../functions/create-floating-element-component.js'
 import type { AracnaTooltipProps, AracnaTooltipArrowProps, AracnaTooltipContentProps, AracnaTooltipTriggerProps } from '../../definitions/props.js'
 import type {
   AracnaTooltipElementAttributes,
@@ -22,7 +23,7 @@ export const AracnaTooltip: ElementComponent<AracnaTooltipElement, AracnaTooltip
   AracnaTooltipElement,
   AracnaTooltipElementAttributes,
   AracnaTooltipElementEventMap
->('aracna-tooltip', AracnaTooltipElement)
+>('aracna-tooltip', AracnaTooltipElement, ['hide', 'show'])
 
 export const AracnaTooltipArrow: ElementComponent<AracnaTooltipArrowElement, AracnaTooltipArrowProps> = createBaseElementComponent<
   AracnaTooltipArrowElement,

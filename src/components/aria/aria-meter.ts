@@ -1,5 +1,5 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
 import type { AracnaAriaMeterProps } from '../../definitions/props.js'
 import type { AracnaAriaMeterElementAttributes, AracnaAriaMeterElementEventMap } from '@aracna/web-components'
 import { AracnaAriaMeterElement } from '@aracna/web-components/elements/aria/aria-meter-element'

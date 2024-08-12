@@ -1,5 +1,6 @@
-import { createBaseElementComponent, createFocusTrapElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFocusTrapElementComponent } from '../../functions/create-focus-trap-element-component.js'
 import type { AracnaAlertDialogProps, AracnaAlertDialogDescriptionProps, AracnaAlertDialogLabelProps } from '../../definitions/props.js'
 import type {
   AracnaAlertDialogElementAttributes,

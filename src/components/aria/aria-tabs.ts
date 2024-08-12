@@ -1,5 +1,5 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
 import type { AracnaAriaTabsProps, AracnaAriaTabsPanelProps, AracnaAriaTabsTabProps } from '../../definitions/props.js'
 import type {
   AracnaAriaTabsElementAttributes,
@@ -27,4 +27,4 @@ export const AracnaAriaTabsTab: ElementComponent<AracnaAriaTabsTabElement, Aracn
   AracnaAriaTabsTabElement,
   AracnaAriaTabsTabElementAttributes,
   AracnaAriaTabsTabElementEventMap
->('aracna-aria-tabs-tab', AracnaAriaTabsTabElement, ['tabs-tab-selection'])
+>('aracna-aria-tabs-tab', AracnaAriaTabsTabElement, ['select', 'unselect'])

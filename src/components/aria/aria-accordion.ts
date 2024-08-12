@@ -1,5 +1,5 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
 import type {
   AracnaAriaAccordionProps,
   AracnaAriaAccordionButtonProps,
@@ -55,4 +55,4 @@ export const AracnaAriaAccordionSection: ElementComponent<AracnaAriaAccordionSec
   AracnaAriaAccordionSectionElement,
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap
->('aracna-aria-accordion-section', AracnaAriaAccordionSectionElement)
+>('aracna-aria-accordion-section', AracnaAriaAccordionSectionElement, ['collapse', 'expand'])

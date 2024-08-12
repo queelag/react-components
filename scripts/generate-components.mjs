@@ -1,59 +1,126 @@
-import { removeArrayDuplicates } from '@aracna/core'
+import { getKebabCaseString, removeArrayDuplicates } from '@aracna/core'
 import { mkdir, readFile, rm, writeFile } from 'fs/promises'
 import { glob } from 'glob'
 import { format } from 'prettier'
 
 const GENERICS = new Map([
-  ['AracnaAriaMenuElement', 'AracnaAriaMenuItemElement'],
-  ['AracnaAriaListBoxElement', 'AracnaAriaListBoxOptionElement'],
+  /**
+   * ARIA
+   */
   ['AracnaAriaComboBoxElement', 'AracnaAriaComboBoxOptionElement'],
+  ['AracnaAriaListBoxElement', 'AracnaAriaListBoxOptionElement'],
+  ['AracnaAriaMenuElement', 'AracnaAriaMenuItemElement'],
+  /**
+   * Input
+   */
+  ['AracnaListBoxElement', 'AracnaListBoxOptionElement'],
   ['AracnaSelectElement', 'AracnaSelectOptionElement'],
+  /**
+   * Navigation
+   */
   ['AracnaMenuElement', 'AracnaMenuItemElement']
 ])
 
 const EXTENDS = new Map([
-  ['AracnaAriaComboBoxListElement', 'Floating'],
-  ['AracnaAriaMenuSubMenuElement', 'Floating'],
-  ['AracnaAriaTooltipContentElement', 'Floating'],
-  ['AracnaMenuSubMenuElement', 'Floating'],
-  ['AracnaSelectElement', 'Floating'],
-  ['AracnaTooltipContentElement', 'Floating'],
-  ['AracnaAlertDialogElement', 'FocusTrap'],
+  /**
+   * ARIA
+   */
   ['AracnaAriaAlertDialogElement', 'FocusTrap'],
-  ['AracnaAriaDialogElement', 'FocusTrap'],
-  ['AracnaDialogElement', 'FocusTrap'],
   ['AracnaAriaCheckBoxElement', 'FormControl'],
   ['AracnaAriaComboBoxElement', 'FormControl'],
+  ['AracnaAriaComboBoxListElement', 'Floating'],
+  ['AracnaAriaDialogElement', 'FocusTrap'],
+  ['AracnaAriaListBoxElement', 'FormControl'],
+  ['AracnaAriaMenuSubMenuElement', 'Floating'],
   ['AracnaAriaRadioGroupElement', 'FormControl'],
   ['AracnaAriaSliderElement', 'FormControl'],
   ['AracnaAriaSwitchElement', 'FormControl'],
+  ['AracnaAriaTooltipContentElement', 'Floating'],
+  /**
+   * Data
+   */
+  ['AracnaTooltipContentElement', 'Floating'],
+  /**
+   * Feedback
+   */
+  ['AracnaAlertDialogElement', 'FocusTrap'],
+  ['AracnaDialogElement', 'FocusTrap'],
+  /**
+   * Input
+   */
   ['AracnaCheckBoxElement', 'FormControl'],
-  ['AracnaComboBoxElement', 'FormControl'],
   ['AracnaInputElement', 'FormControl'],
   ['AracnaInputFileElement', 'FormControl'],
+  ['AracnaListBoxElement', 'FormControl'],
   ['AracnaRadioGroupElement', 'FormControl'],
+  ['AracnaSelectElement', 'FormControl'],
+  ['AracnaSelectListElement', 'Floating'],
   ['AracnaSliderElement', 'FormControl'],
   ['AracnaSwitchElement', 'FormControl'],
-  ['AracnaTextAreaElement', 'FormControl']
+  ['AracnaTextAreaElement', 'FormControl'],
+  /**
+   * Navigation
+   */
+  ['AracnaMenuSubMenuElement', 'Floating']
 ])
 
 const EVENTS = new Map([
-  ['AracnaAlertDialogElement', ['dialog-close', 'dialog-open']],
-  ['AracnaAriaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
-  ['AracnaAriaComboBoxElement', ['combo-box-collapse', 'combo-box-expand']],
-  ['AracnaAriaComboBoxOptionElement', ['combo-box-option-select']],
+  /**
+   * ARIA
+   */
+  ['AracnaAriaAccordionSectionElement', ['collapse', 'expand']],
+  ['AracnaAriaCarouselElement', ['rotation-pause', 'rotation-resume', 'rotation-start', 'rotation-stop']],
+  ['AracnaAriaCarouselSlideElement', ['activate', 'deactivate']],
+  ['AracnaAriaCarouselTabElement', ['activate', 'deactivate']],
+  ['AracnaAriaCheckBoxElement', ['check', 'uncheck']],
+  ['AracnaAriaComboBoxElement', ['collapse', 'expand']],
+  ['AracnaAriaComboBoxOptionElement', ['select', 'unselect']],
+  ['AracnaAriaDisclosureSectionElement', ['collapse', 'expand']],
+  ['AracnaAriaListBoxOptionElement', ['select', 'unselect']],
+  ['AracnaAriaMenuSubMenuElement', ['collapse', 'expand']],
+  ['AracnaAriaRadioButtonElement', ['check', 'uncheck']],
   ['AracnaAriaSliderElement', ['slider-change']],
-  ['AracnaAriaSliderThumbElement', ['slider-thumb-move']],
-  ['AracnaAriaTabsTabElement', ['tabs-tab-selection']],
-  ['AracnaButtonElement', ['button-click']],
-  ['AracnaCarouselSlideElement', ['carousel-slide-activate', 'carousel-slide-deactive']],
+  ['AracnaAriaSliderThumbElement', ['move']],
+  ['AracnaAriaSwitchElement', ['switch-off', 'switch-on']],
+  ['AracnaAriaTabsTabElement', ['select', 'unselect']],
+  ['AracnaAriaTooltipElement', ['hide', 'show']],
+  /**
+   * Data
+   */
+  ['AracnaCarouselElement', ['rotation-pause', 'rotation-resume', 'rotation-start', 'rotation-stop']],
+  ['AracnaCarouselSlideElement', ['activate', 'deactivate']],
+  ['AracnaCarouselTabElement', ['activate', 'deactivate']],
+  ['AracnaIconElement', ['fetch', 'parse']],
+  ['AracnaImageElement', ['image-load', 'image-load-error']],
+  ['AracnaTooltipElement', ['hide', 'show']],
+  /**
+   * Feedback
+   */
+  ['AracnaAlertDialogElement', ['dialog-close', 'dialog-open']],
   ['AracnaDialogElement', ['dialog-close', 'dialog-open']],
+  /**
+   * Input
+   */
+  ['AracnaButtonElement', ['button-click']],
+  ['AracnaCheckBoxElement', ['check', 'uncheck']],
   ['AracnaFormElement', ['form-submit']],
-  ['AracnaSelectElement', ['combo-box-collapse', 'combo-box-expand']],
-  ['AracnaSelectOptionElement', ['combo-box-option-select']],
+  ['AracnaListBoxOptionElement', ['select', 'unselect']],
+  ['AracnaRadioButtonElement', ['check', 'uncheck']],
+  ['AracnaSelectElement', ['collapse', 'expand']],
+  ['AracnaSelectOptionElement', ['select', 'unselect']],
   ['AracnaSliderElement', ['slider-change']],
-  ['AracnaSliderThumbElement', ['slider-thumb-move']],
-  ['AracnaTabsTabElement', ['tabs-tab-selection']]
+  ['AracnaSliderThumbElement', ['move']],
+  ['AracnaSwitchElement', ['switch-off', 'switch-on']],
+  /**
+   * Navigation
+   */
+  ['AracnaMenuSubMenuElement', ['collapse', 'expand']],
+  ['AracnaTabsTabElement', ['select']],
+  /**
+   * Surface
+   */
+  ['AracnaAccordionSectionElement', ['collapse', 'expand']],
+  ['AracnaDisclosureSectionElement', ['collapse', 'expand']]
 ])
 
 await rm('src/components', { force: true, recursive: true })
@@ -72,13 +139,15 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
 
   ts = /* HTML */ `
     <script>
-      import { ${removeArrayDuplicates(
-        elements.reduce(
-          (creates, { element }) => [...creates, ...(EXTENDS.has(element) ? [`create${EXTENDS.get(element)}ElementComponent`] : [])],
-          ['createBaseElementComponent']
-        )
-      )} } from '@aracna/react'
       import type { ElementComponent } from '@aracna/react'
+      ${removeArrayDuplicates(
+        elements
+          .reduce(
+            (creates, { element }) => [...creates, ...(EXTENDS.has(element) ? [`create${EXTENDS.get(element)}ElementComponent`] : [])],
+            ['createBaseElementComponent']
+          )
+          .map((fn) => `import { ${fn} } from '../../functions/${getKebabCaseString(fn)}.js'`)
+      ).join('\n')}
       import type { ${elements.map(({ element }) => `${element.replace('Element', 'Props')}`).join(', ')} } from '../../definitions/props.js'
       import type { ${elements.map(({ element }) => `${element}Attributes, ${element}EventMap`).join(', ')} } from '@aracna/web-components'
       import { ${elements.map(({ element }) => element).join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'

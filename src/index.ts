@@ -1,1 +1,6 @@
 export type * from './definitions/props.js'
+export * from './functions/create-base-element-component.js'
+export * from './functions/create-floating-element-component.js'
+export * from './functions/create-focus-trap-element-component.js'
+export * from './functions/create-form-control-element-component.js'
+export * from './hooks/use-observable-element-component.js'

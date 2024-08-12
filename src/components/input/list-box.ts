@@ -1,5 +1,6 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFormControlElementComponent } from '../../functions/create-form-control-element-component.js'
 import type { AracnaListBoxProps, AracnaListBoxOptionProps } from '../../definitions/props.js'
 import type {
   AracnaListBoxElementAttributes,
@@ -9,9 +10,9 @@ import type {
 } from '@aracna/web-components'
 import { AracnaListBoxElement, AracnaListBoxOptionElement } from '@aracna/web-components/elements/input/list-box-element'
 
-export const AracnaListBox: ElementComponent<AracnaListBoxElement, AracnaListBoxProps> = createBaseElementComponent<
+export const AracnaListBox: ElementComponent<AracnaListBoxElement, AracnaListBoxProps> = createFormControlElementComponent<
   AracnaListBoxElement,
-  AracnaListBoxElementAttributes,
+  AracnaListBoxElementAttributes<AracnaListBoxOptionElement>,
   AracnaListBoxElementEventMap
 >('aracna-listbox', AracnaListBoxElement)
 
@@ -19,4 +20,4 @@ export const AracnaListBoxOption: ElementComponent<AracnaListBoxOptionElement, A
   AracnaListBoxOptionElement,
   AracnaListBoxOptionElementAttributes,
   AracnaListBoxOptionElementEventMap
->('aracna-listbox-option', AracnaListBoxOptionElement)
+>('aracna-listbox-option', AracnaListBoxOptionElement, ['select', 'unselect'])

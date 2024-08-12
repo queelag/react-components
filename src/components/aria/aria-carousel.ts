@@ -1,5 +1,5 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
 import type {
   AracnaAriaCarouselProps,
   AracnaAriaCarouselNextSlideControlProps,
@@ -43,7 +43,7 @@ export const AracnaAriaCarousel: ElementComponent<AracnaAriaCarouselElement, Ara
   AracnaAriaCarouselElement,
   AracnaAriaCarouselElementAttributes,
   AracnaAriaCarouselElementEventMap
->('aracna-aria-carousel', AracnaAriaCarouselElement)
+>('aracna-aria-carousel', AracnaAriaCarouselElement, ['rotation-pause', 'rotation-resume', 'rotation-start', 'rotation-stop'])
 
 export const AracnaAriaCarouselNextSlideControl: ElementComponent<AracnaAriaCarouselNextSlideControlElement, AracnaAriaCarouselNextSlideControlProps> =
   createBaseElementComponent<
@@ -72,7 +72,7 @@ export const AracnaAriaCarouselSlide: ElementComponent<AracnaAriaCarouselSlideEl
   AracnaAriaCarouselSlideElement,
   AracnaAriaCarouselSlideElementAttributes,
   AracnaAriaCarouselSlideElementEventMap
->('aracna-aria-carousel-slide', AracnaAriaCarouselSlideElement, ['carousel-slide-activate', 'carousel-slide-deactive'])
+>('aracna-aria-carousel-slide', AracnaAriaCarouselSlideElement, ['activate', 'deactivate'])
 
 export const AracnaAriaCarouselSlides: ElementComponent<AracnaAriaCarouselSlidesElement, AracnaAriaCarouselSlidesProps> = createBaseElementComponent<
   AracnaAriaCarouselSlidesElement,
@@ -84,7 +84,7 @@ export const AracnaAriaCarouselTab: ElementComponent<AracnaAriaCarouselTabElemen
   AracnaAriaCarouselTabElement,
   AracnaAriaCarouselTabElementAttributes,
   AracnaAriaCarouselTabElementEventMap
->('aracna-aria-carousel-tab', AracnaAriaCarouselTabElement)
+>('aracna-aria-carousel-tab', AracnaAriaCarouselTabElement, ['activate', 'deactivate'])
 
 export const AracnaAriaCarouselTabs: ElementComponent<AracnaAriaCarouselTabsElement, AracnaAriaCarouselTabsProps> = createBaseElementComponent<
   AracnaAriaCarouselTabsElement,

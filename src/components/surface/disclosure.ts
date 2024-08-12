@@ -1,5 +1,5 @@
-import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
 import type { AracnaDisclosureProps, AracnaDisclosureButtonProps, AracnaDisclosurePanelProps, AracnaDisclosureSectionProps } from '../../definitions/props.js'
 import type {
   AracnaDisclosureElementAttributes,
@@ -40,4 +40,4 @@ export const AracnaDisclosureSection: ElementComponent<AracnaDisclosureSectionEl
   AracnaDisclosureSectionElement,
   AracnaDisclosureSectionElementAttributes,
   AracnaDisclosureSectionElementEventMap
->('aracna-disclosure-section', AracnaDisclosureSectionElement)
+>('aracna-disclosure-section', AracnaDisclosureSectionElement, ['collapse', 'expand'])

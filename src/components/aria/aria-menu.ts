@@ -1,5 +1,6 @@
-import { createBaseElementComponent, createFloatingElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFloatingElementComponent } from '../../functions/create-floating-element-component.js'
 import type { AracnaAriaMenuProps, AracnaAriaMenuButtonProps, AracnaAriaMenuItemProps, AracnaAriaMenuSubMenuProps } from '../../definitions/props.js'
 import type {
   AracnaAriaMenuElementAttributes,
@@ -40,4 +41,4 @@ export const AracnaAriaMenuSubMenu: ElementComponent<AracnaAriaMenuSubMenuElemen
   AracnaAriaMenuSubMenuElement,
   AracnaAriaMenuSubMenuElementAttributes,
   AracnaAriaMenuSubMenuElementEventMap
->('aracna-aria-menu-submenu', AracnaAriaMenuSubMenuElement)
+>('aracna-aria-menu-submenu', AracnaAriaMenuSubMenuElement, ['collapse', 'expand'])

@@ -1,5 +1,6 @@
-import { createBaseElementComponent, createFormControlElementComponent } from '@aracna/react'
 import type { ElementComponent } from '@aracna/react'
+import { createBaseElementComponent } from '../../functions/create-base-element-component.js'
+import { createFormControlElementComponent } from '../../functions/create-form-control-element-component.js'
 import type { AracnaAriaSliderProps, AracnaAriaSliderThumbProps } from '../../definitions/props.js'
 import type {
   AracnaAriaSliderElementAttributes,
@@ -19,4 +20,4 @@ export const AracnaAriaSliderThumb: ElementComponent<AracnaAriaSliderThumbElemen
   AracnaAriaSliderThumbElement,
   AracnaAriaSliderThumbElementAttributes,
   AracnaAriaSliderThumbElementEventMap
->('aracna-aria-slider-thumb', AracnaAriaSliderThumbElement, ['slider-thumb-move'])
+>('aracna-aria-slider-thumb', AracnaAriaSliderThumbElement, ['move'])

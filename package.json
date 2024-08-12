@@ -2,9 +2,9 @@
   "author": "Dario Sechi",
   "devDependencies": {
     "@aracna/core": "^1.1.82",
-    "@aracna/react": "^1.0.50",
+    "@aracna/react": "1.0.53-rc.0",
     "@aracna/web": "^1.0.75",
-    "@aracna/web-components": "^1.0.80",
+    "@aracna/web-components": "1.0.81-rc.1",
     "@floating-ui/dom": "^1.6.10",
     "@lit-labs/react": "^2.1.3",
     "@microsoft/api-extractor": "^7.47.5",
@@ -98,7 +98,7 @@
   "repository": "https://github.com/aracna/react-components",
   "scripts": {
     "build": "rm -rf dist && node esbuild.mjs && pnpm tsc && pnpm api-extractor run --local",
-    "prepublish": "pnpm test && pnpm build && pnpm version patch && cp LICENSE package.json README.md dist",
+    "prepublish": "pnpm test && pnpm build && cp LICENSE package.json README.md dist",
     "test": "vitest run"
   },
   "sideEffects": false,
