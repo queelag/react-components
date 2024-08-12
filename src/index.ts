@@ -1,3 +1,4 @@
+export type * from './definitions/interfaces.js'
 export type * from './definitions/props.js'
 export * from './functions/create-base-element-component.js'
 export * from './functions/create-floating-element-component.js'

@@ -1,3 +1,6 @@
+import type { AttributeChangeEvent, StateChangeEvent } from '@aracna/web-components'
+import type { MutableRefObject } from 'react'
+
 export interface UseObservableElementComponentOptions {
   blacklist?: string[]
   whitelist?: string[]
