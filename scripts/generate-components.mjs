@@ -126,7 +126,7 @@ const EVENTS = new Map([
 await rm('src/components', { force: true, recursive: true })
 await mkdir('src/components')
 
-for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface}/*-element.js')) {
+for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface,typography}/*-element.js')) {
   let folder, name, dts, elements, ts
 
   folder = path.replace('node_modules/@aracna/web-components/elements/', '').split('/')[0]

@@ -33,7 +33,7 @@ imports = {
 }
 exports = []
 
-for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface}/*-element.js')) {
+for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface,typography}/*-element.js')) {
   let folder, name, dts, elements
 
   folder = path.replace('node_modules/@aracna/web-components/elements/', '').split('/')[0]
