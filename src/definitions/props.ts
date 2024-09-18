@@ -72,6 +72,8 @@ import type {
   AracnaAriaComboBoxElementEventMap,
   AracnaAriaComboBoxButtonElementAttributes,
   AracnaAriaComboBoxButtonElementEventMap,
+  AracnaAriaComboBoxClearElementAttributes,
+  AracnaAriaComboBoxClearElementEventMap,
   AracnaAriaComboBoxGroupElementAttributes,
   AracnaAriaComboBoxGroupElementEventMap,
   AracnaAriaComboBoxInputElementAttributes,
@@ -80,6 +82,8 @@ import type {
   AracnaAriaComboBoxListElementEventMap,
   AracnaAriaComboBoxOptionElementAttributes,
   AracnaAriaComboBoxOptionElementEventMap,
+  AracnaAriaComboBoxOptionRemoveElementAttributes,
+  AracnaAriaComboBoxOptionRemoveElementEventMap,
   AracnaAriaCheckBoxElementAttributes,
   AracnaAriaCheckBoxElementEventMap,
   AracnaAriaCarouselElementAttributes,
@@ -190,6 +194,10 @@ import type {
   AracnaAlertDialogLabelElementEventMap,
   AracnaTextAreaElementAttributes,
   AracnaTextAreaElementEventMap,
+  AracnaTextAreaClearElementAttributes,
+  AracnaTextAreaClearElementEventMap,
+  AracnaTextAreaItemRemoveElementAttributes,
+  AracnaTextAreaItemRemoveElementEventMap,
   AracnaSwitchElementAttributes,
   AracnaSwitchElementEventMap,
   AracnaSliderElementAttributes,
@@ -200,6 +208,8 @@ import type {
   AracnaSelectElementEventMap,
   AracnaSelectButtonElementAttributes,
   AracnaSelectButtonElementEventMap,
+  AracnaSelectClearElementAttributes,
+  AracnaSelectClearElementEventMap,
   AracnaSelectGroupElementAttributes,
   AracnaSelectGroupElementEventMap,
   AracnaSelectInputElementAttributes,
@@ -208,6 +218,8 @@ import type {
   AracnaSelectListElementEventMap,
   AracnaSelectOptionElementAttributes,
   AracnaSelectOptionElementEventMap,
+  AracnaSelectOptionRemoveElementAttributes,
+  AracnaSelectOptionRemoveElementEventMap,
   AracnaRadioGroupElementAttributes,
   AracnaRadioGroupElementEventMap,
   AracnaRadioButtonElementAttributes,
@@ -218,8 +230,18 @@ import type {
   AracnaListBoxOptionElementEventMap,
   AracnaInputFileElementAttributes,
   AracnaInputFileElementEventMap,
+  AracnaInputFileClearElementAttributes,
+  AracnaInputFileClearElementEventMap,
+  AracnaInputFileRemoveElementAttributes,
+  AracnaInputFileRemoveElementEventMap,
   AracnaInputElementAttributes,
   AracnaInputElementEventMap,
+  AracnaInputClearElementAttributes,
+  AracnaInputClearElementEventMap,
+  AracnaInputObscureElementAttributes,
+  AracnaInputObscureElementEventMap,
+  AracnaInputItemRemoveElementAttributes,
+  AracnaInputItemRemoveElementEventMap,
   AracnaFormElementAttributes,
   AracnaFormElementEventMap,
   AracnaCheckBoxElementAttributes,
@@ -324,10 +346,12 @@ import type {
 import type {
   AracnaAriaComboBoxElement,
   AracnaAriaComboBoxButtonElement,
+  AracnaAriaComboBoxClearElement,
   AracnaAriaComboBoxGroupElement,
   AracnaAriaComboBoxInputElement,
   AracnaAriaComboBoxListElement,
-  AracnaAriaComboBoxOptionElement
+  AracnaAriaComboBoxOptionElement,
+  AracnaAriaComboBoxOptionRemoveElement
 } from '@aracna/web-components/elements/aria/aria-combo-box-element'
 import type { AracnaAriaCheckBoxElement } from '@aracna/web-components/elements/aria/aria-check-box-element'
 import type {
@@ -396,21 +420,36 @@ import type {
   AracnaAlertDialogDescriptionElement,
   AracnaAlertDialogLabelElement
 } from '@aracna/web-components/elements/feedback/alert-dialog-element'
-import type { AracnaTextAreaElement } from '@aracna/web-components/elements/input/text-area-element'
+import type {
+  AracnaTextAreaElement,
+  AracnaTextAreaClearElement,
+  AracnaTextAreaItemRemoveElement
+} from '@aracna/web-components/elements/input/text-area-element'
 import type { AracnaSwitchElement } from '@aracna/web-components/elements/input/switch-element'
 import type { AracnaSliderElement, AracnaSliderThumbElement } from '@aracna/web-components/elements/input/slider-element'
 import type {
   AracnaSelectElement,
   AracnaSelectButtonElement,
+  AracnaSelectClearElement,
   AracnaSelectGroupElement,
   AracnaSelectInputElement,
   AracnaSelectListElement,
-  AracnaSelectOptionElement
+  AracnaSelectOptionElement,
+  AracnaSelectOptionRemoveElement
 } from '@aracna/web-components/elements/input/select-element'
 import type { AracnaRadioGroupElement, AracnaRadioButtonElement } from '@aracna/web-components/elements/input/radio-group-element'
 import type { AracnaListBoxElement, AracnaListBoxOptionElement } from '@aracna/web-components/elements/input/list-box-element'
-import type { AracnaInputFileElement } from '@aracna/web-components/elements/input/input-file-element'
-import type { AracnaInputElement } from '@aracna/web-components/elements/input/input-element'
+import type {
+  AracnaInputFileElement,
+  AracnaInputFileClearElement,
+  AracnaInputFileRemoveElement
+} from '@aracna/web-components/elements/input/input-file-element'
+import type {
+  AracnaInputElement,
+  AracnaInputClearElement,
+  AracnaInputObscureElement,
+  AracnaInputItemRemoveElement
+} from '@aracna/web-components/elements/input/input-element'
 import type { AracnaFormElement } from '@aracna/web-components/elements/input/form-element'
 import type { AracnaCheckBoxElement } from '@aracna/web-components/elements/input/check-box-element'
 import type { AracnaButtonGroupElement } from '@aracna/web-components/elements/input/button-group-element'
@@ -590,6 +629,11 @@ export type AracnaAriaComboBoxButtonProps = ElementComponentProps<
   AracnaAriaComboBoxButtonElementAttributes,
   AracnaAriaComboBoxButtonElementEventMap
 >
+export type AracnaAriaComboBoxClearProps = ElementComponentProps<
+  AracnaAriaComboBoxClearElement,
+  AracnaAriaComboBoxClearElementAttributes,
+  AracnaAriaComboBoxClearElementEventMap
+>
 export type AracnaAriaComboBoxGroupProps = ElementComponentProps<
   AracnaAriaComboBoxGroupElement,
   AracnaAriaComboBoxGroupElementAttributes,
@@ -609,6 +653,11 @@ export type AracnaAriaComboBoxOptionProps = ElementComponentProps<
   AracnaAriaComboBoxOptionElement,
   AracnaAriaComboBoxOptionElementAttributes,
   AracnaAriaComboBoxOptionElementEventMap
+>
+export type AracnaAriaComboBoxOptionRemoveProps = ElementComponentProps<
+  AracnaAriaComboBoxOptionRemoveElement,
+  AracnaAriaComboBoxOptionRemoveElementAttributes,
+  AracnaAriaComboBoxOptionRemoveElementEventMap
 >
 
 export type AracnaAriaCheckBoxProps = ElementComponentProps<AracnaAriaCheckBoxElement, AracnaAriaCheckBoxElementAttributes, AracnaAriaCheckBoxElementEventMap>
@@ -807,6 +856,16 @@ export type AracnaAlertDialogLabelProps = ElementComponentProps<
 >
 
 export type AracnaTextAreaProps = ElementComponentProps<AracnaTextAreaElement, AracnaTextAreaElementAttributes, AracnaTextAreaElementEventMap>
+export type AracnaTextAreaClearProps = ElementComponentProps<
+  AracnaTextAreaClearElement,
+  AracnaTextAreaClearElementAttributes,
+  AracnaTextAreaClearElementEventMap
+>
+export type AracnaTextAreaItemRemoveProps = ElementComponentProps<
+  AracnaTextAreaItemRemoveElement,
+  AracnaTextAreaItemRemoveElementAttributes,
+  AracnaTextAreaItemRemoveElementEventMap
+>
 
 export type AracnaSwitchProps = ElementComponentProps<AracnaSwitchElement, AracnaSwitchElementAttributes, AracnaSwitchElementEventMap>
 
@@ -819,10 +878,16 @@ export type AracnaSelectProps<T = any> = ElementComponentProps<
   AracnaSelectElementEventMap
 >
 export type AracnaSelectButtonProps = ElementComponentProps<AracnaSelectButtonElement, AracnaSelectButtonElementAttributes, AracnaSelectButtonElementEventMap>
+export type AracnaSelectClearProps = ElementComponentProps<AracnaSelectClearElement, AracnaSelectClearElementAttributes, AracnaSelectClearElementEventMap>
 export type AracnaSelectGroupProps = ElementComponentProps<AracnaSelectGroupElement, AracnaSelectGroupElementAttributes, AracnaSelectGroupElementEventMap>
 export type AracnaSelectInputProps = ElementComponentProps<AracnaSelectInputElement, AracnaSelectInputElementAttributes, AracnaSelectInputElementEventMap>
 export type AracnaSelectListProps = ElementComponentProps<AracnaSelectListElement, AracnaSelectListElementAttributes, AracnaSelectListElementEventMap>
 export type AracnaSelectOptionProps = ElementComponentProps<AracnaSelectOptionElement, AracnaSelectOptionElementAttributes, AracnaSelectOptionElementEventMap>
+export type AracnaSelectOptionRemoveProps = ElementComponentProps<
+  AracnaSelectOptionRemoveElement,
+  AracnaSelectOptionRemoveElementAttributes,
+  AracnaSelectOptionRemoveElementEventMap
+>
 
 export type AracnaRadioGroupProps<T = any> = ElementComponentProps<
   AracnaRadioGroupElement,
@@ -843,8 +908,25 @@ export type AracnaListBoxOptionProps = ElementComponentProps<
 >
 
 export type AracnaInputFileProps = ElementComponentProps<AracnaInputFileElement, AracnaInputFileElementAttributes, AracnaInputFileElementEventMap>
+export type AracnaInputFileClearProps = ElementComponentProps<
+  AracnaInputFileClearElement,
+  AracnaInputFileClearElementAttributes,
+  AracnaInputFileClearElementEventMap
+>
+export type AracnaInputFileRemoveProps = ElementComponentProps<
+  AracnaInputFileRemoveElement,
+  AracnaInputFileRemoveElementAttributes,
+  AracnaInputFileRemoveElementEventMap
+>
 
 export type AracnaInputProps = ElementComponentProps<AracnaInputElement, AracnaInputElementAttributes, AracnaInputElementEventMap>
+export type AracnaInputClearProps = ElementComponentProps<AracnaInputClearElement, AracnaInputClearElementAttributes, AracnaInputClearElementEventMap>
+export type AracnaInputObscureProps = ElementComponentProps<AracnaInputObscureElement, AracnaInputObscureElementAttributes, AracnaInputObscureElementEventMap>
+export type AracnaInputItemRemoveProps = ElementComponentProps<
+  AracnaInputItemRemoveElement,
+  AracnaInputItemRemoveElementAttributes,
+  AracnaInputItemRemoveElementEventMap
+>
 
 export type AracnaFormProps<T = any> = ElementComponentProps<AracnaFormElement, AracnaFormElementAttributes<T>, AracnaFormElementEventMap>
 

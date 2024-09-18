@@ -5,16 +5,20 @@ import { createFloatingElementComponent } from '../../functions/create-floating-
 import type {
   AracnaAriaComboBoxProps,
   AracnaAriaComboBoxButtonProps,
+  AracnaAriaComboBoxClearProps,
   AracnaAriaComboBoxGroupProps,
   AracnaAriaComboBoxInputProps,
   AracnaAriaComboBoxListProps,
-  AracnaAriaComboBoxOptionProps
+  AracnaAriaComboBoxOptionProps,
+  AracnaAriaComboBoxOptionRemoveProps
 } from '../../definitions/props.js'
 import type {
   AracnaAriaComboBoxElementAttributes,
   AracnaAriaComboBoxElementEventMap,
   AracnaAriaComboBoxButtonElementAttributes,
   AracnaAriaComboBoxButtonElementEventMap,
+  AracnaAriaComboBoxClearElementAttributes,
+  AracnaAriaComboBoxClearElementEventMap,
   AracnaAriaComboBoxGroupElementAttributes,
   AracnaAriaComboBoxGroupElementEventMap,
   AracnaAriaComboBoxInputElementAttributes,
@@ -22,15 +26,19 @@ import type {
   AracnaAriaComboBoxListElementAttributes,
   AracnaAriaComboBoxListElementEventMap,
   AracnaAriaComboBoxOptionElementAttributes,
-  AracnaAriaComboBoxOptionElementEventMap
+  AracnaAriaComboBoxOptionElementEventMap,
+  AracnaAriaComboBoxOptionRemoveElementAttributes,
+  AracnaAriaComboBoxOptionRemoveElementEventMap
 } from '@aracna/web-components'
 import {
   AracnaAriaComboBoxElement,
   AracnaAriaComboBoxButtonElement,
+  AracnaAriaComboBoxClearElement,
   AracnaAriaComboBoxGroupElement,
   AracnaAriaComboBoxInputElement,
   AracnaAriaComboBoxListElement,
-  AracnaAriaComboBoxOptionElement
+  AracnaAriaComboBoxOptionElement,
+  AracnaAriaComboBoxOptionRemoveElement
 } from '@aracna/web-components/elements/aria/aria-combo-box-element'
 
 export const AracnaAriaComboBox: ElementComponent<AracnaAriaComboBoxElement, AracnaAriaComboBoxProps> = createFormControlElementComponent<
@@ -44,6 +52,12 @@ export const AracnaAriaComboBoxButton: ElementComponent<AracnaAriaComboBoxButton
   AracnaAriaComboBoxButtonElementAttributes,
   AracnaAriaComboBoxButtonElementEventMap
 >('aracna-aria-combobox-button', AracnaAriaComboBoxButtonElement)
+
+export const AracnaAriaComboBoxClear: ElementComponent<AracnaAriaComboBoxClearElement, AracnaAriaComboBoxClearProps> = createBaseElementComponent<
+  AracnaAriaComboBoxClearElement,
+  AracnaAriaComboBoxClearElementAttributes,
+  AracnaAriaComboBoxClearElementEventMap
+>('aracna-aria-combobox-clear', AracnaAriaComboBoxClearElement)
 
 export const AracnaAriaComboBoxGroup: ElementComponent<AracnaAriaComboBoxGroupElement, AracnaAriaComboBoxGroupProps> = createBaseElementComponent<
   AracnaAriaComboBoxGroupElement,
@@ -68,3 +82,10 @@ export const AracnaAriaComboBoxOption: ElementComponent<AracnaAriaComboBoxOption
   AracnaAriaComboBoxOptionElementAttributes,
   AracnaAriaComboBoxOptionElementEventMap
 >('aracna-aria-combobox-option', AracnaAriaComboBoxOptionElement, ['select', 'unselect'])
+
+export const AracnaAriaComboBoxOptionRemove: ElementComponent<AracnaAriaComboBoxOptionRemoveElement, AracnaAriaComboBoxOptionRemoveProps> =
+  createBaseElementComponent<
+    AracnaAriaComboBoxOptionRemoveElement,
+    AracnaAriaComboBoxOptionRemoveElementAttributes,
+    AracnaAriaComboBoxOptionRemoveElementEventMap
+  >('aracna-aria-combobox-option-remove', AracnaAriaComboBoxOptionRemoveElement)

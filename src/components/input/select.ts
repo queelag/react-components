@@ -5,16 +5,20 @@ import { createFloatingElementComponent } from '../../functions/create-floating-
 import type {
   AracnaSelectProps,
   AracnaSelectButtonProps,
+  AracnaSelectClearProps,
   AracnaSelectGroupProps,
   AracnaSelectInputProps,
   AracnaSelectListProps,
-  AracnaSelectOptionProps
+  AracnaSelectOptionProps,
+  AracnaSelectOptionRemoveProps
 } from '../../definitions/props.js'
 import type {
   AracnaSelectElementAttributes,
   AracnaSelectElementEventMap,
   AracnaSelectButtonElementAttributes,
   AracnaSelectButtonElementEventMap,
+  AracnaSelectClearElementAttributes,
+  AracnaSelectClearElementEventMap,
   AracnaSelectGroupElementAttributes,
   AracnaSelectGroupElementEventMap,
   AracnaSelectInputElementAttributes,
@@ -22,15 +26,19 @@ import type {
   AracnaSelectListElementAttributes,
   AracnaSelectListElementEventMap,
   AracnaSelectOptionElementAttributes,
-  AracnaSelectOptionElementEventMap
+  AracnaSelectOptionElementEventMap,
+  AracnaSelectOptionRemoveElementAttributes,
+  AracnaSelectOptionRemoveElementEventMap
 } from '@aracna/web-components'
 import {
   AracnaSelectElement,
   AracnaSelectButtonElement,
+  AracnaSelectClearElement,
   AracnaSelectGroupElement,
   AracnaSelectInputElement,
   AracnaSelectListElement,
-  AracnaSelectOptionElement
+  AracnaSelectOptionElement,
+  AracnaSelectOptionRemoveElement
 } from '@aracna/web-components/elements/input/select-element'
 
 export const AracnaSelect: ElementComponent<AracnaSelectElement, AracnaSelectProps> = createFormControlElementComponent<
@@ -44,6 +52,12 @@ export const AracnaSelectButton: ElementComponent<AracnaSelectButtonElement, Ara
   AracnaSelectButtonElementAttributes,
   AracnaSelectButtonElementEventMap
 >('aracna-select-button', AracnaSelectButtonElement)
+
+export const AracnaSelectClear: ElementComponent<AracnaSelectClearElement, AracnaSelectClearProps> = createBaseElementComponent<
+  AracnaSelectClearElement,
+  AracnaSelectClearElementAttributes,
+  AracnaSelectClearElementEventMap
+>('aracna-select-clear', AracnaSelectClearElement)
 
 export const AracnaSelectGroup: ElementComponent<AracnaSelectGroupElement, AracnaSelectGroupProps> = createBaseElementComponent<
   AracnaSelectGroupElement,
@@ -68,3 +82,9 @@ export const AracnaSelectOption: ElementComponent<AracnaSelectOptionElement, Ara
   AracnaSelectOptionElementAttributes,
   AracnaSelectOptionElementEventMap
 >('aracna-select-option', AracnaSelectOptionElement, ['select', 'unselect'])
+
+export const AracnaSelectOptionRemove: ElementComponent<AracnaSelectOptionRemoveElement, AracnaSelectOptionRemoveProps> = createBaseElementComponent<
+  AracnaSelectOptionRemoveElement,
+  AracnaSelectOptionRemoveElementAttributes,
+  AracnaSelectOptionRemoveElementEventMap
+>('aracna-select-option-remove', AracnaSelectOptionRemoveElement)

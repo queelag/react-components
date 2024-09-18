@@ -18,8 +18,8 @@ importers:
         specifier: ^1.0.75
         version: 1.0.75(@aracna/core@1.1.82)
       '@aracna/web-components':
-        specifier: 1.0.85
-        version: 1.0.85(@aracna/core@1.1.82)(@aracna/web@1.0.75(@aracna/core@1.1.82))(lit@3.2.0)
+        specifier: 1.0.86-rc.2
+        version: 1.0.86-rc.2(@aracna/core@1.1.82)(@aracna/web@1.0.75(@aracna/core@1.1.82))(lit@3.2.0)
       '@floating-ui/dom':
         specifier: ^1.6.10
         version: 1.6.10
@@ -109,8 +109,8 @@ packages:
       '@aracna/web': '>= 1.0.0'
       react: '>= 18.2.0'
 
-  '@aracna/web-components@1.0.85':
-    resolution: {integrity: sha512-V4EDeWXQpkl0+wUi94n6CbUaahaXIh3d5Hcl736RqjyL9PSywAuEhWqTKObyaml3+0xm0382ZLsKWO7gIR7TmQ==}
+  '@aracna/web-components@1.0.86-rc.2':
+    resolution: {integrity: sha512-4rlAfvNnUlOjW3GXACXDEDJTEWs3gl2MR5ctDe4/oFxFA/c/PsP/Sh8LHJEcgqD72JTy/B6nurr+8+hkWFVzgA==}
     engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
@@ -1854,7 +1854,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@aracna/web-components@1.0.85(@aracna/core@1.1.82)(@aracna/web@1.0.75(@aracna/core@1.1.82))(lit@3.2.0)':
+  '@aracna/web-components@1.0.86-rc.2(@aracna/core@1.1.82)(@aracna/web@1.0.75(@aracna/core@1.1.82))(lit@3.2.0)':
     dependencies:
       '@aracna/core': 1.1.82
       '@aracna/web': 1.0.75(@aracna/core@1.1.82)
