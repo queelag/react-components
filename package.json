@@ -4,7 +4,7 @@
     "@aracna/core": "^1.1.82",
     "@aracna/react": "1.0.53",
     "@aracna/web": "^1.0.75",
-    "@aracna/web-components": "1.0.86-rc.2",
+    "@aracna/web-components": "1.0.86",
     "@floating-ui/dom": "^1.6.10",
     "@lit-labs/react": "^2.1.3",
     "@microsoft/api-extractor": "^7.47.5",
