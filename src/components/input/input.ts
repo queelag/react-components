@@ -23,7 +23,7 @@ export const AracnaInput: ElementComponent<AracnaInputElement, AracnaInputProps>
   AracnaInputElement,
   AracnaInputElementAttributes,
   AracnaInputElementEventMap
->('aracna-input', AracnaInputElement)
+>('aracna-input', AracnaInputElement, ['input-change'])
 
 export const AracnaInputClear: ElementComponent<AracnaInputClearElement, AracnaInputClearProps> = createBaseElementComponent<
   AracnaInputClearElement,

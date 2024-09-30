@@ -104,6 +104,7 @@ const EVENTS = new Map([
   ['AracnaButtonElement', ['button-click']],
   ['AracnaCheckBoxElement', ['check', 'uncheck']],
   ['AracnaFormElement', ['form-submit']],
+  ['AracnaInputElement', ['input-change']],
   ['AracnaListBoxOptionElement', ['select', 'unselect']],
   ['AracnaRadioButtonElement', ['check', 'uncheck']],
   ['AracnaSelectElement', ['collapse', 'expand']],
