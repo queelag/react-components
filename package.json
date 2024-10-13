@@ -35,54 +35,54 @@
   },
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.js",
-      "require": "./index.cjs",
-      "types": "./index.d.ts"
+      "require": "./index.cjs"
     },
     "./components/aria/*": {
+      "types": "./components/aria/*.d.ts",
       "import": "./components/aria/*.js",
-      "require": "./components/aria/*.cjs",
-      "types": "./components/aria/*.d.ts"
+      "require": "./components/aria/*.cjs"
     },
     "./components/core/*": {
+      "types": "./components/core/*.d.ts",
       "import": "./components/core/*.js",
-      "require": "./components/core/*.cjs",
-      "types": "./components/core/*.d.ts"
+      "require": "./components/core/*.cjs"
     },
     "./components/data/*": {
+      "types": "./components/data/*.d.ts",
       "import": "./components/data/*.js",
-      "require": "./components/data/*.cjs",
-      "types": "./components/data/*.d.ts"
+      "require": "./components/data/*.cjs"
     },
     "./components/feedback/*": {
+      "types": "./components/feedback/*.d.ts",
       "import": "./components/feedback/*.js",
-      "require": "./components/feedback/*.cjs",
-      "types": "./components/feedback/*.d.ts"
+      "require": "./components/feedback/*.cjs"
     },
     "./components/input/*": {
+      "types": "./components/input/*.d.ts",
       "import": "./components/input/*.js",
-      "require": "./components/input/*.cjs",
-      "types": "./components/input/*.d.ts"
+      "require": "./components/input/*.cjs"
     },
     "./components/layout/*": {
+      "types": "./components/layout/*.d.ts",
       "import": "./components/layout/*.js",
-      "require": "./components/layout/*.cjs",
-      "types": "./components/layout/*.d.ts"
+      "require": "./components/layout/*.cjs"
     },
     "./components/navigation/*": {
+      "types": "./components/navigation/*.d.ts",
       "import": "./components/navigation/*.js",
-      "require": "./components/navigation/*.cjs",
-      "types": "./components/navigation/*.d.ts"
+      "require": "./components/navigation/*.cjs"
     },
     "./components/surface/*": {
+      "types": "./components/surface/*.d.ts",
       "import": "./components/surface/*.js",
-      "require": "./components/surface/*.cjs",
-      "types": "./components/surface/*.d.ts"
+      "require": "./components/surface/*.cjs"
     },
     "./components/typography/*": {
+      "types": "./components/typography/*.d.ts",
       "import": "./components/typography/*.js",
-      "require": "./components/typography/*.cjs",
-      "types": "./components/typography/*.d.ts"
+      "require": "./components/typography/*.cjs"
     }
   },
   "license": "MIT",
