@@ -1,5 +1,53 @@
 
 import type {
+  AracnaTooltipElementAttributes,
+  AracnaTooltipElementEventMap,
+  AracnaTooltipArrowElementAttributes,
+  AracnaTooltipArrowElementEventMap,
+  AracnaTooltipContentElementAttributes,
+  AracnaTooltipContentElementEventMap,
+  AracnaTooltipTriggerElementAttributes,
+  AracnaTooltipTriggerElementEventMap,
+  AracnaQrCodeElementAttributes,
+  AracnaQrCodeElementEventMap,
+  AracnaListElementAttributes,
+  AracnaListElementEventMap,
+  AracnaListItemElementAttributes,
+  AracnaListItemElementEventMap,
+  AracnaImageElementAttributes,
+  AracnaImageElementEventMap,
+  AracnaIconElementAttributes,
+  AracnaIconElementEventMap,
+  AracnaFeedElementAttributes,
+  AracnaFeedElementEventMap,
+  AracnaFeedArticleElementAttributes,
+  AracnaFeedArticleElementEventMap,
+  AracnaFeedArticleDescriptionElementAttributes,
+  AracnaFeedArticleDescriptionElementEventMap,
+  AracnaFeedArticleLabelElementAttributes,
+  AracnaFeedArticleLabelElementEventMap,
+  AracnaChipElementAttributes,
+  AracnaChipElementEventMap,
+  AracnaCarouselElementAttributes,
+  AracnaCarouselElementEventMap,
+  AracnaCarouselNextSlideControlElementAttributes,
+  AracnaCarouselNextSlideControlElementEventMap,
+  AracnaCarouselPreviousSlideControlElementAttributes,
+  AracnaCarouselPreviousSlideControlElementEventMap,
+  AracnaCarouselRotationControlElementAttributes,
+  AracnaCarouselRotationControlElementEventMap,
+  AracnaCarouselSlideElementAttributes,
+  AracnaCarouselSlideElementEventMap,
+  AracnaCarouselSlidesElementAttributes,
+  AracnaCarouselSlidesElementEventMap,
+  AracnaCarouselTabElementAttributes,
+  AracnaCarouselTabElementEventMap,
+  AracnaCarouselTabsElementAttributes,
+  AracnaCarouselTabsElementEventMap,
+  AracnaBadgeElementAttributes,
+  AracnaBadgeElementEventMap,
+  AracnaAvatarElementAttributes,
+  AracnaAvatarElementEventMap,
   AracnaAriaTooltipElementAttributes,
   AracnaAriaTooltipElementEventMap,
   AracnaAriaTooltipArrowElementAttributes,
@@ -128,54 +176,6 @@ import type {
   AracnaAriaAccordionPanelElementEventMap,
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap,
-  AracnaTooltipElementAttributes,
-  AracnaTooltipElementEventMap,
-  AracnaTooltipArrowElementAttributes,
-  AracnaTooltipArrowElementEventMap,
-  AracnaTooltipContentElementAttributes,
-  AracnaTooltipContentElementEventMap,
-  AracnaTooltipTriggerElementAttributes,
-  AracnaTooltipTriggerElementEventMap,
-  AracnaQrCodeElementAttributes,
-  AracnaQrCodeElementEventMap,
-  AracnaListElementAttributes,
-  AracnaListElementEventMap,
-  AracnaListItemElementAttributes,
-  AracnaListItemElementEventMap,
-  AracnaImageElementAttributes,
-  AracnaImageElementEventMap,
-  AracnaIconElementAttributes,
-  AracnaIconElementEventMap,
-  AracnaFeedElementAttributes,
-  AracnaFeedElementEventMap,
-  AracnaFeedArticleElementAttributes,
-  AracnaFeedArticleElementEventMap,
-  AracnaFeedArticleDescriptionElementAttributes,
-  AracnaFeedArticleDescriptionElementEventMap,
-  AracnaFeedArticleLabelElementAttributes,
-  AracnaFeedArticleLabelElementEventMap,
-  AracnaChipElementAttributes,
-  AracnaChipElementEventMap,
-  AracnaCarouselElementAttributes,
-  AracnaCarouselElementEventMap,
-  AracnaCarouselNextSlideControlElementAttributes,
-  AracnaCarouselNextSlideControlElementEventMap,
-  AracnaCarouselPreviousSlideControlElementAttributes,
-  AracnaCarouselPreviousSlideControlElementEventMap,
-  AracnaCarouselRotationControlElementAttributes,
-  AracnaCarouselRotationControlElementEventMap,
-  AracnaCarouselSlideElementAttributes,
-  AracnaCarouselSlideElementEventMap,
-  AracnaCarouselSlidesElementAttributes,
-  AracnaCarouselSlidesElementEventMap,
-  AracnaCarouselTabElementAttributes,
-  AracnaCarouselTabElementEventMap,
-  AracnaCarouselTabsElementAttributes,
-  AracnaCarouselTabsElementEventMap,
-  AracnaBadgeElementAttributes,
-  AracnaBadgeElementEventMap,
-  AracnaAvatarElementAttributes,
-  AracnaAvatarElementEventMap,
   AracnaMeterElementAttributes,
   AracnaMeterElementEventMap,
   AracnaDialogElementAttributes,
@@ -306,6 +306,35 @@ import type {
   AracnaHeadingElementEventMap
 } from '@aracna/web-components'
 import type {
+  AracnaTooltipElement,
+  AracnaTooltipArrowElement,
+  AracnaTooltipContentElement,
+  AracnaTooltipTriggerElement
+} from '@aracna/web-components/elements/data/tooltip-element'
+import type { AracnaQrCodeElement } from '@aracna/web-components/elements/data/qr-code-element'
+import type { AracnaListElement, AracnaListItemElement } from '@aracna/web-components/elements/data/list-element'
+import type { AracnaImageElement } from '@aracna/web-components/elements/data/image-element'
+import type { AracnaIconElement } from '@aracna/web-components/elements/data/icon-element'
+import type {
+  AracnaFeedElement,
+  AracnaFeedArticleElement,
+  AracnaFeedArticleDescriptionElement,
+  AracnaFeedArticleLabelElement
+} from '@aracna/web-components/elements/data/feed-element'
+import type { AracnaChipElement } from '@aracna/web-components/elements/data/chip-element'
+import type {
+  AracnaCarouselElement,
+  AracnaCarouselNextSlideControlElement,
+  AracnaCarouselPreviousSlideControlElement,
+  AracnaCarouselRotationControlElement,
+  AracnaCarouselSlideElement,
+  AracnaCarouselSlidesElement,
+  AracnaCarouselTabElement,
+  AracnaCarouselTabsElement
+} from '@aracna/web-components/elements/data/carousel-element'
+import type { AracnaBadgeElement } from '@aracna/web-components/elements/data/badge-element'
+import type { AracnaAvatarElement } from '@aracna/web-components/elements/data/avatar-element'
+import type {
   AracnaAriaTooltipElement,
   AracnaAriaTooltipArrowElement,
   AracnaAriaTooltipContentElement,
@@ -383,35 +412,6 @@ import type {
   AracnaAriaAccordionPanelElement,
   AracnaAriaAccordionSectionElement
 } from '@aracna/web-components/elements/aria/aria-accordion-element'
-import type {
-  AracnaTooltipElement,
-  AracnaTooltipArrowElement,
-  AracnaTooltipContentElement,
-  AracnaTooltipTriggerElement
-} from '@aracna/web-components/elements/data/tooltip-element'
-import type { AracnaQrCodeElement } from '@aracna/web-components/elements/data/qr-code-element'
-import type { AracnaListElement, AracnaListItemElement } from '@aracna/web-components/elements/data/list-element'
-import type { AracnaImageElement } from '@aracna/web-components/elements/data/image-element'
-import type { AracnaIconElement } from '@aracna/web-components/elements/data/icon-element'
-import type {
-  AracnaFeedElement,
-  AracnaFeedArticleElement,
-  AracnaFeedArticleDescriptionElement,
-  AracnaFeedArticleLabelElement
-} from '@aracna/web-components/elements/data/feed-element'
-import type { AracnaChipElement } from '@aracna/web-components/elements/data/chip-element'
-import type {
-  AracnaCarouselElement,
-  AracnaCarouselNextSlideControlElement,
-  AracnaCarouselPreviousSlideControlElement,
-  AracnaCarouselRotationControlElement,
-  AracnaCarouselSlideElement,
-  AracnaCarouselSlidesElement,
-  AracnaCarouselTabElement,
-  AracnaCarouselTabsElement
-} from '@aracna/web-components/elements/data/carousel-element'
-import type { AracnaBadgeElement } from '@aracna/web-components/elements/data/badge-element'
-import type { AracnaAvatarElement } from '@aracna/web-components/elements/data/avatar-element'
 import type { AracnaMeterElement } from '@aracna/web-components/elements/feedback/meter-element'
 import type { AracnaDialogElement, AracnaDialogDescriptionElement, AracnaDialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
 import type { AracnaAlertElement } from '@aracna/web-components/elements/feedback/alert-element'
@@ -486,6 +486,76 @@ import type {
 import type { AracnaTextElement } from '@aracna/web-components/elements/typography/text-element'
 import type { AracnaHeadingElement } from '@aracna/web-components/elements/typography/heading-element'
 import type { ElementComponentProps } from '@aracna/react'
+
+export type AracnaTooltipProps = ElementComponentProps<AracnaTooltipElement, AracnaTooltipElementAttributes, AracnaTooltipElementEventMap>
+export type AracnaTooltipArrowProps = ElementComponentProps<AracnaTooltipArrowElement, AracnaTooltipArrowElementAttributes, AracnaTooltipArrowElementEventMap>
+export type AracnaTooltipContentProps = ElementComponentProps<
+  AracnaTooltipContentElement,
+  AracnaTooltipContentElementAttributes,
+  AracnaTooltipContentElementEventMap
+>
+export type AracnaTooltipTriggerProps = ElementComponentProps<
+  AracnaTooltipTriggerElement,
+  AracnaTooltipTriggerElementAttributes,
+  AracnaTooltipTriggerElementEventMap
+>
+
+export type AracnaQrCodeProps = ElementComponentProps<AracnaQrCodeElement, AracnaQrCodeElementAttributes, AracnaQrCodeElementEventMap>
+
+export type AracnaListProps<T = any> = ElementComponentProps<AracnaListElement, AracnaListElementAttributes<T>, AracnaListElementEventMap>
+export type AracnaListItemProps = ElementComponentProps<AracnaListItemElement, AracnaListItemElementAttributes, AracnaListItemElementEventMap>
+
+export type AracnaImageProps = ElementComponentProps<AracnaImageElement, AracnaImageElementAttributes, AracnaImageElementEventMap>
+
+export type AracnaIconProps = ElementComponentProps<AracnaIconElement, AracnaIconElementAttributes, AracnaIconElementEventMap>
+
+export type AracnaFeedProps<T = any> = ElementComponentProps<AracnaFeedElement, AracnaFeedElementAttributes<T>, AracnaFeedElementEventMap>
+export type AracnaFeedArticleProps = ElementComponentProps<AracnaFeedArticleElement, AracnaFeedArticleElementAttributes, AracnaFeedArticleElementEventMap>
+export type AracnaFeedArticleDescriptionProps = ElementComponentProps<
+  AracnaFeedArticleDescriptionElement,
+  AracnaFeedArticleDescriptionElementAttributes,
+  AracnaFeedArticleDescriptionElementEventMap
+>
+export type AracnaFeedArticleLabelProps = ElementComponentProps<
+  AracnaFeedArticleLabelElement,
+  AracnaFeedArticleLabelElementAttributes,
+  AracnaFeedArticleLabelElementEventMap
+>
+
+export type AracnaChipProps = ElementComponentProps<AracnaChipElement, AracnaChipElementAttributes, AracnaChipElementEventMap>
+
+export type AracnaCarouselProps<T = any> = ElementComponentProps<AracnaCarouselElement, AracnaCarouselElementAttributes<T>, AracnaCarouselElementEventMap>
+export type AracnaCarouselNextSlideControlProps = ElementComponentProps<
+  AracnaCarouselNextSlideControlElement,
+  AracnaCarouselNextSlideControlElementAttributes,
+  AracnaCarouselNextSlideControlElementEventMap
+>
+export type AracnaCarouselPreviousSlideControlProps = ElementComponentProps<
+  AracnaCarouselPreviousSlideControlElement,
+  AracnaCarouselPreviousSlideControlElementAttributes,
+  AracnaCarouselPreviousSlideControlElementEventMap
+>
+export type AracnaCarouselRotationControlProps = ElementComponentProps<
+  AracnaCarouselRotationControlElement,
+  AracnaCarouselRotationControlElementAttributes,
+  AracnaCarouselRotationControlElementEventMap
+>
+export type AracnaCarouselSlideProps = ElementComponentProps<
+  AracnaCarouselSlideElement,
+  AracnaCarouselSlideElementAttributes,
+  AracnaCarouselSlideElementEventMap
+>
+export type AracnaCarouselSlidesProps = ElementComponentProps<
+  AracnaCarouselSlidesElement,
+  AracnaCarouselSlidesElementAttributes,
+  AracnaCarouselSlidesElementEventMap
+>
+export type AracnaCarouselTabProps = ElementComponentProps<AracnaCarouselTabElement, AracnaCarouselTabElementAttributes, AracnaCarouselTabElementEventMap>
+export type AracnaCarouselTabsProps = ElementComponentProps<AracnaCarouselTabsElement, AracnaCarouselTabsElementAttributes, AracnaCarouselTabsElementEventMap>
+
+export type AracnaBadgeProps = ElementComponentProps<AracnaBadgeElement, AracnaBadgeElementAttributes, AracnaBadgeElementEventMap>
+
+export type AracnaAvatarProps = ElementComponentProps<AracnaAvatarElement, AracnaAvatarElementAttributes, AracnaAvatarElementEventMap>
 
 export type AracnaAriaTooltipProps = ElementComponentProps<AracnaAriaTooltipElement, AracnaAriaTooltipElementAttributes, AracnaAriaTooltipElementEventMap>
 export type AracnaAriaTooltipArrowProps = ElementComponentProps<
@@ -760,76 +830,6 @@ export type AracnaAriaAccordionSectionProps = ElementComponentProps<
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap
 >
-
-export type AracnaTooltipProps = ElementComponentProps<AracnaTooltipElement, AracnaTooltipElementAttributes, AracnaTooltipElementEventMap>
-export type AracnaTooltipArrowProps = ElementComponentProps<AracnaTooltipArrowElement, AracnaTooltipArrowElementAttributes, AracnaTooltipArrowElementEventMap>
-export type AracnaTooltipContentProps = ElementComponentProps<
-  AracnaTooltipContentElement,
-  AracnaTooltipContentElementAttributes,
-  AracnaTooltipContentElementEventMap
->
-export type AracnaTooltipTriggerProps = ElementComponentProps<
-  AracnaTooltipTriggerElement,
-  AracnaTooltipTriggerElementAttributes,
-  AracnaTooltipTriggerElementEventMap
->
-
-export type AracnaQrCodeProps = ElementComponentProps<AracnaQrCodeElement, AracnaQrCodeElementAttributes, AracnaQrCodeElementEventMap>
-
-export type AracnaListProps<T = any> = ElementComponentProps<AracnaListElement, AracnaListElementAttributes<T>, AracnaListElementEventMap>
-export type AracnaListItemProps = ElementComponentProps<AracnaListItemElement, AracnaListItemElementAttributes, AracnaListItemElementEventMap>
-
-export type AracnaImageProps = ElementComponentProps<AracnaImageElement, AracnaImageElementAttributes, AracnaImageElementEventMap>
-
-export type AracnaIconProps = ElementComponentProps<AracnaIconElement, AracnaIconElementAttributes, AracnaIconElementEventMap>
-
-export type AracnaFeedProps<T = any> = ElementComponentProps<AracnaFeedElement, AracnaFeedElementAttributes<T>, AracnaFeedElementEventMap>
-export type AracnaFeedArticleProps = ElementComponentProps<AracnaFeedArticleElement, AracnaFeedArticleElementAttributes, AracnaFeedArticleElementEventMap>
-export type AracnaFeedArticleDescriptionProps = ElementComponentProps<
-  AracnaFeedArticleDescriptionElement,
-  AracnaFeedArticleDescriptionElementAttributes,
-  AracnaFeedArticleDescriptionElementEventMap
->
-export type AracnaFeedArticleLabelProps = ElementComponentProps<
-  AracnaFeedArticleLabelElement,
-  AracnaFeedArticleLabelElementAttributes,
-  AracnaFeedArticleLabelElementEventMap
->
-
-export type AracnaChipProps = ElementComponentProps<AracnaChipElement, AracnaChipElementAttributes, AracnaChipElementEventMap>
-
-export type AracnaCarouselProps<T = any> = ElementComponentProps<AracnaCarouselElement, AracnaCarouselElementAttributes<T>, AracnaCarouselElementEventMap>
-export type AracnaCarouselNextSlideControlProps = ElementComponentProps<
-  AracnaCarouselNextSlideControlElement,
-  AracnaCarouselNextSlideControlElementAttributes,
-  AracnaCarouselNextSlideControlElementEventMap
->
-export type AracnaCarouselPreviousSlideControlProps = ElementComponentProps<
-  AracnaCarouselPreviousSlideControlElement,
-  AracnaCarouselPreviousSlideControlElementAttributes,
-  AracnaCarouselPreviousSlideControlElementEventMap
->
-export type AracnaCarouselRotationControlProps = ElementComponentProps<
-  AracnaCarouselRotationControlElement,
-  AracnaCarouselRotationControlElementAttributes,
-  AracnaCarouselRotationControlElementEventMap
->
-export type AracnaCarouselSlideProps = ElementComponentProps<
-  AracnaCarouselSlideElement,
-  AracnaCarouselSlideElementAttributes,
-  AracnaCarouselSlideElementEventMap
->
-export type AracnaCarouselSlidesProps = ElementComponentProps<
-  AracnaCarouselSlidesElement,
-  AracnaCarouselSlidesElementAttributes,
-  AracnaCarouselSlidesElementEventMap
->
-export type AracnaCarouselTabProps = ElementComponentProps<AracnaCarouselTabElement, AracnaCarouselTabElementAttributes, AracnaCarouselTabElementEventMap>
-export type AracnaCarouselTabsProps = ElementComponentProps<AracnaCarouselTabsElement, AracnaCarouselTabsElementAttributes, AracnaCarouselTabsElementEventMap>
-
-export type AracnaBadgeProps = ElementComponentProps<AracnaBadgeElement, AracnaBadgeElementAttributes, AracnaBadgeElementEventMap>
-
-export type AracnaAvatarProps = ElementComponentProps<AracnaAvatarElement, AracnaAvatarElementAttributes, AracnaAvatarElementEventMap>
 
 export type AracnaMeterProps = ElementComponentProps<AracnaMeterElement, AracnaMeterElementAttributes, AracnaMeterElementEventMap>
 

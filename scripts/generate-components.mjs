@@ -1,6 +1,7 @@
 import { getKebabCaseString, removeArrayDuplicates } from '@aracna/core'
 import { mkdir, readFile, rm, writeFile } from 'fs/promises'
 import { glob } from 'glob'
+import { basename, dirname, extname } from 'path'
 import { format } from 'prettier'
 
 const GENERICS = new Map([
@@ -130,8 +131,8 @@ await mkdir('src/components')
 for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,data,feedback,input,layout,navigation,surface,typography}/*-element.js')) {
   let folder, name, dts, elements, ts
 
-  folder = path.replace('node_modules/@aracna/web-components/elements/', '').split('/')[0]
-  name = path.replace('node_modules/@aracna/web-components/elements/', '').split('/')[1].replace('.js', '')
+  folder = basename(dirname(path))
+  name = basename(path).replace(extname(path), '')
 
   dts = await readFile(path.replace('.js', '.d.ts'), 'utf8')
   elements = dts
