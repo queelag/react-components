@@ -128,6 +128,22 @@ import type {
   AracnaAriaAccordionPanelElementEventMap,
   AracnaAriaAccordionSectionElementAttributes,
   AracnaAriaAccordionSectionElementEventMap,
+  AracnaMeterElementAttributes,
+  AracnaMeterElementEventMap,
+  AracnaDialogElementAttributes,
+  AracnaDialogElementEventMap,
+  AracnaDialogDescriptionElementAttributes,
+  AracnaDialogDescriptionElementEventMap,
+  AracnaDialogLabelElementAttributes,
+  AracnaDialogLabelElementEventMap,
+  AracnaAlertElementAttributes,
+  AracnaAlertElementEventMap,
+  AracnaAlertDialogElementAttributes,
+  AracnaAlertDialogElementEventMap,
+  AracnaAlertDialogDescriptionElementAttributes,
+  AracnaAlertDialogDescriptionElementEventMap,
+  AracnaAlertDialogLabelElementAttributes,
+  AracnaAlertDialogLabelElementEventMap,
   AracnaTooltipElementAttributes,
   AracnaTooltipElementEventMap,
   AracnaTooltipArrowElementAttributes,
@@ -176,22 +192,6 @@ import type {
   AracnaBadgeElementEventMap,
   AracnaAvatarElementAttributes,
   AracnaAvatarElementEventMap,
-  AracnaMeterElementAttributes,
-  AracnaMeterElementEventMap,
-  AracnaDialogElementAttributes,
-  AracnaDialogElementEventMap,
-  AracnaDialogDescriptionElementAttributes,
-  AracnaDialogDescriptionElementEventMap,
-  AracnaDialogLabelElementAttributes,
-  AracnaDialogLabelElementEventMap,
-  AracnaAlertElementAttributes,
-  AracnaAlertElementEventMap,
-  AracnaAlertDialogElementAttributes,
-  AracnaAlertDialogElementEventMap,
-  AracnaAlertDialogDescriptionElementAttributes,
-  AracnaAlertDialogDescriptionElementEventMap,
-  AracnaAlertDialogLabelElementAttributes,
-  AracnaAlertDialogLabelElementEventMap,
   AracnaTextAreaElementAttributes,
   AracnaTextAreaElementEventMap,
   AracnaTextAreaClearElementAttributes,
@@ -383,6 +383,14 @@ import type {
   AracnaAriaAccordionPanelElement,
   AracnaAriaAccordionSectionElement
 } from '@aracna/web-components/elements/aria/aria-accordion-element'
+import type { AracnaMeterElement } from '@aracna/web-components/elements/feedback/meter-element'
+import type { AracnaDialogElement, AracnaDialogDescriptionElement, AracnaDialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
+import type { AracnaAlertElement } from '@aracna/web-components/elements/feedback/alert-element'
+import type {
+  AracnaAlertDialogElement,
+  AracnaAlertDialogDescriptionElement,
+  AracnaAlertDialogLabelElement
+} from '@aracna/web-components/elements/feedback/alert-dialog-element'
 import type {
   AracnaTooltipElement,
   AracnaTooltipArrowElement,
@@ -412,14 +420,6 @@ import type {
 } from '@aracna/web-components/elements/data/carousel-element'
 import type { AracnaBadgeElement } from '@aracna/web-components/elements/data/badge-element'
 import type { AracnaAvatarElement } from '@aracna/web-components/elements/data/avatar-element'
-import type { AracnaMeterElement } from '@aracna/web-components/elements/feedback/meter-element'
-import type { AracnaDialogElement, AracnaDialogDescriptionElement, AracnaDialogLabelElement } from '@aracna/web-components/elements/feedback/dialog-element'
-import type { AracnaAlertElement } from '@aracna/web-components/elements/feedback/alert-element'
-import type {
-  AracnaAlertDialogElement,
-  AracnaAlertDialogDescriptionElement,
-  AracnaAlertDialogLabelElement
-} from '@aracna/web-components/elements/feedback/alert-dialog-element'
 import type {
   AracnaTextAreaElement,
   AracnaTextAreaClearElement,
@@ -761,6 +761,30 @@ export type AracnaAriaAccordionSectionProps = ElementComponentProps<
   AracnaAriaAccordionSectionElementEventMap
 >
 
+export type AracnaMeterProps = ElementComponentProps<AracnaMeterElement, AracnaMeterElementAttributes, AracnaMeterElementEventMap>
+
+export type AracnaDialogProps = ElementComponentProps<AracnaDialogElement, AracnaDialogElementAttributes, AracnaDialogElementEventMap>
+export type AracnaDialogDescriptionProps = ElementComponentProps<
+  AracnaDialogDescriptionElement,
+  AracnaDialogDescriptionElementAttributes,
+  AracnaDialogDescriptionElementEventMap
+>
+export type AracnaDialogLabelProps = ElementComponentProps<AracnaDialogLabelElement, AracnaDialogLabelElementAttributes, AracnaDialogLabelElementEventMap>
+
+export type AracnaAlertProps = ElementComponentProps<AracnaAlertElement, AracnaAlertElementAttributes, AracnaAlertElementEventMap>
+
+export type AracnaAlertDialogProps = ElementComponentProps<AracnaAlertDialogElement, AracnaAlertDialogElementAttributes, AracnaAlertDialogElementEventMap>
+export type AracnaAlertDialogDescriptionProps = ElementComponentProps<
+  AracnaAlertDialogDescriptionElement,
+  AracnaAlertDialogDescriptionElementAttributes,
+  AracnaAlertDialogDescriptionElementEventMap
+>
+export type AracnaAlertDialogLabelProps = ElementComponentProps<
+  AracnaAlertDialogLabelElement,
+  AracnaAlertDialogLabelElementAttributes,
+  AracnaAlertDialogLabelElementEventMap
+>
+
 export type AracnaTooltipProps = ElementComponentProps<AracnaTooltipElement, AracnaTooltipElementAttributes, AracnaTooltipElementEventMap>
 export type AracnaTooltipArrowProps = ElementComponentProps<AracnaTooltipArrowElement, AracnaTooltipArrowElementAttributes, AracnaTooltipArrowElementEventMap>
 export type AracnaTooltipContentProps = ElementComponentProps<
@@ -830,30 +854,6 @@ export type AracnaCarouselTabsProps = ElementComponentProps<AracnaCarouselTabsEl
 export type AracnaBadgeProps = ElementComponentProps<AracnaBadgeElement, AracnaBadgeElementAttributes, AracnaBadgeElementEventMap>
 
 export type AracnaAvatarProps = ElementComponentProps<AracnaAvatarElement, AracnaAvatarElementAttributes, AracnaAvatarElementEventMap>
-
-export type AracnaMeterProps = ElementComponentProps<AracnaMeterElement, AracnaMeterElementAttributes, AracnaMeterElementEventMap>
-
-export type AracnaDialogProps = ElementComponentProps<AracnaDialogElement, AracnaDialogElementAttributes, AracnaDialogElementEventMap>
-export type AracnaDialogDescriptionProps = ElementComponentProps<
-  AracnaDialogDescriptionElement,
-  AracnaDialogDescriptionElementAttributes,
-  AracnaDialogDescriptionElementEventMap
->
-export type AracnaDialogLabelProps = ElementComponentProps<AracnaDialogLabelElement, AracnaDialogLabelElementAttributes, AracnaDialogLabelElementEventMap>
-
-export type AracnaAlertProps = ElementComponentProps<AracnaAlertElement, AracnaAlertElementAttributes, AracnaAlertElementEventMap>
-
-export type AracnaAlertDialogProps = ElementComponentProps<AracnaAlertDialogElement, AracnaAlertDialogElementAttributes, AracnaAlertDialogElementEventMap>
-export type AracnaAlertDialogDescriptionProps = ElementComponentProps<
-  AracnaAlertDialogDescriptionElement,
-  AracnaAlertDialogDescriptionElementAttributes,
-  AracnaAlertDialogDescriptionElementEventMap
->
-export type AracnaAlertDialogLabelProps = ElementComponentProps<
-  AracnaAlertDialogLabelElement,
-  AracnaAlertDialogLabelElementAttributes,
-  AracnaAlertDialogLabelElementEventMap
->
 
 export type AracnaTextAreaProps = ElementComponentProps<AracnaTextAreaElement, AracnaTextAreaElementAttributes, AracnaTextAreaElementEventMap>
 export type AracnaTextAreaClearProps = ElementComponentProps<
