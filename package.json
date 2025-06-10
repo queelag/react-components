@@ -97,6 +97,7 @@
     "@aracna/web": ">= 1.0.0",
     "@aracna/web-components": ">= 1.1.0",
     "@floating-ui/dom": ">= 1.0.0",
+    "@lit/react": ">= 1.0.0",
     "dompurify": ">= 3.0.0",
     "focus-trap": ">= 7.0.0",
     "lit": ">= 3.0.0",
