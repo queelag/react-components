@@ -280,10 +280,6 @@ import type {
   AracnaBreadcrumbItemElementEventMap,
   AracnaBreadcrumbListElementAttributes,
   AracnaBreadcrumbListElementEventMap,
-  AracnaTextElementAttributes,
-  AracnaTextElementEventMap,
-  AracnaHeadingElementAttributes,
-  AracnaHeadingElementEventMap,
   AracnaDisclosureElementAttributes,
   AracnaDisclosureElementEventMap,
   AracnaDisclosureButtonElementAttributes,
@@ -303,7 +299,11 @@ import type {
   AracnaAccordionPanelElementAttributes,
   AracnaAccordionPanelElementEventMap,
   AracnaAccordionSectionElementAttributes,
-  AracnaAccordionSectionElementEventMap
+  AracnaAccordionSectionElementEventMap,
+  AracnaTextElementAttributes,
+  AracnaTextElementEventMap,
+  AracnaHeadingElementAttributes,
+  AracnaHeadingElementEventMap
 } from '@aracna/web-components'
 import type {
   AracnaAriaTooltipElement,
@@ -469,8 +469,6 @@ import type {
   AracnaBreadcrumbItemElement,
   AracnaBreadcrumbListElement
 } from '@aracna/web-components/elements/navigation/breadcrumb-element'
-import type { AracnaTextElement } from '@aracna/web-components/elements/typography/text-element'
-import type { AracnaHeadingElement } from '@aracna/web-components/elements/typography/heading-element'
 import type {
   AracnaDisclosureElement,
   AracnaDisclosureButtonElement,
@@ -485,6 +483,8 @@ import type {
   AracnaAccordionPanelElement,
   AracnaAccordionSectionElement
 } from '@aracna/web-components/elements/surface/accordion-element'
+import type { AracnaTextElement } from '@aracna/web-components/elements/typography/text-element'
+import type { AracnaHeadingElement } from '@aracna/web-components/elements/typography/heading-element'
 import type { ElementComponentProps } from '@aracna/react'
 
 export type AracnaAriaTooltipProps = ElementComponentProps<AracnaAriaTooltipElement, AracnaAriaTooltipElementAttributes, AracnaAriaTooltipElementEventMap>
@@ -993,10 +993,6 @@ export type AracnaBreadcrumbListProps = ElementComponentProps<
   AracnaBreadcrumbListElementEventMap
 >
 
-export type AracnaTextProps = ElementComponentProps<AracnaTextElement, AracnaTextElementAttributes, AracnaTextElementEventMap>
-
-export type AracnaHeadingProps = ElementComponentProps<AracnaHeadingElement, AracnaHeadingElementAttributes, AracnaHeadingElementEventMap>
-
 export type AracnaDisclosureProps<T = any> = ElementComponentProps<
   AracnaDisclosureElement,
   AracnaDisclosureElementAttributes<T>,
@@ -1041,3 +1037,7 @@ export type AracnaAccordionSectionProps = ElementComponentProps<
   AracnaAccordionSectionElementAttributes,
   AracnaAccordionSectionElementEventMap
 >
+
+export type AracnaTextProps = ElementComponentProps<AracnaTextElement, AracnaTextElementAttributes, AracnaTextElementEventMap>
+
+export type AracnaHeadingProps = ElementComponentProps<AracnaHeadingElement, AracnaHeadingElementAttributes, AracnaHeadingElementEventMap>
