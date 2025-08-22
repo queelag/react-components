@@ -43,33 +43,40 @@ for (let path of await glob('node_modules/@aracna/web-components/elements/{aria,
   dts = await readFile(path.replace('.js', '.d.ts'), 'utf8')
   elements = dts.match(/'aracna-[a-z-]+': [a-zA-Z]+/gm).map((match) => 'Aracna' + match.split(':')[1].trim())
 
-  imports.web.push(...elements.map((element) => `${element}Attributes, ${element}EventMap`))
-  imports.webc.push(`import type { ${elements.join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'`)
+  imports.web.push(...elements.map((element) => ({ element, ts: `${element}Attributes, ${element}EventMap` })))
+  imports.webc.push({ name, ts: `import type { ${elements.join(', ')} } from '@aracna/web-components/elements/${folder}/${name}'` })
 
-  exports.push(/* HTML */ `
-    <script>
-      ${elements
-        .map((element) =>
-          [
-            `export type ${element.replace('Element', '')}Props`,
-            GENERICS.get(element)?.[0] === 'T' ? `<T = any>` : GENERICS.get(element)?.[1] === 'T' ? '<T = any>' : '',
-            ` = ElementComponentProps<${element}, ${element}Attributes`,
-            GENERICS.has(element) ? `<${[...GENERICS.get(element)].join(',')}>` : '',
-            `, ${element}EventMap>`
-          ].join('')
-        )
-        .join('\n')}
-    </script>
-  `)
+  exports.push({
+    name,
+    ts: /* HTML */ `
+      <script>
+        ${elements
+          .map((element) =>
+            [
+              `export type ${element.replace('Element', '')}Props`,
+              GENERICS.get(element)?.[0] === 'T' ? `<T = any>` : GENERICS.get(element)?.[1] === 'T' ? '<T = any>' : '',
+              ` = ElementComponentProps<${element}, ${element}Attributes`,
+              GENERICS.has(element) ? `<${[...GENERICS.get(element)].join(',')}>` : '',
+              `, ${element}EventMap>`
+            ].join('')
+          )
+          .join('\n')}
+      </script>
+    `
+  })
 }
+
+imports.web.sort((a, b) => (a.element > b.element ? 1 : -1))
+imports.webc.sort((a, b) => (a.name > b.name ? 1 : -1))
+exports.sort((a, b) => (a.name > b.name ? 1 : -1))
 
 ts = /* HTML */ `
   <script>
-    import type { ${imports.web.join(',')} } from '@aracna/web-components'
-    ${imports.webc.join('\n')}
+    import type { ${imports.web.map((w) => w.ts).join(',')} } from '@aracna/web-components'
+    ${imports.webc.map((w) => w.ts).join('\n')}
     import type { ElementComponentProps } from '@aracna/react'
 
-    ${exports.join('\n')}
+    ${exports.map((e) => e.ts).join('\n')}
   </script>
 `
 
