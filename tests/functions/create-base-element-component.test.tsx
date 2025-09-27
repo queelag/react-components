@@ -2,7 +2,7 @@ import { ElementComponent, ElementComponentProps } from '@aracna/react'
 import { AracnaBaseElementAttributes, AracnaBaseElementEventMap } from '@aracna/web-components'
 import { AracnaBaseElement } from '@aracna/web-components/elements/core/base-element'
 import { cleanup, render, screen, waitFor } from '@testing-library/react'
-import React, { ReactNode, useEffect, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import { Mock, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 import { createBaseElementComponent } from '../../src/functions/create-base-element-component'
 

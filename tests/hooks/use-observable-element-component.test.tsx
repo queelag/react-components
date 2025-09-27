@@ -3,7 +3,7 @@ import { defineCustomElement } from '@aracna/web'
 import { AracnaBaseElement } from '@aracna/web-components/elements/core/base-element'
 import { render } from '@testing-library/react'
 import type { PropertyDeclarations } from 'lit'
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import { describe, it } from 'vitest'
 import { useObservableElementComponent } from '../../src/hooks/use-observable-element-component'
 
