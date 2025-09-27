@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - esbuild
 
 packages:
-  - 'packages/@aracna/*'
+  - packages/@aracna/*
