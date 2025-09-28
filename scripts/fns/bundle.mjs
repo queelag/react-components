@@ -9,9 +9,6 @@ const options = {
   minify: true
 }
 
-/** @type {import('esbuild').BuildOptions['external']} */
-const external = ['@aracna/core', '@aracna/react', '@aracna/web', '@aracna/web-components', '@floating-ui/dom', 'dompurify', 'focus-trap', 'qrcode', 'tabbable']
-
 export async function bundle() {
   await Promise.all(
     [
@@ -33,11 +30,10 @@ export async function bundle() {
         ...options,
         bundle: true,
         entryPoints: ['src/index.ts'],
-        external,
         format: 'cjs',
         outfile: 'dist/index.cjs',
-        platform: 'neutral',
-        treeShaking: true
+        packages: 'external',
+        platform: 'neutral'
       }),
       /**
        * IIFE
@@ -47,7 +43,7 @@ export async function bundle() {
         bundle: true,
         entryPoints: ['src/index.ts'],
         format: 'iife',
-        globalName: 'AracnaWebComponents',
+        globalName: 'AracnaReactComponents',
         outfile: 'dist/index.iife.js',
         platform: 'browser',
         treeShaking: true
@@ -66,11 +62,10 @@ export async function bundle() {
               ...options,
               bundle: true,
               entryPoints: [element],
-              external,
               format: 'cjs',
               outfile: element.replace('src', 'dist').replace('.ts', '.cjs'),
-              platform: 'neutral',
-              treeShaking: true
+              packages: 'external',
+              platform: 'neutral'
             }),
             /**
              * IIFE
@@ -80,7 +75,7 @@ export async function bundle() {
               bundle: true,
               entryPoints: [element],
               format: 'iife',
-              globalName: 'AracnaWebComponents' + getPascalCaseString(basename(element).replace(extname(element), '')),
+              globalName: 'AracnaReactComponents' + getPascalCaseString(basename(element).replace(extname(element), '')),
               outfile: element.replace('src', 'dist').replace('.ts', '.iife.js'),
               platform: 'browser',
               treeShaking: true
