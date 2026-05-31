@@ -26,6 +26,7 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "tabbable": "^6.4.0",
+    "typedoc": "^0.28.19",
     "typescript": "^6.0.3",
     "vitest": "^4.1.7"
   },
